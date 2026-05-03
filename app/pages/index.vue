@@ -4,6 +4,7 @@
         <HomeHero />
         <HomeAbout />
         <HomeQuote />
+        <HomeHighlight />
 
     </div>
 </template>

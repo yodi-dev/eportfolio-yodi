@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   content: {
     experimental: {
       nativeSqlite: true
-    }
+    }    
   },
   app: {
     head: {

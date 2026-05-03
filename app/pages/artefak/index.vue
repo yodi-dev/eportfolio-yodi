@@ -1,18 +1,33 @@
 <script setup>
-const { data: artefaks } = await useAsyncData(() =>
+const { data: list } = await useAsyncData('artefak', () =>
     queryCollection('artefak').all()
 )
 </script>
 
 <template>
-    <div class="space-y-8">
-        <h1 class="text-3xl font-bold">Artefak</h1>
-        <div class="space-y-4">
-            <NuxtLink v-for="item in artefaks" :key="item.path" :to="item.path"
-                class="block border border-gray-100 rounded-xl p-5 hover:border-gray-300 transition">
-                <p class="font-medium">{{ item.title }}</p>
-                <p class="text-sm text-gray-400 mt-1">{{ item.description }}</p>
-            </NuxtLink>
+    <main class="max-w-5xl mx-auto py-12 px-4">
+        <h1 class="text-4xl font-bold text-stone-800 mb-8" style="font-family: 'Lora', serif;">
+            Daftar Artefak Pembelajaran
+        </h1>
+
+        <!-- Kalau kosong -->
+        <div v-if="!list?.length" class="text-stone-400 text-center py-20">
+            Belum ada artefak yang ditambahkan.
         </div>
-    </div>
+
+        <!-- List artikel -->
+        <div v-else class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div v-for="article in list" :key="article._path"
+                class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow">
+                <NuxtLink :to="article._path">
+                    <h2 class="text-xl font-bold text-emerald-700 mb-2">{{ article.title }}</h2>
+                    <p class="text-stone-600 text-sm line-clamp-2">{{ article.description }}</p>
+                    <div class="mt-4 text-xs font-semibold uppercase tracking-widest text-stone-400">
+                        Klik untuk membaca &rarr;
+                    </div>
+                </NuxtLink>
+            </div>
+        </div>
+
+    </main>
 </template>

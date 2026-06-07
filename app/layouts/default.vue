@@ -38,6 +38,11 @@
                             class="text-stone-500 hover:text-emerald-600 px-1 py-5 text-sm font-medium transition-colors">
                             Visi Guru
                         </NuxtLink>
+                        <NuxtLink to="/refleksi"
+                            activeClass="text-emerald-600 font-semibold border-b-2 border-emerald-600"
+                            class="text-stone-500 hover:text-emerald-600 px-1 py-5 text-sm font-medium transition-colors">
+                            Refleksi
+                        </NuxtLink>
                     </nav>
 
                 </div>

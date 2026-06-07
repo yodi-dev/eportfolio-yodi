@@ -1,5 +1,6 @@
 <script setup>
 const route = useRoute()
+const router = useRouter() // <--- 1. TAMBAHKAN INI SOB!
 
 const { data: doc } = await useAsyncData(route.path, () =>
     queryCollection('artefak').path(route.path).first()
@@ -9,17 +10,22 @@ const { data: doc } = await useAsyncData(route.path, () =>
 <template>
     <main class="max-w-4xl mx-auto py-10 px-4">
 
-        <!-- Not found -->
         <div v-if="!doc" class="text-center py-20 space-y-4">
             <h1 class="text-4xl font-bold text-stone-800">Halaman Tidak Ditemukan</h1>
             <p class="text-lg text-stone-600">Artefak yang kamu cari belum dibuat atau URL-nya salah.</p>
-            <NuxtLink to="/"
+
+            <button @click="router.back()"
                 class="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-emerald-600 text-white font-medium rounded-full hover:bg-emerald-700 transition-colors">
-                Kembali ke Beranda
-            </NuxtLink>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                </svg>
+
+                Kembali
+            </button>
         </div>
 
-        <!-- Article -->
         <article v-else>
             <header class="mb-12 space-y-4">
                 <div class="flex items-center gap-3">
@@ -49,14 +55,16 @@ const { data: doc } = await useAsyncData(route.path, () =>
             </div>
 
             <div class="mt-16 pt-8 border-t border-stone-100">
-                <NuxtLink to="/"
-                    class="inline-flex items-center gap-2 text-stone-500 hover:text-emerald-600 transition-colors">
+                <button @click="router.back()"
+                    class="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-emerald-600 text-white font-medium rounded-full hover:bg-emerald-700 transition-colors">
+
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                     </svg>
-                    Kembali ke Beranda
-                </NuxtLink>
+
+                    Kembali
+                </button>
             </div>
         </article>
 

@@ -15,7 +15,10 @@
         <div class="w-56 h-56 md:w-72 md:h-72 flex-shrink-0 group cursor-pointer">
             <div
                 class="w-full h-full bg-stone-100 rounded-full border-8 border-white shadow-[0_20px_50px_rgb(0,0,0,0.07)] overflow-hidden flex items-center justify-center text-stone-400 group-hover:scale-105 transition-transform duration-500">
-                <span class="text-sm font-medium tracking-widest">FOTO PROFIL</span>
+
+                <!-- Ganti span kemarin dengan tag img ini, sob -->
+                <img src="/pp.jpg" alt="Foto Profil Mahasiswa" class="w-full h-full object-cover" />
+
             </div>
         </div>
     </section>

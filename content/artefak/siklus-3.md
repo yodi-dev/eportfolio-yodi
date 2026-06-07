@@ -25,5 +25,5 @@ Guru yang hebat bukanlah yang memiliki RPP paling sempurna, melainkan guru yang 
 
 ## Lampiran Artefak
 
-- [Unduh RPP Siklus 3](#)
-- [Unduh LKPD Siklus 3](#)
+- <a href="/rpp.docx" target="_blank" download>Unduh RPP Siklus 3</a>
+- <a href="/lkpd.docx" target="_blank" download>Unduh LKPD Siklus 3</a>

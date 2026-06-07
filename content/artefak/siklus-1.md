@@ -21,5 +21,5 @@ Muncul kesadaran kritis untuk memodifikasi bahan ajar menjadi format yang lebih 
 
 ## Lampiran Artefak
 
-- [Unduh RPP Siklus 1](#)
-- [Unduh LKPD Siklus 1](#)
+- <a href="/rpp.docx" target="_blank" download>Unduh RPP Siklus 1</a>
+- <a href="/lkpd.docx" target="_blank" download>Unduh LKPD Siklus 1</a>

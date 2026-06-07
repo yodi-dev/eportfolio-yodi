@@ -25,5 +25,5 @@ Fokus ke depan adalah penyiapan **Strategi Cadangan (Plan B)** yang terstruktur 
 
 ## Lampiran Artefak
 
-- [Unduh RPP Siklus 2](#)
-- [Unduh LKPD Siklus 2](#)
+- <a href="/rpp.docx" target="_blank" download>Unduh RPP Siklus 2</a>
+- <a href="/lkpd.docx" target="_blank" download>Unduh LKPD Siklus 2</a>

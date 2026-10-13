@@ -157,7 +157,7 @@ const quickModules = [
                         </p>
                     </div>
                     <div class="pt-4 mt-4 border-t border-stone-50 text-xs font-bold text-emerald-600 flex items-center gap-1 group-hover:gap-2 transition-all">
-                        Buka Arsip PPL I &rarr;
+                        Buka Portofolio PPL I &rarr;
                     </div>
                 </NuxtLink>
 
@@ -172,11 +172,11 @@ const quickModules = [
                             PPL II: Praktik Mandiri
                         </h3>
                         <p class="text-stone-600 text-xs leading-relaxed">
-                            Wadah modular siap menampung modul ajar mandiri, studi kasus siswa, dan evaluasi hasil belajar bertahap.
+                            Dokumentasi pelaksanaan pembelajaran mandiri penuh di kelas, studi kasus penanganan siswa, dan evaluasi belajar.
                         </p>
                     </div>
                     <div class="pt-4 mt-4 border-t border-stone-50 text-xs font-bold text-teal-600 flex items-center gap-1 group-hover:gap-2 transition-all">
-                        Buka Wadah PPL II &rarr;
+                        Buka Portofolio PPL II &rarr;
                     </div>
                 </NuxtLink>
 
@@ -191,11 +191,11 @@ const quickModules = [
                             Seminar PPG
                         </h3>
                         <p class="text-stone-600 text-xs leading-relaxed">
-                            Ruang diseminasi desain inovasi pembelajaran berbasis EdTech, jurnal refleksi kritis, dan artikel ilmiah.
+                            Ruang diseminasi karya inovasi pembelajaran, jurnal refleksi kritis berkelanjutan, dan naskah artikel ilmiah.
                         </p>
                     </div>
                     <div class="pt-4 mt-4 border-t border-stone-50 text-xs font-bold text-amber-700 flex items-center gap-1 group-hover:gap-2 transition-all">
-                        Buka Ruang Seminar &rarr;
+                        Buka Portofolio Seminar &rarr;
                     </div>
                 </NuxtLink>
             </div>

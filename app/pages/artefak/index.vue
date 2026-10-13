@@ -58,9 +58,9 @@ const filteredList = computed(() => {
 
         <!-- Kalau kosong -->
         <div v-if="!filteredList.length" class="text-center py-16 bg-white rounded-3xl border border-stone-100 p-8 space-y-2">
-            <p class="text-stone-700 font-bold text-base">Belum ada artefak untuk kategori ini.</p>
-            <p class="text-stone-400 text-xs">
-                Wadah kurikulum telah siap. Artefak akan muncul otomatis saat penugasan ditambahkan.
+            <p class="text-stone-700 font-bold text-base">Dokumentasi Pembelajaran Sedang Disusun</p>
+            <p class="text-stone-500 text-xs leading-relaxed max-w-md mx-auto">
+                Luaran modul ajar dan laporan refleksi untuk kategori ini akan saya publikasikan secara bertahap seiring berjalannya pelaksanaan perkuliahan.
             </p>
         </div>
 

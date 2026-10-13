@@ -35,7 +35,7 @@ const goBack = () => {
 
         <div v-if="!doc" class="text-center py-20 space-y-4 bg-white rounded-3xl border border-stone-100 p-8">
             <h1 class="text-3xl font-bold text-stone-800" style="font-family: 'Lora', serif;">Halaman Tidak Ditemukan</h1>
-            <p class="text-base text-stone-600">Artefak yang kamu cari belum dibuat atau URL-nya salah.</p>
+            <p class="text-base text-stone-600">Dokumen artefak pembelajaran yang dicari belum tersedia atau tautan tidak sesuai.</p>
 
             <button @click="goBack"
                 class="inline-flex items-center gap-2 mt-4 px-6 py-3 bg-emerald-600 text-white font-medium rounded-full hover:bg-emerald-700 transition-colors shadow-sm">

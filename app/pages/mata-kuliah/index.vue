@@ -25,11 +25,11 @@ const courses = [
         id: 'ppl-2',
         title: 'PPL II (Praktik Mandiri)',
         subtitle: 'Praktik Pengalaman Lapangan II',
-        status: 'Sedang Berjalan / Siap Diisi',
+        status: 'Sedang Berjalan',
         statusClass: 'bg-teal-100 text-teal-800',
         score: 'Proses PPL',
         to: '/mata-kuliah/ppl-2',
-        desc: 'Fase pendewasaan mengajar secara mandiri penuh, penanganan studi kasus kasuistik peserta didik, dan asesmen komprehensif.',
+        desc: 'Fase pendewasaan saya dalam mengajar secara mandiri penuh, menangani studi kasus kesulitan belajar siswa, dan menyusun evaluasi komprehensif.',
         highlights: [
             'Praktik Mengajar Mandiri Penuh',
             'Studi Kasus Penanganan Kesulitan Belajar Siswa',
@@ -68,7 +68,7 @@ const courses = [
                 Portofolio Mata Kuliah PPG
             </h1>
             <p class="text-stone-600 max-w-2xl mx-auto text-base leading-relaxed">
-                Dokumentasi terstruktur capaian akademik dan praktik lapangan program Pendidikan Profesi Guru (PPG) Prajabatan Yodi Irawan.
+                Dokumentasi terstruktur capaian akademik dan praktik lapangan saya selama menempuh program Pendidikan Profesi Guru (PPG) Prajabatan.
             </p>
         </header>
 
@@ -114,7 +114,7 @@ const courses = [
                 <div class="pt-6 mt-6 border-t border-stone-100">
                     <NuxtLink :to="course.to"
                         class="w-full py-3 px-4 bg-stone-800 text-white group-hover:bg-emerald-600 rounded-2xl text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
-                        Buka Portofolio Modul
+                        Buka Portofolio Mata Kuliah
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                         </svg>

@@ -27,7 +27,7 @@ const { data: siklusList } = await useAsyncData('artefak-ppl1', () =>
                 PPL I: Praktik Pembelajaran Terbimbing
             </h1>
             <p class="text-stone-600 max-w-3xl text-base leading-relaxed">
-                Fase awal pengenalan lapangan persekolahan, asistensi mengajar, serta implementasi 3 siklus pembelajaran terbimbing di bawah bimbingan Guru Pamong <strong>Febriyana, S.T.</strong>
+                Fase awal pengenalan lapangan persekolahan, asistensi mengajar, serta implementasi 3 siklus pembelajaran terbimbing yang telah saya laksanakan di bawah bimbingan Guru Pamong <strong>Febriyana, S.T.</strong>
             </p>
         </header>
 

@@ -1,5 +1,5 @@
 <template>
-    <main class="max-w-4xl mx-auto py-12 px-4 space-y-16">
+    <div class="max-w-4xl mx-auto space-y-16 animate-fadeIn">
 
         <header class="text-center space-y-4">
             <span
@@ -132,8 +132,12 @@
             </div>
         </section>
 
-    </main>
+    </div>
 </template>
 
 <script setup>
+useSeoMeta({
+    title: 'Visi Guru Profesional',
+    description: 'Komitmen diri dalam mewujudkan pembelajaran yang berpihak pada murid, adaptif terhadap perkembangan zaman, dan bernilai humanis.'
+})
 </script>

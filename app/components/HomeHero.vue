@@ -17,7 +17,7 @@
                 class="w-full h-full bg-stone-100 rounded-full border-8 border-white shadow-[0_20px_50px_rgb(0,0,0,0.07)] overflow-hidden flex items-center justify-center text-stone-400 group-hover:scale-105 transition-transform duration-500">
 
                 <!-- Ganti span kemarin dengan tag img ini, sob -->
-                <img src="/pp.jpg" alt="Foto Profil Mahasiswa" class="w-full h-full object-cover" />
+                <img src="/pp.png" alt="Foto Profil Mahasiswa" class="w-full h-full object-cover" />
 
             </div>
         </div>

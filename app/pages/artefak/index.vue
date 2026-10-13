@@ -1,38 +1,96 @@
 <script setup>
+import { ref, computed } from 'vue'
+
+useSeoMeta({
+    title: 'Daftar Artefak Pembelajaran',
+    description: 'Koleksi komprehensif artefak pembelajaran PPL I, PPL II, dan Seminar PPG: modul ajar, LKPD, inovasi, dan catatan refleksi.'
+})
+
 const { data: list } = await useAsyncData('artefak', () =>
     queryCollection('artefak').all()
 )
+
+const activeFilter = ref('all')
+
+const filterOptions = [
+    { label: 'Semua Artefak', value: 'all' },
+    { label: 'PPL I (Terbimbing)', value: 'ppl-1' },
+    { label: 'PPL II (Mandiri)', value: 'ppl-2' },
+    { label: 'Seminar PPG', value: 'seminar' }
+]
+
+const filteredList = computed(() => {
+    if (!list.value) return []
+    if (activeFilter.value === 'all') return list.value
+    return list.value.filter(item => item.course === activeFilter.value)
+})
 </script>
 
 <template>
-    <main class="max-w-5xl mx-auto py-12 px-4">
-        <h1 class="text-4xl font-bold text-stone-800 mb-8" style="font-family: 'Lora', serif;">
-            Daftar Artefak Pembelajaran
-        </h1>
+    <div class="space-y-8 animate-fadeIn">
+        <header class="text-center md:text-left space-y-3">
+            <span
+                class="px-4 py-1.5 bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-wider rounded-full">
+                Dokumentasi Pembelajaran
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                Daftar Artefak Pembelajaran
+            </h1>
+            <p class="text-stone-600 max-w-2xl text-base leading-relaxed">
+                Koleksi perangkat ajar, materi asesmen, dan catatan reflektif dari pelaksanaan mata kuliah PPL I, PPL II, dan Seminar PPG.
+            </p>
+        </header>
+
+        <!-- Filter Pill Tabs -->
+        <div class="flex flex-wrap gap-2 pt-2">
+            <button v-for="opt in filterOptions" :key="opt.value"
+                @click="activeFilter = opt.value"
+                type="button"
+                :class="[
+                    'px-4 py-2 rounded-full text-xs font-bold tracking-wide transition-all duration-200',
+                    activeFilter === opt.value
+                        ? 'bg-emerald-600 text-white shadow-sm scale-105'
+                        : 'bg-white text-stone-600 border border-stone-200 hover:bg-stone-50'
+                ]">
+                {{ opt.label }}
+            </button>
+        </div>
 
         <!-- Kalau kosong -->
-        <div v-if="!list?.length" class="text-stone-400 text-center py-20">
-            Belum ada artefak yang ditambahkan.
+        <div v-if="!filteredList.length" class="text-center py-16 bg-white rounded-3xl border border-stone-100 p-8 space-y-2">
+            <p class="text-stone-700 font-bold text-base">Belum ada artefak untuk kategori ini.</p>
+            <p class="text-stone-400 text-xs">
+                Wadah kurikulum telah siap. Artefak akan muncul otomatis saat penugasan ditambahkan.
+            </p>
         </div>
 
         <!-- List artikel -->
         <div v-else class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- 1. Ganti :key menjadi article.path -->
-            <!-- 2. Ganti :to langsung menjadi article.path -->
-            <NuxtLink v-for="article in list" :key="article.path" :to="article.path"
-                class="block bg-white p-6 md:p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-stone-100 hover:shadow-[0_8px_30px_rgb(52,211,153,0.15)] hover:-translate-y-1 transition-all duration-300 group">
+            <NuxtLink v-for="article in filteredList" :key="article.path" :to="article.path"
+                class="bg-white p-6 md:p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-stone-100 hover:shadow-[0_8px_30px_rgb(52,211,153,0.15)] hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
 
-                <h2 class="text-xl font-bold text-stone-800 mb-3 group-hover:text-emerald-700 transition-colors"
-                    style="font-family: 'Lora', serif;">
-                    {{ article.title }}
-                </h2>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="px-3 py-1 bg-stone-100 text-stone-600 text-xs font-bold rounded-full uppercase tracking-wider">
+                            {{ article.category }}
+                        </span>
+                        <span v-if="article.badge" class="px-2.5 py-0.5 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-full">
+                            {{ article.badge }}
+                        </span>
+                    </div>
 
-                <p class="text-stone-600 text-sm leading-relaxed line-clamp-2 mb-6">
-                    {{ article.description }}
-                </p>
+                    <h2 class="text-xl font-bold text-stone-800 group-hover:text-emerald-700 transition-colors"
+                        style="font-family: 'Lora', serif;">
+                        {{ article.title }}
+                    </h2>
+
+                    <p class="text-stone-600 text-sm leading-relaxed line-clamp-2">
+                        {{ article.description }}
+                    </p>
+                </div>
 
                 <div
-                    class="mt-auto text-xs font-bold uppercase tracking-widest text-emerald-600 flex items-center gap-2 group-hover:gap-3 transition-all w-max">
+                    class="pt-6 mt-4 border-t border-stone-50 text-xs font-bold uppercase tracking-widest text-emerald-600 flex items-center gap-2 group-hover:gap-3 transition-all w-max">
                     Baca Selengkapnya
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-4 h-4">
@@ -42,5 +100,5 @@ const { data: list } = await useAsyncData('artefak', () =>
 
             </NuxtLink>
         </div>
-    </main>
+    </div>
 </template>

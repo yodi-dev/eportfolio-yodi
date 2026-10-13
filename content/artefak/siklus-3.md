@@ -2,6 +2,7 @@
 title: "Siklus 3: Penerapan Diferensiasi"
 description: "Fase pematangan melalui riset mandiri terpandu dan kebebasan berekspresi siswa."
 category: "PPL I"
+course: "ppl-1"
 date: "2024-03-05"
 badge: "Phase: Maturity"
 color: "stone"

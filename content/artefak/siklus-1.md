@@ -2,6 +2,7 @@
 title: "Siklus 1: Mengidentifikasi Tantangan Dasar"
 description: "Fase perjuangan dalam memahami karakteristik peserta didik dan efektivitas metode In-Class Flipped Learning."
 category: "PPL I"
+course: "ppl-1"
 date: "2024-01-15"
 badge: "Phase: Struggle"
 color: "emerald"

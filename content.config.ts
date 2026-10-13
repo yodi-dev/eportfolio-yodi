@@ -9,6 +9,8 @@ export default defineContentConfig({
                 title: z.string(),
                 description: z.string(),
                 category: z.string(),
+                course: z.enum(['ppl-1', 'ppl-2', 'seminar']).default('ppl-1'),
+                status: z.enum(['completed', 'in-progress', 'planned']).default('completed'),
                 date: z.string(),
                 badge: z.string().optional(),
                 color: z.string().optional(),

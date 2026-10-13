@@ -1,5 +1,5 @@
 <template>
-    <main class="max-w-5xl mx-auto py-12 px-4 space-y-10">
+    <div class="space-y-10 animate-fadeIn">
 
         <!-- Header Halaman -->
         <header class="text-center space-y-4">
@@ -126,7 +126,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
                     </svg>
-                    Unduh Lampiran 8 PPLT.docx
+                    Unduh Lampiran 8 PPLT.pdf
                 </a>
             </div>
 
@@ -176,11 +176,16 @@
                 kurang sempurna mendapat skor 1, dan tidak munculnya deskriptor mendapat skor 0.</p>
         </footer>
 
-    </main>
+    </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+
+useSeoMeta({
+    title: 'Lembar Penilaian Resmi',
+    description: 'Rekapitulasi otentik nilai Lampiran 7 (Perangkat) dan Lampiran 8 (Praktik) PPL Direktorat PPG Kemendikdasmen oleh Guru Pamong Febriyana, S.T.'
+})
 
 const activeTab = ref('lampiran7')
 

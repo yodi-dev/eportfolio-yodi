@@ -2,6 +2,7 @@
 title: "Siklus 2: Penguatan Manajemen Kelas"
 description: "Fase adaptasi dalam menangani dinamika kelas dan menegakkan aturan yang humanis."
 category: "PPL I"
+course: "ppl-1"
 date: "2024-02-10"
 badge: "Phase: Adaptation"
 color: "teal"

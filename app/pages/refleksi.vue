@@ -1,5 +1,5 @@
 <template>
-    <main class="max-w-4xl mx-auto py-12 px-4 space-y-12 animate-fadeIn">
+    <div class="max-w-4xl mx-auto space-y-12 animate-fadeIn">
 
         <header class="text-center space-y-4">
             <span
@@ -145,11 +145,14 @@
             </div>
         </section>
 
-    </main>
+    </div>
 </template>
 
 <script setup>
-// Halaman statis, tidak memerlukan logika script tambahan saat ini.
+useSeoMeta({
+    title: 'Refleksi Akhir & Filosofi Mengajar',
+    description: 'Formulasi prinsip, nilai, dan evaluasi kritis perjalanan Praktik Pengalaman Lapangan (PPL) Terbimbing menuju guru profesional.'
+})
 </script>
 
 <style scoped>
@@ -168,7 +171,4 @@
         transform: translateY(0);
     }
 }
-
-/* Kustomisasi tambahan untuk styling font serif (opsional jika Lora sudah diload global) */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 </style>

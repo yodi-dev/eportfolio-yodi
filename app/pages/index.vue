@@ -1,7 +1,7 @@
 <script setup>
 useSeoMeta({
     title: 'Dashboard Portofolio',
-    description: 'Dashboard resmi E-Portfolio PPG Prajabatan Yodi Irawan. Ikhtisar capaian PPL I, persiapan PPL II, dan Seminar PPG.'
+    description: 'Dashboard resmi E-Portfolio PPG Calon Guru Yodi Irawan. Ikhtisar capaian PPL I, persiapan PPL II, dan Seminar PPG.'
 })
 
 const quickModules = [
@@ -69,9 +69,16 @@ const quickModules = [
                 </div>
 
                 <div class="flex-1 text-center md:text-left space-y-4">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full uppercase tracking-wider">
-                        <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-                        E-Portfolio Terpadu • PPG Prajabatan
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-2.5">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full uppercase tracking-wider">
+                            <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                            E-Portfolio Terpadu • PPG Calon Guru
+                        </div>
+                        <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-stone-100 border border-stone-200/80 rounded-full text-xs text-stone-700 font-medium">
+                            <img src="/logo-uny.svg" alt="Logo UNY" class="w-4 h-4 object-contain" />
+                            <img src="/logo-kemendikbud.svg" alt="Logo Kemendikdasmen" class="w-4 h-4 object-contain" />
+                            <span>LPTK UNY</span>
+                        </div>
                     </div>
                     <h1 class="text-3xl md:text-5xl font-bold text-stone-800 leading-tight" style="font-family: 'Lora', serif;">
                         Dashboard Akademik & Praktik Lapangan

@@ -26,7 +26,7 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'E-Portfolio Resmi Pendidikan Profesi Guru (PPG) Prajabatan - Yodi Irawan. Menampilkan artefak pembelajaran, penilaian resmi, visi pendidik, dan refleksi pedagogis.' },
+        { name: 'description', content: 'E-Portfolio Resmi Pendidikan Profesi Guru (PPG) Calon Guru - Yodi Irawan (UNY). Menampilkan artefak pembelajaran, penilaian resmi, visi pendidik, dan refleksi pedagogis.' },
         { property: 'og:site_name', content: 'E-Portfolio Yodi Irawan' },
         { property: 'og:type', content: 'website' }
       ],

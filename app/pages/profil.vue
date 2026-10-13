@@ -1,7 +1,7 @@
 <script setup>
 useSeoMeta({
     title: 'Profil Pendidik',
-    description: 'Profil lengkap Yodi Irawan: latar belakang budaya Melayu, inspirasi pendidik, dan komitmen profesional dalam PPG Prajabatan.'
+    description: 'Profil lengkap Yodi Irawan: latar belakang budaya Melayu, inspirasi pendidik, dan komitmen profesional dalam PPG Calon Guru.'
 })
 </script>
 
@@ -33,8 +33,15 @@ useSeoMeta({
 
                 <div class="flex-1 space-y-5 text-center md:text-left">
                     <div>
-                        <div class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-full mb-2">
-                            Mahasiswa PPG Prajabatan
+                        <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 mb-2">
+                            <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-full">
+                                Mahasiswa PPG Calon Guru
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-full">
+                                <img src="/logo-uny.svg" alt="UNY" class="w-3.5 h-3.5 object-contain" />
+                                <img src="/logo-kemendikbud.svg" alt="PPG Kemendikdasmen" class="w-3.5 h-3.5 object-contain" />
+                                Universitas Negeri Yogyakarta
+                            </span>
                         </div>
                         <h2 class="text-3xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
                             Yodi Irawan

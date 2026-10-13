@@ -55,10 +55,20 @@ onBeforeUnmount(() => {
                 <div class="flex justify-between items-center h-16">
 
                     <div class="flex-shrink-0 flex items-center">
-                        <NuxtLink to="/"
-                            class="text-xl font-bold bg-gradient-to-r from-emerald-700 to-teal-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
-                            style="font-family: 'Lora', serif;">
-                            E-Portfolio
+                        <NuxtLink to="/" class="flex items-center gap-2.5 group">
+                            <div class="flex items-center gap-1.5 p-1 bg-stone-50 rounded-lg border border-stone-200/80 group-hover:border-emerald-300 transition-colors">
+                                <img src="/logo-uny.svg" alt="Logo UNY" class="w-6 h-6 object-contain" />
+                                <img src="/logo-kemendikbud.svg" alt="Logo PPG Kemendikdasmen" class="w-6 h-6 object-contain" />
+                            </div>
+                            <div>
+                                <span class="text-base sm:text-lg font-bold bg-gradient-to-r from-emerald-700 to-teal-600 bg-clip-text text-transparent block leading-tight"
+                                    style="font-family: 'Lora', serif;">
+                                    E-Portfolio
+                                </span>
+                                <span class="text-[9px] sm:text-[10px] uppercase font-bold tracking-wider text-stone-400 block -mt-0.5">
+                                    PPG Calon Guru UNY
+                                </span>
+                            </div>
                         </NuxtLink>
                     </div>
 
@@ -238,12 +248,112 @@ onBeforeUnmount(() => {
             <slot />
         </main>
 
-        <footer class="bg-white/80 border-t border-stone-200 mt-auto backdrop-blur-sm z-10">
-            <div class="max-w-5xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
-                <p class="text-center text-sm text-stone-500 font-medium tracking-wide">
-                    &copy; {{ new Date().getFullYear() }} Yodi Irawan - <a href="http://awanbeo.my.id" target="_blank"
-                        rel="noopener noreferrer" class="hover:text-emerald-600 transition-colors">awanbeo.my.id</a>
-                </p>
+        <footer class="bg-white border-t border-stone-200 mt-auto z-10">
+            <div class="max-w-5xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
+                    
+                    <!-- Kolom 1: Identitas Institusi & Afiliasi -->
+                    <div class="md:col-span-5 space-y-4 text-center md:text-left">
+                        <div class="flex items-center justify-center md:justify-start gap-3">
+                            <img src="/logo-uny.svg" alt="Logo Universitas Negeri Yogyakarta" class="h-11 w-11 object-contain" />
+                            <img src="/logo-kemendikbud.svg" alt="Logo Kemendikdasmen Tut Wuri Handayani" class="h-11 w-11 object-contain" />
+                            <div class="h-8 w-px bg-stone-200 mx-1"></div>
+                            <div>
+                                <p class="text-xs font-bold uppercase tracking-wider text-emerald-800">PPG Calon Guru</p>
+                                <p class="text-[11px] text-stone-500 font-medium">Universitas Negeri Yogyakarta</p>
+                            </div>
+                        </div>
+
+                        <p class="text-sm text-stone-600 leading-relaxed text-justify">
+                            Portal e-portfolio resmi dokumentasi luaran akademik dan praktik pembelajaran <strong>Yodi Irawan</strong>. Menghimpun asesmen otentik, modul ajar multi-siklus, inovasi pedagogis, dan refleksi kritis program <strong>Pendidikan Profesi Guru (PPG) Calon Guru</strong>.
+                        </p>
+
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-stone-50 border border-stone-200 rounded-full text-xs text-stone-600">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                            <span>LPTK Penyelenggara: <strong>UNY (Yogyakarta)</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Kolom 2: Navigasi Kurikulum -->
+                    <div class="md:col-span-4 space-y-3">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-stone-400">Navigasi Kurikulum</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li>
+                                <NuxtLink to="/mata-kuliah/ppl-1" class="text-stone-600 hover:text-emerald-700 transition-colors inline-flex items-center gap-1.5">
+                                    <span class="text-emerald-600 font-bold">&bull;</span> PPL I (Terbimbing & Legalitas L7-L8)
+                                </NuxtLink>
+                            </li>
+                            <li>
+                                <NuxtLink to="/mata-kuliah/ppl-2" class="text-stone-600 hover:text-emerald-700 transition-colors inline-flex items-center gap-1.5">
+                                    <span class="text-emerald-600 font-bold">&bull;</span> PPL II (Praktik Mandiri & Studi Kasus)
+                                </NuxtLink>
+                            </li>
+                            <li>
+                                <NuxtLink to="/mata-kuliah/seminar" class="text-stone-600 hover:text-emerald-700 transition-colors inline-flex items-center gap-1.5">
+                                    <span class="text-emerald-600 font-bold">&bull;</span> Seminar PPG (Desain Inovasi)
+                                </NuxtLink>
+                            </li>
+                            <li>
+                                <NuxtLink to="/penilaian" class="text-stone-600 hover:text-emerald-700 transition-colors inline-flex items-center gap-1.5">
+                                    <span class="text-emerald-600 font-bold">&bull;</span> Lembar Penilaian Otentik (L7 & L8)
+                                </NuxtLink>
+                            </li>
+                            <li>
+                                <NuxtLink to="/artefak" class="text-stone-600 hover:text-emerald-700 transition-colors inline-flex items-center gap-1.5">
+                                    <span class="text-emerald-600 font-bold">&bull;</span> Katalog Artefak & Modul Ajar
+                                </NuxtLink>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Kolom 3: Portofolio Web Developer & Tautan Luar -->
+                    <div class="md:col-span-3 space-y-3">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-stone-400">Portofolio & Tautan</h3>
+                        
+                        <!-- Kartu Khusus Web Developer -->
+                        <a href="https://awanbeo.my.id" target="_blank" rel="noopener noreferrer"
+                            class="block p-3.5 rounded-2xl bg-gradient-to-br from-stone-900 via-stone-850 to-stone-800 text-white hover:from-emerald-900 hover:to-stone-900 transition-all duration-300 shadow-sm group border border-stone-700/50">
+                            <div class="text-[10px] uppercase font-bold tracking-wider text-emerald-400 mb-1 flex items-center justify-between">
+                                <span>Web Developer</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </div>
+                            <p class="text-xs font-semibold text-stone-100">awanbeo.my.id</p>
+                            <p class="text-[11px] text-stone-400 mt-1 leading-snug">Kunjungi portofolio teknologi & rekayasa web personal saya.</p>
+                        </a>
+
+                        <ul class="space-y-1.5 text-xs text-stone-500 pt-1">
+                            <li>
+                                <a href="https://ppg.kemendikdasmen.go.id" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-700 transition-colors flex items-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3 text-stone-400">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                    </svg>
+                                    <span>Portal PPG Kemendikdasmen</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ppg.uny.ac.id" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-700 transition-colors flex items-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3 text-stone-400">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                    </svg>
+                                    <span>Direktorat PPG UNY</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Bottom Bar / Hak Cipta -->
+                <div class="mt-10 pt-6 border-t border-stone-200/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-stone-500 font-medium">
+                    <p class="text-center sm:text-left">
+                        &copy; {{ new Date().getFullYear() }} <strong>Yodi Irawan</strong>. Seluruh hak cipta dilindungi.
+                    </p>
+                    <p class="text-stone-400 text-center sm:text-right">
+                        E-Portfolio Resmi Pendidikan Profesi Guru (PPG) Calon Guru &bull; Universitas Negeri Yogyakarta
+                    </p>
+                </div>
             </div>
         </footer>
 

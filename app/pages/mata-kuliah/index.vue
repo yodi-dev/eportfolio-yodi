@@ -1,7 +1,7 @@
 <script setup>
 useSeoMeta({
     title: 'Portofolio Mata Kuliah PPG',
-    description: 'Pusat dokumentasi mata kuliah PPG Prajabatan: PPL I (Terbimbing), PPL II (Mandiri), dan Seminar PPG.'
+    description: 'Pusat dokumentasi mata kuliah PPG Calon Guru: PPL I (Terbimbing), PPL II (Mandiri), dan Seminar PPG.'
 })
 
 const courses = [
@@ -61,14 +61,15 @@ const courses = [
 
         <!-- Header -->
         <header class="text-center space-y-4">
-            <span class="px-4 py-1.5 bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-wider rounded-full">
-                Struktur Kurikulum & Mata Kuliah
-            </span>
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider rounded-full">
+                <img src="/logo-uny.svg" alt="UNY" class="w-3.5 h-3.5 object-contain" />
+                <span>Struktur Kurikulum & Mata Kuliah</span>
+            </div>
             <h1 class="text-3xl md:text-5xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
                 Portofolio Mata Kuliah PPG
             </h1>
             <p class="text-stone-600 max-w-2xl mx-auto text-base leading-relaxed">
-                Dokumentasi terstruktur capaian akademik dan praktik lapangan saya selama menempuh program Pendidikan Profesi Guru (PPG) Prajabatan.
+                Dokumentasi terstruktur capaian akademik dan praktik lapangan saya selama menempuh program <strong>Pendidikan Profesi Guru (PPG) Calon Guru</strong> di <strong>Universitas Negeri Yogyakarta</strong>.
             </p>
         </header>
 

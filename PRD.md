@@ -2,8 +2,8 @@
 ## Proyek: E-Portfolio Terpadu Yodi Irawan (`eportofolio-yodi`)
 
 > **Status**: Aktif & Dokumen Sumber Kebenaran (Single Source of Truth)  
-> **Cakupan Kurikulum**: PPG Prajabatan Kemendikdasmen (**PPL I**, **PPL II**, & **Seminar PPG**)  
-> **Pemilik**: Yodi Irawan (Mahasiswa PPG Prajabatan)  
+> **Cakupan Kurikulum**: PPG Calon Guru Kemendikdasmen (**PPL I**, **PPL II**, & **Seminar PPG**)  
+> **Pemilik**: Yodi Irawan (Mahasiswa PPG Calon Guru UNY)  
 > **Domain Live**: [awanbeo.my.id](http://awanbeo.my.id) | **GitHub**: [github.com/yodi-dev/eportfolio-yodi](https://github.com/yodi-dev/eportfolio-yodi.git)
 
 ---

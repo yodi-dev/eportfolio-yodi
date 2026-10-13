@@ -60,40 +60,54 @@ const quickModules = [
     <div class="space-y-16 animate-fadeIn">
 
         <!-- Hero Dashboard -->
-        <section class="bg-white/80 backdrop-blur-sm p-8 md:p-12 rounded-[2.5rem] border border-stone-200/70 shadow-[0_8px_30px_rgb(0,0,0,0.03)] relative overflow-hidden">
-            <div class="absolute -right-12 -top-12 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <section
+            class="bg-white/80 backdrop-blur-sm p-8 md:p-12 rounded-[2.5rem] border border-stone-200/70 shadow-[0_8px_30px_rgb(0,0,0,0.03)] relative overflow-hidden">
+            <div
+                class="absolute -right-12 -top-12 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none">
+            </div>
 
             <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 relative z-10">
-                <div class="w-32 h-32 md:w-40 md:h-40 rounded-3xl border-4 border-white shadow-md overflow-hidden flex-shrink-0 group">
-                    <img src="/pp.png" alt="Foto Yodi Irawan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div
+                    class="w-32 h-32 md:w-40 md:h-40 rounded-3xl border-4 border-white shadow-md overflow-hidden flex-shrink-0 group">
+                    <img src="/pp.png" alt="Foto Yodi Irawan"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
 
                 <div class="flex-1 text-center md:text-left space-y-4">
                     <div class="flex flex-wrap items-center justify-center md:justify-start gap-2.5">
-                        <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full uppercase tracking-wider">
+                        <div
+                            class="inline-flex items-center gap-2 px-3.5 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full uppercase tracking-wider">
                             <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
                             E-Portfolio Terpadu • PPG Calon Guru
                         </div>
-                        <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-stone-100 border border-stone-200/80 rounded-full text-xs text-stone-700 font-medium">
+                        <div
+                            class="inline-flex items-center gap-1.5 px-3 py-1 bg-stone-100 border border-stone-200/80 rounded-full text-xs text-stone-700 font-medium">
                             <img src="/logo-uny.svg" alt="Logo UNY" class="w-4 h-4 object-contain" />
                             <img src="/logo-kemendikbud.svg" alt="Logo Kemendikdasmen" class="w-4 h-4 object-contain" />
                             <span>LPTK UNY</span>
                         </div>
                     </div>
-                    <h1 class="text-3xl md:text-5xl font-bold text-stone-800 leading-tight" style="font-family: 'Lora', serif;">
+                    <h1 class="text-3xl md:text-5xl font-bold text-stone-800 leading-tight"
+                        style="font-family: 'Lora', serif;">
                         Dashboard Akademik & Praktik Lapangan
                     </h1>
                     <p class="text-stone-600 text-base md:text-lg leading-relaxed max-w-2xl">
-                        Selamat datang di portal e-portfolio <strong>Yodi Irawan</strong>. Menghimpun seluruh luaran terpadu mata kuliah <strong>PPL I</strong>, <strong>PPL II</strong>, dan <strong>Seminar PPG</strong> secara terstruktur dan transparan.
+                        Selamat datang di portal e-portfolio <strong>Yodi Irawan</strong>. Menghimpun seluruh luaran
+                        terpadu mata kuliah <strong>PPL I</strong>, <strong>PPL II</strong>, dan <strong>Seminar
+                            PPG</strong> secara terstruktur dan transparan.
                     </p>
                     <div class="flex flex-wrap gap-3 justify-center md:justify-start pt-2">
-                        <NuxtLink to="/mata-kuliah" class="px-5 py-2.5 bg-stone-800 text-white text-sm font-semibold rounded-full hover:bg-emerald-700 transition-colors shadow-sm inline-flex items-center gap-2">
+                        <NuxtLink to="/mata-kuliah"
+                            class="px-5 py-2.5 bg-stone-800 text-white text-sm font-semibold rounded-full hover:bg-emerald-700 transition-colors shadow-sm inline-flex items-center gap-2">
                             Pusat Mata Kuliah
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                             </svg>
                         </NuxtLink>
-                        <NuxtLink to="/profil" class="px-5 py-2.5 bg-white text-stone-700 border border-stone-200 text-sm font-semibold rounded-full hover:bg-stone-50 hover:text-emerald-700 transition-colors shadow-sm">
+                        <NuxtLink to="/profil"
+                            class="px-5 py-2.5 bg-white text-stone-700 border border-stone-200 text-sm font-semibold rounded-full hover:bg-stone-50 hover:text-emerald-700 transition-colors shadow-sm">
                             Profil Pendidik
                         </NuxtLink>
                     </div>
@@ -110,25 +124,31 @@ const quickModules = [
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                 <div class="bg-white p-6 rounded-3xl border border-stone-100 shadow-sm space-y-2">
                     <span class="text-xs font-bold uppercase tracking-wider text-stone-400">Artefak Siklus</span>
-                    <div class="text-3xl md:text-4xl font-extrabold text-stone-800" style="font-family: 'Lora', serif;">3</div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-stone-800" style="font-family: 'Lora', serif;">
+                        3</div>
                     <p class="text-stone-500 text-xs leading-relaxed">Siklus 1, 2, & 3 PPL I Terdokumentasi</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-3xl border border-stone-100 shadow-sm space-y-2">
-                    <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Nilai Perangkat (L7)</span>
-                    <div class="text-3xl md:text-4xl font-extrabold text-emerald-700" style="font-family: 'Lora', serif;">3.4 <span class="text-xs font-normal text-stone-400">/ 4.0</span></div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Nilai Perangkat
+                        (L7)</span>
+                    <div class="text-3xl md:text-4xl font-extrabold text-emerald-700"
+                        style="font-family: 'Lora', serif;">3.4 <span class="text-xs font-normal text-stone-400">/
+                            4.0</span></div>
                     <p class="text-stone-500 text-xs leading-relaxed">Skor total 68 (Kategori Amat Baik)</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-3xl border border-stone-100 shadow-sm space-y-2">
                     <span class="text-xs font-bold uppercase tracking-wider text-teal-600">Nilai Praktik (L8)</span>
-                    <div class="text-3xl md:text-4xl font-extrabold text-teal-700" style="font-family: 'Lora', serif;">3.9 <span class="text-xs font-normal text-stone-400">/ 4.0</span></div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-teal-700" style="font-family: 'Lora', serif;">
+                        3.9 <span class="text-xs font-normal text-stone-400">/ 4.0</span></div>
                     <p class="text-stone-500 text-xs leading-relaxed">Skor total 78 (Kategori Istimewa)</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-3xl border border-stone-100 shadow-sm space-y-2">
                     <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Status PPL I</span>
-                    <div class="text-2xl md:text-3xl font-extrabold text-stone-800" style="font-family: 'Lora', serif;">Tuntas</div>
+                    <div class="text-2xl md:text-3xl font-extrabold text-stone-800" style="font-family: 'Lora', serif;">
+                        Tuntas</div>
                     <p class="text-stone-500 text-xs leading-relaxed">Evaluasi Guru Pamong: Febriyana, S.T.</p>
                 </div>
             </div>
@@ -141,67 +161,85 @@ const quickModules = [
                     <h2 class="text-2xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
                         Progres Kurikulum & Mata Kuliah PPG
                     </h2>
-                    <p class="text-stone-500 text-sm">Status penyelesaian luaran tugas PPL I, PPL II, dan Seminar PPG.</p>
+                    <p class="text-stone-500 text-sm">Status penyelesaian luaran tugas PPL I, PPL II, dan Seminar PPG.
+                    </p>
                 </div>
-                <NuxtLink to="/mata-kuliah" class="text-xs font-bold uppercase tracking-wider text-emerald-600 hover:underline hidden sm:block">
-                    Kelola Semua Mata Kuliah &rarr;
+                <NuxtLink to="/mata-kuliah"
+                    class="text-xs font-bold uppercase tracking-wider text-emerald-600 hover:underline hidden sm:block">
+                    Lihat Semua Mata Kuliah &rarr;
                 </NuxtLink>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- PPL 1 -->
-                <NuxtLink to="/mata-kuliah/ppl-1" class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
+                <NuxtLink to="/mata-kuliah/ppl-1"
+                    class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
                             <span class="text-xs font-bold text-stone-400 uppercase">Mata Kuliah 1</span>
-                            <span class="px-2.5 py-0.5 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full">Selesai (Tuntas)</span>
+                            <span
+                                class="px-2.5 py-0.5 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full">Selesai
+                                (Tuntas)</span>
                         </div>
-                        <h3 class="text-lg font-bold text-stone-800 group-hover:text-emerald-700 transition-colors" style="font-family: 'Lora', serif;">
+                        <h3 class="text-lg font-bold text-stone-800 group-hover:text-emerald-700 transition-colors"
+                            style="font-family: 'Lora', serif;">
                             PPL I: Praktik Terbimbing
                         </h3>
                         <p class="text-stone-600 text-xs leading-relaxed">
-                            3 siklus modul ajar selesai. Nilai Lampiran 7 (3.4) & Lampiran 8 (3.9) dari Guru Pamong Febriyana, S.T.
+                            3 siklus modul ajar selesai. Nilai Lampiran 7 (3.4) & Lampiran 8 (3.9) dari Guru Pamong
+                            Febriyana, S.T.
                         </p>
                     </div>
-                    <div class="pt-4 mt-4 border-t border-stone-50 text-xs font-bold text-emerald-600 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    <div
+                        class="pt-4 mt-4 border-t border-stone-50 text-xs font-bold text-emerald-600 flex items-center gap-1 group-hover:gap-2 transition-all">
                         Buka Portofolio PPL I &rarr;
                     </div>
                 </NuxtLink>
 
                 <!-- PPL 2 -->
-                <NuxtLink to="/mata-kuliah/ppl-2" class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
+                <NuxtLink to="/mata-kuliah/ppl-2"
+                    class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
                             <span class="text-xs font-bold text-stone-400 uppercase">Mata Kuliah 2</span>
-                            <span class="px-2.5 py-0.5 bg-teal-100 text-teal-800 text-xs font-bold rounded-full">Praktik Mandiri</span>
+                            <span class="px-2.5 py-0.5 bg-teal-100 text-teal-800 text-xs font-bold rounded-full">Praktik
+                                Mandiri</span>
                         </div>
-                        <h3 class="text-lg font-bold text-stone-800 group-hover:text-teal-700 transition-colors" style="font-family: 'Lora', serif;">
+                        <h3 class="text-lg font-bold text-stone-800 group-hover:text-teal-700 transition-colors"
+                            style="font-family: 'Lora', serif;">
                             PPL II: Praktik Mandiri
                         </h3>
                         <p class="text-stone-600 text-xs leading-relaxed">
-                            Dokumentasi pelaksanaan pembelajaran mandiri penuh di kelas, studi kasus penanganan siswa, dan evaluasi belajar.
+                            Dokumentasi pelaksanaan pembelajaran mandiri penuh di kelas, studi kasus penanganan siswa,
+                            dan evaluasi belajar.
                         </p>
                     </div>
-                    <div class="pt-4 mt-4 border-t border-stone-50 text-xs font-bold text-teal-600 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    <div
+                        class="pt-4 mt-4 border-t border-stone-50 text-xs font-bold text-teal-600 flex items-center gap-1 group-hover:gap-2 transition-all">
                         Buka Portofolio PPL II &rarr;
                     </div>
                 </NuxtLink>
 
                 <!-- Seminar PPG -->
-                <NuxtLink to="/mata-kuliah/seminar" class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
+                <NuxtLink to="/mata-kuliah/seminar"
+                    class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
                             <span class="text-xs font-bold text-stone-400 uppercase">Mata Kuliah 3</span>
-                            <span class="px-2.5 py-0.5 bg-amber-100 text-amber-800 text-xs font-bold rounded-full">Perancangan</span>
+                            <span
+                                class="px-2.5 py-0.5 bg-amber-100 text-amber-800 text-xs font-bold rounded-full">Perancangan</span>
                         </div>
-                        <h3 class="text-lg font-bold text-stone-800 group-hover:text-amber-700 transition-colors" style="font-family: 'Lora', serif;">
+                        <h3 class="text-lg font-bold text-stone-800 group-hover:text-amber-700 transition-colors"
+                            style="font-family: 'Lora', serif;">
                             Seminar PPG
                         </h3>
                         <p class="text-stone-600 text-xs leading-relaxed">
-                            Ruang diseminasi karya inovasi pembelajaran, jurnal refleksi kritis berkelanjutan, dan naskah artikel ilmiah.
+                            Ruang diseminasi karya inovasi pembelajaran, jurnal refleksi kritis berkelanjutan, dan
+                            naskah artikel ilmiah.
                         </p>
                     </div>
-                    <div class="pt-4 mt-4 border-t border-stone-50 text-xs font-bold text-amber-700 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    <div
+                        class="pt-4 mt-4 border-t border-stone-50 text-xs font-bold text-amber-700 flex items-center gap-1 group-hover:gap-2 transition-all">
                         Buka Portofolio Seminar &rarr;
                     </div>
                 </NuxtLink>
@@ -214,7 +252,8 @@ const quickModules = [
                 <h2 class="text-2xl md:text-3xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
                     Pusat Modul Portofolio
                 </h2>
-                <p class="text-stone-500 text-sm">Pilih modul untuk menelaah dokumen dan laporan pembelajaran secara terperinci.</p>
+                <p class="text-stone-500 text-sm">Pilih modul untuk menelaah dokumen dan laporan pembelajaran secara
+                    terperinci.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -222,16 +261,20 @@ const quickModules = [
                     class="bg-white p-6 md:p-8 rounded-3xl border border-stone-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
                     <div class="space-y-4">
                         <div class="flex items-center justify-between">
-                            <div class="p-3 bg-stone-50 group-hover:bg-emerald-50 rounded-2xl text-stone-600 group-hover:text-emerald-600 transition-colors">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <div
+                                class="p-3 bg-stone-50 group-hover:bg-emerald-50 rounded-2xl text-stone-600 group-hover:text-emerald-600 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" :d="mod.icon" />
                                 </svg>
                             </div>
-                            <span class="text-xs font-bold uppercase tracking-wider text-stone-400 bg-stone-50 px-2.5 py-1 rounded-full group-hover:bg-emerald-50 group-hover:text-emerald-700 transition-colors">
+                            <span
+                                class="text-xs font-bold uppercase tracking-wider text-stone-400 bg-stone-50 px-2.5 py-1 rounded-full group-hover:bg-emerald-50 group-hover:text-emerald-700 transition-colors">
                                 {{ mod.badge }}
                             </span>
                         </div>
-                        <h3 class="text-xl font-bold text-stone-800 group-hover:text-emerald-700 transition-colors" style="font-family: 'Lora', serif;">
+                        <h3 class="text-xl font-bold text-stone-800 group-hover:text-emerald-700 transition-colors"
+                            style="font-family: 'Lora', serif;">
                             {{ mod.title }}
                         </h3>
                         <p class="text-stone-600 text-sm leading-relaxed">
@@ -239,10 +282,13 @@ const quickModules = [
                         </p>
                     </div>
 
-                    <div class="pt-6 mt-4 border-t border-stone-50 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 group-hover:gap-3 transition-all">
+                    <div
+                        class="pt-6 mt-4 border-t border-stone-50 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 group-hover:gap-3 transition-all">
                         Akses Modul
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                         </svg>
                     </div>
                 </NuxtLink>

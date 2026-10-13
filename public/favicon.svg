@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" />
+      <stop offset="50%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#0F766E" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="50%" stop-color="#FACC15" />
+      <stop offset="100%" stop-color="#CA8A04" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle with subtle gradient -->
+  <rect width="128" height="128" rx="34" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Inner Border Highlight -->
+  <rect x="3.5" y="3.5" width="121" height="121" rx="30.5" fill="none" stroke="#6EE7B7" stroke-width="1.5" stroke-opacity="0.3" />
+
+  <!-- Monogram Y Group -->
+  <g filter="url(#glow)">
+    <!-- Elegant Calligraphic / Serif Y -->
+    <path fill="#FFFFFF" d="
+      M 32 30
+      C 32 34 35 35 39 36
+      L 57 68
+      L 57 90
+      C 53 91 50 92 50 96
+      L 78 96
+      C 78 92 75 91 71 90
+      L 71 68
+      L 89 36
+      C 93 35 96 34 96 30
+      L 78 30
+      C 78 34 80 35 80 36
+      L 64 64
+      L 48 36
+      C 48 35 50 34 50 30
+      Z
+    " />
+    
+    <!-- Fine Hairline & Stem Reinforcement for high-DPI clarity -->
+    <path fill="#FFFFFF" d="
+      M 59 66
+      L 69 66
+      L 69 91
+      L 59 91
+      Z
+    " />
+  </g>
+
+  <!-- Golden Academic Star / Spark Accent (Knowledge & Growth) -->
+  <path fill="url(#goldGrad)" d="
+    M 94 28
+    Q 94 34 98 34
+    Q 94 34 94 40
+    Q 94 34 90 34
+    Q 94 34 94 28
+    Z
+  " />
+</svg>
+

@@ -7,10 +7,10 @@
                 class="px-4 py-1.5 bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-wider rounded-full">
                 Legalitas & Asesmen PPL
             </span>
-            <h1 class="text-4xl md:text-5xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+            <h1 class="text-4xl md:text-5xl font-bold text-stone-900 font-serif">
                 Lembar Penilaian Resmi
             </h1>
-            <p class="text-stone-600 max-w-2xl mx-auto text-base leading-relaxed">
+            <p class="text-stone-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
                 Rekapitulasi nilai otentik berdasarkan instrumen Direktorat PPG Kemendikdasmen.
             </p>
         </header>
@@ -19,16 +19,16 @@
         <div
             class="bg-white border border-stone-200 shadow-sm p-6 rounded-2xl flex flex-wrap gap-x-8 gap-y-4 justify-center md:justify-start text-sm text-stone-700">
             <div class="space-y-1">
-                <span class="text-stone-400 text-xs font-bold uppercase tracking-wider">Nama Mahasiswa</span>
-                <p class="font-semibold text-stone-800 text-base">Yodi Irawan</p>
+                <span class="text-stone-500 text-xs font-bold uppercase tracking-wider">Nama Mahasiswa</span>
+                <p class="font-semibold text-stone-900 text-base">Yodi Irawan</p>
             </div>
             <div class="space-y-1">
-                <span class="text-stone-400 text-xs font-bold uppercase tracking-wider">Guru Pamong (GP)</span>
-                <p class="font-semibold text-stone-800 text-base">Febriyana, S.T.</p>
+                <span class="text-stone-500 text-xs font-bold uppercase tracking-wider">Guru Pamong (GP)</span>
+                <p class="font-semibold text-stone-900 text-base">Febriyana, S.T.</p>
             </div>
             <div class="space-y-1">
-                <span class="text-stone-400 text-xs font-bold uppercase tracking-wider">Tanggal Evaluasi</span>
-                <p class="font-semibold text-stone-800 text-base">Yogyakarta, 30 April 2026</p>
+                <span class="text-stone-500 text-xs font-bold uppercase tracking-wider">Tanggal Evaluasi</span>
+                <p class="font-semibold text-stone-900 text-base">Yogyakarta, 30 April 2026</p>
             </div>
         </div>
 
@@ -36,13 +36,13 @@
         <div class="flex justify-center p-1.5 bg-stone-100 rounded-2xl max-w-md mx-auto shadow-inner">
             <button @click="activeTab = 'lampiran7'" :class="[
                 'w-1/2 py-2.5 text-sm font-bold rounded-xl transition-all duration-300',
-                activeTab === 'lampiran7' ? 'bg-white text-emerald-700 shadow-sm' : 'text-stone-500 hover:text-stone-800'
+                activeTab === 'lampiran7' ? 'bg-white text-emerald-800 shadow-sm' : 'text-stone-600 hover:text-stone-900'
             ]">
                 Lampiran 7 (Perangkat)
             </button>
             <button @click="activeTab = 'lampiran8'" :class="[
                 'w-1/2 py-2.5 text-sm font-bold rounded-xl transition-all duration-300',
-                activeTab === 'lampiran8' ? 'bg-white text-emerald-700 shadow-sm' : 'text-stone-500 hover:text-stone-800'
+                activeTab === 'lampiran8' ? 'bg-white text-emerald-800 shadow-sm' : 'text-stone-600 hover:text-stone-900'
             ]">
                 Lampiran 8 (Praktik)
             </button>
@@ -76,7 +76,7 @@
                     <table class="w-full text-left border-collapse min-w-[700px]">
                         <thead>
                             <tr
-                                class="bg-stone-50/70 border-b border-stone-100 text-stone-500 text-xs font-bold uppercase tracking-wider">
+                                class="bg-stone-50/70 border-b border-stone-100 text-stone-600 text-xs font-bold uppercase tracking-wider">
                                 <th class="p-5 pl-8 w-1/3">Aspek & Indikator Penilaian</th>
                                 <th class="p-5 text-center w-28">Skor Rata-Rata (Skala 1-4)</th>
                                 <th class="p-5 pl-6">Catatan Kekurangan & Refleksi GP</th>
@@ -86,12 +86,12 @@
                             <tr v-for="(aspek, idx) in aspekLampiran7" :key="idx"
                                 class="hover:bg-stone-50/30 transition-colors">
                                 <td class="p-5 pl-8">
-                                    <div class="font-bold text-stone-800 text-sm md:text-base">{{ aspek.nama }}</div>
-                                    <div class="text-stone-400 text-xs mt-1 leading-relaxed">{{ aspek.desc }}</div>
+                                    <div class="font-bold text-stone-900 text-sm md:text-base">{{ aspek.nama }}</div>
+                                    <div class="text-stone-500 text-xs mt-1 leading-relaxed">{{ aspek.desc }}</div>
                                 </td>
-                                <td class="p-5 text-center font-bold text-emerald-600 bg-emerald-50/20 text-lg">{{
+                                <td class="p-5 text-center font-bold text-emerald-700 bg-emerald-50/20 text-lg">{{
                                     aspek.skor }}</td>
-                                <td class="p-5 pl-6 text-xs text-stone-600 leading-relaxed italic pr-8">{{ aspek.catatan
+                                <td class="p-5 pl-6 text-sm text-stone-600 leading-relaxed italic pr-8">{{ aspek.catatan
                                 }}</td>
                             </tr>
                             <!-- Baris Total Kumulatif -->
@@ -136,7 +136,7 @@
                     <table class="w-full text-left border-collapse min-w-[700px]">
                         <thead>
                             <tr
-                                class="bg-stone-50/70 border-b border-stone-100 text-stone-500 text-xs font-bold uppercase tracking-wider">
+                                class="bg-stone-50/70 border-b border-stone-100 text-stone-600 text-xs font-bold uppercase tracking-wider">
                                 <th class="p-5 pl-8 w-1/3">Aspek & Indikator Praktik Mengajar</th>
                                 <th class="p-5 text-center w-28">Skor Rata-Rata (Skala 1-4)</th>
                                 <th class="p-5 pl-6">Catatan Kekurangan & Refleksi GP</th>
@@ -146,12 +146,12 @@
                             <tr v-for="(aspek, idx) in aspekLampiran8" :key="idx"
                                 class="hover:bg-stone-50/30 transition-colors">
                                 <td class="p-5 pl-8">
-                                    <div class="font-bold text-stone-800 text-sm md:text-base">{{ aspek.nama }}</div>
-                                    <div class="text-stone-400 text-xs mt-1 leading-relaxed">{{ aspek.desc }}</div>
+                                    <div class="font-bold text-stone-900 text-sm md:text-base">{{ aspek.nama }}</div>
+                                    <div class="text-stone-500 text-xs mt-1 leading-relaxed">{{ aspek.desc }}</div>
                                 </td>
-                                <td class="p-5 text-center font-bold text-teal-600 bg-teal-50/20 text-lg">{{ aspek.skor
+                                <td class="p-5 text-center font-bold text-teal-700 bg-teal-50/20 text-lg">{{ aspek.skor
                                 }}</td>
-                                <td class="p-5 pl-6 text-xs text-stone-600 leading-relaxed italic pr-8">{{ aspek.catatan
+                                <td class="p-5 pl-6 text-sm text-stone-600 leading-relaxed italic pr-8">{{ aspek.catatan
                                 }}</td>
                             </tr>
                             <!-- Baris Total Kumulatif -->

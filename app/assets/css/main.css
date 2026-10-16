@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base HTML Settings */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  color: #292524;
+}
+
+/* ===================================================
+   PROSE ACADEMIC: Tipografi Pembelajaran & Artefak
+   Dioptimalkan untuk kenyamanan membaca dosen/evaluator
+   =================================================== */
+
+.prose-academic {
+  color: #44403c;
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+  .prose-academic {
+    font-size: 1.0625rem; /* ~17px untuk kenyamanan membaca artikel panjang */
+  }
+}
+
+/* Headings */
+.prose-academic h1 {
+  font-family: "Lora", ui-serif, Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.prose-academic h2 {
+  font-family: "Lora", ui-serif, Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid #f0eeeb;
+  padding-bottom: 0.5rem;
+}
+
+.prose-academic h3 {
+  font-family: "Lora", ui-serif, Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #292524;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.prose-academic h4 {
+  font-family: "Lora", ui-serif, Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #292524;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraphs & Text Alignment */
+.prose-academic p {
+  margin-bottom: 1.35rem;
+  line-height: 1.8;
+  color: #44403c;
+  text-align: left; /* Rata kiri alami untuk keterbacaan mata yang stabil */
+}
+
+/* Emphasis & Strong */
+.prose-academic strong {
+  color: #065f46; /* Emerald-800 untuk penekanan akademis berbobot */
+  font-weight: 700;
+}
+
+.prose-academic em {
+  font-style: italic;
+  color: #57534e;
+}
+
+/* Links */
+.prose-academic a {
+  color: #059669;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+.prose-academic a:hover {
+  color: #047857;
+}
+
+/* Blockquotes */
+.prose-academic blockquote {
+  border-left: 4px solid #10b981;
+  background-color: rgba(236, 253, 245, 0.6);
+  padding: 1rem 1.25rem;
+  border-radius: 0 1rem 1rem 0;
+  font-style: italic;
+  margin: 1.75rem 0;
+  color: #292524;
+  line-height: 1.7;
+}
+
+.prose-academic blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Lists */
+.prose-academic ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.35rem;
+}
+
+.prose-academic ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1.35rem;
+}
+
+.prose-academic li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  color: #44403c;
+}
+
+.prose-academic li::marker {
+  color: #059669; /* Bullet warna emerald */
+}
+
+/* Horizontal Rule */
+.prose-academic hr {
+  margin: 2.5rem 0;
+  border: 0;
+  border-top: 1px solid #e7e5e4;
+}
+
+/* Inline Code & Code Blocks */
+.prose-academic :not(pre) > code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  background-color: #f5f5f4;
+  color: #047857;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.375rem;
+  font-size: 0.875em;
+  font-weight: 600;
+  border: 1px solid #e7e5e4;
+}
+
+.prose-academic pre {
+  margin: 1.5rem 0;
+  border-radius: 1rem;
+  overflow-x: auto;
+  border: 1px solid #e7e5e4;
+}
+
+/* Tables in Markdown */
+.prose-academic table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.75rem 0;
+  border: 1px solid #e7e5e4;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.prose-academic th {
+  background-color: #f5f5f4;
+  color: #1c1917;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.875rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e7e5e4;
+}
+
+.prose-academic td {
+  padding: 0.875rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.625;
+  color: #44403c;
+  border-bottom: 1px solid #f5f5f4;
+  vertical-align: top;
+}
+
+.prose-academic tr:last-child td {
+  border-bottom: none;
+}
+
+.prose-academic tr:nth-child(even) td {
+  background-color: #fafaf9;
+}
+
+.prose-academic tr:hover td {
+  background-color: #f0fdf4; /* Highlight baris hijau lembut saat di-hover */
+}
+

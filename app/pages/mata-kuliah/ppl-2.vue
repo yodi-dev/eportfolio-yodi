@@ -188,10 +188,10 @@ const closePreview = () => {
                 </span>
             </div>
 
-            <h1 class="text-3xl md:text-5xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+            <h1 class="text-3xl md:text-5xl font-bold text-stone-900 font-serif">
                 PPL II: Praktik Pembelajaran Mandiri
             </h1>
-            <p class="text-stone-600 max-w-3xl text-base leading-relaxed">
+            <p class="text-stone-600 max-w-3xl text-base md:text-lg leading-relaxed">
                 Pusat dokumentasi portofolio pembelajaran mandiri saya selama menempuh Praktik Pengalaman Lapangan II. Memuat <strong>6 dimensi analisis kritis</strong> luaran praktik mengajar, keterlibatan kegiatan persekolahan, serta sistem evaluasi hasil belajar.
             </p>
         </header>
@@ -199,22 +199,22 @@ const closePreview = () => {
         <!-- KPI & Overview PPL II -->
         <section class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
-                <span class="text-xs font-bold uppercase text-stone-400">Target Luaran</span>
-                <div class="text-2xl font-bold text-teal-700 mt-1">6 Dimensi</div>
+                <span class="text-xs font-bold uppercase text-stone-500">Target Luaran</span>
+                <div class="text-2xl font-bold text-teal-700 mt-1 font-serif">6 Dimensi</div>
                 <p class="text-xs text-stone-500 mt-1">Analisis Kritis Wajib</p>
             </div>
             <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
-                <span class="text-xs font-bold uppercase text-emerald-600">Sasaran Mengajar</span>
-                <div class="text-2xl font-bold text-stone-800 mt-1">X TM 1 & 2</div>
+                <span class="text-xs font-bold uppercase text-emerald-700">Sasaran Mengajar</span>
+                <div class="text-2xl font-bold text-stone-900 mt-1 font-serif">X TM 1 & 2</div>
                 <p class="text-xs text-stone-500 mt-1">Teknik Mesin SMKN 3</p>
             </div>
             <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
-                <span class="text-xs font-bold uppercase text-stone-400">Guru Pamong</span>
-                <div class="text-lg font-bold text-stone-800 mt-1 truncate">Febriyana, S.T.</div>
+                <span class="text-xs font-bold uppercase text-stone-500">Guru Pamong</span>
+                <div class="text-lg font-bold text-stone-900 mt-1 truncate">Febriyana, S.T.</div>
                 <p class="text-xs text-stone-500 mt-1">LPTK UNY Yogyakarta</p>
             </div>
             <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
-                <span class="text-xs font-bold uppercase text-teal-600">Status Portofolio</span>
+                <span class="text-xs font-bold uppercase text-teal-700">Status Portofolio</span>
                 <div class="text-base font-bold text-teal-700 mt-1">Tuntas Dianalisis</div>
                 <p class="text-xs text-stone-500 mt-1">6 Dimensi Lengkap</p>
             </div>
@@ -226,15 +226,15 @@ const closePreview = () => {
                 <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-teal-100 text-teal-800 text-xs font-bold rounded-full uppercase tracking-wider">
                     Evolusi Praktik Mandiri
                 </div>
-                <h3 class="text-xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                <h3 class="text-xl font-bold text-stone-900 font-serif">
                     Guided Discovery & Active Note-Taking di Kelas X Teknik Mesin
                 </h3>
-                <p class="text-stone-600 text-sm leading-relaxed">
+                <p class="text-stone-700 text-sm md:text-base leading-relaxed text-left">
                     Mengevaluasi pasivitas membaca pada PPL I, di PPL II saya mentransformasikan strategi instruksional menjadi <strong>Guided Discovery</strong>: siswa menelusuri materi online lalu merangkum manual dengan bahasa sendiri di buku fisik, dikonfirmasi melalui slide PPT dan kuis interaktif <strong>Wayground</strong>, serta praktik koding mandiri pada <strong>OnlineGDB</strong>.
                 </p>
             </div>
             <div class="flex-shrink-0">
-                <span class="px-4 py-2 bg-white text-teal-700 font-bold text-xs uppercase tracking-wider rounded-xl border border-teal-200 shadow-xs inline-block">
+                <span class="px-4 py-2 bg-white text-teal-800 font-bold text-xs uppercase tracking-wider rounded-xl border border-teal-200 shadow-xs inline-block">
                     SMKN 3 Yogyakarta
                 </span>
             </div>
@@ -247,7 +247,7 @@ const closePreview = () => {
                     <span class="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full">
                         Struktur Luaran Wajib
                     </span>
-                    <h2 class="text-2xl md:text-3xl font-bold text-stone-800 mt-2" style="font-family: 'Lora', serif;">
+                    <h2 class="text-2xl md:text-3xl font-bold text-stone-900 mt-2 font-serif">
                         6 Dimensi Analisis Praktik Mandiri
                     </h2>
                     <p class="text-stone-500 text-sm mt-1">
@@ -293,16 +293,16 @@ const closePreview = () => {
                                     <path stroke-linecap="round" stroke-linejoin="round" :d="dim.iconSvg" />
                                 </svg>
                             </div>
-                            <h3 class="text-lg font-bold text-stone-800 group-hover:text-teal-700 transition-colors leading-snug" style="font-family: 'Lora', serif;">
+                            <h3 class="text-lg font-bold text-stone-900 group-hover:text-teal-700 transition-colors leading-snug font-serif">
                                 {{ dim.title }}
                             </h3>
-                            <p class="text-xs font-medium text-stone-400">
+                            <p class="text-xs font-semibold text-stone-500">
                                 {{ dim.subtitle }}
                             </p>
                         </div>
 
                         <!-- Deskripsi Sudut Pandang Pertama -->
-                        <p class="text-stone-600 text-xs leading-relaxed text-justify line-clamp-3">
+                        <p class="text-stone-600 text-sm leading-relaxed text-left line-clamp-3">
                             {{ dim.summary }}
                         </p>
 
@@ -354,13 +354,13 @@ const closePreview = () => {
                         </svg>
                         Wadah Video Praktik Mandiri
                     </div>
-                    <span class="text-xs text-stone-400 font-medium">Dimensi 04</span>
+                    <span class="text-xs text-stone-500 font-medium">Dimensi 04</span>
                 </div>
 
-                <h3 class="text-xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                <h3 class="text-xl font-bold text-stone-900 font-serif">
                     Dokumentasi Rekaman Video Mengajar Kelas X TM
                 </h3>
-                <p class="text-stone-600 text-sm leading-relaxed text-justify">
+                <p class="text-stone-600 text-sm md:text-base leading-relaxed text-left">
                     Dokumentasi rekaman performa mengajar mandiri utuh dan editan 15–20 menit di laboratorium komputer: apersepsi agenda Google Docs, pemantauan keliling catatan manual, validasi PPT, kuis Wayground, dan penutupan dengan exit ticket.
                 </p>
 
@@ -389,13 +389,13 @@ const closePreview = () => {
                         </svg>
                         Wadah Asesmen & Nonmengajar
                     </div>
-                    <span class="text-xs text-stone-400 font-medium">Dimensi 05 & 06</span>
+                    <span class="text-xs text-stone-500 font-medium">Dimensi 05 & 06</span>
                 </div>
 
-                <h3 class="text-xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                <h3 class="text-xl font-bold text-stone-900 font-serif">
                     Sistem Evaluasi Multi-Metode & Inovasi Sekolah
                 </h3>
-                <p class="text-stone-600 text-sm leading-relaxed text-justify">
+                <p class="text-stone-600 text-sm md:text-base leading-relaxed text-left">
                     Menghimpun rubrik evaluasi multi-metode (catatan manual, flowchart, kuis Wayground, OnlineGDB, dan presentasi kelompok) serta rekam jejak piket 5S, KBM, dan inovasi aplikasi web SIBENKA dan SIPENSI.
                 </p>
 
@@ -421,10 +421,10 @@ const closePreview = () => {
             <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-stone-100 text-stone-700 text-xs font-bold rounded-full uppercase tracking-wider">
                 Refleksi Pendidik Mandiri
             </div>
-            <h2 class="text-2xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+            <h2 class="text-2xl font-bold text-stone-900 font-serif">
                 Sintesis Praktik Mandiri Menuju Seminar Inovasi PPG
             </h2>
-            <p class="text-stone-600 text-sm md:text-base leading-relaxed text-justify">
+            <p class="text-stone-600 text-base leading-relaxed text-left">
                 Pelaksanaan 6 dimensi analisis pada PPL II ini bukan sekadar pemenuhan beban administrasi kurikulum, melainkan wahana penempaan diri saya untuk menjadi pendidik yang reflektif. Temuan autentik dari analisis perencanaan, materi, media, video rekaman, kegiatan nonmengajar, serta instrumen asesmen ini akan menjadi bahan baku utama yang saya formulasikan dalam desain inovasi pembelajaran pada mata kuliah <strong>Seminar PPG</strong> berikutnya.
             </p>
             <div class="pt-2 flex flex-wrap gap-3">
@@ -455,14 +455,14 @@ const closePreview = () => {
                             {{ previewModal.status }}
                         </span>
                     </div>
-                    <h3 class="text-xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                    <h3 class="text-xl font-bold text-stone-900 font-serif">
                         {{ previewModal.title }}
                     </h3>
-                    <p class="text-xs text-stone-400">{{ previewModal.subtitle }}</p>
+                    <p class="text-xs text-stone-500">{{ previewModal.subtitle }}</p>
                 </div>
 
-                <div class="space-y-3 text-xs text-stone-600 leading-relaxed">
-                    <p class="text-justify">{{ previewModal.summary }}</p>
+                <div class="space-y-3 text-sm text-stone-600 leading-relaxed">
+                    <p class="text-left">{{ previewModal.summary }}</p>
 
                     <div class="p-4 bg-stone-50 rounded-2xl border border-stone-100 space-y-2">
                         <span class="font-bold text-stone-700 uppercase tracking-wider block text-[10px]">

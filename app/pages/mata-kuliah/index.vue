@@ -65,10 +65,10 @@ const courses = [
                 <img src="/logo-uny.svg" alt="UNY" class="w-3.5 h-3.5 object-contain" />
                 <span>Struktur Kurikulum & Mata Kuliah</span>
             </div>
-            <h1 class="text-3xl md:text-5xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+            <h1 class="text-3xl md:text-5xl font-bold text-stone-900 font-serif">
                 Portofolio Mata Kuliah PPG
             </h1>
-            <p class="text-stone-600 max-w-2xl mx-auto text-base leading-relaxed">
+            <p class="text-stone-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
                 Dokumentasi terstruktur capaian akademik dan praktik lapangan saya selama menempuh program <strong>Pendidikan Profesi Guru (PPG) Calon Guru</strong> di <strong>Universitas Negeri Yogyakarta</strong>.
             </p>
         </header>
@@ -80,7 +80,7 @@ const courses = [
                 
                 <div class="space-y-5">
                     <div class="flex items-center justify-between gap-2">
-                        <span class="text-xs font-bold uppercase tracking-wider text-stone-400">
+                        <span class="text-xs font-bold uppercase tracking-wider text-stone-500">
                             {{ course.subtitle }}
                         </span>
                         <span :class="course.statusClass" class="px-3 py-1 text-xs font-bold rounded-full">
@@ -89,10 +89,10 @@ const courses = [
                     </div>
 
                     <div>
-                        <h2 class="text-2xl font-bold text-stone-800 group-hover:text-emerald-700 transition-colors" style="font-family: 'Lora', serif;">
+                        <h2 class="text-2xl font-bold text-stone-900 group-hover:text-emerald-700 transition-colors font-serif">
                             {{ course.title }}
                         </h2>
-                        <div class="text-xs font-bold text-emerald-600 mt-1 uppercase tracking-wider">
+                        <div class="text-xs font-bold text-emerald-700 mt-1 uppercase tracking-wider">
                             Capaian: {{ course.score }}
                         </div>
                     </div>
@@ -102,10 +102,10 @@ const courses = [
                     </p>
 
                     <div class="pt-4 border-t border-stone-100 space-y-2">
-                        <span class="text-xs font-bold uppercase tracking-wider text-stone-400">Fokus Luaran:</span>
-                        <ul class="text-xs text-stone-600 space-y-1.5">
+                        <span class="text-xs font-bold uppercase tracking-wider text-stone-500">Fokus Luaran:</span>
+                        <ul class="text-sm text-stone-600 space-y-1.5">
                             <li v-for="(hl, idx) in course.highlights" :key="idx" class="flex items-start gap-2">
-                                <span class="text-emerald-500 font-bold">•</span>
+                                <span class="text-emerald-600 font-bold">•</span>
                                 <span>{{ hl }}</span>
                             </li>
                         </ul>

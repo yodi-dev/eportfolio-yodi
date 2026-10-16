@@ -34,7 +34,7 @@ const goBack = () => {
     <div class="max-w-4xl mx-auto space-y-6 animate-fadeIn">
 
         <div v-if="!doc" class="text-center py-20 space-y-4 bg-white rounded-3xl border border-stone-100 p-8">
-            <h1 class="text-3xl font-bold text-stone-800" style="font-family: 'Lora', serif;">Halaman Tidak Ditemukan</h1>
+            <h1 class="text-3xl font-bold text-stone-800 font-serif">Halaman Tidak Ditemukan</h1>
             <p class="text-base text-stone-600">Dokumen artefak pembelajaran yang dicari belum tersedia atau tautan tidak sesuai.</p>
 
             <button @click="goBack"
@@ -47,7 +47,7 @@ const goBack = () => {
             </button>
         </div>
 
-        <article v-else class="bg-white/70 backdrop-blur-sm p-6 sm:p-10 md:p-12 rounded-[2.5rem] border border-stone-200/70 shadow-sm">
+        <article v-else class="bg-white/80 backdrop-blur-sm p-6 sm:p-10 md:p-12 rounded-[2.5rem] border border-stone-200/70 shadow-sm">
             <header class="mb-10 space-y-4">
                 <div class="flex flex-wrap items-center gap-3">
                     <span
@@ -57,28 +57,23 @@ const goBack = () => {
                     <span v-if="doc.badge" class="px-3 py-1 bg-teal-50 text-teal-700 text-xs font-semibold rounded-full">
                         {{ doc.badge }}
                     </span>
-                    <span class="text-stone-400 text-sm ml-auto font-medium">
+                    <span class="text-stone-500 text-sm ml-auto font-medium">
                         {{ formatDate(doc.date) }}
                     </span>
                 </div>
 
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-stone-800 leading-tight" style="font-family: 'Lora', serif;">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-stone-900 leading-tight font-serif">
                     {{ doc.title }}
                 </h1>
 
-                <p class="text-lg md:text-xl text-stone-500 leading-relaxed italic border-l-4 border-emerald-400 pl-4 py-1">
+                <p class="text-lg md:text-xl text-stone-600 leading-relaxed italic border-l-4 border-emerald-500 pl-4 py-1">
                     "{{ doc.description }}"
                 </p>
             </header>
 
-            <hr class="border-stone-100 mb-10" />
+            <hr class="border-stone-200 mb-10" />
 
-            <div class="prose prose-stone prose-lg max-w-none 
-                prose-headings:font-serif prose-headings:text-stone-800
-                prose-p:leading-relaxed prose-p:text-stone-600
-                prose-li:text-stone-600
-                prose-strong:text-emerald-700
-                prose-a:text-emerald-600 prose-a:font-semibold prose-a:underline hover:prose-a:text-emerald-800">
+            <div class="prose-academic max-w-none">
                 <ContentRenderer :value="doc" />
             </div>
 
@@ -92,7 +87,7 @@ const goBack = () => {
                     Kembali
                 </button>
 
-                <NuxtLink to="/artefak" class="text-stone-500 hover:text-emerald-600 text-sm font-medium transition-colors">
+                <NuxtLink to="/artefak" class="text-stone-600 hover:text-emerald-700 text-sm font-semibold transition-colors">
                     Lihat Semua Artefak &rarr;
                 </NuxtLink>
             </div>
@@ -100,9 +95,3 @@ const goBack = () => {
 
     </div>
 </template>
-
-<style scoped>
-.prose :deep(h2) {
-    @apply text-2xl font-bold mt-10 mb-4 border-l-4 border-emerald-500 pl-4;
-}
-</style>

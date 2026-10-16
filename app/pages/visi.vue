@@ -6,7 +6,7 @@
                 class="px-4 py-1.5 bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-wider rounded-full">
                 Filosofi & Orientasi
             </span>
-            <h1 class="text-4xl md:text-5xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+            <h1 class="text-4xl md:text-5xl font-bold text-stone-900 font-serif">
                 Visi Guru Profesional
             </h1>
             <p class="text-stone-600 max-w-2xl mx-auto text-lg leading-relaxed">
@@ -23,7 +23,7 @@
                 <div class="relative z-10 space-y-4">
                     <span class="text-xs font-bold tracking-widest text-emerald-300 uppercase">Pernyataan Visi
                         Pribadi</span>
-                    <h2 class="text-2xl md:text-3xl font-medium leading-relaxed" style="font-family: 'Lora', serif;">
+                    <h2 class="text-2xl md:text-3xl font-medium leading-relaxed font-serif">
                         "Menjadi pendidik yang adaptif, humanis, dan berbasis teknologi untuk menumbuhkan kemandirian
                         belajar serta karakter profil pelajar pancasila."
                     </h2>
@@ -33,7 +33,7 @@
 
         <section class="space-y-8">
             <div class="text-center md:text-left space-y-2">
-                <h3 class="text-2xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                <h3 class="text-2xl font-bold text-stone-900 font-serif">
                     Pilar Implementasi Visi
                 </h3>
                 <p class="text-stone-500 text-sm">Landasan utama dalam setiap praktik pembelajaran.</p>
@@ -45,7 +45,7 @@
                     <div
                         class="w-12 h-12 mb-5 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center font-bold text-lg group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                         01</div>
-                    <h4 class="text-lg font-bold text-stone-800 mb-3" style="font-family: 'Lora', serif;">Pedagogi
+                    <h4 class="text-lg font-bold text-stone-900 mb-3 font-serif">Pedagogi
                         Humanis</h4>
                     <p class="text-stone-600 text-sm leading-relaxed">
                         Menghidupkan konsep 'Among' Ki Hadjar Dewantara, menuntun kodrat anak dengan kasih sayang dan
@@ -58,7 +58,7 @@
                     <div
                         class="w-12 h-12 mb-5 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center font-bold text-lg group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                         02</div>
-                    <h4 class="text-lg font-bold text-stone-800 mb-3" style="font-family: 'Lora', serif;">Otonomi
+                    <h4 class="text-lg font-bold text-stone-900 mb-3 font-serif">Otonomi
                         Belajar</h4>
                     <p class="text-stone-600 text-sm leading-relaxed">
                         Menerapkan pembelajaran berdiferensiasi dan riset mandiri terpandu untuk memberikan kebebasan
@@ -71,7 +71,7 @@
                     <div
                         class="w-12 h-12 mb-5 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center font-bold text-lg group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                         03</div>
-                    <h4 class="text-lg font-bold text-stone-800 mb-3" style="font-family: 'Lora', serif;">Adaptasi
+                    <h4 class="text-lg font-bold text-stone-900 mb-3 font-serif">Adaptasi
                         Digital</h4>
                     <p class="text-stone-600 text-sm leading-relaxed">
                         Mengintegrasikan teknologi secara kritis dan bijak (seperti pemanfaatan media sosial positif)
@@ -84,7 +84,7 @@
         <section
             class="bg-white p-8 md:p-10 rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-stone-100 space-y-8">
             <div class="space-y-2 text-center md:text-left">
-                <h3 class="text-2xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                <h3 class="text-2xl font-bold text-stone-900 font-serif">
                     Rencana Tindak Lanjut (RTL) Pasca-PPG
                 </h3>
                 <p class="text-stone-500 text-sm">Langkah konkret setelah menyelesaikan program pendidikan profesi.</p>

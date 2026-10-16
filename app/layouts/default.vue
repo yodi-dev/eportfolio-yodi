@@ -42,8 +42,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <div class="min-h-screen flex flex-col bg-[#FAFAFA] text-stone-800 relative overflow-hidden"
-        style="font-family: 'Plus Jakarta Sans', sans-serif;">
+    <div class="min-h-screen flex flex-col bg-[#FAFAFA] text-stone-800 font-sans relative overflow-hidden">
 
         <div
             class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-emerald-500/10 blur-[100px] rounded-full pointer-events-none -z-10">
@@ -61,8 +60,7 @@ onBeforeUnmount(() => {
                                 <img src="/logo-kemendikbud.svg" alt="Logo PPG Kemendikdasmen" class="w-6 h-6 object-contain" />
                             </div>
                             <div>
-                                <span class="text-base sm:text-lg font-bold bg-gradient-to-r from-emerald-700 to-teal-600 bg-clip-text text-transparent block leading-tight"
-                                    style="font-family: 'Lora', serif;">
+                                <span class="text-base sm:text-lg font-bold bg-gradient-to-r from-emerald-700 to-teal-600 bg-clip-text text-transparent block leading-tight font-serif">
                                     E-Portfolio
                                 </span>
                                 <span class="text-[9px] sm:text-[10px] uppercase font-bold tracking-wider text-stone-400 block -mt-0.5">
@@ -264,7 +262,7 @@ onBeforeUnmount(() => {
                             </div>
                         </div>
 
-                        <p class="text-sm text-stone-600 leading-relaxed text-justify">
+                        <p class="text-sm text-stone-600 leading-relaxed text-left">
                             Portal e-portfolio resmi dokumentasi luaran akademik dan praktik pembelajaran <strong>Yodi Irawan</strong>. Menghimpun asesmen otentik, modul ajar multi-siklus, inovasi pedagogis, dan refleksi kritis program <strong>Pendidikan Profesi Guru (PPG) Calon Guru</strong>.
                         </p>
 
@@ -276,7 +274,7 @@ onBeforeUnmount(() => {
 
                     <!-- Kolom 2: Navigasi Kurikulum -->
                     <div class="md:col-span-4 space-y-3">
-                        <h3 class="text-xs font-bold uppercase tracking-widest text-stone-400">Navigasi Kurikulum</h3>
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-stone-500">Navigasi Kurikulum</h3>
                         <ul class="space-y-2 text-sm">
                             <li>
                                 <NuxtLink to="/mata-kuliah/ppl-1" class="text-stone-600 hover:text-emerald-700 transition-colors inline-flex items-center gap-1.5">
@@ -308,7 +306,7 @@ onBeforeUnmount(() => {
 
                     <!-- Kolom 3: Portofolio Web Developer & Tautan Luar -->
                     <div class="md:col-span-3 space-y-3">
-                        <h3 class="text-xs font-bold uppercase tracking-widest text-stone-400">Portofolio & Tautan</h3>
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-stone-500">Portofolio & Tautan</h3>
                         
                         <!-- Kartu Khusus Web Developer -->
                         <a href="https://awanbeo.my.id" target="_blank" rel="noopener noreferrer"

@@ -6,10 +6,10 @@
                 class="px-4 py-1.5 bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-widest rounded-full shadow-sm">
                 E-Portfolio Bagian 2
             </span>
-            <h1 class="text-4xl md:text-5xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+            <h1 class="text-4xl md:text-5xl font-bold text-stone-900 font-serif">
                 Refleksi Akhir & Filosofi Mengajar
             </h1>
-            <p class="text-stone-500 max-w-2xl mx-auto text-base leading-relaxed">
+            <p class="text-stone-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
                 Formulasi prinsip, nilai, dan evaluasi kritis perjalanan Praktik Pengalaman Lapangan (PPL) Terbimbing
                 menuju guru profesional.
             </p>
@@ -29,21 +29,20 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-2xl font-bold text-stone-800" style="font-family: 'Lora', serif;">Refleksi Akhir PPL
-                        Terbimbing</h2>
+                    <h2 class="text-2xl font-bold text-stone-900 font-serif">Refleksi Akhir PPL Terbimbing</h2>
                     <p class="text-stone-500 text-sm mt-1">Analisis produk pembelajaran dan evaluasi praktik mengajar.
                     </p>
                 </div>
             </div>
 
-            <div class="relative z-10 space-y-8 text-stone-600 leading-relaxed text-sm md:text-base">
+            <div class="relative z-10 space-y-8 text-stone-700 leading-relaxed text-base">
 
                 <div class="space-y-2">
-                    <h3 class="font-bold text-stone-800 flex items-center gap-2 text-base">
+                    <h3 class="font-bold text-stone-900 flex items-center gap-2 text-base md:text-lg">
                         <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
                         Pengalaman & Pembelajaran Utama
                     </h3>
-                    <p class="pl-4 border-l-2 border-stone-100 text-justify">
+                    <p class="pl-4 border-l-2 border-emerald-200 text-left">
                         Selama menempuh tahapan PPL Terbimbing dari awal hingga akhir, saya belajar bahwa menjadi
                         seorang guru profesional tidak hanya sekadar menguasai materi di depan kelas, melainkan
                         kemampuan mengintegrasikan kesiapan perangkat dengan eksekusi riil di lapangan. Saya belajar
@@ -57,11 +56,11 @@
                 </div>
 
                 <div class="space-y-2">
-                    <h3 class="font-bold text-stone-800 flex items-center gap-2 text-base">
+                    <h3 class="font-bold text-stone-900 flex items-center gap-2 text-base md:text-lg">
                         <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
                         Analisis Tantangan & Solusi Nyata
                     </h3>
-                    <p class="pl-4 border-l-2 border-stone-100 text-justify">
+                    <p class="pl-4 border-l-2 border-emerald-200 text-left">
                         Tantangan terbesar saya muncul pada fase perancangan perangkat pembelajaran ke-1, di mana
                         rancangan saya belum memuat teknik <i>scaffolding</i> secara tertulis pada kegiatan inti, belum
                         mencantumkan rencana tindak lanjut pada penutup, serta belum dilengkapi dengan kisi-kisi jawaban
@@ -74,11 +73,11 @@
                 </div>
 
                 <div class="space-y-2">
-                    <h3 class="font-bold text-stone-800 flex items-center gap-2 text-base">
+                    <h3 class="font-bold text-stone-900 flex items-center gap-2 text-base md:text-lg">
                         <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
                         Rencana Perbaikan untuk PPL Mandiri
                     </h3>
-                    <p class="pl-4 border-l-2 border-stone-100 text-justify">
+                    <p class="pl-4 border-l-2 border-emerald-200 text-left">
                         Berdasarkan diskusi refleksi akhir bersama Ibu Febriyana, S.T., umpan balik utama yang menjadi
                         bekal saya untuk PPL Mandiri adalah <b>konsistensi ketuntasan perangkat sebelum mengajar</b>.
                         Saya disarankan untuk memastikan seluruh instrumen evaluasi (kisi-kisi dan rubrik) wajib siap
@@ -92,7 +91,7 @@
         </section>
 
         <section
-            class="bg-stone-800 text-stone-300 border border-stone-700 shadow-xl rounded-[2rem] p-8 md:p-10 space-y-8 relative overflow-hidden">
+            class="bg-stone-850 text-stone-200 border border-stone-700 shadow-xl rounded-[2rem] p-8 md:p-10 space-y-8 relative overflow-hidden">
             <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-amber-600/20 rounded-full blur-3xl -z-0"></div>
 
             <div
@@ -105,14 +104,13 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-2xl font-bold text-white" style="font-family: 'Lora', serif;">Filosofi Mengajar
-                        (Ideologi Pendidik)</h2>
+                    <h2 class="text-2xl font-bold text-white font-serif">Filosofi Mengajar (Ideologi Pendidik)</h2>
                     <p class="text-stone-400 text-sm mt-1">Prinsip dan keyakinan yang mendasari praktik pengajaran.</p>
                 </div>
             </div>
 
-            <div class="relative z-10 space-y-6 text-sm md:text-base leading-relaxed font-serif text-justify">
-                <p class="indent-8">
+            <div class="relative z-10 space-y-6 text-base md:text-[17px] leading-8 font-serif text-left text-stone-200">
+                <p>
                     Prinsip dasar yang menjadi jangkar keyakinan saya dalam mengajar adalah pandangan bahwa setiap
                     peserta didik merupakan individu unik yang membawa potensi kodratnya masing-masing. Filosofi ini
                     berakar pada pemikiran Ki Hadjar Dewantara mengenai "Sistem Among", di mana guru berperan sebagai
@@ -122,7 +120,7 @@
                     sehari-hari. Mengajar bukanlah proses mengisi gelas kosong, melainkan menyalakan pelita rasa ingin
                     tahu murid dalam ekosistem belajar yang aman dan berpihak pada anak.
                 </p>
-                <p class="indent-8">
+                <p>
                     Secara epistemologis, saya meyakini teori Konstruktivisme Sosial dari Lev Vygotsky, yang menyatakan
                     bahwa pengetahuan dibangun secara aktif oleh murid melalui interaksi sosial. Oleh karena itu,
                     ideologi pengajaran saya berfokus pada penyediaan lingkungan yang kolaboratif. Melalui pengalaman
@@ -132,7 +130,7 @@
                     perlahan melepaskan bantuan tersebut ketika murid mulai mandiri. Hal ini terbukti mampu mendongkrak
                     keaktifan dan kepercayaan diri mereka saat mengonstruksi konsep secara mandiri di kelas.
                 </p>
-                <p class="indent-8">
+                <p>
                     Sebagai penutup, filosofi mengajar saya menekankan bahwa evaluasi yang holistik dan refleksi diri
                     adalah motor penggerak transformasi seorang guru profesional. Nilai akhir rancangan pembelajaran
                     sebesar 3.4 dan pelaksanaan praktik sebesar 3.9 bukanlah titik akhir, melainkan cermin untuk terus

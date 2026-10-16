@@ -14,7 +14,7 @@ useSeoMeta({
                 class="px-4 py-1.5 bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-wider rounded-full">
                 Identitas & Rekam Jejak
             </span>
-            <h1 class="text-4xl md:text-5xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+            <h1 class="text-4xl md:text-5xl font-bold text-stone-900 font-serif">
                 Profil Pendidik
             </h1>
             <p class="text-stone-600 max-w-2xl mx-auto text-base leading-relaxed">
@@ -43,33 +43,33 @@ useSeoMeta({
                                 Universitas Negeri Yogyakarta
                             </span>
                         </div>
-                        <h2 class="text-3xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                        <h2 class="text-3xl font-bold text-stone-900 font-serif">
                             Yodi Irawan
                         </h2>
                         <p class="text-stone-500 text-sm mt-1">Calon Pendidik Profesional • Praktisi Pembelajaran Adaptif & Teknologi</p>
                     </div>
 
-                    <p class="text-stone-600 leading-relaxed text-sm md:text-base text-justify">
+                    <p class="text-stone-700 leading-relaxed text-base md:text-[17px] text-left">
                         Seorang pendidik yang bersemangat mengombinasikan kepekaan pedagogi humanis dengan kecakapan teknologi instruksional. Berfokus pada penciptaan ekosistem kelas yang aman, memberdayakan nalar kritis, dan memfasilitasi kemandirian belajar bagi setiap peserta didik.
                     </p>
 
                     <!-- Informasi Meta / Ringkasan -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3 border-t border-stone-100 text-left text-sm">
                         <div class="flex items-center gap-3">
-                            <span class="text-stone-400 text-xs font-bold uppercase tracking-wider w-24">Asal Wilayah</span>
-                            <span class="text-stone-700 font-medium">Jambi – Sumatera Selatan</span>
+                            <span class="text-stone-500 text-xs font-bold uppercase tracking-wider w-24">Asal Wilayah</span>
+                            <span class="text-stone-800 font-medium">Jambi – Sumatera Selatan</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <span class="text-stone-400 text-xs font-bold uppercase tracking-wider w-24">Akar Budaya</span>
-                            <span class="text-stone-700 font-medium">Budaya Melayu</span>
+                            <span class="text-stone-500 text-xs font-bold uppercase tracking-wider w-24">Akar Budaya</span>
+                            <span class="text-stone-800 font-medium">Budaya Melayu</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <span class="text-stone-400 text-xs font-bold uppercase tracking-wider w-24">Guru Pamong</span>
-                            <span class="text-stone-700 font-medium">Febriyana, S.T.</span>
+                            <span class="text-stone-500 text-xs font-bold uppercase tracking-wider w-24">Guru Pamong</span>
+                            <span class="text-stone-800 font-medium">Febriyana, S.T.</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <span class="text-stone-400 text-xs font-bold uppercase tracking-wider w-24">Web Pribadi</span>
-                            <a href="http://awanbeo.my.id" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-medium hover:underline">
+                            <span class="text-stone-500 text-xs font-bold uppercase tracking-wider w-24">Web Pribadi</span>
+                            <a href="http://awanbeo.my.id" target="_blank" rel="noopener noreferrer" class="text-emerald-700 font-semibold hover:underline">
                                 awanbeo.my.id
                             </a>
                         </div>
@@ -88,11 +88,11 @@ useSeoMeta({
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                    <h3 class="text-xl font-bold text-stone-900 font-serif">
                         Akar Budaya & Karakter Dasar
                     </h3>
                 </div>
-                <p class="text-stone-600 text-sm md:text-base leading-relaxed text-justify">
+                <p class="text-stone-600 text-base leading-relaxed text-left">
                     Saya dibesarkan di kawasan perbatasan antara Jambi dan Sumatera Selatan, lingkungan masyarakat yang kental dengan falsafah Melayu. Nilai-nilai kesantunan tutur kata, penghormatan terhadap adab, kekeluargaan, serta gotong royong telah terpatri kuat dan menjadi fondasi utama etika saya dalam membimbing dan memperlakukan peserta didik.
                 </p>
             </div>
@@ -104,11 +104,11 @@ useSeoMeta({
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.82 1.508-2.316a7.5 7.5 0 1 0-7.516 0c.85.496 1.508 1.333 1.508 2.316V18w4.5Z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                    <h3 class="text-xl font-bold text-stone-900 font-serif">
                         Inspirasi & Titik Mula Panggilan
                     </h3>
                 </div>
-                <p class="text-stone-600 text-sm md:text-base leading-relaxed text-justify">
+                <p class="text-stone-600 text-base leading-relaxed text-left">
                     Benih ketertarikan untuk mengajar tumbuh sejak bangku SMP melalui teladan guru Bahasa Inggris saya, Ma'am Amel. Pendekatan beliau yang tulus, penuh empati, dan selalu memompa semangat belajar membuktikan bahwa seorang guru mampu mengubah cara pandang seorang murid terhadap potensi dirinya sendiri seumur hidup.
                 </p>
             </div>
@@ -117,10 +117,10 @@ useSeoMeta({
         <!-- Kutipan Inspiratif -->
         <section class="pb-2">
             <blockquote class="relative p-8 md:p-12 bg-gradient-to-br from-emerald-50 to-teal-50/60 rounded-[2.5rem] border border-white shadow-sm overflow-hidden text-center space-y-4">
-                <p class="text-xl md:text-2xl text-stone-700 italic font-medium leading-relaxed max-w-3xl mx-auto" style="font-family: 'Lora', serif;">
+                <p class="text-xl md:text-2xl text-stone-800 italic font-medium leading-relaxed max-w-3xl mx-auto font-serif">
                     "Jadi guru itu amalannya jariyah, selama ilmu yang kita ajarkan itu digunakan maka pahalanya akan terus mengalir."
                 </p>
-                <footer class="text-emerald-700 font-semibold tracking-wider uppercase text-xs">
+                <footer class="text-emerald-800 font-bold tracking-wider uppercase text-xs">
                     — Ma'am Amel, Guru Bahasa Inggris
                 </footer>
             </blockquote>
@@ -129,7 +129,7 @@ useSeoMeta({
         <!-- Pilar Kompetensi Pendidik -->
         <section class="space-y-6">
             <div class="text-center space-y-2">
-                <h3 class="text-2xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                <h3 class="text-2xl font-bold text-stone-900 font-serif">
                     Fokus & Kompetensi Pengajaran
                 </h3>
                 <p class="text-stone-500 text-sm">Prinsip kerja yang dipegang dalam setiap perancangan dan pelaksanaan kelas.</p>
@@ -139,19 +139,19 @@ useSeoMeta({
                 <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm space-y-3">
                     <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">1</div>
                     <h4 class="font-bold text-stone-800">Pedagogi Humanis</h4>
-                    <p class="text-stone-600 text-xs leading-relaxed">Menuntun dan menghargai keunikan siswa dengan prinsip Sistem Among tanpa mempermalukan mental murid.</p>
+                    <p class="text-stone-600 text-sm leading-relaxed">Menuntun dan menghargai keunikan siswa dengan prinsip Sistem Among tanpa mempermalukan mental murid.</p>
                 </div>
 
                 <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm space-y-3">
                     <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center font-bold">2</div>
                     <h4 class="font-bold text-stone-800">Integrasi Teknologi</h4>
-                    <p class="text-stone-600 text-xs leading-relaxed">Memanfaatkan instrumen riset digital dan diferensiasi produk multimedia (Canva/PPT) yang relevan bagi generasi digital.</p>
+                    <p class="text-stone-600 text-sm leading-relaxed">Memanfaatkan instrumen riset digital dan diferensiasi produk multimedia (Canva/PPT) yang relevan bagi generasi digital.</p>
                 </div>
 
                 <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm space-y-3">
                     <div class="w-10 h-10 rounded-xl bg-stone-200 text-stone-700 flex items-center justify-center font-bold">3</div>
                     <h4 class="font-bold text-stone-800">Refleksi Berkelanjutan</h4>
-                    <p class="text-stone-600 text-xs leading-relaxed">Secara proaktif merevisi modul ajar, rubrik asesmen, dan tata kelola waktu kelas demi perbaikan kualitas berkesinambungan.</p>
+                    <p class="text-stone-600 text-sm leading-relaxed">Secara proaktif merevisi modul ajar, rubrik asesmen, dan tata kelola waktu kelas demi perbaikan kualitas berkesinambungan.</p>
                 </div>
             </div>
         </section>
@@ -165,10 +165,10 @@ useSeoMeta({
                     <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/20 text-emerald-300 text-xs font-bold rounded-full uppercase tracking-wider">
                         Keunggulan Komparatif (USP)
                     </div>
-                    <h3 class="text-2xl font-bold text-white" style="font-family: 'Lora', serif;">
+                    <h3 class="text-2xl font-bold text-white font-serif">
                         Sinergi Pendidik & Web Developer
                     </h3>
-                    <p class="text-stone-300 text-sm leading-relaxed">
+                    <p class="text-stone-300 text-sm md:text-base leading-relaxed text-left">
                         Latar belakang rekayasa perangkat lunak dan pengembangan web memungkinkan saya merancang media belajar interaktif, sistem asesmen digital mandiri, serta ekosistem e-portfolio yang responsif dan modern. Portofolio teknis dan rekayasa kode sengaja dipisahkan agar fokus kurikulum PPG tetap terjaga.
                     </p>
                 </div>

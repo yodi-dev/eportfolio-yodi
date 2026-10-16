@@ -13,9 +13,8 @@
                 </span>
             </div>
 
-            <h1 class="text-4xl md:text-6xl font-bold text-stone-800 tracking-tight"
-                style="font-family: 'Lora', serif;">
-                Halo, Saya <span class="text-emerald-600">Yodi Irawan</span>
+            <h1 class="text-4xl md:text-6xl font-bold text-stone-900 tracking-tight font-serif">
+                Halo, Saya <span class="text-emerald-700">Yodi Irawan</span>
             </h1>
             <p class="text-lg md:text-xl text-stone-600 leading-relaxed font-light">
                 Mahasiswa PPG Calon Guru yang bersemangat untuk menjadi pendidik profesional. Saya bertekad

@@ -2,8 +2,7 @@
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div
             class="bg-white/60 backdrop-blur-sm p-8 md:p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white hover:shadow-[0_8px_30px_rgb(52,211,153,0.15)] hover:-translate-y-1 transition-all duration-300">
-            <h2 class="text-2xl font-bold text-stone-800 mb-5 flex items-center gap-4"
-                style="font-family: 'Lora', serif;">
+            <h2 class="text-2xl font-bold text-stone-900 mb-5 flex items-center gap-4 font-serif">
                 <div class="p-3 bg-emerald-50 rounded-2xl text-emerald-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-6 h-6">
@@ -15,7 +14,7 @@
                 </div>
                 Asal & Kebudayaan
             </h2>
-            <p class="text-stone-600 leading-relaxed text-justify">
+            <p class="text-stone-700 leading-relaxed text-left text-base">
                 Saya berasal dari wilayah perbatasan antara Jambi dan Sumatera Selatan, sebuah daerah yang sangat kental
                 dengan budaya Melayu. Nilai-nilai kesantunan, kekeluargaan, dan gotong royong yang ada di dalam
                 masyarakat Melayu telah membentuk karakter dasar saya, terutama dalam memandang pentingnya adab dan
@@ -25,8 +24,7 @@
 
         <div
             class="bg-white/60 backdrop-blur-sm p-8 md:p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white hover:shadow-[0_8px_30px_rgb(52,211,153,0.15)] hover:-translate-y-1 transition-all duration-300">
-            <h2 class="text-2xl font-bold text-stone-800 mb-5 flex items-center gap-4"
-                style="font-family: 'Lora', serif;">
+            <h2 class="text-2xl font-bold text-stone-900 mb-5 flex items-center gap-4 font-serif">
                 <div class="p-3 bg-emerald-50 rounded-2xl text-emerald-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-6 h-6">
@@ -36,7 +34,7 @@
                 </div>
                 Inspirasi & Visi
             </h2>
-            <p class="text-stone-600 leading-relaxed text-justify">
+            <p class="text-stone-700 leading-relaxed text-left text-base">
                 Keinginan saya menjadi guru tumbuh sejak SMP, berkat guru Bahasa Inggris saya, Ma'am Amel. Beliau adalah
                 sosok yang memotivasi dan menginspirasi saya. Ke depannya, saya ingin menjadi guru yang tidak hanya kuat
                 secara pedagogi, tetapi juga memiliki kemampuan teknis yang mumpuni, sehingga dapat memberikan

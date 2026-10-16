@@ -57,12 +57,12 @@ const sixDimensions = [
         path: '/artefak/ppl-2/analisis-materi',
         iconBg: 'bg-teal-50 text-teal-600',
         iconSvg: 'M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25',
-        summary: 'Kajian struktur materi esensial Pendidikan Jasmani & Olahraga yang adaptif, mengeliminasi potensi miskonsepsi gerak, dan memadukan wawasan teknologi instruksional.',
+        summary: 'Kajian struktur materi esensial Informatika yang adaptif, mengeliminasi potensi miskonsepsi logika komputasional, dan memadukan wawasan teknologi instruksional.',
         criteria: [
-            'Kedalaman materi esensial dan hierarki instruksional konsep gerak',
-            'Penerapan wawasan TPACK dalam visualisasi materi pembelajaran',
-            'Relevansi kontekstual materi dengan kebugaran dan kehidupan siswa',
-            'Strategi preventif terhadap potensi miskonsepsi motorik siswa'
+            'Kedalaman materi esensial dan hierarki instruksional Informatika Fase E',
+            'Penerapan wawasan TPACK dalam visualisasi materi pembelajaran digital',
+            'Relevansi kontekstual materi dengan literasi digital dan industri perfilman/broadcasting',
+            'Strategi preventif terhadap potensi miskonsepsi konsep teknologi & algoritma'
         ],
         formatLabel: 'Bahan Ajar Mandiri'
     },
@@ -78,12 +78,12 @@ const sixDimensions = [
         path: '/artefak/ppl-2/analisis-media',
         iconBg: 'bg-emerald-50 text-emerald-600',
         iconSvg: 'M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3',
-        summary: 'Evaluasi pemilihan serta pemanfaatan media instruksional fisik di lapangan maupun media digital interaktif dalam menstimulasi keaktifan gerak, keterlibatan kelas, dan pemahaman konsep siswa.',
+        summary: 'Evaluasi pemilihan serta pemanfaatan media digital interaktif dan platform instruksional dalam menstimulasi eksplorasi mandiri, keterlibatan kelas, dan pemahaman konsep siswa.',
         criteria: [
-            'Ketepatan media dalam memperjelas capaian tujuan pembelajaran',
-            'Dukungan media terhadap gaya belajar visual, auditori, & kinestetik',
-            'Efisiensi setup dan keamanan penggunaan media bagi seluruh siswa',
-            'Daya dukung media dalam memberikan umpan balik performa langsung'
+            'Ketepatan media dalam memperjelas capaian tujuan pembelajaran informatika',
+            'Dukungan media terhadap gaya belajar visual, auditori, & hands-on praktik komputer',
+            'Efisiensi setup perangkat, laboratorium/kelas, dan aksesibilitas siswa',
+            'Daya dukung media dalam memberikan interaksi dan umpan balik belajar langsung'
         ],
         formatLabel: 'Katalog Alat & Media'
     },
@@ -120,12 +120,12 @@ const sixDimensions = [
         path: '/artefak/ppl-2/analisis-kegiatan-nonmengajar',
         iconBg: 'bg-teal-50 text-teal-600',
         iconSvg: 'M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342',
-        summary: 'Laporan keterlibatan aktif saya dalam tata kelola sekolah mitra di luar jam mengajar formal: pelaksanaan tugas piket harian, pembinaan kesiswaan, ekstrakurikuler, dan komunitas belajar guru.',
+        summary: 'Laporan keterlibatan aktif saya dalam tata kelola SMK Negeri 3 Yogyakarta di luar jam mengajar formal: pelaksanaan tugas piket harian, pembinaan kesiswaan, ekstrakurikuler, dan komunitas belajar guru.',
         criteria: [
-            'Kedisiplinan pelaksanaan piket harian & pelayanan perizinan siswa',
-            'Pendampingan pembiasaan positif, upacara bendera, & senam bersama',
-            'Pembinaan ekstrakurikuler olahraga serta penguatan karakter',
-            'Kolaborasi dalam pertemuan komunitas guru mitra / MGMP sekolah'
+            'Kedisiplinan pelaksanaan piket harian & pelayanan ketertiban presensi siswa',
+            'Pendampingan pembiasaan positif, apel pagi, upacara bendera, & budaya industri sekolah',
+            'Pembinaan kegiatan ekstrakurikuler serta penguatan karakter profil pelajar Pancasila',
+            'Kolaborasi dalam pertemuan komunitas guru mitra / MGMP Informatika sekolah'
         ],
         formatLabel: 'Jurnal & Dokumentasi'
     },
@@ -141,10 +141,10 @@ const sixDimensions = [
         path: '/artefak/ppl-2/analisis-instrumen-penilaian',
         iconBg: 'bg-emerald-50 text-emerald-600',
         iconSvg: 'M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z',
-        summary: 'Instrumen komprehensif penilaian sikap, pengetahuan, dan keterampilan gerak beserta pengolahan data daya serap siswa, analisis butir evaluasi, serta tindak lanjut remedial dan pengayaan.',
+        summary: 'Instrumen komprehensif penilaian sikap, pengetahuan, dan keterampilan praktik digital/komputer beserta pengolahan data daya serap siswa, analisis butir evaluasi, serta tindak lanjut remedial dan pengayaan.',
         criteria: [
-            'Kisi-kisi dan butir soal kognitif kontekstual berorientasi HOTS',
-            'Rubrik penilaian unjuk kerja gerak (psikomotorik) yang transparan',
+            'Kisi-kisi dan butir asesmen kognitif kontekstual berorientasi HOTS',
+            'Rubrik penilaian unjuk kerja praktik komputer / produk digital yang objektif',
             'Lembar observasi perkembangan sikap & Profil Pelajar Pancasila',
             'Tabulasi ketuntasan klasikal dan perancangan program remedial'
         ],
@@ -211,7 +211,7 @@ const closePreview = () => {
             <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
                 <span class="text-xs font-bold uppercase text-stone-400">LPTK Pembina</span>
                 <div class="text-lg font-bold text-stone-800 mt-1 truncate">UNY Yogyakarta</div>
-                <p class="text-xs text-stone-500 mt-1">Pendidikan Jasmani</p>
+                <p class="text-xs text-stone-500 mt-1">Informatika • SMK N 3 Yogyakarta</p>
             </div>
             <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
                 <span class="text-xs font-bold uppercase text-stone-400">Status Portofolio</span>

@@ -58,63 +58,70 @@ eportofolio-yodi/
 │       ├── penilaian.vue           # Lembar penilaian Lampiran 7 & 8 resmi
 │       ├── visi.vue                # Visi guru profesional & RTL
 │       └── refleksi.vue            # Refleksi mendalam & ideologi mengajar
-├── content/
-│   └── artefak/                    # Data artefak Markdown multi-matakuliah
-│       ├── siklus-1.md             # PPL I - Siklus 1
-│       ├── siklus-2.md             # PPL I - Siklus 2
-│       └── siklus-3.md             # PPL I - Siklus 3
-├── public/                         # Aset statis (PDF Lampiran, Dokumen RPP/LKPD, Foto pp.png)
-├── content.config.ts               # Skema Zod (mendukung course: ppl-1 | ppl-2 | seminar)
-├── nuxt.config.ts                  # Konfigurasi Nuxt 4, SEO global, font Lora & Jakarta Sans
-└── package.json                    # Dependensi proyek
-```
-
----
-
-## 3. Skema Data Artefak (`content.config.ts`)
-
-```ts
-schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    category: z.string(),
-    course: z.enum(['ppl-1', 'ppl-2', 'seminar']).default('ppl-1'),
-    status: z.enum(['completed', 'in-progress', 'planned']).default('completed'),
-    date: z.string(),
-    badge: z.string().optional(),
-    color: z.string().optional(),
-})
-```
-
-### Prosedur Menambah Dokumen Tugas Baru:
-- **Tugas PPL I**: Masukkan frontmatter `course: "ppl-1"`.
-- **Tugas PPL II**: Masukkan frontmatter `course: "ppl-2"`.
-- **Tugas Seminar PPG**: Masukkan frontmatter `course: "seminar"`.
-Dokumen akan langsung terpetakan otomatis ke filter `/artefak` dan halaman hub mata kuliah yang bersangkutan.
-
----
-
-## 4. Status Implementasi & Roadmap
-
-### Fase 1: Perbaikan Bug & Pemisahan Profil (Selesai ✅)
-- [x] Pemisahan Dashboard (`/`) dan Profil (`/profil`).
-- [x] Navigasi responsif mobile drawer dan hamburger toggle.
-- [x] Pembersihan semantik tag `<main>` ganda.
-- [x] SEO dan meta tag global dan dinamis.
-- [x] Pembersihan warning CSS PostCSS.
-- [x] Penyesuaian label berkas download PDF.
-
-### Fase 2: Arsitektur Multi-Mata Kuliah (Selesai ✅)
-- [x] Skema Nuxt Content v3 diperluas mendukung `course: ppl-1 | ppl-2 | seminar`.
-- [x] Dropdown desktop & Accordion mobile untuk menu Mata Kuliah di `default.vue`.
-- [x] Halaman hub kurikulum: `/mata-kuliah`, `/mata-kuliah/ppl-1`, `/mata-kuliah/ppl-2`, `/mata-kuliah/seminar`.
-- [x] Filter pills kategori per mata kuliah di `/artefak`.
-- [x] Matriks Progres Mata Kuliah (Course Matrix Tracker) di Dashboard.
-- [x] Sinergi USP Pendidik & Web Developer di `/profil`.
-- [x] Integrasi wadah 6 Dimensi Analisis Praktik Mandiri PPL II (Perencanaan, Materi, Media, Video, Nonmengajar, Asesmen) dan 6 template artefak pendukung.
-
-### Fase 3: Pengisian Konten Bertahap & Fitur Masa Depan (Sedang Berjalan 🚀)
-- [ ] Pengisian berkas autentik dan data evaluasi PPL II seiring berjalannya siklus praktik sekolah.
-- [ ] Pengisian desain inovasi & jurnal Seminar PPG.
-- [ ] Inline PDF previewer modal untuk Lampiran 7 & 8.
-- [ ] Video embed responsif untuk rekaman micro-teaching.
+61: ├── content/
+62: │   └── artefak/                    # Data artefak Markdown multi-matakuliah
+63: │       ├── siklus-1.md             # PPL I - Siklus 1
+64: │       ├── siklus-2.md             # PPL I - Siklus 2
+65: │       ├── siklus-3.md             # PPL I - Siklus 3
+66: │       └── ppl-2/                  # PPL II - 6 Dimensi Analisis Praktik Mandiri
+67: │           ├── analisis-perencanaan.md          # Dimensi 01: Modul Ajar Guided Discovery
+68: │           ├── analisis-materi.md               # Dimensi 02: AP & AD Berbasis SOP Mesin
+69: │           ├── analisis-media.md                # Dimensi 03: Wayground, OnlineGDB, Catatan Buku
+70: │           ├── analisis-video.md                # Dimensi 04: Active Roaming & Scaffolding
+71: │           ├── analisis-kegiatan-nonmengajar.md # Dimensi 05: Piket 5S, SIBENKA & SIPENSI
+72: │           └── analisis-instrumen-penilaian.md  # Dimensi 06: Evaluasi Multi-Metode & Exit Ticket
+73: ├── public/                         # Aset statis (PDF Lampiran, Dokumen RPP/LKPD, Foto pp.png)
+74: ├── content.config.ts               # Skema Zod (mendukung course: ppl-1 | ppl-2 | seminar)
+75: ├── nuxt.config.ts                  # Konfigurasi Nuxt 4, SEO global, font Lora & Jakarta Sans
+76: └── package.json                    # Dependensi proyek
+77: ```
+78: 
+79: ---
+80: 
+81: ## 3. Skema Data Artefak (`content.config.ts`)
+82: 
+83: ```ts
+84: schema: z.object({
+85:     title: z.string(),
+86:     description: z.string(),
+87:     category: z.string(),
+88:     course: z.enum(['ppl-1', 'ppl-2', 'seminar']).default('ppl-1'),
+89:     status: z.enum(['completed', 'in-progress', 'planned']).default('completed'),
+90:     date: z.string(),
+91:     badge: z.string().optional(),
+92:     color: z.string().optional(),
+93: })
+94: ```
+95: 
+96: ### Prosedur Menambah Dokumen Tugas Baru:
+97: - **Tugas PPL I**: Masukkan frontmatter `course: "ppl-1"`.
+98: - **Tugas PPL II**: Masukkan frontmatter `course: "ppl-2"`.
+99: - **Tugas Seminar PPG**: Masukkan frontmatter `course: "seminar"`.
+100: Dokumen akan langsung terpetakan otomatis ke filter `/artefak` dan halaman hub mata kuliah yang bersangkutan.
+101: 
+102: ---
+103: 
+104: ## 4. Status Implementasi & Roadmap
+105: 
+106: ### Fase 1: Perbaikan Bug & Pemisahan Profil (Selesai ✅)
+107: - [x] Pemisahan Dashboard (`/`) dan Profil (`/profil`).
+108: - [x] Navigasi responsif mobile drawer dan hamburger toggle.
+109: - [x] Pembersihan semantik tag `<main>` ganda.
+110: - [x] SEO dan meta tag global dan dinamis.
+111: - [x] Pembersihan warning CSS PostCSS.
+112: - [x] Penyesuaian label berkas download PDF.
+113: 
+114: ### Fase 2: Arsitektur Multi-Mata Kuliah (Selesai ✅)
+115: - [x] Skema Nuxt Content v3 diperluas mendukung `course: ppl-1 | ppl-2 | seminar`.
+116: - [x] Dropdown desktop & Accordion mobile untuk menu Mata Kuliah di `default.vue`.
+117: - [x] Halaman hub kurikulum: `/mata-kuliah`, `/mata-kuliah/ppl-1`, `/mata-kuliah/ppl-2`, `/mata-kuliah/seminar`.
+118: - [x] Filter pills kategori per mata kuliah di `/artefak`.
+119: - [x] Matriks Progres Mata Kuliah (Course Matrix Tracker) di Dashboard.
+120: - [x] Sinergi USP Pendidik & Web Developer di `/profil`.
+121: - [x] Integrasi wadah 6 Dimensi Analisis Praktik Mandiri PPL II dan 6 dokumen analisis mendalam berbasis data riil kelas X TM 1 & X TM 2 SMKN 3 Yogyakarta.
+122: 
+123: ### Fase 3: Pengisian Konten Bertahap & Fitur Masa Depan (Sedang Berjalan 🚀)
+124: - [x] Pengisian berkas autentik dan data evaluasi PPL II (Algoritma Pemrograman, Analisis Data, Wayground, OnlineGDB, Piket 5S/KBM, SIBENKA & SIPENSI).
+125: - [ ] Pengisian desain inovasi & jurnal Seminar PPG.
+126: - [ ] Inline PDF previewer modal untuk Lampiran 7 & 8.
+127: - [ ] Video embed responsif untuk rekaman micro-teaching.

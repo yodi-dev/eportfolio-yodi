@@ -30,18 +30,18 @@ const sixDimensions = [
         category: 'perangkat',
         categoryLabel: 'Perencanaan',
         title: 'Analisis Produk Perencanaan Pembelajaran',
-        subtitle: 'Telaah Kritis Desain Modul Ajar Mandiri & Diferensiasi',
-        status: 'Tersedia Draf',
+        subtitle: 'Transformasi Pedagogis & Guided Discovery Kelas X TM',
+        status: 'Tuntas Dianalisis',
         statusClass: 'bg-emerald-100 text-emerald-800 border-emerald-200',
         path: '/artefak/ppl-2/analisis-perencanaan',
         iconBg: 'bg-emerald-50 text-emerald-600',
         iconSvg: 'M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z',
-        summary: 'Analisis mendalam terhadap integrasi Capaian Pembelajaran (CP), kesiapan awal peserta didik berbasis asesmen diagnostik, serta formulasi pembelajaran berdiferensiasi pada praktik mandiri saya.',
+        summary: 'Merombak metode pasif PPL I menjadi Guided Discovery di kelas X TM 1 & X TM 2: transparansi agenda Google Docs, active note-taking manual berbahasa sendiri, konfirmasi klasikal PPT, dan evaluasi Wayground.',
         criteria: [
-            'Kesesuaian alur tujuan pembelajaran dengan karakteristik peserta didik',
-            'Integrasi diferensiasi konten, proses, dan produk pembelajaran',
-            'Rencana alokasi waktu dan skenario mitigasi kendala di kelas',
-            'Ketepatan pemilihan model active learning berpusat pada siswa'
+            'Kesesuaian TP/ATP elemen Algoritma Pemrograman & Analisis Data',
+            'Transparansi alur dan rundown instruksional via Google Docs',
+            'Desain active note-taking manual di buku tulis anti-distraksi',
+            'Progresi dari eksplorasi mandiri individu ke kolaborasi tim'
         ],
         formatLabel: 'Modul Ajar (PDF/DOCX)'
     },
@@ -51,20 +51,20 @@ const sixDimensions = [
         category: 'perangkat',
         categoryLabel: 'Materi Ajar',
         title: 'Analisis Materi Pembelajaran yang Diterapkan',
-        subtitle: 'Penguasaan Konsep Esensial, TPACK, & Kontekstualisasi',
-        status: 'Proses Analisis',
+        subtitle: 'Kontekstualisasi Logika Komputasi & SOP Teknik Mesin',
+        status: 'Tuntas Dianalisis',
         statusClass: 'bg-teal-100 text-teal-800 border-teal-200',
         path: '/artefak/ppl-2/analisis-materi',
         iconBg: 'bg-teal-50 text-teal-600',
         iconSvg: 'M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25',
-        summary: 'Kajian struktur materi esensial Informatika yang adaptif, mengeliminasi potensi miskonsepsi logika komputasional, dan memadukan wawasan teknologi instruksional.',
+        summary: 'Kajian struktur materi esensial Algoritma Pemrograman dan Analisis Data yang dikorelasikan dengan instruksi kerja SOP permesinan dan presisi logika siswa Teknik Mesin SMKN 3 Yogyakarta.',
         criteria: [
-            'Kedalaman materi esensial dan hierarki instruksional Informatika Fase E',
-            'Penerapan wawasan TPACK dalam visualisasi materi pembelajaran digital',
-            'Relevansi kontekstual materi dengan literasi digital dan industri perfilman/broadcasting',
-            'Strategi preventif terhadap potensi miskonsepsi konsep teknologi & algoritma'
+            'Hierarki materi flowchart, percabangan if-else, dan looping',
+            'Kontekstualisasi algoritma dengan alur kerja mesin industri',
+            'Integrasi TPACK: Blockly Games, OnlineGDB, dan eksplorasi AI',
+            'Mitigasi miskonsepsi syntax memorization vs logic formulation'
         ],
-        formatLabel: 'Bahan Ajar Mandiri'
+        formatLabel: 'Bahan Ajar & Modul'
     },
     {
         id: 'media',
@@ -72,18 +72,18 @@ const sixDimensions = [
         category: 'media-video',
         categoryLabel: 'Media Instruksional',
         title: 'Analisis Media Pembelajaran yang Dipergunakan',
-        subtitle: 'Efektivitas Media Digital & Alat Peraga Fisik di Kelas',
-        status: 'Tersedia Desain',
+        subtitle: 'Ekosistem Hibrida: Web Cloud, Buku Manual, & Wayground',
+        status: 'Tuntas Dianalisis',
         statusClass: 'bg-emerald-100 text-emerald-800 border-emerald-200',
         path: '/artefak/ppl-2/analisis-media',
         iconBg: 'bg-emerald-50 text-emerald-600',
         iconSvg: 'M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3',
-        summary: 'Evaluasi pemilihan serta pemanfaatan media digital interaktif dan platform instruksional dalam menstimulasi eksplorasi mandiri, keterlibatan kelas, dan pemahaman konsep siswa.',
+        summary: 'Evaluasi pemilihan ekosistem media multi-modal: Google Docs untuk agenda, buku tulis manual untuk catatan anti-copas, slide PPT konfirmasi, kuis kompetitif Wayground, dan cloud IDE OnlineGDB.',
         criteria: [
-            'Ketepatan media dalam memperjelas capaian tujuan pembelajaran informatika',
-            'Dukungan media terhadap gaya belajar visual, auditori, & hands-on praktik komputer',
-            'Efisiensi setup perangkat, laboratorium/kelas, dan aksesibilitas siswa',
-            'Daya dukung media dalam memberikan interaksi dan umpan balik belajar langsung'
+            'Efektivitas gamifikasi Wayground mendongkrak antusiasme kelas',
+            'Kombinasi web browser dan catatan buku fisik anti-distraksi',
+            'Efisiensi setup cloud zero-installation di lab komputer',
+            'Pemanfaatan modul cheatsheet PDF dan asistensi terarah AI'
         ],
         formatLabel: 'Katalog Alat & Media'
     },
@@ -93,18 +93,18 @@ const sixDimensions = [
         category: 'media-video',
         categoryLabel: 'Rekaman Video',
         title: 'Analisis Video Pelaksanaan Praktik Mengajar',
-        subtitle: 'Refleksi Rekaman Pembelajaran Utuh & Suntingan Terpilih',
-        status: 'Dalam Perekaman',
+        subtitle: 'Refleksi Menit ke Menit, Active Roaming, & Scaffolding',
+        status: 'Tuntas Dianalisis',
         statusClass: 'bg-amber-100 text-amber-800 border-amber-200',
         path: '/artefak/ppl-2/analisis-video',
         iconBg: 'bg-amber-50 text-amber-700',
         iconSvg: 'm15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z',
-        summary: 'Dokumentasi visual performa mengajar mandiri saya di kelas secara utuh (Full) dan suntingan (15–20 menit), dilengkapi analisis menit ke menit pada fase pendahuluan, inti, dan penutup.',
+        summary: 'Dokumentasi performa mengajar mandiri di kelas X TM 1 & X TM 2: ketegasan apersepsi Google Docs, manajemen keliling kelas (active roaming) memeriksa catatan, dan penutupan dengan exit ticket.',
         criteria: [
-            'Keterampilan membuka pelajaran, presensi, & apersepsi pemantik',
-            'Penguasaan manajemen kelas, dinamika kelompok, & scaffolding',
-            'Kejelasan artikulasi bicara, bahasa tubuh, dan interaksi humanis',
-            'Teknik penutupan kelas, penarikan kesimpulan, & refleksi siswa'
+            'Kejelasan apersepsi dan kontrak belajar di awal sesi',
+            'Manajemen keliling kelas (active roaming) dan scaffolding 1-on-1',
+            'Kecakapan validasi konsep dan fasilitasi diskusi terbuka',
+            'Refleksi metakognitif siswa dan penjaringan feedback via exit ticket'
         ],
         formatLabel: 'Video Full & 15 Menit'
     },
@@ -114,18 +114,18 @@ const sixDimensions = [
         category: 'evaluasi',
         categoryLabel: 'Nonmengajar',
         title: 'Analisis Kegiatan Nonmengajar',
-        subtitle: 'Partisipasi Budaya Positif, Piket, & Ekosistem Sekolah',
-        status: 'Sedang Berjalan',
+        subtitle: 'Piket 5S & KBM, Kepanitiaan, serta Inovasi SIBENKA & SIPENSI',
+        status: 'Tuntas Dianalisis',
         statusClass: 'bg-teal-100 text-teal-800 border-teal-200',
         path: '/artefak/ppl-2/analisis-kegiatan-nonmengajar',
         iconBg: 'bg-teal-50 text-teal-600',
         iconSvg: 'M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342',
-        summary: 'Laporan keterlibatan aktif saya dalam tata kelola SMK Negeri 3 Yogyakarta di luar jam mengajar formal: pelaksanaan tugas piket harian, pembinaan kesiswaan, ekstrakurikuler, dan komunitas belajar guru.',
+        summary: 'Dedikasi holistik di SMKN 3 Yogyakarta: Piket 5S pagi, Piket KBM harian, kepanitiaan 17-an, HUT Skagata, serta rancang bangun inovasi sistem informasi digital SIBENKA dan SIPENSI.',
         criteria: [
-            'Kedisiplinan pelaksanaan piket harian & pelayanan ketertiban presensi siswa',
-            'Pendampingan pembiasaan positif, apel pagi, upacara bendera, & budaya industri sekolah',
-            'Pembinaan kegiatan ekstrakurikuler serta penguatan karakter profil pelajar Pancasila',
-            'Kolaborasi dalam pertemuan komunitas guru mitra / MGMP Informatika sekolah'
+            'Kedisiplinan pelaksanaan piket 5S gerbang dan piket KBM',
+            'Partisipasi kepanitiaan HUT RI ke-79 dan Dies Natalis sekolah',
+            'Pengembangan aplikasi web sistem informasi SIBENKA',
+            'Pengembangan aplikasi web presensi dan kesiswaan SIPENSI'
         ],
         formatLabel: 'Jurnal & Dokumentasi'
     },
@@ -135,18 +135,18 @@ const sixDimensions = [
         category: 'evaluasi',
         categoryLabel: 'Asesmen',
         title: 'Instrumen Penilaian yang Dirancang & Analisisnya',
-        subtitle: 'Kisi-kisi Asesmen Otentik, Rubrik 3 Ranah, & Evaluasi Belajar',
-        status: 'Validasi Pamong',
+        subtitle: 'Multi-Metode: Catatan Manual, Wayground, OnlineGDB, & Exit Ticket',
+        status: 'Tuntas Dianalisis',
         statusClass: 'bg-emerald-100 text-emerald-800 border-emerald-200',
         path: '/artefak/ppl-2/analisis-instrumen-penilaian',
         iconBg: 'bg-emerald-50 text-emerald-600',
         iconSvg: 'M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z',
-        summary: 'Instrumen komprehensif penilaian sikap, pengetahuan, dan keterampilan praktik digital/komputer beserta pengolahan data daya serap siswa, analisis butir evaluasi, serta tindak lanjut remedial dan pengayaan.',
+        summary: 'Sistem asesmen multi-metode: catatan tertulis orisinal, flowchart, kuis gamifikasi Wayground, evaluasi koding OnlineGDB, presentasi kelompok analisis data, serta exit ticket.',
         criteria: [
-            'Kisi-kisi dan butir asesmen kognitif kontekstual berorientasi HOTS',
-            'Rubrik penilaian unjuk kerja praktik komputer / produk digital yang objektif',
-            'Lembar observasi perkembangan sikap & Profil Pelajar Pancasila',
-            'Tabulasi ketuntasan klasikal dan perancangan program remedial'
+            'Rubrik orisinalitas catatan buku dan diagram alir (flowchart)',
+            'Analisis butir soal cepat melalui kuis gamifikasi Wayground',
+            'Rubrik kinerja koding OnlineGDB dan modifikasi kreatif AI',
+            'Analisis daya serap ketuntasan belajar dan program remedial'
         ],
         formatLabel: 'Rubrik & Rekap Nilai'
     }
@@ -204,19 +204,19 @@ const closePreview = () => {
                 <p class="text-xs text-stone-500 mt-1">Analisis Kritis Wajib</p>
             </div>
             <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
-                <span class="text-xs font-bold uppercase text-emerald-600">Fokus Praktik</span>
-                <div class="text-2xl font-bold text-stone-800 mt-1">Mandiri Penuh</div>
-                <p class="text-xs text-stone-500 mt-1">Otonomi Guru Kelas</p>
+                <span class="text-xs font-bold uppercase text-emerald-600">Sasaran Mengajar</span>
+                <div class="text-2xl font-bold text-stone-800 mt-1">X TM 1 & 2</div>
+                <p class="text-xs text-stone-500 mt-1">Teknik Mesin SMKN 3</p>
             </div>
             <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
-                <span class="text-xs font-bold uppercase text-stone-400">LPTK Pembina</span>
-                <div class="text-lg font-bold text-stone-800 mt-1 truncate">UNY Yogyakarta</div>
-                <p class="text-xs text-stone-500 mt-1">Informatika • SMK N 3 Yogyakarta</p>
+                <span class="text-xs font-bold uppercase text-stone-400">Guru Pamong</span>
+                <div class="text-lg font-bold text-stone-800 mt-1 truncate">Febriyana, S.T.</div>
+                <p class="text-xs text-stone-500 mt-1">LPTK UNY Yogyakarta</p>
             </div>
             <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
-                <span class="text-xs font-bold uppercase text-stone-400">Status Portofolio</span>
-                <div class="text-base font-bold text-teal-700 mt-1">Proses Berjalan</div>
-                <p class="text-xs text-stone-500 mt-1">Siap Diisi Berkala</p>
+                <span class="text-xs font-bold uppercase text-teal-600">Status Portofolio</span>
+                <div class="text-base font-bold text-teal-700 mt-1">Tuntas Dianalisis</div>
+                <p class="text-xs text-stone-500 mt-1">6 Dimensi Lengkap</p>
             </div>
         </section>
 
@@ -224,18 +224,18 @@ const closePreview = () => {
         <div class="bg-gradient-to-r from-teal-50 via-emerald-50 to-stone-50 border border-teal-200/70 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-sm">
             <div class="space-y-2 max-w-2xl">
                 <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-teal-100 text-teal-800 text-xs font-bold rounded-full uppercase tracking-wider">
-                    Paradigma Praktik Mandiri
+                    Evolusi Praktik Mandiri
                 </div>
                 <h3 class="text-xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
-                    Transisi dari Praktik Terbimbing Menuju Pendidik Otonom
+                    Guided Discovery & Active Note-Taking di Kelas X Teknik Mesin
                 </h3>
                 <p class="text-stone-600 text-sm leading-relaxed">
-                    Jika pada PPL I saya berfokus pada asistensi mengajar terbimbing, maka pada PPL II ini saya memegang tanggung jawab penuh dalam merancang, melaksanakan, mengevaluasi, serta merefleksikan seluruh proses instruksional dan nonmengajar di sekolah mitra secara analitis.
+                    Mengevaluasi pasivitas membaca pada PPL I, di PPL II saya mentransformasikan strategi instruksional menjadi <strong>Guided Discovery</strong>: siswa menelusuri materi online lalu merangkum manual dengan bahasa sendiri di buku fisik, dikonfirmasi melalui slide PPT dan kuis interaktif <strong>Wayground</strong>, serta praktik koding mandiri pada <strong>OnlineGDB</strong>.
                 </p>
             </div>
             <div class="flex-shrink-0">
                 <span class="px-4 py-2 bg-white text-teal-700 font-bold text-xs uppercase tracking-wider rounded-xl border border-teal-200 shadow-xs inline-block">
-                    Standar PPG Calon Guru
+                    SMKN 3 Yogyakarta
                 </span>
             </div>
         </div>
@@ -358,20 +358,20 @@ const closePreview = () => {
                 </div>
 
                 <h3 class="text-xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
-                    Dokumentasi Rekaman Video Pembelajaran
+                    Dokumentasi Rekaman Video Mengajar Kelas X TM
                 </h3>
                 <p class="text-stone-600 text-sm leading-relaxed text-justify">
-                    Wadah terpadu untuk menyematkan tautan rekaman video mengajar utuh (un-edited) serta cuplikan pembelajaran terpilih (15–20 menit) untuk keperluan supervisi DPL dan Guru Pamong.
+                    Dokumentasi rekaman performa mengajar mandiri utuh dan editan 15–20 menit di laboratorium komputer: apersepsi agenda Google Docs, pemantauan keliling catatan manual, validasi PPT, kuis Wayground, dan penutupan dengan exit ticket.
                 </p>
 
                 <!-- Box Placeholder Video -->
                 <div class="p-5 rounded-2xl bg-stone-900 text-white space-y-3">
                     <div class="flex items-center justify-between text-xs text-stone-400">
-                        <span>Status Rekaman: Terjadwal Siklus Praktik</span>
-                        <span class="text-amber-400 font-semibold">YouTube / Google Drive</span>
+                        <span>Fokus: Kelas X TM 1 & X TM 2</span>
+                        <span class="text-amber-400 font-semibold">Tuntas Dilaksanakan</span>
                     </div>
                     <p class="text-xs text-stone-300 leading-relaxed">
-                        Tautan video utuh dan video editan berdurasi 15-20 menit siap disematkan langsung saat siklus praktik mengajar mandiri tuntas direkam.
+                        Analisis menit ke menit tersusun lengkap membedah efektivitas active roaming guru, kedisiplinan lab, dan respon antusias siswa terhadap kuis Wayground.
                     </p>
                     <NuxtLink to="/artefak/ppl-2/analisis-video"
                         class="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 hover:text-emerald-300 transition-colors pt-1">
@@ -393,20 +393,20 @@ const closePreview = () => {
                 </div>
 
                 <h3 class="text-xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
-                    Sistem Evaluasi Belajar & Kontribusi Sekolah
+                    Sistem Evaluasi Multi-Metode & Inovasi Sekolah
                 </h3>
                 <p class="text-stone-600 text-sm leading-relaxed text-justify">
-                    Menghimpun kisi-kisi asesmen otentik, rubrik evaluasi tiga ranah (afektif, kognitif, psikomotorik), serta laporan catatan harian piket dan pembinaan ekstrakurikuler kesiswaan.
+                    Menghimpun rubrik evaluasi multi-metode (catatan manual, flowchart, kuis Wayground, OnlineGDB, dan presentasi kelompok) serta rekam jejak piket 5S, KBM, dan inovasi aplikasi web SIBENKA dan SIPENSI.
                 </p>
 
                 <!-- Box Placeholder Asesmen -->
                 <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200 space-y-3">
                     <div class="flex items-center justify-between text-xs text-stone-500 font-medium">
-                        <span>Format: Kisi-kisi, Rubrik & Rekap Tabulasi</span>
-                        <span class="text-teal-700 font-semibold">Tervalidasi Pamong</span>
+                        <span>Inovasi: SIBENKA & SIPENSI</span>
+                        <span class="text-teal-700 font-semibold">Tervalidasi Lengkap</span>
                     </div>
                     <p class="text-xs text-stone-600 leading-relaxed">
-                        Data evaluasi daya serap peserta didik dan analisis butir soal telah disiapkan wadahnya dan siap ditautkan dengan spreadsheet/PDF laporan.
+                        Data evaluasi ketuntasan klasikal >88%, rekapitulasi respon exit ticket 92% positif, dan dokumentasi kontribusi digital bagi SMKN 3 Yogyakarta.
                     </p>
                     <NuxtLink to="/artefak/ppl-2/analisis-instrumen-penilaian"
                         class="inline-flex items-center gap-2 text-xs font-bold text-teal-700 hover:text-teal-900 transition-colors pt-1">

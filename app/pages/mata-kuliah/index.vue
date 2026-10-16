@@ -25,16 +25,16 @@ const courses = [
         id: 'ppl-2',
         title: 'PPL II (Praktik Mandiri)',
         subtitle: 'Praktik Pengalaman Lapangan II',
-        status: 'Sedang Berjalan',
+        status: 'Tuntas Dianalisis',
         statusClass: 'bg-teal-100 text-teal-800',
-        score: 'Proses PPL',
+        score: '6 Dimensi Lengkap',
         to: '/mata-kuliah/ppl-2',
-        desc: 'Fase pelaksanaan mengajar mandiri penuh di sekolah mitra yang memuat 6 dimensi analisis kritis: perencanaan, materi, media, video praktik, nonmengajar, dan asesmen.',
+        desc: 'Fase mengajar mandiri di kelas X TM 1 & X TM 2 SMKN 3 Yogyakarta (Algoritma Pemrograman & Analisis Data) memuat 6 dimensi analisis kritis dan inovasi SIBENKA & SIPENSI.',
         highlights: [
-            'Analisis Perencanaan & Materi Mandiri',
-            'Analisis Media & Rekaman Video Praktik',
-            'Analisis Kegiatan Nonmengajar & Persekolahan',
-            'Instrumen Penilaian & Evaluasi Hasil Belajar'
+            'Guided Discovery & Active Note-Taking (X TM 1 & 2)',
+            'Media Interaktif: Wayground, OnlineGDB, & Blockly',
+            'Analisis Video Menit ke Menit & Active Roaming',
+            'Nonmengajar & Inovasi Web: SIBENKA & SIPENSI'
         ]
     },
     {

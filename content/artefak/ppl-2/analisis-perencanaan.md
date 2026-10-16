@@ -72,7 +72,7 @@ Perencanaan yang saya susun memperlihatkan progresi bertahap:
 ## 4. Evaluasi Kritis atas Keselarasan Perangkat
 
 Berdasarkan telaah perangkat dan supervisi bersama Guru Pamong (Ibu **Febriyana, S.T.**) dan DPL:
-- **Kekuatan Modul**: Pembagian fase yang jelas (Eksplorasi $\rightarrow$ Catatan Mandiri $\rightarrow$ Konfirmasi Klasikal $\rightarrow$ Gamifikasi) sangat efektif mereduksi perilaku pasif siswa dan meminimalkan celah pengawasan guru (*blind spot*).
+- **Kekuatan Modul**: Pembagian fase yang jelas (Eksplorasi → Catatan Mandiri → Konfirmasi Klasikal → Gamifikasi) sangat efektif mereduksi perilaku pasif siswa dan meminimalkan celah pengawasan guru (*blind spot*).
 - **Fleksibilitas Alokasi Waktu**: Penyediaan panduan ringkas *cheatsheet* sangat membantu menghemat waktu instruksi tatap muka, sehingga porsi waktu terbesar (60-70%) dialokasikan untuk latihan terbimbing dan pendampingan individu.
 - **Integrasi Asesmen Autentik**: Perangkat tidak hanya mengukur capaian kognitif akhir, melainkan mencakup penilaian proses pada buku catatan siswa, keterlibatan diskusi, kepatuhan rundown Google Docs, dan pengisian *exit ticket*.
 

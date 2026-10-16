@@ -7,6 +7,23 @@ status: "completed"
 date: "2026-10-16"
 badge: "Dimensi 05 - Nonmengajar"
 color: "teal"
+attachments:
+  - title: "Surat Tugas & Rekapitulasi Kegiatan Nonmengajar PPL II"
+    type: "pdf"
+    url: "/dokumen/ppl-2/surat-tugas-piket-nonmengajar.pdf"
+    size: "99 KB"
+    badge: "Surat Tugas Resmi"
+    description: "Rekapitulasi resmi penugasan piket 5S, piket KBM, kepanitiaan HUT RI, serta inovasi SIBENKA dan SIPENSI."
+  - title: "Inovasi Sistem Informasi Bengkel Mesin (SIBENKA)"
+    type: "link"
+    url: "https://github.com/yodi-dev"
+    badge: "Inovasi Web"
+    description: "Dokumentasi dan repositori sistem informasi inventaris bengkel teknik mesin SMKN 3 Yogyakarta."
+  - title: "Inovasi Sistem Presensi Kesiswaan (SIPENSI)"
+    type: "link"
+    url: "https://github.com/yodi-dev"
+    badge: "Inovasi Web"
+    description: "Aplikasi pencatatan kehadiran dan pembinaan ketertiban siswa SMKN 3 Yogyakarta."
 ---
 
 ## 1. Integrasi Holistik dalam Ekosistem Satuan Pendidikan

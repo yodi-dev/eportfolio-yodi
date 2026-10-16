@@ -63,6 +63,21 @@ const goBack = () => {
         router.push('/artefak')
     }
 }
+
+// State untuk pratinjau PDF in-browser modal
+const isPdfModalOpen = ref(false)
+const activePdfTitle = ref('')
+const activePdfUrl = ref('')
+
+const openPdfPreview = (file) => {
+    activePdfTitle.value = file.title || 'Dokumen Asli'
+    activePdfUrl.value = file.url
+    isPdfModalOpen.value = true
+}
+
+const closePdfPreview = () => {
+    isPdfModalOpen.value = false
+}
 </script>
 
 <template>
@@ -151,6 +166,13 @@ const goBack = () => {
                 <ContentRenderer :value="doc" />
             </div>
 
+            <!-- Wadah Dokumen Asli & Berkas Bukti Fisik (Evidence Vault) -->
+            <ArtefakAttachments
+                v-if="doc.attachments && doc.attachments.length > 0"
+                :attachments="doc.attachments"
+                @preview="openPdfPreview"
+            />
+
             <!-- Navigasi Sekuensial Next / Previous Artifact -->
             <div v-if="prevDoc || nextDoc" class="mt-14 pt-8 border-t border-stone-200/80 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <NuxtLink v-if="prevDoc" :to="prevDoc.path"
@@ -197,6 +219,14 @@ const goBack = () => {
                 </div>
             </div>
         </article>
+
+        <!-- Modal Pratinjau Dokumen PDF -->
+        <PdfViewerModal
+            :is-open="isPdfModalOpen"
+            :title="activePdfTitle"
+            :file-url="activePdfUrl"
+            @close="closePdfPreview"
+        />
 
     </div>
 </template>

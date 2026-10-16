@@ -58,16 +58,27 @@
                     <p class="text-stone-500 text-xs mt-0.5">Penilaian rancangan pembelajaran oleh GP untuk tahapan
                         asistensi/praktik.</p>
                 </div>
-                <a href="/Lampiran7.pdf" target="_blank"
-                    class="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-stone-700 font-semibold text-sm rounded-xl border border-stone-200 shadow-sm hover:bg-stone-50 hover:text-emerald-700 hover:border-emerald-200 transition-all group">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor"
-                        class="w-4 h-4 text-stone-400 group-hover:text-emerald-600 transition-colors">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                    </svg>
-                    Unduh Lampiran 7 PPLT.pdf
-                </a>
+                <div class="flex items-center gap-2">
+                    <button @click="openPdfPreview('Lampiran 7: Penilaian Rancangan Pembelajaran', '/Lampiran7.pdf')"
+                        type="button"
+                        class="inline-flex items-center gap-1.5 px-4 py-2.5 bg-emerald-50 text-emerald-800 font-semibold text-sm rounded-xl border border-emerald-200 hover:bg-emerald-100 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                        Pratinjau Layar
+                    </button>
+                    <a href="/Lampiran7.pdf" target="_blank" download
+                        class="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-stone-700 font-semibold text-sm rounded-xl border border-stone-200 shadow-sm hover:bg-stone-50 hover:text-emerald-700 hover:border-emerald-200 transition-all group">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor"
+                            class="w-4 h-4 text-stone-400 group-hover:text-emerald-600 transition-colors">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
+                        Unduh PDF
+                    </a>
+                </div>
             </div>
 
             <div
@@ -118,16 +129,27 @@
                     <p class="text-stone-500 text-xs mt-0.5">Penilaian praktik mengajar untuk tahapan pembelajaran
                         terbimbing.</p>
                 </div>
-                <a href="/Lampiran8.pdf" target="_blank"
-                    class="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-stone-700 font-semibold text-sm rounded-xl border border-stone-200 shadow-sm hover:bg-stone-50 hover:text-emerald-700 hover:border-emerald-200 transition-all group">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor"
-                        class="w-4 h-4 text-stone-400 group-hover:text-emerald-600 transition-colors">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                    </svg>
-                    Unduh Lampiran 8 PPLT.pdf
-                </a>
+                <div class="flex items-center gap-2">
+                    <button @click="openPdfPreview('Lampiran 8: Penilaian Praktik Mengajar', '/Lampiran8.pdf')"
+                        type="button"
+                        class="inline-flex items-center gap-1.5 px-4 py-2.5 bg-emerald-50 text-emerald-800 font-semibold text-sm rounded-xl border border-emerald-200 hover:bg-emerald-100 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                        Pratinjau Layar
+                    </button>
+                    <a href="/Lampiran8.pdf" target="_blank" download
+                        class="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-stone-700 font-semibold text-sm rounded-xl border border-stone-200 shadow-sm hover:bg-stone-50 hover:text-emerald-700 hover:border-emerald-200 transition-all group">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor"
+                            class="w-4 h-4 text-stone-400 group-hover:text-emerald-600 transition-colors">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
+                        Unduh PDF
+                    </a>
+                </div>
             </div>
 
             <div
@@ -176,6 +198,14 @@
                 kurang sempurna mendapat skor 1, dan tidak munculnya deskriptor mendapat skor 0.</p>
         </footer>
 
+        <!-- Modal Pratinjau Dokumen PDF -->
+        <PdfViewerModal
+            :is-open="isPdfModalOpen"
+            :title="activePdfTitle"
+            :file-url="activePdfUrl"
+            @close="closePdfPreview"
+        />
+
     </div>
 </template>
 
@@ -188,6 +218,21 @@ useSeoMeta({
 })
 
 const activeTab = ref('lampiran7')
+
+// State modal pratinjau PDF in-browser
+const isPdfModalOpen = ref(false)
+const activePdfTitle = ref('')
+const activePdfUrl = ref('')
+
+const openPdfPreview = (title, url) => {
+    activePdfTitle.value = title
+    activePdfUrl.value = url
+    isPdfModalOpen.value = true
+}
+
+const closePdfPreview = () => {
+    isPdfModalOpen.value = false
+}
 
 // Data Riil Lampiran 7 (Rancangan Pembelajaran Ke-1)
 const aspekLampiran7 = ref([

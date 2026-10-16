@@ -7,6 +7,18 @@ status: "completed"
 date: "2026-10-16"
 badge: "Dimensi 03 - Media Instruksional"
 color: "teal"
+attachments:
+  - title: "Panduan Praktik Zero-Installation (OnlineGDB & C++)"
+    type: "pdf"
+    url: "/dokumen/ppl-2/panduan-praktik-onlinegdb.pdf"
+    size: "100 KB"
+    badge: "Panduan Media"
+    description: "Cheatsheet petunjuk pengoperasian media web IDE tanpa instalasi lokal di laboratorium komputer."
+  - title: "Platform Evaluasi Gamifikasi Wayground"
+    type: "link"
+    url: "https://wayground.com"
+    badge: "Kuis Interaktif"
+    description: "Sistem asesmen formatif interaktif berbasis game untuk menguji pemahaman konsep algoritma."
 ---
 
 ## 1. Arsitektur Ekosistem Media Pembelajaran

@@ -165,6 +165,79 @@ const openPreview = (dim) => {
 const closePreview = () => {
     previewModal.value = null
 }
+
+// State & fungsi modal pratinjau PDF in-browser
+const isPdfModalOpen = ref(false)
+const activePdfTitle = ref('')
+const activePdfUrl = ref('')
+
+const openPdfPreview = (file) => {
+    activePdfTitle.value = file.title || 'Dokumen Asli'
+    activePdfUrl.value = file.url
+    isPdfModalOpen.value = true
+}
+
+const closePdfPreview = () => {
+    isPdfModalOpen.value = false
+}
+
+// Repositori Dokumen Otentik PPL II
+const documentRepository = [
+    {
+        title: 'Modul Ajar Praktik Mandiri: Algoritma & Pemrograman',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/modul-ajar-algoritma-pemrograman.pdf',
+        size: '127 KB',
+        badge: 'Modul Utama',
+        category: 'Perencanaan',
+        description: 'Perangkat pembelajaran mandiri Kurikulum Merdeka Fase E X TM SMKN 3 Yogyakarta.'
+    },
+    {
+        title: 'Modul Ajar Praktik Mandiri: Analisis Data',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/modul-ajar-analisis-data.pdf',
+        size: '101 KB',
+        badge: 'Modul Pengayaan',
+        category: 'Perencanaan',
+        description: 'Perangkat pembelajaran kolaboratif investigasi kelompok dan diskusi panel kelas.'
+    },
+    {
+        title: 'Lembar Kerja Peserta Didik (LKPD) Flowchart & Koding',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/lkpd-algoritma-flowchart.pdf',
+        size: '93 KB',
+        badge: 'LKPD Praktik',
+        category: 'Lembar Kerja',
+        description: 'Lembar kerja perancangan logika flowchart dan tantangan modifikasi kode C++.'
+    },
+    {
+        title: 'Cheatsheet & Panduan Praktik Pemrograman Cloud OnlineGDB',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/panduan-praktik-onlinegdb.pdf',
+        size: '100 KB',
+        badge: 'Bahan Ajar',
+        category: 'Media & Bahan',
+        description: 'Panduan zero-installation sintaks dasar C++, if-else, dan looping untuk lab komputer.'
+    },
+    {
+        title: 'Instrumen Asesmen Multi-Metode & Analisis Ketuntasan',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/rubrik-penilaian-multimetode.pdf',
+        size: '104 KB',
+        badge: 'Instrumen Asesmen',
+        category: 'Evaluasi',
+        description: 'Rubrik catatan orisinal, kisi-kisi Wayground, rubrik koding, dan rekap ketuntasan 90.3%.'
+    },
+    {
+        title: 'Surat Tugas & Rekapitulasi Kegiatan Nonmengajar',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/surat-tugas-piket-nonmengajar.pdf',
+        size: '99 KB',
+        badge: 'Surat Tugas',
+        category: 'Nonmengajar',
+        description: 'Rekapitulasi resmi penugasan piket 5S, piket KBM, kepanitiaan, dan inovasi sekolah.'
+    }
+]
 </script>
 
 <template>
@@ -416,6 +489,77 @@ const closePreview = () => {
             </div>
         </section>
 
+        <!-- Pusat Unduhan & Repositori Perangkat Pembelajaran Otentik (Evidence Vault) -->
+        <section class="bg-stone-50/90 p-6 md:p-10 rounded-3xl border border-stone-200/90 space-y-6">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-stone-200">
+                <div class="space-y-1">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full uppercase tracking-wider">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
+                        </svg>
+                        Evidence Vault • Perangkat Otentik
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-stone-900 font-serif">
+                        Pusat Repositori Perangkat Pembelajaran Mandiri
+                    </h2>
+                    <p class="text-stone-600 text-sm max-w-2xl leading-relaxed">
+                        Koleksi lengkap dokumen fisik dan digital asli pelaksanaan PPL II di SMK Negeri 3 Yogyakarta. Asesor dan dosen pembimbing dapat mempratinjau langsung dokumen PDF di layar atau mengunduh berkas master.
+                    </p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="px-3.5 py-1.5 bg-white text-stone-700 font-semibold text-xs rounded-xl border border-stone-200 shadow-xs">
+                        {{ documentRepository.length }} Dokumen Resmi Terverifikasi
+                    </span>
+                </div>
+            </div>
+
+            <!-- Grid Kartu Berkas Repositori -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div v-for="(file, fIdx) in documentRepository" :key="fIdx"
+                    class="bg-white p-5 rounded-2xl border border-stone-200 hover:border-emerald-300 hover:shadow-sm transition-all flex flex-col justify-between space-y-4 group">
+                    <div class="space-y-2.5">
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">
+                                {{ file.type.toUpperCase() }}
+                            </span>
+                            <span class="text-[11px] font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-md">
+                                {{ file.badge }}
+                            </span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-stone-400 block mb-0.5">{{ file.category }}</span>
+                            <h4 class="text-sm font-bold text-stone-900 group-hover:text-emerald-800 transition-colors line-clamp-2">
+                                {{ file.title }}
+                            </h4>
+                            <p class="text-xs text-stone-500 mt-1 line-clamp-2 leading-relaxed">
+                                {{ file.description }}
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-3 border-t border-stone-100 flex items-center justify-between gap-2">
+                        <button @click="openPdfPreview(file)"
+                            type="button"
+                            class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 rounded-xl transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+                            <span>Pratinjau Layar</span>
+                        </button>
+
+                        <a :href="file.url" download target="_blank"
+                            class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-stone-700 bg-stone-100 hover:bg-stone-200 rounded-xl transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5 text-stone-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                            </svg>
+                            <span>Unduh ({{ file.size }})</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Refleksi & Komitmen Menuju Seminar PPG -->
         <section class="bg-white p-8 md:p-10 rounded-3xl border border-stone-200/80 shadow-xs space-y-4">
             <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-stone-100 text-stone-700 text-xs font-bold rounded-full uppercase tracking-wider">
@@ -489,6 +633,14 @@ const closePreview = () => {
                 </div>
             </div>
         </div>
+
+        <!-- Modal Pratinjau Dokumen PDF -->
+        <PdfViewerModal
+            :is-open="isPdfModalOpen"
+            :title="activePdfTitle"
+            :file-url="activePdfUrl"
+            @close="closePdfPreview"
+        />
 
     </div>
 </template>

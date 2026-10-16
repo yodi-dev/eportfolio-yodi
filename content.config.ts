@@ -14,6 +14,14 @@ export default defineContentConfig({
                 date: z.string(),
                 badge: z.string().optional(),
                 color: z.string().optional(),
+                attachments: z.array(z.object({
+                    title: z.string(),
+                    type: z.enum(['pdf', 'docx', 'pptx', 'xlsx', 'drive', 'video', 'link']).default('pdf'),
+                    url: z.string(),
+                    size: z.string().optional(),
+                    badge: z.string().optional(),
+                    description: z.string().optional()
+                })).optional()
             })
         })
     }

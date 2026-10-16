@@ -7,6 +7,19 @@ status: "completed"
 date: "2026-10-16"
 badge: "Dimensi 02 - Materi Ajar"
 color: "teal"
+attachments:
+  - title: "Cheatsheet & Panduan Praktik Pemrograman C++ Cloud IDE"
+    type: "pdf"
+    url: "/dokumen/ppl-2/panduan-praktik-onlinegdb.pdf"
+    size: "100 KB"
+    badge: "Bahan Ajar"
+    description: "Panduan praktis sintaks dasar, percabangan if-else, dan looping C++ pada OnlineGDB."
+  - title: "Modul Ajar Pembelajaran Algoritma & Pemrograman"
+    type: "pdf"
+    url: "/dokumen/ppl-2/modul-ajar-algoritma-pemrograman.pdf"
+    size: "127 KB"
+    badge: "Rujukan Materi"
+    description: "Uraian capaian pembelajaran materi logika proposisi dan struktur kontrol pemrograman."
 ---
 
 ## 1. Rasional Pemilihan & Struktur Materi Esensial

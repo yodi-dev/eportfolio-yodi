@@ -7,6 +7,13 @@ date: "2026-10-16"
 badge: "Desain Inovasi Utama"
 color: "amber"
 status: "in-progress"
+attachments:
+  - title: "Naskah Akademik Desain Inovasi Pembelajaran Seminar PPG"
+    type: "pdf"
+    url: "/dokumen/seminar/naskah-desain-inovasi-pembelajaran.pdf"
+    size: "95 KB"
+    badge: "Naskah Seminar"
+    description: "Dokumen proposal akademik inovasi pembelajaran berbasis EdTech, Guided Discovery, dan gamifikasi digital."
 ---
 
 ## 1. Latar Belakang & Identifikasi Tantangan Empiris

@@ -7,6 +7,17 @@ status: "completed"
 date: "2026-10-16"
 badge: "Dimensi 04 - Video Praktik"
 color: "teal"
+attachments:
+  - title: "Dokumentasi Video Mengajar Mandiri Kelas X TM (Rekaman Utuh)"
+    type: "video"
+    url: "https://www.youtube.com"
+    badge: "Video Full"
+    description: "Rekaman video pelaksanaan praktik mandiri tanpa potongan di laboratorium komputer SMKN 3 Yogyakarta."
+  - title: "Video Pelaksanaan Praktik Mandiri Pilihan (Editing 15 Menit)"
+    type: "video"
+    url: "https://www.youtube.com"
+    badge: "Video Supervisi"
+    description: "Kompilasi video teredit 15 menit memuat apersepsi, active roaming, konfirmasi PPT, dan exit ticket."
 ---
 
 ## 1. Dokumentasi Audio-Visual & Refleksi Mengajar Mandiri

@@ -7,6 +7,19 @@ status: "completed"
 date: "2026-10-16"
 badge: "Dimensi 06 - Asesmen & Evaluasi"
 color: "teal"
+attachments:
+  - title: "Instrumen Penilaian Multi-Metode & Analisis Ketuntasan"
+    type: "pdf"
+    url: "/dokumen/ppl-2/rubrik-penilaian-multimetode.pdf"
+    size: "104 KB"
+    badge: "Instrumen Asesmen"
+    description: "Rubrik catatan orisinal, kisi-kisi Wayground, rubrik koding OnlineGDB, dan rekap ketuntasan klasikal (>90%)."
+  - title: "Lembar Kerja Peserta Didik (LKPD) Flowchart & Koding"
+    type: "pdf"
+    url: "/dokumen/ppl-2/lkpd-algoritma-flowchart.pdf"
+    size: "93 KB"
+    badge: "LKPD Asli"
+    description: "Lembar kerja peserta didik untuk perancangan diagram alir logika dan konversi program C++."
 ---
 
 ## 1. Paradigma Asesmen Autentik Multi-Metode

@@ -1,139 +1,494 @@
 <script setup>
+import { ref, computed } from 'vue'
+
 useSeoMeta({
-    title: 'Portofolio PPL II (Praktik Mandiri)',
-    description: 'Dokumentasi Praktik Pengalaman Lapangan II (PPL II) Yodi Irawan: Pembelajaran mandiri, studi kasus bimbingan siswa, dan asesmen komprehensif.'
+    title: 'Portofolio PPL II (Praktik Mandiri & 6 Dimensi Analisis)',
+    description: 'Dokumentasi lengkap Praktik Pengalaman Lapangan II (PPL II) Yodi Irawan: 6 dimensi analisis kritis rancangan pembelajaran, materi, media, video praktik, kegiatan nonmengajar, dan instrumen penilaian.'
 })
 
+// Query artefak dinamis PPL II dari Content v3
 const { data: ppl2List } = await useAsyncData('artefak-ppl2', () =>
     queryCollection('artefak').where('course', '=', 'ppl-2').all()
 )
 
-const roadmapPPL2 = [
+// Kategori Filter
+const activeFilter = ref('all')
+const previewModal = ref(null)
+
+const categories = [
+    { id: 'all', label: 'Semua Dimensi (6)' },
+    { id: 'perangkat', label: 'Perencanaan & Materi' },
+    { id: 'media-video', label: 'Media & Video Praktik' },
+    { id: 'evaluasi', label: 'Persekolahan & Asesmen' }
+]
+
+// 6 Dimensi Analisis Wajib Luaran PPL II
+const sixDimensions = [
     {
-        title: 'Praktik Mengajar Mandiri Penuh',
-        desc: 'Pelaksanaan pembelajaran mandiri secara utuh di kelas dengan penguasaan manajemen kelas komprehensif dan strategi diferensiasi.',
-        status: 'Tahap Berjalan'
+        id: 'perencanaan',
+        number: '01',
+        category: 'perangkat',
+        categoryLabel: 'Perencanaan',
+        title: 'Analisis Produk Perencanaan Pembelajaran',
+        subtitle: 'Telaah Kritis Desain Modul Ajar Mandiri & Diferensiasi',
+        status: 'Tersedia Draf',
+        statusClass: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+        path: '/artefak/ppl-2/analisis-perencanaan',
+        iconBg: 'bg-emerald-50 text-emerald-600',
+        iconSvg: 'M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z',
+        summary: 'Analisis mendalam terhadap integrasi Capaian Pembelajaran (CP), kesiapan awal peserta didik berbasis asesmen diagnostik, serta formulasi pembelajaran berdiferensiasi pada praktik mandiri saya.',
+        criteria: [
+            'Kesesuaian alur tujuan pembelajaran dengan karakteristik peserta didik',
+            'Integrasi diferensiasi konten, proses, dan produk pembelajaran',
+            'Rencana alokasi waktu dan skenario mitigasi kendala di kelas',
+            'Ketepatan pemilihan model active learning berpusat pada siswa'
+        ],
+        formatLabel: 'Modul Ajar (PDF/DOCX)'
     },
     {
-        title: 'Studi Kasus Penanganan Peserta Didik',
-        desc: 'Analisis diagnostik mendalam terhadap dinamika belajar siswa serta perancangan intervensi pedagogis yang solutif.',
-        status: 'Proses Penyusunan'
+        id: 'materi',
+        number: '02',
+        category: 'perangkat',
+        categoryLabel: 'Materi Ajar',
+        title: 'Analisis Materi Pembelajaran yang Diterapkan',
+        subtitle: 'Penguasaan Konsep Esensial, TPACK, & Kontekstualisasi',
+        status: 'Proses Analisis',
+        statusClass: 'bg-teal-100 text-teal-800 border-teal-200',
+        path: '/artefak/ppl-2/analisis-materi',
+        iconBg: 'bg-teal-50 text-teal-600',
+        iconSvg: 'M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25',
+        summary: 'Kajian struktur materi esensial Pendidikan Jasmani & Olahraga yang adaptif, mengeliminasi potensi miskonsepsi gerak, dan memadukan wawasan teknologi instruksional.',
+        criteria: [
+            'Kedalaman materi esensial dan hierarki instruksional konsep gerak',
+            'Penerapan wawasan TPACK dalam visualisasi materi pembelajaran',
+            'Relevansi kontekstual materi dengan kebugaran dan kehidupan siswa',
+            'Strategi preventif terhadap potensi miskonsepsi motorik siswa'
+        ],
+        formatLabel: 'Bahan Ajar Mandiri'
     },
     {
-        title: 'Observasi Lingkungan & Budaya Sekolah',
-        desc: 'Kajian terhadap iklim persekolahan mitra, partisipasi dalam komunitas belajar guru, dan pembiasaan budaya positif.',
-        status: 'Proses Observasi'
+        id: 'media',
+        number: '03',
+        category: 'media-video',
+        categoryLabel: 'Media Instruksional',
+        title: 'Analisis Media Pembelajaran yang Dipergunakan',
+        subtitle: 'Efektivitas Media Digital & Alat Peraga Fisik di Kelas',
+        status: 'Tersedia Desain',
+        statusClass: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+        path: '/artefak/ppl-2/analisis-media',
+        iconBg: 'bg-emerald-50 text-emerald-600',
+        iconSvg: 'M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3',
+        summary: 'Evaluasi pemilihan serta pemanfaatan media instruksional fisik di lapangan maupun media digital interaktif dalam menstimulasi keaktifan gerak, keterlibatan kelas, dan pemahaman konsep siswa.',
+        criteria: [
+            'Ketepatan media dalam memperjelas capaian tujuan pembelajaran',
+            'Dukungan media terhadap gaya belajar visual, auditori, & kinestetik',
+            'Efisiensi setup dan keamanan penggunaan media bagi seluruh siswa',
+            'Daya dukung media dalam memberikan umpan balik performa langsung'
+        ],
+        formatLabel: 'Katalog Alat & Media'
     },
     {
-        title: 'Asesmen & Refleksi Mandiri Komprehensif',
-        desc: 'Evaluasi ketercapaian tujuan pembelajaran, pengolahan data asesmen otentik, dan refleksi perbaikan kualitas mengajar.',
-        status: 'Tahap Evaluasi'
+        id: 'video',
+        number: '04',
+        category: 'media-video',
+        categoryLabel: 'Rekaman Video',
+        title: 'Analisis Video Pelaksanaan Praktik Mengajar',
+        subtitle: 'Refleksi Rekaman Pembelajaran Utuh & Suntingan Terpilih',
+        status: 'Dalam Perekaman',
+        statusClass: 'bg-amber-100 text-amber-800 border-amber-200',
+        path: '/artefak/ppl-2/analisis-video',
+        iconBg: 'bg-amber-50 text-amber-700',
+        iconSvg: 'm15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z',
+        summary: 'Dokumentasi visual performa mengajar mandiri saya di kelas secara utuh (Full) dan suntingan (15–20 menit), dilengkapi analisis menit ke menit pada fase pendahuluan, inti, dan penutup.',
+        criteria: [
+            'Keterampilan membuka pelajaran, presensi, & apersepsi pemantik',
+            'Penguasaan manajemen kelas, dinamika kelompok, & scaffolding',
+            'Kejelasan artikulasi bicara, bahasa tubuh, dan interaksi humanis',
+            'Teknik penutupan kelas, penarikan kesimpulan, & refleksi siswa'
+        ],
+        formatLabel: 'Video Full & 15 Menit'
+    },
+    {
+        id: 'nonmengajar',
+        number: '05',
+        category: 'evaluasi',
+        categoryLabel: 'Nonmengajar',
+        title: 'Analisis Kegiatan Nonmengajar',
+        subtitle: 'Partisipasi Budaya Positif, Piket, & Ekosistem Sekolah',
+        status: 'Sedang Berjalan',
+        statusClass: 'bg-teal-100 text-teal-800 border-teal-200',
+        path: '/artefak/ppl-2/analisis-kegiatan-nonmengajar',
+        iconBg: 'bg-teal-50 text-teal-600',
+        iconSvg: 'M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342',
+        summary: 'Laporan keterlibatan aktif saya dalam tata kelola sekolah mitra di luar jam mengajar formal: pelaksanaan tugas piket harian, pembinaan kesiswaan, ekstrakurikuler, dan komunitas belajar guru.',
+        criteria: [
+            'Kedisiplinan pelaksanaan piket harian & pelayanan perizinan siswa',
+            'Pendampingan pembiasaan positif, upacara bendera, & senam bersama',
+            'Pembinaan ekstrakurikuler olahraga serta penguatan karakter',
+            'Kolaborasi dalam pertemuan komunitas guru mitra / MGMP sekolah'
+        ],
+        formatLabel: 'Jurnal & Dokumentasi'
+    },
+    {
+        id: 'penilaian',
+        number: '06',
+        category: 'evaluasi',
+        categoryLabel: 'Asesmen',
+        title: 'Instrumen Penilaian yang Dirancang & Analisisnya',
+        subtitle: 'Kisi-kisi Asesmen Otentik, Rubrik 3 Ranah, & Evaluasi Belajar',
+        status: 'Validasi Pamong',
+        statusClass: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+        path: '/artefak/ppl-2/analisis-instrumen-penilaian',
+        iconBg: 'bg-emerald-50 text-emerald-600',
+        iconSvg: 'M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z',
+        summary: 'Instrumen komprehensif penilaian sikap, pengetahuan, dan keterampilan gerak beserta pengolahan data daya serap siswa, analisis butir evaluasi, serta tindak lanjut remedial dan pengayaan.',
+        criteria: [
+            'Kisi-kisi dan butir soal kognitif kontekstual berorientasi HOTS',
+            'Rubrik penilaian unjuk kerja gerak (psikomotorik) yang transparan',
+            'Lembar observasi perkembangan sikap & Profil Pelajar Pancasila',
+            'Tabulasi ketuntasan klasikal dan perancangan program remedial'
+        ],
+        formatLabel: 'Rubrik & Rekap Nilai'
     }
 ]
+
+// Filter dimensi berdasarkan kategori aktif
+const filteredDimensions = computed(() => {
+    if (activeFilter.value === 'all') return sixDimensions
+    return sixDimensions.filter(d => d.category === activeFilter.value)
+})
+
+const openPreview = (dim) => {
+    previewModal.value = dim
+}
+
+const closePreview = () => {
+    previewModal.value = null
+}
 </script>
 
 <template>
     <div class="space-y-12 animate-fadeIn">
 
-        <!-- Header -->
+        <!-- Header Halaman PPL II -->
         <header class="text-center md:text-left space-y-4">
             <div class="flex flex-wrap items-center gap-3 justify-center md:justify-start">
-                <NuxtLink to="/mata-kuliah" class="text-stone-400 hover:text-emerald-600 text-xs font-bold uppercase tracking-wider flex items-center gap-1">
+                <NuxtLink to="/mata-kuliah" class="text-stone-400 hover:text-emerald-600 text-xs font-bold uppercase tracking-wider flex items-center gap-1 transition-colors">
                     &larr; Semua Mata Kuliah
                 </NuxtLink>
                 <span class="text-stone-300">•</span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-stone-100 border border-stone-200 rounded-full text-xs text-stone-700 font-medium">
+                    <img src="/logo-uny.svg" alt="UNY" class="w-3.5 h-3.5 object-contain" />
+                    <img src="/logo-kemendikbud.svg" alt="PPG" class="w-3.5 h-3.5 object-contain" />
+                    <span>LPTK UNY • PPG Calon Guru</span>
+                </div>
+                <span class="text-stone-300">•</span>
                 <span class="px-3 py-1 bg-teal-100 text-teal-800 text-xs font-bold rounded-full uppercase tracking-wider">
-                    Status: Praktik Mandiri (Fase Berjalan)
+                    Praktik Mandiri (Fase Berjalan)
                 </span>
             </div>
+
             <h1 class="text-3xl md:text-5xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
                 PPL II: Praktik Pembelajaran Mandiri
             </h1>
             <p class="text-stone-600 max-w-3xl text-base leading-relaxed">
-                Dokumentasi portofolio pembelajaran mandiri saya selama menempuh Praktik Pengalaman Lapangan II. Memuat perangkat ajar mandiri, studi kasus pendampingan siswa, dan evaluasi hasil belajar.
+                Pusat dokumentasi portofolio pembelajaran mandiri saya selama menempuh Praktik Pengalaman Lapangan II. Memuat <strong>6 dimensi analisis kritis</strong> luaran praktik mengajar, keterlibatan kegiatan persekolahan, serta sistem evaluasi hasil belajar.
             </p>
         </header>
 
-        <!-- Orientasi & Komitmen Praktik Mandiri -->
-        <div class="bg-gradient-to-r from-teal-50 to-emerald-50 border border-teal-200/60 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <!-- KPI & Overview PPL II -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
+                <span class="text-xs font-bold uppercase text-stone-400">Target Luaran</span>
+                <div class="text-2xl font-bold text-teal-700 mt-1">6 Dimensi</div>
+                <p class="text-xs text-stone-500 mt-1">Analisis Kritis Wajib</p>
+            </div>
+            <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
+                <span class="text-xs font-bold uppercase text-emerald-600">Fokus Praktik</span>
+                <div class="text-2xl font-bold text-stone-800 mt-1">Mandiri Penuh</div>
+                <p class="text-xs text-stone-500 mt-1">Otonomi Guru Kelas</p>
+            </div>
+            <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
+                <span class="text-xs font-bold uppercase text-stone-400">LPTK Pembina</span>
+                <div class="text-lg font-bold text-stone-800 mt-1 truncate">UNY Yogyakarta</div>
+                <p class="text-xs text-stone-500 mt-1">Pendidikan Jasmani</p>
+            </div>
+            <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
+                <span class="text-xs font-bold uppercase text-stone-400">Status Portofolio</span>
+                <div class="text-base font-bold text-teal-700 mt-1">Proses Berjalan</div>
+                <p class="text-xs text-stone-500 mt-1">Siap Diisi Berkala</p>
+            </div>
+        </section>
+
+        <!-- Banner Orientasi Praktik Mandiri -->
+        <div class="bg-gradient-to-r from-teal-50 via-emerald-50 to-stone-50 border border-teal-200/70 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-sm">
             <div class="space-y-2 max-w-2xl">
                 <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-teal-100 text-teal-800 text-xs font-bold rounded-full uppercase tracking-wider">
-                    Fokus Praktik Mandiri
+                    Paradigma Praktik Mandiri
                 </div>
                 <h3 class="text-xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
-                    Penguatan Otonomi Mengajar & Kepemimpinan Kelas
+                    Transisi dari Praktik Terbimbing Menuju Pendidik Otonom
                 </h3>
                 <p class="text-stone-600 text-sm leading-relaxed">
-                    Pada tahapan PPL II ini, saya memperdalam kemandirian mengajar penuh di kelas, mempraktikkan pembelajaran berdiferensiasi yang kontekstual, serta melakukan studi kasus diagnostik untuk membantu mengatasi kesulitan belajar peserta didik.
+                    Jika pada PPL I saya berfokus pada asistensi mengajar terbimbing, maka pada PPL II ini saya memegang tanggung jawab penuh dalam merancang, melaksanakan, mengevaluasi, serta merefleksikan seluruh proses instruksional dan nonmengajar di sekolah mitra secara analitis.
                 </p>
             </div>
             <div class="flex-shrink-0">
-                <span class="px-4 py-2 bg-white text-teal-700 font-bold text-xs uppercase tracking-wider rounded-xl border border-teal-200 shadow-sm inline-block">
-                    Praktik Terstruktur
+                <span class="px-4 py-2 bg-white text-teal-700 font-bold text-xs uppercase tracking-wider rounded-xl border border-teal-200 shadow-xs inline-block">
+                    Standar PPG Calon Guru
                 </span>
             </div>
         </div>
 
-        <!-- Daftar Artefak PPL II -->
+        <!-- Section: 6 Dimensi Analisis Praktik Mandiri -->
         <section class="space-y-6">
-            <h2 class="text-2xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
-                Dokumentasi & Perangkat Pembelajaran Mandiri
-            </h2>
-
-            <div v-if="!ppl2List?.length" class="bg-white rounded-3xl border border-stone-200/70 p-10 text-center space-y-3">
-                <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-2xl mx-auto flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
-                    </svg>
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full">
+                        Struktur Luaran Wajib
+                    </span>
+                    <h2 class="text-2xl md:text-3xl font-bold text-stone-800 mt-2" style="font-family: 'Lora', serif;">
+                        6 Dimensi Analisis Praktik Mandiri
+                    </h2>
+                    <p class="text-stone-500 text-sm mt-1">
+                        Pilih dimensi untuk menelaah instrumen analisis, deskripsi reflektif, serta berkas artefak yang telah saya rancang.
+                    </p>
                 </div>
-                <h3 class="text-lg font-bold text-stone-700">Dokumentasi Praktik Sedang Berlangsung</h3>
-                <p class="text-stone-500 text-sm max-w-md mx-auto leading-relaxed">
-                    Saat ini saya sedang melaksanakan rangkaian pembelajaran mandiri di sekolah mitra. Seluruh modul ajar, lembar kerja siswa, dan laporan studi kasus akan saya publikasikan di sini secara berkala.
-                </p>
+
+                <!-- Filter Kategori Tabs -->
+                <div class="flex flex-wrap gap-2">
+                    <button v-for="cat in categories" :key="cat.id"
+                        @click="activeFilter = cat.id"
+                        :class="[
+                            'px-3.5 py-1.5 text-xs font-semibold rounded-full transition-all duration-200',
+                            activeFilter === cat.id
+                                ? 'bg-teal-700 text-white shadow-sm'
+                                : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                        ]">
+                        {{ cat.label }}
+                    </button>
+                </div>
             </div>
 
-            <div v-else class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <NuxtLink v-for="item in ppl2List" :key="item.path" :to="item.path"
-                    class="bg-white p-6 rounded-3xl border border-stone-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
-                    <h3 class="text-lg font-bold text-stone-800 group-hover:text-teal-700 transition-colors" style="font-family: 'Lora', serif;">
-                        {{ item.title }}
-                    </h3>
-                    <p class="text-stone-600 text-sm mt-2 line-clamp-2">
-                        {{ item.description }}
+            <!-- Matriks Kartu 6 Dimensi -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div v-for="dim in filteredDimensions" :key="dim.id"
+                    class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                    
+                    <div class="space-y-4">
+                        <!-- Top Meta Header -->
+                        <div class="flex items-center justify-between">
+                            <span class="w-9 h-9 rounded-2xl bg-stone-100 text-stone-700 font-bold flex items-center justify-center text-xs group-hover:bg-teal-700 group-hover:text-white transition-colors">
+                                {{ dim.number }}
+                            </span>
+                            <span :class="['px-2.5 py-1 text-[11px] font-bold rounded-full border', dim.statusClass]">
+                                {{ dim.status }}
+                            </span>
+                        </div>
+
+                        <!-- Icon & Judul -->
+                        <div class="space-y-2">
+                            <div :class="['w-10 h-10 rounded-2xl flex items-center justify-center', dim.iconBg]">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" :d="dim.iconSvg" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-bold text-stone-800 group-hover:text-teal-700 transition-colors leading-snug" style="font-family: 'Lora', serif;">
+                                {{ dim.title }}
+                            </h3>
+                            <p class="text-xs font-medium text-stone-400">
+                                {{ dim.subtitle }}
+                            </p>
+                        </div>
+
+                        <!-- Deskripsi Sudut Pandang Pertama -->
+                        <p class="text-stone-600 text-xs leading-relaxed text-justify line-clamp-3">
+                            {{ dim.summary }}
+                        </p>
+
+                        <!-- Indikator Kunci -->
+                        <div class="p-3.5 bg-stone-50 rounded-2xl border border-stone-100 space-y-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-stone-500 block">
+                                Poin Telaah Kritis:
+                            </span>
+                            <ul class="space-y-1.5 text-[11px] text-stone-600">
+                                <li v-for="(point, pIdx) in dim.criteria.slice(0, 2)" :key="pIdx" class="flex items-start gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3.5 h-3.5 text-teal-600 flex-shrink-0 mt-0.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                    </svg>
+                                    <span class="line-clamp-1">{{ point }}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Action Box / Footer Kartu -->
+                    <div class="pt-5 mt-4 border-t border-stone-100 flex items-center justify-between gap-2">
+                        <button @click="openPreview(dim)"
+                            type="button"
+                            class="text-xs font-semibold text-stone-500 hover:text-stone-800 transition-colors inline-flex items-center gap-1">
+                            <span>Pratinjau</span>
+                        </button>
+
+                        <NuxtLink :to="dim.path"
+                            class="px-3.5 py-1.5 bg-stone-800 text-white hover:bg-teal-700 text-xs font-semibold rounded-full transition-colors inline-flex items-center gap-1.5 shadow-xs">
+                            <span>Buka Telaah</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
+                        </NuxtLink>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Wadah Interaktif Video & Media Praktik Mandiri -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Card Showcase Video Pembelajaran Mandiri -->
+            <div class="bg-white p-6 md:p-8 rounded-3xl border border-stone-200/80 shadow-xs space-y-4">
+                <div class="flex items-center justify-between">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-50 text-amber-800 text-xs font-bold rounded-full uppercase tracking-wider">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
+                        </svg>
+                        Wadah Video Praktik Mandiri
+                    </div>
+                    <span class="text-xs text-stone-400 font-medium">Dimensi 04</span>
+                </div>
+
+                <h3 class="text-xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                    Dokumentasi Rekaman Video Pembelajaran
+                </h3>
+                <p class="text-stone-600 text-sm leading-relaxed text-justify">
+                    Wadah terpadu untuk menyematkan tautan rekaman video mengajar utuh (un-edited) serta cuplikan pembelajaran terpilih (15–20 menit) untuk keperluan supervisi DPL dan Guru Pamong.
+                </p>
+
+                <!-- Box Placeholder Video -->
+                <div class="p-5 rounded-2xl bg-stone-900 text-white space-y-3">
+                    <div class="flex items-center justify-between text-xs text-stone-400">
+                        <span>Status Rekaman: Terjadwal Siklus Praktik</span>
+                        <span class="text-amber-400 font-semibold">YouTube / Google Drive</span>
+                    </div>
+                    <p class="text-xs text-stone-300 leading-relaxed">
+                        Tautan video utuh dan video editan berdurasi 15-20 menit siap disematkan langsung saat siklus praktik mengajar mandiri tuntas direkam.
                     </p>
+                    <NuxtLink to="/artefak/ppl-2/analisis-video"
+                        class="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 hover:text-emerald-300 transition-colors pt-1">
+                        Buka Lembar Telaah Video &rarr;
+                    </NuxtLink>
+                </div>
+            </div>
+
+            <!-- Card Showcase Penilaian & Nonmengajar -->
+            <div class="bg-white p-6 md:p-8 rounded-3xl border border-stone-200/80 shadow-xs space-y-4">
+                <div class="flex items-center justify-between">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-teal-50 text-teal-800 text-xs font-bold rounded-full uppercase tracking-wider">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z" />
+                        </svg>
+                        Wadah Asesmen & Nonmengajar
+                    </div>
+                    <span class="text-xs text-stone-400 font-medium">Dimensi 05 & 06</span>
+                </div>
+
+                <h3 class="text-xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                    Sistem Evaluasi Belajar & Kontribusi Sekolah
+                </h3>
+                <p class="text-stone-600 text-sm leading-relaxed text-justify">
+                    Menghimpun kisi-kisi asesmen otentik, rubrik evaluasi tiga ranah (afektif, kognitif, psikomotorik), serta laporan catatan harian piket dan pembinaan ekstrakurikuler kesiswaan.
+                </p>
+
+                <!-- Box Placeholder Asesmen -->
+                <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200 space-y-3">
+                    <div class="flex items-center justify-between text-xs text-stone-500 font-medium">
+                        <span>Format: Kisi-kisi, Rubrik & Rekap Tabulasi</span>
+                        <span class="text-teal-700 font-semibold">Tervalidasi Pamong</span>
+                    </div>
+                    <p class="text-xs text-stone-600 leading-relaxed">
+                        Data evaluasi daya serap peserta didik dan analisis butir soal telah disiapkan wadahnya dan siap ditautkan dengan spreadsheet/PDF laporan.
+                    </p>
+                    <NuxtLink to="/artefak/ppl-2/analisis-instrumen-penilaian"
+                        class="inline-flex items-center gap-2 text-xs font-bold text-teal-700 hover:text-teal-900 transition-colors pt-1">
+                        Buka Instrumen Penilaian &rarr;
+                    </NuxtLink>
+                </div>
+            </div>
+        </section>
+
+        <!-- Refleksi & Komitmen Menuju Seminar PPG -->
+        <section class="bg-white p-8 md:p-10 rounded-3xl border border-stone-200/80 shadow-xs space-y-4">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-stone-100 text-stone-700 text-xs font-bold rounded-full uppercase tracking-wider">
+                Refleksi Pendidik Mandiri
+            </div>
+            <h2 class="text-2xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                Sintesis Praktik Mandiri Menuju Seminar Inovasi PPG
+            </h2>
+            <p class="text-stone-600 text-sm md:text-base leading-relaxed text-justify">
+                Pelaksanaan 6 dimensi analisis pada PPL II ini bukan sekadar pemenuhan beban administrasi kurikulum, melainkan wahana penempaan diri saya untuk menjadi pendidik yang reflektif. Temuan autentik dari analisis perencanaan, materi, media, video rekaman, kegiatan nonmengajar, serta instrumen asesmen ini akan menjadi bahan baku utama yang saya formulasikan dalam desain inovasi pembelajaran pada mata kuliah <strong>Seminar PPG</strong> berikutnya.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-3">
+                <NuxtLink to="/mata-kuliah/ppl-1" class="px-4 py-2 bg-stone-100 hover:bg-stone-200 text-stone-700 text-xs font-semibold rounded-full transition-colors">
+                    &larr; Lihat Rekapitulasi PPL I
+                </NuxtLink>
+                <NuxtLink to="/mata-kuliah/seminar" class="px-4 py-2 bg-stone-800 hover:bg-teal-700 text-white text-xs font-semibold rounded-full transition-colors">
+                    Lanjut ke Rencana Seminar PPG &rarr;
                 </NuxtLink>
             </div>
         </section>
 
-        <!-- Matriks Target Pembelajaran PPL II -->
-        <section class="space-y-6">
-            <div>
-                <h2 class="text-2xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
-                    Peta Capaian Pembelajaran PPL II
-                </h2>
-                <p class="text-stone-500 text-sm">Target kompetensi dan luaran tugas yang saya kembangkan pada fase praktik mandiri.</p>
-            </div>
+        <!-- Modal Pratinjau Kriteria Dimensi -->
+        <div v-if="previewModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs animate-fadeIn">
+            <div class="bg-white rounded-3xl max-w-lg w-full p-6 md:p-8 space-y-5 shadow-2xl border border-stone-200 relative">
+                <button @click="closePreview" type="button" class="absolute top-5 right-5 text-stone-400 hover:text-stone-700 transition-colors p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </button>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div v-for="(item, idx) in roadmapPPL2" :key="idx"
-                    class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm space-y-3">
-                    <div class="flex items-center justify-between">
-                        <span class="w-8 h-8 rounded-xl bg-teal-50 text-teal-700 font-bold flex items-center justify-center text-xs">
-                            0{{ idx + 1 }}
+                <div class="space-y-1">
+                    <div class="flex items-center gap-2">
+                        <span class="px-2.5 py-0.5 bg-stone-100 text-stone-700 text-xs font-bold rounded-full">
+                            Dimensi {{ previewModal.number }}
                         </span>
-                        <span class="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-2.5 py-1 rounded-full">
-                            {{ item.status }}
+                        <span :class="['px-2.5 py-0.5 text-xs font-bold rounded-full border', previewModal.statusClass]">
+                            {{ previewModal.status }}
                         </span>
                     </div>
-                    <h3 class="text-base font-bold text-stone-800">
-                        {{ item.title }}
+                    <h3 class="text-xl font-bold text-stone-800" style="font-family: 'Lora', serif;">
+                        {{ previewModal.title }}
                     </h3>
-                    <p class="text-stone-600 text-xs leading-relaxed">
-                        {{ item.desc }}
-                    </p>
+                    <p class="text-xs text-stone-400">{{ previewModal.subtitle }}</p>
+                </div>
+
+                <div class="space-y-3 text-xs text-stone-600 leading-relaxed">
+                    <p class="text-justify">{{ previewModal.summary }}</p>
+
+                    <div class="p-4 bg-stone-50 rounded-2xl border border-stone-100 space-y-2">
+                        <span class="font-bold text-stone-700 uppercase tracking-wider block text-[10px]">
+                            Indikator Telaah Akademik:
+                        </span>
+                        <ul class="space-y-1.5">
+                            <li v-for="(crit, cIdx) in previewModal.criteria" :key="cIdx" class="flex items-start gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-teal-600 mt-1.5 flex-shrink-0"></span>
+                                <span>{{ crit }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pt-3 border-t border-stone-100 flex items-center justify-between">
+                    <span class="text-xs text-stone-400">Berkas: {{ previewModal.formatLabel }}</span>
+                    <NuxtLink :to="previewModal.path" @click="closePreview"
+                        class="px-4 py-2 bg-teal-700 hover:bg-teal-800 text-white text-xs font-bold rounded-full transition-colors inline-flex items-center gap-1.5">
+                        <span>Buka Halaman Telaah Lengkap</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                    </NuxtLink>
                 </div>
             </div>
-        </section>
+        </div>
 
     </div>
 </template>

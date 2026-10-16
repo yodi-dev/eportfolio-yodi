@@ -50,7 +50,7 @@ eportofolio-yodi/
 │       ├── mata-kuliah/            # Hub Kurikulum PPG
 │       │   ├── index.vue           # Overview 3 Mata Kuliah PPG
 │       │   ├── ppl-1.vue           # Portofolio PPL I (Terbimbing)
-│       │   ├── ppl-2.vue           # Portofolio PPL II (Mandiri - Modular)
+│       │   ├── ppl-2.vue           # Portofolio PPL II (Wadah 6 Dimensi Analisis Praktik Mandiri)
 │       │   └── seminar.vue         # Portofolio Seminar PPG (Inovasi & Jurnal)
 │       ├── artefak/
 │       │   ├── index.vue           # Katalog artefak dengan filter course pills
@@ -111,9 +111,10 @@ Dokumen akan langsung terpetakan otomatis ke filter `/artefak` dan halaman hub m
 - [x] Filter pills kategori per mata kuliah di `/artefak`.
 - [x] Matriks Progres Mata Kuliah (Course Matrix Tracker) di Dashboard.
 - [x] Sinergi USP Pendidik & Web Developer di `/profil`.
+- [x] Integrasi wadah 6 Dimensi Analisis Praktik Mandiri PPL II (Perencanaan, Materi, Media, Video, Nonmengajar, Asesmen) dan 6 template artefak pendukung.
 
 ### Fase 3: Pengisian Konten Bertahap & Fitur Masa Depan (Sedang Berjalan 🚀)
-- [ ] Pengisian tugas mandiri PPL II seiring berjalannya perkuliahan.
+- [ ] Pengisian berkas autentik dan data evaluasi PPL II seiring berjalannya siklus praktik sekolah.
 - [ ] Pengisian desain inovasi & jurnal Seminar PPG.
 - [ ] Inline PDF previewer modal untuk Lampiran 7 & 8.
 - [ ] Video embed responsif untuk rekaman micro-teaching.

@@ -29,12 +29,12 @@ const courses = [
         statusClass: 'bg-teal-100 text-teal-800',
         score: 'Proses PPL',
         to: '/mata-kuliah/ppl-2',
-        desc: 'Fase pendewasaan saya dalam mengajar secara mandiri penuh, menangani studi kasus kesulitan belajar siswa, dan menyusun evaluasi komprehensif.',
+        desc: 'Fase pelaksanaan mengajar mandiri penuh di sekolah mitra yang memuat 6 dimensi analisis kritis: perencanaan, materi, media, video praktik, nonmengajar, dan asesmen.',
         highlights: [
-            'Praktik Mengajar Mandiri Penuh',
-            'Studi Kasus Penanganan Kesulitan Belajar Siswa',
-            'Analisis Lingkungan & Budaya Sekolah',
-            'Evaluasi & Asesmen Performa Mandiri'
+            'Analisis Perencanaan & Materi Mandiri',
+            'Analisis Media & Rekaman Video Praktik',
+            'Analisis Kegiatan Nonmengajar & Persekolahan',
+            'Instrumen Penilaian & Evaluasi Hasil Belajar'
         ]
     },
     {

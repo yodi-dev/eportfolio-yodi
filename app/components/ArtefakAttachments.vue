@@ -46,6 +46,12 @@ const getBadgeStyle = (type) => {
                 iconBg: 'bg-amber-100 text-amber-700',
                 label: 'Google Drive'
             }
+        case 'gdoc':
+            return {
+                bg: 'bg-sky-50 text-sky-700 border-sky-200',
+                iconBg: 'bg-sky-100 text-sky-600',
+                label: 'Google Docs'
+            }
         case 'video':
             return {
                 bg: 'bg-purple-50 text-purple-700 border-purple-200',
@@ -124,17 +130,17 @@ const getBadgeStyle = (type) => {
 
                     <!-- Tombol Aksi Utama (Unduh / Buka) -->
                     <a :href="file.url"
-                        :download="file.type !== 'drive' && file.type !== 'video' && file.type !== 'link'"
-                        :target="file.type === 'drive' || file.type === 'video' || file.type === 'link' ? '_blank' : '_blank'"
+                        :download="file.type !== 'drive' && file.type !== 'video' && file.type !== 'link' && file.type !== 'gdoc'"
+                        target="_blank"
                         rel="noopener noreferrer"
                         class="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold text-white bg-stone-900 hover:bg-emerald-700 rounded-xl transition-colors shadow-xs ml-auto">
-                        <svg v-if="file.type === 'drive' || file.type === 'video' || file.type === 'link'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
+                        <svg v-if="file.type === 'drive' || file.type === 'video' || file.type === 'link' || file.type === 'gdoc'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                         </svg>
                         <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
                         </svg>
-                        <span>{{ file.type === 'drive' ? 'Buka di Drive' : file.type === 'video' ? 'Putar Video' : 'Unduh Berkas' }}</span>
+                        <span>{{ file.type === 'drive' ? 'Buka di Drive' : file.type === 'gdoc' ? 'Buka Google Docs' : file.type === 'video' ? 'Putar Video' : file.type === 'link' ? 'Buka Tautan' : 'Unduh Berkas' }}</span>
                     </a>
                 </div>
 

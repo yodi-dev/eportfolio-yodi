@@ -38,6 +38,26 @@ attachments:
     size: "33 KB"
     badge: "Modul Praktik"
     description: "Cheatsheet dan lembar modul interaktif praktik laboratorium."
+  - title: "Google Docs Rundown & Apersepsi: Algoritma Pemrograman (X TM 1)"
+    type: "gdoc"
+    url: "https://docs.google.com/document/d/1lRHOsSIZXo_2Vfjg3wX_uaDwPwOShJvKxhwz8scbJu4/edit?usp=sharing"
+    badge: "Apersepsi TM 1"
+    description: "Panduan alur rundown belajar, pembagian menit kegiatan, dan instruksi penugasan kelas X TM 1."
+  - title: "Google Docs Rundown & Apersepsi: Algoritma Pemrograman (X TM 2)"
+    type: "gdoc"
+    url: "https://docs.google.com/document/d/1_5u3GeEUt_sW9WYOk1gjVJv8cfObSW9GYa34HIzbV_I/edit?usp=sharing"
+    badge: "Apersepsi TM 2"
+    description: "Panduan alur rundown belajar, pembagian menit kegiatan, dan instruksi penugasan kelas X TM 2."
+  - title: "Google Docs Rundown & Apersepsi: Analisis Data (X TM 1)"
+    type: "gdoc"
+    url: "https://docs.google.com/document/d/1oag8Qrmyf6o5QgBe_rMpnJKvSzQOlqZP5sw7KxVFN74/edit?usp=sharing"
+    badge: "Apersepsi TM 1"
+    description: "Skenario investigasi kelompok, panduan studi kasus, dan alur diskusi materi Analisis Data kelas X TM 1."
+  - title: "Google Docs Rundown & Apersepsi: Analisis Data (X TM 2)"
+    type: "gdoc"
+    url: "https://docs.google.com/document/d/1wC6qsrLVKBDcYSWvPO9ESDpO4uCSRFpcl85xDG4LOEQ/edit?usp=sharing"
+    badge: "Apersepsi TM 2"
+    description: "Skenario investigasi kelompok, panduan studi kasus, dan alur diskusi materi Analisis Data kelas X TM 2."
   - title: "Platform Evaluasi Gamifikasi Wayground"
     type: "link"
     url: "https://wayground.com"
@@ -103,8 +123,18 @@ Laboratorium komputer sekolah kejuruan sering menghadapi kendala lisensi atau va
 
 ## 5. Tautan & Repositori Media Pembelajaran
 
-- Tautan Dokumen Apersepsi Google Docs (Rundown Belajar X TM 1 & X TM 2).
-- Tautan Sesi Evaluasi Gamifikasi Wayground (Bank Soal Algoritma Pemrograman).
-- Tautan Portal Latihan Logika Visual: [Blockly Games](https://blockly.games).
-- Tautan Lingkungan Koding Laboratorium: [OnlineGDB IDE](https://www.onlinegdb.com).
-- Slide Presentasi Pembersihan Data & Algoritma Teknik Mesin (Format PPTX).
+### A. Dokumen Google Docs Apersepsi & Rundown Harian Siswa
+1. **Algoritma dan Pemrograman Dasar – Kelas X TM 1**: [Buka Google Docs X TM 1](https://docs.google.com/document/d/1lRHOsSIZXo_2Vfjg3wX_uaDwPwOShJvKxhwz8scbJu4/edit?usp=sharing)
+   - Disajikan di awal sesi tatap muka: memuat sasaran pertemuan, daftar kata kunci pencarian materi mandiri, pembagian waktu mencatat, dan tautan tugas lab.
+2. **Algoritma dan Pemrograman Dasar – Kelas X TM 2**: [Buka Google Docs X TM 2](https://docs.google.com/document/d/1_5u3GeEUt_sW9WYOk1gjVJv8cfObSW9GYa34HIzbV_I/edit?usp=sharing)
+   - Panduan rundown operasional KBM untuk kelas X TM 2 pada topik logika algoritma, diagram alir, dan pengkodean Python.
+3. **Analisis Data – Kelas X TM 1**: [Buka Google Docs X TM 1](https://docs.google.com/document/d/1oag8Qrmyf6o5QgBe_rMpnJKvSzQOlqZP5sw7KxVFN74/edit?usp=sharing)
+   - Skenario penugasan investigasi kolaboratif, pembagian peran kelompok, serta panduan presentasi panel di depan kelas.
+4. **Analisis Data – Kelas X TM 2**: [Buka Google Docs X TM 2](https://docs.google.com/document/d/1wC6qsrLVKBDcYSWvPO9ESDpO4uCSRFpcl85xDG4LOEQ/edit?usp=sharing)
+   - Lembar skenario terpadu diskusi kelompok pengolahan data untuk kelas X TM 2.
+
+### B. Media Interaktif & Cloud IDE Laboratorium
+- **Evaluasi Gamifikasi**: [Platform Wayground](https://wayground.com) (Kuis interaktif pilihan ganda berbasis game yang membangkitkan kompetisi sehat siswa).
+- **Penguatan Nalar Visual**: [Blockly Games](https://blockly.games) (Permainan logika alur blok sekuensial dan percabangan).
+- **Laboratorium Koding Cloud**: [OnlineGDB IDE](https://www.onlinegdb.com) (Eksekusi dan debugging kode Python tanpa instalasi lokal).
+- **Slide Presentasi Validasi**: Slide materi PPTX dapat diunduh pada daftar lampiran berkas fisik di atas.

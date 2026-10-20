@@ -186,6 +186,7 @@ const repoFilter = ref('all')
 
 const repoCategories = [
     { id: 'all', label: 'Semua Berkas' },
+    { id: 'Google Docs', label: 'Google Docs Apersepsi' },
     { id: 'Perencanaan', label: 'Perencanaan' },
     { id: 'Materi Ajar', label: 'Materi Ajar' },
     { id: 'Lembar Kerja', label: 'Lembar Kerja' },
@@ -195,6 +196,38 @@ const repoCategories = [
 ]
 
 const documentRepository = [
+    {
+        title: 'Google Docs Rundown KBM: Algoritma & Pemrograman (X TM 1)',
+        type: 'gdoc',
+        url: 'https://docs.google.com/document/d/1lRHOsSIZXo_2Vfjg3wX_uaDwPwOShJvKxhwz8scbJu4/edit?usp=sharing',
+        badge: 'Apersepsi TM 1',
+        category: 'Google Docs',
+        description: 'Kontrak belajar dan rundown kegiatan menit ke menit materi algoritma kelas X TM 1.'
+    },
+    {
+        title: 'Google Docs Rundown KBM: Algoritma & Pemrograman (X TM 2)',
+        type: 'gdoc',
+        url: 'https://docs.google.com/document/d/1_5u3GeEUt_sW9WYOk1gjVJv8cfObSW9GYa34HIzbV_I/edit?usp=sharing',
+        badge: 'Apersepsi TM 2',
+        category: 'Google Docs',
+        description: 'Kontrak belajar dan rundown kegiatan menit ke menit materi algoritma kelas X TM 2.'
+    },
+    {
+        title: 'Google Docs Rundown KBM: Analisis Data (X TM 1)',
+        type: 'gdoc',
+        url: 'https://docs.google.com/document/d/1oag8Qrmyf6o5QgBe_rMpnJKvSzQOlqZP5sw7KxVFN74/edit?usp=sharing',
+        badge: 'Apersepsi TM 1',
+        category: 'Google Docs',
+        description: 'Panduan investigasi kelompok dan skenario presentasi materi Analisis Data kelas X TM 1.'
+    },
+    {
+        title: 'Google Docs Rundown KBM: Analisis Data (X TM 2)',
+        type: 'gdoc',
+        url: 'https://docs.google.com/document/d/1wC6qsrLVKBDcYSWvPO9ESDpO4uCSRFpcl85xDG4LOEQ/edit?usp=sharing',
+        badge: 'Apersepsi TM 2',
+        category: 'Google Docs',
+        description: 'Panduan investigasi kelompok dan skenario presentasi materi Analisis Data kelas X TM 2.'
+    },
     {
         title: 'Rencana Pelaksanaan Dinamis (RPD): Algoritma & Pemrograman',
         type: 'image',
@@ -425,6 +458,7 @@ const getRepoBadgeClass = (type) => {
         case 'pptx': return 'bg-orange-50 text-orange-700 border-orange-200'
         case 'xlsx': return 'bg-emerald-50 text-emerald-700 border-emerald-200'
         case 'image': return 'bg-indigo-50 text-indigo-700 border-indigo-200'
+        case 'gdoc': return 'bg-sky-50 text-sky-700 border-sky-200'
         case 'drive': return 'bg-amber-50 text-amber-800 border-amber-200'
         default: return 'bg-stone-50 text-stone-700 border-stone-200'
     }
@@ -683,33 +717,82 @@ const getRepoBadgeClass = (type) => {
                 </div>
             </div>
 
-            <!-- Google Drive Banner: Tugas Murid X TM -->
-            <div class="p-6 md:p-8 bg-gradient-to-br from-amber-500/10 via-emerald-500/10 to-teal-500/10 rounded-3xl border border-amber-200/80 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-                <div class="flex items-start gap-4">
-                    <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 shadow-xs">
-                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/>
-                        </svg>
-                    </div>
-                    <div class="space-y-1">
-                        <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-amber-100 text-amber-800 text-[10px] font-bold rounded-full uppercase tracking-wider">
-                            Google Drive Siswa • Cloud Storage
+            <!-- Showcase Cloud Storage & Apersepsi Siswa (Google Drive & Google Docs) -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <!-- Google Drive Banner: Tugas Murid X TM -->
+                <div class="p-6 md:p-7 bg-gradient-to-br from-amber-500/10 via-emerald-500/10 to-teal-500/10 rounded-3xl border border-amber-200/80 shadow-xs flex flex-col justify-between gap-5">
+                    <div class="flex items-start gap-3.5">
+                        <div class="w-11 h-11 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 shadow-xs">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/>
+                            </svg>
                         </div>
-                        <h3 class="text-lg md:text-xl font-bold text-stone-900 font-serif">
-                            Repositori Portofolio & Tugas Murid Kelas X TM
-                        </h3>
-                        <p class="text-stone-600 text-xs md:text-sm leading-relaxed max-w-2xl">
-                            Seluruh hasil pengerjaan tugas mandiri dan kelompok siswa (berukuran besar) tersimpan rapi di Google Drive resmi: lembar pengerjaan pembersihan data, file spreadsheet, notasi flowchart, dan program Python.
-                        </p>
+                        <div class="space-y-1">
+                            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-amber-100 text-amber-800 text-[10px] font-bold rounded-full uppercase tracking-wider">
+                                Google Drive Siswa • Cloud Storage
+                            </div>
+                            <h3 class="text-base md:text-lg font-bold text-stone-900 font-serif">
+                                Repositori Portofolio & Tugas Murid Kelas X TM
+                            </h3>
+                            <p class="text-stone-600 text-xs md:text-sm leading-relaxed">
+                                Seluruh hasil pengerjaan tugas mandiri dan kelompok siswa tersimpan rapi di Google Drive resmi: lembar pembersihan data, spreadsheet, flowchart, dan file kode Python.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-amber-200/60 flex items-center justify-between">
+                        <span class="text-xs text-amber-900/70 font-medium">Cloud Folder Terverifikasi</span>
+                        <a href="https://drive.google.com/drive/folders/1l3G0LNKkGxQ8UR0H7qK3E2_NA-FlDqSb?usp=sharing" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 px-4 py-2 bg-amber-700 hover:bg-amber-800 text-white text-xs font-bold rounded-xl shadow-xs transition-all group">
+                            <span>Buka Folder Drive</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <a href="https://drive.google.com/drive/folders/1l3G0LNKkGxQ8UR0H7qK3E2_NA-FlDqSb?usp=sharing" target="_blank" rel="noopener noreferrer"
-                    class="inline-flex items-center gap-2 px-5 py-3 bg-amber-700 hover:bg-amber-800 text-white text-xs sm:text-sm font-bold rounded-2xl shadow-sm transition-all group flex-shrink-0">
-                    <span>Buka Folder Google Drive</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 group-hover:translate-x-0.5 transition-transform">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                    </svg>
-                </a>
+
+                <!-- Google Docs Banner: Rundown Apersepsi X TM 1 & X TM 2 -->
+                <div class="p-6 md:p-7 bg-gradient-to-br from-sky-500/10 via-blue-500/10 to-indigo-500/10 rounded-3xl border border-sky-200/80 shadow-xs flex flex-col justify-between gap-5">
+                    <div class="flex items-start gap-3.5">
+                        <div class="w-11 h-11 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center flex-shrink-0 shadow-xs">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                            </svg>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-sky-100 text-sky-800 text-[10px] font-bold rounded-full uppercase tracking-wider">
+                                Google Docs Siswa • Transparansi Skenario
+                            </div>
+                            <h3 class="text-base md:text-lg font-bold text-stone-900 font-serif">
+                                Rundown & Kontrak Belajar Harian (Apersepsi)
+                            </h3>
+                            <p class="text-stone-600 text-xs md:text-sm leading-relaxed">
+                                Dokumen apersepsi yang dibagikan live di awal tatap muka: sasaran capaian, pembagian menit mencatat mandiri, dan skenario investigasi kelompok.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-sky-200/60 flex flex-wrap items-center gap-2 justify-between">
+                        <span class="text-xs text-sky-900/70 font-medium">Tautan Cepat 4 Rombel:</span>
+                        <div class="flex flex-wrap items-center gap-1.5">
+                            <a href="https://docs.google.com/document/d/1lRHOsSIZXo_2Vfjg3wX_uaDwPwOShJvKxhwz8scbJu4/edit?usp=sharing" target="_blank" rel="noopener noreferrer"
+                                class="px-2.5 py-1 bg-white hover:bg-sky-50 text-sky-800 border border-sky-200 text-[11px] font-bold rounded-lg transition-colors shadow-xs">
+                                AP TM 1 &rarr;
+                            </a>
+                            <a href="https://docs.google.com/document/d/1_5u3GeEUt_sW9WYOk1gjVJv8cfObSW9GYa34HIzbV_I/edit?usp=sharing" target="_blank" rel="noopener noreferrer"
+                                class="px-2.5 py-1 bg-white hover:bg-sky-50 text-sky-800 border border-sky-200 text-[11px] font-bold rounded-lg transition-colors shadow-xs">
+                                AP TM 2 &rarr;
+                            </a>
+                            <a href="https://docs.google.com/document/d/1oag8Qrmyf6o5QgBe_rMpnJKvSzQOlqZP5sw7KxVFN74/edit?usp=sharing" target="_blank" rel="noopener noreferrer"
+                                class="px-2.5 py-1 bg-white hover:bg-sky-50 text-sky-800 border border-sky-200 text-[11px] font-bold rounded-lg transition-colors shadow-xs">
+                                AD TM 1 &rarr;
+                            </a>
+                            <a href="https://docs.google.com/document/d/1wC6qsrLVKBDcYSWvPO9ESDpO4uCSRFpcl85xDG4LOEQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer"
+                                class="px-2.5 py-1 bg-white hover:bg-sky-50 text-sky-800 border border-sky-200 text-[11px] font-bold rounded-lg transition-colors shadow-xs">
+                                AD TM 2 &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Tab Filter Kategori Repositori -->
@@ -764,13 +847,15 @@ const getRepoBadgeClass = (type) => {
                         </button>
 
                         <a :href="file.url"
-                            :download="file.type !== 'drive' && file.type !== 'video' && file.type !== 'link'"
+                            :download="file.type !== 'drive' && file.type !== 'video' && file.type !== 'link' && file.type !== 'gdoc'"
                             target="_blank"
+                            rel="noopener noreferrer"
                             class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-stone-700 bg-stone-100 hover:bg-stone-200 rounded-xl transition-colors ml-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5 text-stone-500">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                <path v-if="file.type === 'drive' || file.type === 'gdoc' || file.type === 'link'" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                <path v-else stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
                             </svg>
-                            <span>Unduh ({{ file.size }})</span>
+                            <span>{{ file.type === 'drive' ? 'Buka Folder' : file.type === 'gdoc' ? 'Buka Google Doc' : file.type === 'link' ? 'Buka Tautan' : `Unduh (${file.size || 'Berkas'})` }}</span>
                         </a>
                     </div>
                 </div>

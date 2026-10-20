@@ -38,6 +38,26 @@ attachments:
     size: "204 KB"
     badge: "Sistem Blok"
     description: "Dokumentasi pengaturan jadwal sistem blok pembelajaran praktik kejuruan di SMKN 3 Yogyakarta."
+  - title: "Google Docs Rundown KBM: Algoritma & Pemrograman (X TM 1)"
+    type: "gdoc"
+    url: "https://docs.google.com/document/d/1lRHOsSIZXo_2Vfjg3wX_uaDwPwOShJvKxhwz8scbJu4/edit?usp=sharing"
+    badge: "Rundown TM 1"
+    description: "Kontrak belajar, pembagian menit apersepsi, dan panduan penugasan mandiri kelas X TM 1."
+  - title: "Google Docs Rundown KBM: Algoritma & Pemrograman (X TM 2)"
+    type: "gdoc"
+    url: "https://docs.google.com/document/d/1_5u3GeEUt_sW9WYOk1gjVJv8cfObSW9GYa34HIzbV_I/edit?usp=sharing"
+    badge: "Rundown TM 2"
+    description: "Kontrak belajar, pembagian menit apersepsi, dan panduan penugasan mandiri kelas X TM 2."
+  - title: "Google Docs Rundown KBM: Analisis Data (X TM 1)"
+    type: "gdoc"
+    url: "https://docs.google.com/document/d/1oag8Qrmyf6o5QgBe_rMpnJKvSzQOlqZP5sw7KxVFN74/edit?usp=sharing"
+    badge: "Rundown TM 1"
+    description: "Skenario pembelajaran investigasi kelompok materi analisis data kelas X TM 1."
+  - title: "Google Docs Rundown KBM: Analisis Data (X TM 2)"
+    type: "gdoc"
+    url: "https://docs.google.com/document/d/1wC6qsrLVKBDcYSWvPO9ESDpO4uCSRFpcl85xDG4LOEQ/edit?usp=sharing"
+    badge: "Rundown TM 2"
+    description: "Skenario pembelajaran investigasi kelompok materi analisis data kelas X TM 2."
 ---
 
 ## 1. Konteks Kelas & Rasional Perencanaan Mandiri
@@ -74,8 +94,16 @@ Rancangan modul ajar PPL II saya bagi menjadi dua format eksekusi yang saling me
 ---
 
 ## 4. Tautan Dokumen Produk Perencanaan
-- Rencana Pelaksanaan Dinamis (RPD) Algoritma & Pemrograman Fase E X TM.
-- Rencana Pelaksanaan Dinamis (RPD) Sistem Komputer & Perangkat Digital.
-- Buku Administrasi Pendidik Lengkap (ATP, Program Tahunan/Semester, Rekap Nilai).
+
+### A. Dokumen Master Perencanaan & Kurikulum
+- Rencana Pelaksanaan Dinamis (RPD) Algoritma & Pemrograman Fase E X TM (Tersedia pratinjau gambar di atas).
+- Rencana Pelaksanaan Dinamis (RPD) Sistem Komputer & Perangkat Digital (Tersedia pratinjau gambar di atas).
+- Buku Administrasi Pendidik Lengkap (ATP, Program Tahunan/Semester, Rekap Nilai, dan Presensi).
 - Struktur Jam Pelajaran & Jadwal KBM SMKN 3 Yogyakarta.
-- Dokumentasi Pengaturan Sistem Blok Pembelajaran Kejuruan.
+- Dokumentasi Pengaturan Sistem Blok Pembelajaran Kejuruan (Blok 1 & Blok 2).
+
+### B. Dokumen Operasional Rundown & Skenario Apersepsi (Google Docs)
+- **Algoritma dan Pemrograman Dasar – X TM 1**: [Buka Dokumen Google Docs](https://docs.google.com/document/d/1lRHOsSIZXo_2Vfjg3wX_uaDwPwOShJvKxhwz8scbJu4/edit?usp=sharing)
+- **Algoritma dan Pemrograman Dasar – X TM 2**: [Buka Dokumen Google Docs](https://docs.google.com/document/d/1_5u3GeEUt_sW9WYOk1gjVJv8cfObSW9GYa34HIzbV_I/edit?usp=sharing)
+- **Analisis Data – X TM 1**: [Buka Dokumen Google Docs](https://docs.google.com/document/d/1oag8Qrmyf6o5QgBe_rMpnJKvSzQOlqZP5sw7KxVFN74/edit?usp=sharing)
+- **Analisis Data – X TM 2**: [Buka Dokumen Google Docs](https://docs.google.com/document/d/1wC6qsrLVKBDcYSWvPO9ESDpO4uCSRFpcl85xDG4LOEQ/edit?usp=sharing)

@@ -8,18 +8,48 @@ date: "2026-10-16"
 badge: "Dimensi 02 - Materi Ajar"
 color: "teal"
 attachments:
-  - title: "Cheatsheet & Panduan Praktik Pemrograman C++ Cloud IDE"
+  - title: "Bahan Bacaan Siswa: Algoritma dan Pemrograman"
     type: "pdf"
-    url: "/dokumen/ppl-2/panduan-praktik-onlinegdb.pdf"
-    size: "100 KB"
-    badge: "Bahan Ajar"
-    description: "Panduan praktis sintaks dasar, percabangan if-else, dan looping C++ pada OnlineGDB."
-  - title: "Modul Ajar Pembelajaran Algoritma & Pemrograman"
+    url: "/dokumen/ppl-2/Bahan Bacaan.pdf"
+    size: "191 KB"
+    badge: "Bahan Bacaan Utama"
+    description: "Materi ajar intisari logika pemrograman, flowchart, dan notasi algoritma yang dibaca siswa saat Guided Search."
+  - title: "Bahan Bacaan Siswa: Analisis Data & Validasi Informasi"
     type: "pdf"
-    url: "/dokumen/ppl-2/modul-ajar-algoritma-pemrograman.pdf"
-    size: "127 KB"
-    badge: "Rujukan Materi"
-    description: "Uraian capaian pembelajaran materi logika proposisi dan struktur kontrol pemrograman."
+    url: "/dokumen/ppl-2/Bahan Bacaan Analisis Data.pdf"
+    size: "364 KB"
+    badge: "Bahan Bacaan AD"
+    description: "Materi konsep pengolahan data, privasi data, dan teknik validasi data digital."
+  - title: "Slide Presentasi: Algoritma & Pemrograman untuk Teknik Mesin"
+    type: "pptx"
+    url: "/dokumen/ppl-2/Algoritma & Pemrograman - Teknik Mesin.pptx"
+    size: "696 KB"
+    badge: "Slide Validasi"
+    description: "Media tayang PowerPoint konseptual untuk memvalidasi dan mengonfirmasi catatan mandiri peserta didik."
+  - title: "Slide Presentasi: Pembersihan dan Validasi Data"
+    type: "pptx"
+    url: "/dokumen/ppl-2/Pembersihan dan Validasi Data.pptx"
+    size: "1.8 MB"
+    badge: "Slide Validasi"
+    description: "Materi presentasi interaktif tentang deteksi anomali data, data kotor, dan teknik kurasi data."
+  - title: "Cheatsheet Sintaks Python (Bagian 1)"
+    type: "pdf"
+    url: "/dokumen/ppl-2/Cheatsheet Python 1.pdf"
+    size: "29 KB"
+    badge: "Cheatsheet Koding"
+    description: "Panduan cepat sintaks Python, tipe data, variabel, operator, dan percabangan."
+  - title: "Cheatsheet Sintaks Python (Bagian 2)"
+    type: "pdf"
+    url: "/dokumen/ppl-2/Cheatsheet Python 2.pdf"
+    size: "22 KB"
+    badge: "Cheatsheet Koding"
+    description: "Panduan sintaks struktur kontrol perulangan dan fungsi logika Python."
+  - title: "Modul Praktikum: Struktur Kontrol Percabangan & Perulangan"
+    type: "pdf"
+    url: "/dokumen/ppl-2/Modul Praktikum Percabangan dan Perulangan.pdf"
+    size: "33 KB"
+    badge: "Modul Praktikum"
+    description: "Panduan terstruktur latihan praktikum koding langkah demi langkah untuk siswa kelas X TM."
 ---
 
 ## 1. Rasional Pemilihan & Struktur Materi Esensial
@@ -35,12 +65,12 @@ Materi dirancang berjenjang dari pengenalan pola berpikir komputasional hingga p
    - Struktur Perulangan (*Iteration/Looping: for, while*).
 3. **Penerapan Praktik Coding Terpandu**:
    - Transisi visual melalui logika blok pada **Blockly Games**.
-   - Penulisan kode sumber terstruktur pada IDE berbasis cloud (**OnlineGDB**).
+   - Penulisan kode sumber terstruktur pada IDE berbasis cloud (**OnlineGDB**) dan bahasa Python.
    - Modifikasi logika program dan eksperimentasi berbantukan perangkat AI.
 
 ### B. Elemen Analisis Data (Kajian Teori Kontekstual)
 1. **Hakikat Data & Informasi**: Memahami perbedaan data mentah, struktur data dasar (numerik, teks, kategoris), dan transformasi data menjadi wawasan yang bermakna.
-2. **Pengumpulan & Validasi Data**: Teknik pencarian data digital yang kredibel, pemilahan informasi yang relevan, serta pengenalan dasar etika privasi data.
+2. **Pengumpulan & Validasi Data**: Teknik pencarian data digital yang kredibel, pembersihan data kotor (*dirty data*), serta pengenalan dasar etika privasi data.
 3. *Catatan Pelaksanaan*: Pada elemen Analisis Data, implementasi difokuskan pada penguasaan teori konsep, investigasi kelompok, dan penyusunan bahan presentasi karena masa penugasan PPL II di sekolah mitra telah memasuki akhir semester.
 
 ---
@@ -89,7 +119,7 @@ Dalam implementasi materi di kelas X TM 1 dan X TM 2, saya mengidentifikasi bebe
 
 ## 5. Bahan Bacaan & Tautan Perangkat Materi Ajar
 
-- **Modul & Panduan Cheatsheet Algoritma Pemrograman** (Format ringkas PDF panduan sintaks dan logika pemrograman dasar).
+- **Bahan Bacaan Siswa Algoritma dan Pemrograman** (Format ringkas PDF panduan sintaks dan logika pemrograman dasar).
 - **Slide Presentasi Konfirmasi Guru** (Media PPT interaktif untuk validasi hasil riset mandiri siswa).
-- **Repositori Bahan Bacaan Digital**: Kumpulan artikel pengantar analisis data dan algoritma komputasi untuk eksplorasi siswa di peramban.
-- **Format Telaah Bahan Ajar**: Lembar verifikasi materi ajar bersama Guru Pamong Febriyana, S.T.
+- **Cheatsheet Sintaks Pemrograman Python**: Kumpulan lembar referensi cepat sintaks dan fungsi logika pemrograman.
+- **Modul Praktikum Percabangan dan Perulangan**: Panduan terstruktur latihan praktikum koding laboratorium.

@@ -88,7 +88,7 @@ Pengalaman berharga dalam mengelola Siklus 1, 2, dan 3 ini menjadi fondasi kokoh
 
 ## 6. Berkas & Lampiran Pembelajaran Siklus 3
 
-- [Modul Ajar / RPP Siklus 3 Literasi Media Digital](/rpp.docx) (Perangkat pembelajaran berdiferensiasi produk).
-- [Lembar Kerja Peserta Didik (LKPD) Siklus 3](/lkpd.docx) (Panduan verifikasi fakta dan hoaks).
+- [Modul Ajar / RPP Siklus 3 Literasi Media Digital](/dokumen/ppl-1/rpp-ppl1.docx) (Perangkat pembelajaran berdiferensiasi produk).
+- [Lembar Kerja Peserta Didik (LKPD) Siklus 3](/dokumen/ppl-1/lkpd-ppl1.docx) (Panduan verifikasi fakta dan hoaks).
 - Rubrik Penilaian Produk Presentasi Canva & PPT.
 - Salinan Berkas Resmi Penilaian Lampiran 7 & Lampiran 8 (Diterbitkan 30 April 2026).

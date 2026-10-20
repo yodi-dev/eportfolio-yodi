@@ -18,6 +18,11 @@ attachments:
     url: "https://www.youtube.com"
     badge: "Video Supervisi"
     description: "Kompilasi video teredit 15 menit memuat apersepsi, active roaming, konfirmasi PPT, dan exit ticket."
+  - title: "Repositori Rekaman & Portofolio Pembelajaran (Google Drive)"
+    type: "drive"
+    url: "https://drive.google.com/drive/folders/1l3G0LNKkGxQ8UR0H7qK3E2_NA-FlDqSb?usp=sharing"
+    badge: "Google Drive"
+    description: "Penyimpanan cloud resmi berkas rekaman video dan arsip portofolio tugas siswa kelas X TM."
 ---
 
 ## 1. Dokumentasi Audio-Visual & Refleksi Mengajar Mandiri
@@ -30,48 +35,33 @@ Rekaman disusun dalam dua format:
 
 ---
 
-## 2. Analisis Menit ke Menit Berdasarkan Tahapan Instruksional
+## 2. Analisis Struktur Pelaksanaan Berdasarkan Video Rekaman
 
-```mermaid
-timeline
-    title Timeline Alur Pembelajaran Mandiri Teramati
-    Apersepsi (00:00 - 15:00) : Salam & Presensi : Rundown Google Docs : Kontrak Belajar
-    Eksplorasi Teori (15:00 - 45:00) : Poin Pencarian : Active Note-Taking : Active Roaming Guru
-    Validasi Klasikal (45:00 - 65:00) : Presentasi PPT Guru : Diskusi Terbuka : Konfirmasi Miskonsepsi
-    Evaluasi & Praktik (65:00 - 80:00) : Wayground Quiz : Blockly & OnlineGDB : Eksplorasi Kode & AI
-    Penutup (80:00 - 90:00) : Kesimpulan Bersama : Exit Ticket : Apresiasi & Doa
-```
+Melalui telaah rekaman video, pelaksanaan pembelajaran mandiri dievaluasi ke dalam tiga episode utama:
 
-### A. Fase Pendahuluan / Apersepsi (00:00 – 15:00)
-- **Komunikasi Awal & Presensi**: Membuka kelas dengan salam hangat, doa bersama, dan mengecek kesiapan fisik serta mental siswa di laboratorium komputer.
-- **Pemanfaatan Google Docs**: Guru menayangkan dokumen Google Docs di layar utama yang memuat agenda, indikator tujuan belajar, dan rundown alokasi waktu hari itu. Transparansi ini terbukti membuat siswa lebih terarah dan siap secara mental mengikuti setiap fase.
-- **Penyampaian Kontrak Belajar**: Menjelaskan instruksi penelusuran mandiri secara tegas namun bersahabat: *materi dicari via peramban, dipahami, dan dicatat di buku menggunakan bahasa sendiri, tanpa salin-tempel*.
+### A. Episode Pendahuluan (Menit 00:00 – 15:00)
+- **Apersepsi Terbuka**: Guru membuka sesi dengan salam hangat, doa bersama, dan presensi. Menampilkan dokumen **Google Docs** di layar proyektor untuk memaparkan garis besar kegiatan belajar hari itu, alokasi waktu, serta kriteria keberhasilan.
+- **Koneksi Kontekstual**: Mengaitkan konsep algoritma dengan logika kerja sistem mekanik/mesin yang familiar bagi siswa Teknik Mesin, mereduksi resistensi awal terhadap materi komputasi yang abstrak.
 
-### B. Fase Inti Bagian I: Eksplorasi Mandiri & Active Roaming (15:00 – 45:00)
-- **Aktivitas Siswa**: Siswa secara mandiri menelusuri poin-poin materi melalui peramban web dan menyusun rangkuman konseptual di buku tulis masing-masing.
-- **Tindakan Guru (*Active Roaming & Proximity Control*)**: Dalam rekaman video terlihat jelas saya tidak hanya berdiri di depan kelas, melainkan aktif berkeliling dari meja ke meja PC. Saya membaca cuplikan catatan siswa, menegur secara humanis jika ada kalimat yang sekadar menjiplak teks web, serta memberikan dorongan pada siswa yang ragu dalam menyusun kalimat sendiri.
-- **Dampak Perilaku**: Pengawasan dekat ini berhasil mengeliminasi godaan membuka game online atau media sosial yang sebelumnya menjadi kendala terbesar pada PPL I.
+### B. Episode Inti (Menit 15:00 – 70:00)
+- **Fase Guided Discovery & Active Roaming**: Guru memberikan poin-poin materi esensial di papan tulis/slide. Siswa mengeksplorasi internet dan mencatat intisarinya di buku catatan fisik dengan bahasa sendiri.
+- **Monitoring Dekat (*Proximity Control*)**: Dalam rekaman video terlihat guru tidak berdiam diri di meja depan, melainkan **aktif berkeliling secara merata ke seluruh lorong meja laboratorium**. Guru memeriksa progres buku catatan, memastikan tidak ada siswa yang membuka situs terlarang, dan membimbing siswa yang mengalami kebuntuan logika (*scaffolding*).
+- **Fase Validasi Klasikal & Diskusi**: Guru menayangkan slide presentasi PowerPoint untuk mengonfirmasi konsep, menyamakan persepsi, dan memfasilitasi dialog dua arah.
+- **Fase Praktik IDE Cloud**: Siswa mempraktikkan koding pada **OnlineGDB** dan Python. Guru memberikan tantangan modifikasi kreatif serta mengarahkan siswa memanfaatkan teknologi AI secara bertanggung jawab sebagai pendukung belajar.
 
-### C. Fase Inti Bagian II: Validasi PPT & Diskusi Terbuka (45:00 – 65:00)
-- **Penyamaan Persepsi**: Guru menayangkan slide presentasi PPT untuk merangkum dan memvalidasi materi yang telah dicatat siswa.
-- **Dinamika Tanya Jawab**: Guru melontarkan pertanyaan pemantik untuk memicu perdebatan sehat di kelas: *"Mengapa algoritma harus terurut? Apa yang terjadi jika urutan langkah mesin tertukar?"*. Siswa kelas teknik mesin merespons aktif karena menghubungkannya dengan prosedur keselamatan kerja di bengkel permesinan.
-
-### D. Fase Inti Bagian III: Evaluasi Wayground & Praktik Koding (65:00 – 80:00)
-- **Kuis Gamifikasi Wayground**: Guru mengaktifkan room kuis Wayground. Video merekam lonjakan antusiasme dan fokus siswa saat berlomba menjawab butir soal pilihan ganda secara cepat dan akurat. Suasana kelas kompetitif, riang, dan berorientasi akademis.
-- **Praktik Hands-on (Blockly & OnlineGDB)**: Bagi sesi praktik koding, siswa diarahkan membuka panduan cheatsheet PDF, menyelesaikan teka-teki logika di Blockly Games, dan mengimplementasikannya pada OnlineGDB. Guru memberikan bantuan teknis langsung bagi siswa yang mengalami galat sintaks (*syntax error*).
-
-### E. Fase Penutup & Refleksi Metakognitif (80:00 – 90:00)
-- **Penarikan Kesimpulan**: Menunjuk perwakilan siswa untuk menyimpulkan pembelajaran hari itu dengan kata-kata mereka sendiri.
-- **Pengisian Exit Ticket**: Membagikan lembar/tautan *exit ticket* singkat untuk merekam pemahaman materi, bagian yang masih dirasa sulit, serta perasaan siswa selama pembelajaran.
-- **Apresiasi & Doa**: Mengapresiasi fokus dan disiplin kerja siswa kelas X TM, menyampaikan materi pertemuan berikutnya, dan menutup kelas dengan santun.
+### C. Episode Penutup (Menit 70:00 – 90:00)
+- **Evaluasi Gamifikasi Cepat**: Siswa membuka gawai/komputer untuk mengikuti kuis kompetitif di **Wayground**. Video merekam antusiasme tinggi siswa dalam menjawab butir soal analitis dan merayakan peringkat pemahaman mereka.
+- **Refleksi & Exit Ticket**: Siswa mengisi lembar *exit ticket* singkat mengenai materi yang paling dipahami dan hal yang masih membingungkan. Guru menutup pembelajaran dengan kesimpulan bersama dan motivasi penutup.
 
 ---
 
-## 3. Komparasi Kinerja Mengajar: PPL I vs PPL II
+## 3. Komparasi Manajemen Kelas: PPL I vs PPL II
 
-| Aspek Pengamatan Video | Performa pada PPL I (Siklus 1-3) | Performa Mandiri pada PPL II |
+Dari rekaman video, terlihat kontras signifikan dalam pengelolaan iklim belajar:
+
+| Parameter Pengamatan Video | Performa pada PPL I | Peningkatan Nyata pada PPL II |
 | :--- | :--- | :--- |
-| **Keterlibatan Siswa (*Student Engagement*)** | Siswa cenderung pasif saat membaca modul digital panjang; beberapa sembunyi-sembunyi bermain game. | Siswa 100% aktif mencatat manual dengan bahasa sendiri dan antusias saat kuis Wayground. |
+| **Keterlibatan Siswa (*Student Engagement*)** | Siswa cenderung pasif membaca modul digital di layar; sebagian membuka tab permainan secara sembunyi-sembunyi. | Siswa sangat aktif membaca, mencerna, dan menulis catatan fisik di buku; antusiasme memuncak saat kuis Wayground. |
 | **Manajemen Pergerakan Guru** | Guru lebih banyak berada di podium depan dan terfokus pada satu kelompok (*blind spot* pengawasan). | Guru aktif berkeliling lab (*full-room roaming*), memantau buku catatan, dan mendampingi koding secara merata. |
 | **Transparansi Waktu & Target** | Instruksi disampaikan lisan tanpa acuan tertulis yang dapat selalu dilihat siswa. | Rundown tertulis jelas di Google Docs dan diproyeksikan di layar utama laboratorium. |
 | **Penerapan Disiplin Kelas** | Menegur siswa secara insidental setelah pelanggaran terjadi. | Menegakkan disiplin preventif melalui kontrak belajar, catatan fisik, dan kehadiran fisik guru di dekat siswa. |
@@ -91,4 +81,4 @@ timeline
 
 - **Video Rekaman Praktik Mandiri PPL II (Full Uncut)**: Tautan arsip cloud video utuh proses belajar mengajar di Lab Komputer SMKN 3 Yogyakarta.
 - **Video Praktik Pembelajaran Terpilih (Best Practice 15–20 Menit)**: Video kompilasi alur instruksional terpadu (Pendahuluan, Eksplorasi, PPT, Wayground, OnlineGDB, dan Penutup).
-- Berkas Lembar Refleksi Diri & Catatan Umpan Balik Guru Pamong Febriyana, S.T.
+- **Repositori Google Drive Rekaman & Portofolio Tugas Siswa**: Arsip cloud resmi rekaman dan luaran siswa kelas X TM.

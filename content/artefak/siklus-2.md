@@ -88,7 +88,7 @@ Dari pengalaman Siklus 2, dua rencana strategis dirumuskan:
 
 ## 6. Berkas & Lampiran Pembelajaran Siklus 2
 
-- [Modul Ajar / RPP Siklus 2 Topologi Jaringan](/rpp.docx) (Perangkat pembelajaran berbasis problem solving).
-- [Lembar Kerja Peserta Didik (LKPD) Siklus 2](/lkpd.docx) (Panduan desain topologi jaringan lab).
+- [Modul Ajar / RPP Siklus 2 Topologi Jaringan](/dokumen/ppl-1/rpp-ppl1.docx) (Perangkat pembelajaran berbasis problem solving).
+- [Lembar Kerja Peserta Didik (LKPD) Siklus 2](/dokumen/ppl-1/lkpd-ppl1.docx) (Panduan desain topologi jaringan lab).
 - Lembar Observasi Kinerja Mengajar Lampiran 8 (Skor 3.9 oleh Febriyana, S.T.).
 - Lembar Evaluasi Disiplin Laboratorium Komputer SMKN 3 Yogyakarta.

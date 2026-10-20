@@ -59,7 +59,7 @@
                         asistensi/praktik.</p>
                 </div>
                 <div class="flex items-center gap-2">
-                    <button @click="openPdfPreview('Lampiran 7: Penilaian Rancangan Pembelajaran', '/Lampiran7.pdf')"
+                    <button @click="openPdfPreview('Lampiran 7: Penilaian Rancangan Pembelajaran', '/dokumen/ppl-1/Lampiran7-Penilaian-Perencanaan.pdf')"
                         type="button"
                         class="inline-flex items-center gap-1.5 px-4 py-2.5 bg-emerald-50 text-emerald-800 font-semibold text-sm rounded-xl border border-emerald-200 hover:bg-emerald-100 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
@@ -68,7 +68,7 @@
                         </svg>
                         Pratinjau Layar
                     </button>
-                    <a href="/Lampiran7.pdf" target="_blank" download
+                    <a href="/dokumen/ppl-1/Lampiran7-Penilaian-Perencanaan.pdf" target="_blank" download
                         class="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-stone-700 font-semibold text-sm rounded-xl border border-stone-200 shadow-sm hover:bg-stone-50 hover:text-emerald-700 hover:border-emerald-200 transition-all group">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor"
@@ -130,7 +130,7 @@
                         terbimbing.</p>
                 </div>
                 <div class="flex items-center gap-2">
-                    <button @click="openPdfPreview('Lampiran 8: Penilaian Praktik Mengajar', '/Lampiran8.pdf')"
+                    <button @click="openPdfPreview('Lampiran 8: Penilaian Praktik Mengajar', '/dokumen/ppl-1/Lampiran8-Penilaian-Pelaksanaan.pdf')"
                         type="button"
                         class="inline-flex items-center gap-1.5 px-4 py-2.5 bg-emerald-50 text-emerald-800 font-semibold text-sm rounded-xl border border-emerald-200 hover:bg-emerald-100 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
@@ -139,7 +139,7 @@
                         </svg>
                         Pratinjau Layar
                     </button>
-                    <a href="/Lampiran8.pdf" target="_blank" download
+                    <a href="/dokumen/ppl-1/Lampiran8-Penilaian-Pelaksanaan.pdf" target="_blank" download
                         class="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-stone-700 font-semibold text-sm rounded-xl border border-stone-200 shadow-sm hover:bg-stone-50 hover:text-emerald-700 hover:border-emerald-200 transition-all group">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor"

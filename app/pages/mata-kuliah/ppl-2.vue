@@ -11,7 +11,7 @@ const { data: ppl2List } = await useAsyncData('artefak-ppl2', () =>
     queryCollection('artefak').where('course', '=', 'ppl-2').all()
 )
 
-// Kategori Filter
+// Kategori Filter Dimensi
 const activeFilter = ref('all')
 const previewModal = ref(null)
 
@@ -182,62 +182,253 @@ const closePdfPreview = () => {
 }
 
 // Repositori Dokumen Otentik PPL II
+const repoFilter = ref('all')
+
+const repoCategories = [
+    { id: 'all', label: 'Semua Berkas' },
+    { id: 'Perencanaan', label: 'Perencanaan' },
+    { id: 'Materi Ajar', label: 'Materi Ajar' },
+    { id: 'Lembar Kerja', label: 'Lembar Kerja' },
+    { id: 'Media Pembelajaran', label: 'Media Pembelajaran' },
+    { id: 'Asesmen & Evaluasi', label: 'Asesmen & Evaluasi' },
+    { id: 'Nonmengajar', label: 'Nonmengajar' }
+]
+
 const documentRepository = [
     {
-        title: 'Modul Ajar Praktik Mandiri: Algoritma & Pemrograman',
-        type: 'pdf',
-        url: '/dokumen/ppl-2/modul-ajar-algoritma-pemrograman.pdf',
-        size: '127 KB',
-        badge: 'Modul Utama',
+        title: 'Rencana Pelaksanaan Dinamis (RPD): Algoritma & Pemrograman',
+        type: 'image',
+        url: '/dokumen/ppl-2/RPD Algoritma.png',
+        size: '1.6 MB',
+        badge: 'RPD Utama',
         category: 'Perencanaan',
-        description: 'Perangkat pembelajaran mandiri Kurikulum Merdeka Fase E X TM SMKN 3 Yogyakarta.'
+        description: 'Desain alur capaian pembelajaran algoritma dan pemrograman terstruktur.'
     },
     {
-        title: 'Modul Ajar Praktik Mandiri: Analisis Data',
-        type: 'pdf',
-        url: '/dokumen/ppl-2/modul-ajar-analisis-data.pdf',
-        size: '101 KB',
-        badge: 'Modul Pengayaan',
+        title: 'Rencana Pelaksanaan Dinamis (RPD): Sistem Komputer',
+        type: 'image',
+        url: '/dokumen/ppl-2/RPD Siskom.png',
+        size: '1.5 MB',
+        badge: 'RPD Penunjang',
         category: 'Perencanaan',
-        description: 'Perangkat pembelajaran kolaboratif investigasi kelompok dan diskusi panel kelas.'
+        description: 'Rancangan instruksional topik sistem komputer dan infrastruktur digital.'
     },
     {
-        title: 'Lembar Kerja Peserta Didik (LKPD) Flowchart & Koding',
+        title: 'Buku Administrasi Pendidik TA 2026/2027 (Kelas X TM 1)',
+        type: 'xlsx',
+        url: '/dokumen/ppl-2/Administrasi Pendidik 2627 - Informatika - TM 1 - Yodi Irawan.xlsx',
+        size: '1.8 MB',
+        badge: 'Administrasi Guru',
+        category: 'Perencanaan',
+        description: 'Buku administrasi pendidik komprehensif: Prota, Promes, ATP, Modul Ajar, dan Nilai.'
+    },
+    {
+        title: 'Bahan Bacaan Siswa: Algoritma dan Pemrograman',
         type: 'pdf',
-        url: '/dokumen/ppl-2/lkpd-algoritma-flowchart.pdf',
-        size: '93 KB',
-        badge: 'LKPD Praktik',
+        url: '/dokumen/ppl-2/Bahan Bacaan.pdf',
+        size: '191 KB',
+        badge: 'Bahan Ajar AP',
+        category: 'Materi Ajar',
+        description: 'Modul materi logika komputasi, diagram alir, dan pengantar algoritma pemrograman.'
+    },
+    {
+        title: 'Bahan Bacaan Siswa: Analisis Data & Validasi Informasi',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/Bahan Bacaan Analisis Data.pdf',
+        size: '364 KB',
+        badge: 'Bahan Ajar AD',
+        category: 'Materi Ajar',
+        description: 'Materi konsep pengolahan data, privasi data, dan teknik kurasi informasi.'
+    },
+    {
+        title: 'Slide Presentasi: Algoritma & Pemrograman Teknik Mesin',
+        type: 'pptx',
+        url: '/dokumen/ppl-2/Algoritma & Pemrograman - Teknik Mesin.pptx',
+        size: '696 KB',
+        badge: 'Slide Presentasi',
+        category: 'Media Pembelajaran',
+        description: 'Media tayang konseptual konfirmasi materi logika algoritma untuk siswa Teknik Mesin.'
+    },
+    {
+        title: 'Slide Presentasi: Pembersihan dan Validasi Data',
+        type: 'pptx',
+        url: '/dokumen/ppl-2/Pembersihan dan Validasi Data.pptx',
+        size: '1.8 MB',
+        badge: 'Slide Presentasi',
+        category: 'Media Pembelajaran',
+        description: 'Media presentasi interaktif materi pembersihan data kotor dan pengujian konsistensi.'
+    },
+    {
+        title: 'Cheatsheet Pemrograman Python (Bagian 1)',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/Cheatsheet Python 1.pdf',
+        size: '29 KB',
+        badge: 'Cheatsheet Python',
+        category: 'Materi Ajar',
+        description: 'Panduan sintaks cepat Python: variabel, tipe data, operator, dan percabangan.'
+    },
+    {
+        title: 'Cheatsheet Pemrograman Python (Bagian 2)',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/Cheatsheet Python 2.pdf',
+        size: '22 KB',
+        badge: 'Cheatsheet Python',
+        category: 'Materi Ajar',
+        description: 'Panduan struktur kontrol perulangan dan fungsi logika komputasi Python.'
+    },
+    {
+        title: 'Modul Praktikum: Percabangan dan Perulangan',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/Modul Praktikum Percabangan dan Perulangan.pdf',
+        size: '33 KB',
+        badge: 'Modul Praktik',
         category: 'Lembar Kerja',
-        description: 'Lembar kerja perancangan logika flowchart dan tantangan modifikasi kode C++.'
+        description: 'Modul panduan langkah demi langkah praktikum laboratorium komputer.'
     },
     {
-        title: 'Cheatsheet & Panduan Praktik Pemrograman Cloud OnlineGDB',
-        type: 'pdf',
-        url: '/dokumen/ppl-2/panduan-praktik-onlinegdb.pdf',
-        size: '100 KB',
-        badge: 'Bahan Ajar',
-        category: 'Media & Bahan',
-        description: 'Panduan zero-installation sintaks dasar C++, if-else, dan looping untuk lab komputer.'
+        title: 'LKPD: Pembersihan dan Validasi Data (X TM)',
+        type: 'docx',
+        url: '/dokumen/ppl-2/LKPD Pembersihan dan Validasi Data.docx',
+        size: '316 KB',
+        badge: 'LKPD Siswa',
+        category: 'Lembar Kerja',
+        description: 'Lembar kerja peserta didik pengolahan data mentah kebiasaan belajar siswa.'
     },
     {
-        title: 'Instrumen Asesmen Multi-Metode & Analisis Ketuntasan',
-        type: 'pdf',
-        url: '/dokumen/ppl-2/rubrik-penilaian-multimetode.pdf',
-        size: '104 KB',
-        badge: 'Instrumen Asesmen',
-        category: 'Evaluasi',
-        description: 'Rubrik catatan orisinal, kisi-kisi Wayground, rubrik koding, dan rekap ketuntasan 90.3%.'
+        title: 'Dataset Simulasi: Kebiasaan Belajar Siswa (Dirty Data)',
+        type: 'xlsx',
+        url: '/dokumen/ppl-2/Dataset Kotor Kebiasaan Belajar Siswa.xlsx',
+        size: '15 KB',
+        badge: 'Dataset Uji',
+        category: 'Asesmen & Evaluasi',
+        description: 'Dataset mentah dengan anomali data untuk bahan asesmen praktik siswa.'
     },
     {
-        title: 'Surat Tugas & Rekapitulasi Kegiatan Nonmengajar',
+        title: 'Kunci Guru: Standar Solusi Pembersihan Data',
+        type: 'xlsx',
+        url: '/dokumen/ppl-2/Kunci Guru Pembersihan Data.xlsx',
+        size: '17 KB',
+        badge: 'Kunci Jawaban',
+        category: 'Asesmen & Evaluasi',
+        description: 'Pedoman standar verifikasi dan kunci penilaian guru terhadap olah data siswa.'
+    },
+    {
+        title: 'Rubrik Penilaian Kinerja Praktik Pembersihan Data',
+        type: 'docx',
+        url: '/dokumen/ppl-2/Rubrik_Penilaian_Praktik_Pembersihan_Data.docx',
+        size: '314 KB',
+        badge: 'Rubrik Asesmen',
+        category: 'Asesmen & Evaluasi',
+        description: 'Instrumen rubrik penskoran autentik kinerja praktik analisis data.'
+    },
+    {
+        title: 'Jadwal Resmi Piket 5S Gerbang Sekolah',
         type: 'pdf',
-        url: '/dokumen/ppl-2/surat-tugas-piket-nonmengajar.pdf',
-        size: '99 KB',
-        badge: 'Surat Tugas',
+        url: '/dokumen/ppl-2/Jadwal Piket 5S.pdf',
+        size: '184 KB',
+        badge: 'Piket 5S',
         category: 'Nonmengajar',
-        description: 'Rekapitulasi resmi penugasan piket 5S, piket KBM, kepanitiaan, dan inovasi sekolah.'
+        description: 'Jadwal pembiasaan budaya Senyum, Sapa, Salam, Sopan, dan Santun di gerbang.'
+    },
+    {
+        title: 'Jadwal Piket KBM Harian Mahasiswa PPL II',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/Jadwal Piket KBM PPL 2 - PPG.pdf',
+        size: '198 KB',
+        badge: 'Piket KBM',
+        category: 'Nonmengajar',
+        description: 'Jadwal pelaksanaan piket pelayanan ketertiban kelas dan KBM harian sekolah.'
+    },
+    {
+        title: 'Undangan Resmi BIMTEK Aplikasi SIBENKA',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/Undangan BIMTEK SIBENKA.pdf',
+        size: '321 KB',
+        badge: 'Inovasi SIBENKA',
+        category: 'Nonmengajar',
+        description: 'Undangan resmi diseminasi aplikasi web Sistem Informasi Bengkel di SMKN 3 Yogyakarta.'
+    },
+    {
+        title: 'Jadwal Jumat Krida Skagata 3 in 1 (Senam & Kebugaran)',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/Jadwal Jumat Krida Skagata 3 in 1 - Skema 3 Kelas.pdf',
+        size: '69 KB',
+        badge: 'Jumat Krida',
+        category: 'Nonmengajar',
+        description: 'Skema pembagian kelas kegiatan senam bersama dan pembinaan kebugaran jasmani.'
+    },
+    {
+        title: 'Jadwal Upacara, Perwalian, dan Senam Sehat TA 2026/2027',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/Jadwal Upacara, Perwalian Wali Kelas, dan Senam Sehat Jumat Krida  - TA 2026-2027 - SMKN 3 Yogyakarta.pdf',
+        size: '88 KB',
+        badge: 'Agenda Sekolah',
+        category: 'Nonmengajar',
+        description: 'Agenda pendampingan upacara bendera dan perwalian kelas rutin SMKN 3 Yogyakarta.'
+    },
+    {
+        title: 'Kalender Kegiatan Ketarunaan SMKN 3 Yogyakarta',
+        type: 'pdf',
+        url: '/dokumen/ppl-2/Kalender_Ketarunaan_SMKN3_Yogyakarta_2026_2027.pdf',
+        size: '57 KB',
+        badge: 'Budaya Ketarunaan',
+        category: 'Nonmengajar',
+        description: 'Agenda pembinaan karakter kedisiplinan dan sistem ketarunaan vokasi Skagata.'
+    },
+    {
+        title: 'Struktur Jam Pelajaran & Jadwal KBM',
+        type: 'image',
+        url: '/dokumen/ppl-2/Jam Pelajaran.jpeg',
+        size: '276 KB',
+        badge: 'Jadwal KBM',
+        category: 'Perencanaan',
+        description: 'Struktur alokasi waktu dan jadwal tatap muka laboratorium komputer.'
+    },
+    {
+        title: 'Pengaturan Jadwal Sistem Blok 1 Praktik',
+        type: 'image',
+        url: '/dokumen/ppl-2/Blok 1.jpeg',
+        size: '204 KB',
+        badge: 'Sistem Blok',
+        category: 'Perencanaan',
+        description: 'Dokumentasi pembagian sistem blok 1 pembelajaran kejuruan.'
+    },
+    {
+        title: 'Pengaturan Jadwal Sistem Blok 2 Praktik',
+        type: 'image',
+        url: '/dokumen/ppl-2/Blok 2.jpeg',
+        size: '198 KB',
+        badge: 'Sistem Blok',
+        category: 'Perencanaan',
+        description: 'Dokumentasi pembagian sistem blok 2 pembelajaran kejuruan.'
+    },
+    {
+        title: 'Peta Konsep & Mindmap Analisis Data',
+        type: 'image',
+        url: '/dokumen/ppl-2/Analisis Data - 2.png',
+        size: '1.6 MB',
+        badge: 'Mindmap AD',
+        category: 'Media Pembelajaran',
+        description: 'Media infografis peta konsep visual pengolahan data terstruktur.'
     }
 ]
+
+const filteredRepository = computed(() => {
+    if (repoFilter.value === 'all') return documentRepository
+    return documentRepository.filter(d => d.category === repoFilter.value)
+})
+
+const getRepoBadgeClass = (type) => {
+    switch (type) {
+        case 'pdf': return 'bg-rose-50 text-rose-700 border-rose-200'
+        case 'docx': return 'bg-blue-50 text-blue-700 border-blue-200'
+        case 'pptx': return 'bg-orange-50 text-orange-700 border-orange-200'
+        case 'xlsx': return 'bg-emerald-50 text-emerald-700 border-emerald-200'
+        case 'image': return 'bg-indigo-50 text-indigo-700 border-indigo-200'
+        case 'drive': return 'bg-amber-50 text-amber-800 border-amber-200'
+        default: return 'bg-stone-50 text-stone-700 border-stone-200'
+    }
+}
 </script>
 
 <template>
@@ -271,105 +462,84 @@ const documentRepository = [
 
         <!-- KPI & Overview PPL II -->
         <section class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
-                <span class="text-xs font-bold uppercase text-stone-500">Target Luaran</span>
-                <div class="text-2xl font-bold text-teal-700 mt-1 font-serif">6 Dimensi</div>
-                <p class="text-xs text-stone-500 mt-1">Analisis Kritis Wajib</p>
+            <div class="bg-white p-5 rounded-3xl border border-stone-200/80 shadow-xs space-y-1">
+                <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Dimensi Analisis</span>
+                <div class="text-3xl font-extrabold text-stone-900">6 Dimensi</div>
+                <p class="text-xs text-stone-500">Standar resmi luaran PPG</p>
             </div>
-            <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
-                <span class="text-xs font-bold uppercase text-emerald-700">Sasaran Mengajar</span>
-                <div class="text-2xl font-bold text-stone-900 mt-1 font-serif">X TM 1 & 2</div>
-                <p class="text-xs text-stone-500 mt-1">Teknik Mesin SMKN 3</p>
+            <div class="bg-white p-5 rounded-3xl border border-stone-200/80 shadow-xs space-y-1">
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Fokus Mengajar</span>
+                <div class="text-3xl font-extrabold text-stone-900">Mandiri</div>
+                <p class="text-xs text-stone-500">Kelas X TM 1 & X TM 2</p>
             </div>
-            <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
-                <span class="text-xs font-bold uppercase text-stone-500">Guru Pamong</span>
-                <div class="text-lg font-bold text-stone-900 mt-1 truncate">Febriyana, S.T.</div>
-                <p class="text-xs text-stone-500 mt-1">LPTK UNY Yogyakarta</p>
+            <div class="bg-white p-5 rounded-3xl border border-stone-200/80 shadow-xs space-y-1">
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Sekolah Mitra</span>
+                <div class="text-3xl font-extrabold text-stone-900">SMKN 3</div>
+                <p class="text-xs text-stone-500">Yogyakarta (Skagata)</p>
             </div>
-            <div class="p-6 bg-white rounded-3xl border border-stone-100 shadow-sm">
-                <span class="text-xs font-bold uppercase text-teal-700">Status Portofolio</span>
-                <div class="text-base font-bold text-teal-700 mt-1">Tuntas Dianalisis</div>
-                <p class="text-xs text-stone-500 mt-1">6 Dimensi Lengkap</p>
+            <div class="bg-white p-5 rounded-3xl border border-stone-200/80 shadow-xs space-y-1">
+                <span class="text-xs font-bold uppercase tracking-wider text-stone-600">Progres Portofolio</span>
+                <div class="text-3xl font-extrabold text-stone-900">100%</div>
+                <p class="text-xs text-stone-500">Seluruh telaah lengkap</p>
             </div>
         </section>
 
-        <!-- Banner Orientasi Praktik Mandiri -->
-        <div class="bg-gradient-to-r from-teal-50 via-emerald-50 to-stone-50 border border-teal-200/70 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-sm">
-            <div class="space-y-2 max-w-2xl">
-                <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-teal-100 text-teal-800 text-xs font-bold rounded-full uppercase tracking-wider">
-                    Evolusi Praktik Mandiri
-                </div>
-                <h3 class="text-xl font-bold text-stone-900 font-serif">
-                    Guided Discovery & Active Note-Taking di Kelas X Teknik Mesin
-                </h3>
-                <p class="text-stone-700 text-sm md:text-base leading-relaxed text-left">
-                    Mengevaluasi pasivitas membaca pada PPL I, di PPL II saya mentransformasikan strategi instruksional menjadi <strong>Guided Discovery</strong>: siswa menelusuri materi online lalu merangkum manual dengan bahasa sendiri di buku fisik, dikonfirmasi melalui slide PPT dan kuis interaktif <strong>Wayground</strong>, serta praktik koding mandiri pada <strong>OnlineGDB</strong>.
-                </p>
-            </div>
-            <div class="flex-shrink-0">
-                <span class="px-4 py-2 bg-white text-teal-800 font-bold text-xs uppercase tracking-wider rounded-xl border border-teal-200 shadow-xs inline-block">
-                    SMKN 3 Yogyakarta
-                </span>
-            </div>
-        </div>
-
         <!-- Section: 6 Dimensi Analisis Praktik Mandiri -->
         <section class="space-y-6">
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-2 border-b border-stone-200/80">
                 <div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full">
-                        Struktur Luaran Wajib
-                    </span>
-                    <h2 class="text-2xl md:text-3xl font-bold text-stone-900 mt-2 font-serif">
-                        6 Dimensi Analisis Praktik Mandiri
+                    <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Katalog Dimensi</span>
+                    <h2 class="text-2xl md:text-3xl font-bold text-stone-900 font-serif">
+                        6 Dimensi Analisis Praktik Mengajar Mandiri
                     </h2>
                     <p class="text-stone-500 text-sm mt-1">
-                        Pilih dimensi untuk menelaah instrumen analisis, deskripsi reflektif, serta berkas artefak yang telah saya rancang.
+                        Disusun berdasarkan pedoman resmi tugas akhir PPL II Direktorat PPG Kemendikdasmen.
                     </p>
                 </div>
 
-                <!-- Filter Kategori Tabs -->
-                <div class="flex flex-wrap gap-2">
+                <!-- Tab Filter Interaktif -->
+                <div class="flex items-center gap-1.5 p-1 bg-stone-100/90 rounded-2xl overflow-x-auto self-start md:self-auto max-w-full">
                     <button v-for="cat in categories" :key="cat.id"
                         @click="activeFilter = cat.id"
                         :class="[
-                            'px-3.5 py-1.5 text-xs font-semibold rounded-full transition-all duration-200',
+                            'px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap',
                             activeFilter === cat.id
-                                ? 'bg-teal-700 text-white shadow-sm'
-                                : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                                ? 'bg-white text-teal-900 shadow-xs'
+                                : 'text-stone-600 hover:text-stone-900'
                         ]">
                         {{ cat.label }}
                     </button>
                 </div>
             </div>
 
-            <!-- Matriks Kartu 6 Dimensi -->
+            <!-- Grid 6 Dimensi Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div v-for="dim in filteredDimensions" :key="dim.id"
-                    class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
-                    
+                    class="bg-white rounded-3xl border border-stone-200/80 p-6 shadow-xs hover:shadow-md hover:border-teal-300 transition-all flex flex-col justify-between group">
+
                     <div class="space-y-4">
-                        <!-- Top Meta Header -->
+                        <!-- Top Metadata -->
                         <div class="flex items-center justify-between">
-                            <span class="w-9 h-9 rounded-2xl bg-stone-100 text-stone-700 font-bold flex items-center justify-center text-xs group-hover:bg-teal-700 group-hover:text-white transition-colors">
-                                {{ dim.number }}
-                            </span>
-                            <span :class="['px-2.5 py-1 text-[11px] font-bold rounded-full border', dim.statusClass]">
+                            <div class="flex items-center gap-2">
+                                <span class="w-8 h-8 rounded-2xl bg-stone-100 flex items-center justify-center font-serif font-bold text-sm text-stone-700">
+                                    {{ dim.number }}
+                                </span>
+                                <span class="text-xs font-bold uppercase tracking-wider text-stone-500">
+                                    {{ dim.categoryLabel }}
+                                </span>
+                            </div>
+
+                            <span :class="['text-[11px] font-bold px-2.5 py-1 rounded-full border', dim.statusClass]">
                                 {{ dim.status }}
                             </span>
                         </div>
 
-                        <!-- Icon & Judul -->
-                        <div class="space-y-2">
-                            <div :class="['w-10 h-10 rounded-2xl flex items-center justify-center', dim.iconBg]">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" :d="dim.iconSvg" />
-                                </svg>
-                            </div>
-                            <h3 class="text-lg font-bold text-stone-900 group-hover:text-teal-700 transition-colors leading-snug font-serif">
+                        <!-- Judul Dimensi -->
+                        <div>
+                            <h3 class="text-lg font-bold text-stone-900 group-hover:text-teal-800 transition-colors font-serif leading-snug">
                                 {{ dim.title }}
                             </h3>
-                            <p class="text-xs font-semibold text-stone-500">
+                            <p class="text-xs text-stone-500 mt-1 font-medium">
                                 {{ dim.subtitle }}
                             </p>
                         </div>
@@ -497,29 +667,72 @@ const documentRepository = [
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
                         </svg>
-                        Evidence Vault • Perangkat Otentik
+                        Evidence Vault • Perangkat Pembelajaran Otentik
                     </div>
                     <h2 class="text-2xl md:text-3xl font-bold text-stone-900 font-serif">
-                        Pusat Repositori Perangkat Pembelajaran Mandiri
+                        Pusat Repositori Berkas Asli PPL II
                     </h2>
                     <p class="text-stone-600 text-sm max-w-2xl leading-relaxed">
-                        Koleksi lengkap dokumen fisik dan digital asli pelaksanaan PPL II di SMK Negeri 3 Yogyakarta. Asesor dan dosen pembimbing dapat mempratinjau langsung dokumen PDF di layar atau mengunduh berkas master.
+                        Koleksi lengkap dokumen fisik dan digital asli pelaksanaan PPL II di SMK Negeri 3 Yogyakarta. Asesor dan dosen pembimbing dapat mempratinjau langsung dokumen di layar atau mengunduh berkas master.
                     </p>
                 </div>
                 <div class="flex items-center gap-2">
                     <span class="px-3.5 py-1.5 bg-white text-stone-700 font-semibold text-xs rounded-xl border border-stone-200 shadow-xs">
-                        {{ documentRepository.length }} Dokumen Resmi Terverifikasi
+                        {{ documentRepository.length }} Berkas Otentik
                     </span>
                 </div>
             </div>
 
+            <!-- Google Drive Banner: Tugas Murid X TM -->
+            <div class="p-6 md:p-8 bg-gradient-to-br from-amber-500/10 via-emerald-500/10 to-teal-500/10 rounded-3xl border border-amber-200/80 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 shadow-xs">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/>
+                        </svg>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-amber-100 text-amber-800 text-[10px] font-bold rounded-full uppercase tracking-wider">
+                            Google Drive Siswa • Cloud Storage
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-stone-900 font-serif">
+                            Repositori Portofolio & Tugas Murid Kelas X TM
+                        </h3>
+                        <p class="text-stone-600 text-xs md:text-sm leading-relaxed max-w-2xl">
+                            Seluruh hasil pengerjaan tugas mandiri dan kelompok siswa (berukuran besar) tersimpan rapi di Google Drive resmi: lembar pengerjaan pembersihan data, file spreadsheet, notasi flowchart, dan program Python.
+                        </p>
+                    </div>
+                </div>
+                <a href="https://drive.google.com/drive/folders/1l3G0LNKkGxQ8UR0H7qK3E2_NA-FlDqSb?usp=sharing" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 px-5 py-3 bg-amber-700 hover:bg-amber-800 text-white text-xs sm:text-sm font-bold rounded-2xl shadow-sm transition-all group flex-shrink-0">
+                    <span>Buka Folder Google Drive</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 group-hover:translate-x-0.5 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Tab Filter Kategori Repositori -->
+            <div class="flex items-center gap-1.5 p-1 bg-stone-100 rounded-2xl overflow-x-auto max-w-full">
+                <button v-for="rcat in repoCategories" :key="rcat.id"
+                    @click="repoFilter = rcat.id"
+                    :class="[
+                        'px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap',
+                        repoFilter === rcat.id
+                            ? 'bg-white text-emerald-900 shadow-xs'
+                            : 'text-stone-600 hover:text-stone-900'
+                    ]">
+                    {{ rcat.label }}
+                </button>
+            </div>
+
             <!-- Grid Kartu Berkas Repositori -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div v-for="(file, fIdx) in documentRepository" :key="fIdx"
+                <div v-for="(file, fIdx) in filteredRepository" :key="fIdx"
                     class="bg-white p-5 rounded-2xl border border-stone-200 hover:border-emerald-300 hover:shadow-sm transition-all flex flex-col justify-between space-y-4 group">
                     <div class="space-y-2.5">
                         <div class="flex items-center justify-between gap-2">
-                            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">
+                            <span :class="['text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md border', getRepoBadgeClass(file.type)]">
                                 {{ file.type.toUpperCase() }}
                             </span>
                             <span class="text-[11px] font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-md">
@@ -538,7 +751,9 @@ const documentRepository = [
                     </div>
 
                     <div class="pt-3 border-t border-stone-100 flex items-center justify-between gap-2">
-                        <button @click="openPdfPreview(file)"
+                        <!-- Pratinjau Layar untuk PDF dan Gambar -->
+                        <button v-if="file.type === 'pdf' || file.type === 'image'"
+                            @click="openPdfPreview(file)"
                             type="button"
                             class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 rounded-xl transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
@@ -548,8 +763,10 @@ const documentRepository = [
                             <span>Pratinjau Layar</span>
                         </button>
 
-                        <a :href="file.url" download target="_blank"
-                            class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-stone-700 bg-stone-100 hover:bg-stone-200 rounded-xl transition-colors">
+                        <a :href="file.url"
+                            :download="file.type !== 'drive' && file.type !== 'video' && file.type !== 'link'"
+                            target="_blank"
+                            class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-stone-700 bg-stone-100 hover:bg-stone-200 rounded-xl transition-colors ml-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5 text-stone-500">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
                             </svg>
@@ -634,7 +851,7 @@ const documentRepository = [
             </div>
         </div>
 
-        <!-- Modal Pratinjau Dokumen PDF -->
+        <!-- Modal Pratinjau Dokumen PDF & Gambar -->
         <PdfViewerModal
             :is-open="isPdfModalOpen"
             :title="activePdfTitle"

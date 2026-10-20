@@ -8,12 +8,36 @@ date: "2026-10-16"
 badge: "Dimensi 03 - Media Instruksional"
 color: "teal"
 attachments:
-  - title: "Panduan Praktik Zero-Installation (OnlineGDB & C++)"
+  - title: "Slide Presentasi: Pembersihan dan Validasi Data"
+    type: "pptx"
+    url: "/dokumen/ppl-2/Pembersihan dan Validasi Data.pptx"
+    size: "1.8 MB"
+    badge: "Media PPTX"
+    description: "Media presentasi interaktif untuk demonstrasi langkah-langkah pembersihan data."
+  - title: "Slide Presentasi: Algoritma & Pemrograman Teknik Mesin"
+    type: "pptx"
+    url: "/dokumen/ppl-2/Algoritma & Pemrograman - Teknik Mesin.pptx"
+    size: "696 KB"
+    badge: "Media PPTX"
+    description: "Media tayang penguatan visual konsep algoritma dan pemrograman."
+  - title: "Dataset Simulasi: Kebiasaan Belajar Siswa (Raw Dirty Data)"
+    type: "xlsx"
+    url: "/dokumen/ppl-2/Dataset Kotor Kebiasaan Belajar Siswa.xlsx"
+    size: "15 KB"
+    badge: "Media Dataset"
+    description: "Dataset riil studi kasus kebiasaan belajar siswa untuk praktikum pembersihan data."
+  - title: "Mindmap & Infografis Konsep Analisis Data"
+    type: "image"
+    url: "/dokumen/ppl-2/Analisis Data - 2.png"
+    size: "1.6 MB"
+    badge: "Infografis Media"
+    description: "Media visual peta konsep pengolahan dan pemodelan analisis data terstruktur."
+  - title: "Modul Praktikum Percabangan dan Perulangan"
     type: "pdf"
-    url: "/dokumen/ppl-2/panduan-praktik-onlinegdb.pdf"
-    size: "100 KB"
-    badge: "Panduan Media"
-    description: "Cheatsheet petunjuk pengoperasian media web IDE tanpa instalasi lokal di laboratorium komputer."
+    url: "/dokumen/ppl-2/Modul Praktikum Percabangan dan Perulangan.pdf"
+    size: "33 KB"
+    badge: "Modul Praktik"
+    description: "Cheatsheet dan lembar modul interaktif praktik laboratorium."
   - title: "Platform Evaluasi Gamifikasi Wayground"
     type: "link"
     url: "https://wayground.com"
@@ -51,8 +75,8 @@ flowchart LR
 | **3** | **Slide PPT Guru** | *Visual Presentation* | **Validasi & Konfirmasi Konsep**: Digunakan guru di depan kelas untuk mengulas hasil pencarian mandiri siswa, meluruskan pemahaman yang keliru, serta memandu diskusi terbuka dua arah. |
 | **4** | **Wayground** | *Gamified Quiz Platform* | **Evaluasi Formatif Interaktif**: Wadah asesmen cepat berupa kuis pilihan ganda interaktif dengan visual dan dinamika permainan yang sangat memacu antusiasme siswa teknik. |
 | **5** | **Blockly Games** | *Visual Logic Puzzle* | **Jembatan Logika Algoritma**: Media permainan susun-blok interaktif untuk memperkuat nalar alur instruksi sekuensial dan percabangan sebelum siswa berhadapan dengan baris kode teks. |
-| **6** | **OnlineGDB** | *Cloud Web IDE* | **Eksekusi Koding Instan**: Lingkungan pengembangan kode terpadu berbasis peramban yang memungkinkan siswa menulis, mengompilasi, dan menguji program tanpa repot menginstal software lokal di laboratorium. |
-| **7** | **Cheatsheet / Panduan Ringkas PDF** | *Handout Digital Ringkas* | **Panduan Mandiri Siswa**: Lembaran ringkasan sintaks dasar, struktur perintah, dan contoh implementasi yang dapat diakses mandiri oleh siswa saat guru berkeliling mendampingi siswa lain. |
+| **6** | **OnlineGDB & Python** | *Cloud Web IDE* | **Eksekusi Koding Instan**: Lingkungan pengembangan kode terpadu berbasis peramban yang memungkinkan siswa menulis, mengompilasi, dan menguji program tanpa repot menginstal software lokal di laboratorium. |
+| **7** | **Cheatsheet & Modul Praktikum PDF** | *Handout Digital Ringkas* | **Panduan Mandiri Siswa**: Lembaran ringkasan sintaks dasar, struktur perintah, dan contoh implementasi yang dapat diakses mandiri oleh siswa saat guru berkeliling mendampingi siswa lain. |
 | **8** | **Generative AI Tools** | *AI Learning Assistant* | **Eksplorasi Tingkat Lanjut**: Digunakan secara terarah pada fase modifikasi kode untuk melatih siswa mengeksplorasi variasi algoritma dan memahami etika pemanfaatan AI. |
 
 ---
@@ -83,4 +107,4 @@ Laboratorium komputer sekolah kejuruan sering menghadapi kendala lisensi atau va
 - Tautan Sesi Evaluasi Gamifikasi Wayground (Bank Soal Algoritma Pemrograman).
 - Tautan Portal Latihan Logika Visual: [Blockly Games](https://blockly.games).
 - Tautan Lingkungan Koding Laboratorium: [OnlineGDB IDE](https://www.onlinegdb.com).
-- [Berkas Cheatsheet & Panduan Praktik Koding PDF](/lkpd.docx).
+- Slide Presentasi Pembersihan Data & Algoritma Teknik Mesin (Format PPTX).

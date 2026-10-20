@@ -34,6 +34,12 @@ const getBadgeStyle = (type) => {
                 iconBg: 'bg-emerald-100 text-emerald-600',
                 label: 'Excel Data'
             }
+        case 'image':
+            return {
+                bg: 'bg-indigo-50 text-indigo-700 border-indigo-200',
+                iconBg: 'bg-indigo-100 text-indigo-600',
+                label: 'Gambar / Infografis'
+            }
         case 'drive':
             return {
                 bg: 'bg-amber-50 text-amber-800 border-amber-200',
@@ -104,8 +110,8 @@ const getBadgeStyle = (type) => {
 
                 <!-- Action Button Group -->
                 <div class="pt-3 border-t border-stone-100 flex items-center justify-between gap-2">
-                    <!-- Tombol Pratinjau Khusus PDF -->
-                    <button v-if="file.type === 'pdf'"
+                    <!-- Tombol Pratinjau Khusus PDF & Gambar -->
+                    <button v-if="file.type === 'pdf' || file.type === 'image'"
                         @click="emit('preview', file)"
                         type="button"
                         class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 rounded-xl transition-colors">
@@ -136,4 +142,3 @@ const getBadgeStyle = (type) => {
         </div>
     </section>
 </template>
-

@@ -8,23 +8,36 @@ date: "2026-10-16"
 badge: "Dimensi 01 - Perencanaan"
 color: "teal"
 attachments:
-  - title: "Modul Ajar Praktik Mandiri: Algoritma dan Pemrograman (Fase E X TM)"
-    type: "pdf"
-    url: "/dokumen/ppl-2/modul-ajar-algoritma-pemrograman.pdf"
-    size: "127 KB"
-    badge: "Modul Utama"
-    description: "Modul ajar Kurikulum Merdeka Fase E X TM SMKN 3 Yogyakarta memuat model Guided Discovery dan sintesis catatan manual."
-  - title: "Modul Ajar Praktik Mandiri: Analisis Data (Fase E X TM)"
-    type: "pdf"
-    url: "/dokumen/ppl-2/modul-ajar-analisis-data.pdf"
-    size: "101 KB"
-    badge: "Modul Pengayaan"
-    description: "Perangkat pembelajaran investigasi kelompok dan panel presentasi kelas elemen Analisis Data."
-  - title: "Agenda Pembelajaran & Alur Apersepsi Harian (Google Docs)"
-    type: "link"
-    url: "https://docs.google.com"
-    badge: "Apersepsi"
-    description: "Tautan live agenda transparansi target waktu dan rundown pembelajaran yang dibagikan saat apersepsi."
+  - title: "Rencana Pelaksanaan Dinamis (RPD): Algoritma & Pemrograman"
+    type: "image"
+    url: "/dokumen/ppl-2/RPD Algoritma.png"
+    size: "1.6 MB"
+    badge: "RPD Modul Utama"
+    description: "Desain rancangan alur pembelajaran terstruktur elemen Algoritma dan Pemrograman Fase E X TM."
+  - title: "Rencana Pelaksanaan Dinamis (RPD): Sistem Komputer"
+    type: "image"
+    url: "/dokumen/ppl-2/RPD Siskom.png"
+    size: "1.5 MB"
+    badge: "RPD Penunjang"
+    description: "Rancangan pembelajaran dinamis topik sistem komputer dan perangkat keras pendukung."
+  - title: "Administrasi Pendidik Lengkap TA 2026/2027 (Kelas X TM 1)"
+    type: "xlsx"
+    url: "/dokumen/ppl-2/Administrasi Pendidik 2627 - Informatika - TM 1 - Yodi Irawan.xlsx"
+    size: "1.8 MB"
+    badge: "Buku Administrasi Guru"
+    description: "Dokumen komprehensif administrasi guru: Program Tahunan/Semester, ATP, Modul, Rekap Nilai, dan Presensi."
+  - title: "Struktur Jam Pelajaran & Jadwal KBM SMKN 3 Yogyakarta"
+    type: "image"
+    url: "/dokumen/ppl-2/Jam Pelajaran.jpeg"
+    size: "276 KB"
+    badge: "Jadwal KBM"
+    description: "Struktur alokasi waktu dan pembagian jam tatap muka laboratorium komputer."
+  - title: "Skema Pengaturan Sistem Blok 1 & 2 Pembelajaran SMK"
+    type: "image"
+    url: "/dokumen/ppl-2/Blok 1.jpeg"
+    size: "204 KB"
+    badge: "Sistem Blok"
+    description: "Dokumentasi pengaturan jadwal sistem blok pembelajaran praktik kejuruan di SMKN 3 Yogyakarta."
 ---
 
 ## 1. Konteks Kelas & Rasional Perencanaan Mandiri
@@ -41,64 +54,28 @@ Karakteristik peserta didik rumpun Teknik Mesin memiliki ketertarikan tinggi ter
 
 ## 2. Metamorfosis Pedagogis: Refleksi PPL I Menuju Desain PPL II
 
-Perencanaan pembelajaran PPL II merupakan hasil refleksi mendalam atas evaluasi PPL I:
-- **Tantangan di PPL I**: Penerapan metode *In-Class Flipped Learning* pasif pada PPL I terbukti kurang efektif. Sebagian besar siswa cenderung pasif, terdistraksi oleh gawai/komputer saat membaca teks digital yang panjang, dan interaksi kelas sulit terbangun.
-- **Inovasi Desain di PPL II**: Saya merombak skenario modul ajar menjadi **Siklus Belajar Berkelanjutan Terpandu (Guided Discovery & Active Synthesis)**. Siswa tidak lagi dibiarkan membaca dokumen pasif, melainkan dipandu melalui langkah-langkah terstruktur:
-  1. *Transparansi Agenda*: Penyampaian rundown kegiatan via **Google Docs** di awal sesi agar siswa memiliki orientasi waktu dan target yang jelas.
-  2. *Active Note-Taking*: Siswa menelusuri poin materi melalui internet, tetapi **wajib menuliskan intisari pemahaman menggunakan bahasa sendiri di buku tulis fisik** (menolak salin-tempel/copy-paste).
-  3. *Validasi Klasikal*: Presentasi interaktif PPT oleh guru untuk menyamakan persepsi dan meluruskan miskonsepsi.
-  4. *Scaffolded Hands-on Practice*: Praktik terpandu menggunakan panduan ringkas (*cheatsheet*), jembatan logika visual dengan **Blockly Games**, implementasi kode pada **OnlineGDB**, serta kebebasan modifikasi dengan bantuan kecerdasan artifisial (AI).
+Perencanaan pembelajaran PPL II merupakan hasil kristalisasi evaluasi mendalam dari pelaksanaan PPL I terbimbing sebelumnya:
+- **Kelemahan Model Sebelumnya**: Pada PPL I, saya sempat menguji coba metode *In-Class Flipped Learning*. Hasil evaluasi empiris menunjukkan metode tersebut kurang efektif; banyak peserta didik bersikap pasif, membuka aplikasi lain di komputer laboratorium, dan absorpsi konsep teoritis menjadi sangat lambat.
+- **Inovasi Desain Instruksional PPL II**: Menjawab tantangan tersebut, pada PPL II saya mengubah dan meningkatkan desain pembelajaran menjadi model **Guided Discovery Learning** yang diperkuat oleh sintesis aktif (*Active Synthesis Cycle*):
+  1. *Transparansi Alur Belajar*: Setiap awal pertemuan, rundown kegiatan dan target capaian dibagikan secara transparan melalui **Google Docs** agar siswa memiliki orientasi waktu yang jelas.
+  2. *Active Note-Taking (Catatan Manual Orisinal)*: Siswa diwajibkan mencari poin-poin materi esensial di peramban, membacanya, dan mencatat intisarinya ke dalam **buku tulis fisik menggunakan kalimat dan pemahaman mereka sendiri** (dilarang menyalin mentah/copy-paste).
+  3. *Active Roaming Guru*: Selama siswa melakukan eksplorasi dan pencatatan, saya berkeliling kelas (*proximity control*) untuk memeriksa kemajuan pemahaman dan memberikan bimbingan individual bagi yang mengalami hambatan kognitif.
+  4. *Validasi Klasikal*: Konsep yang telah dicatat siswa kemudian divalidasi bersama di depan kelas menggunakan media slide presentasi interaktif dan forum diskusi tanya-jawab terbuka.
+  5. *Evaluasi Gamifikasi Cepat*: Pemahaman siswa diuji secara menyenangkan melalui kuis gamifikasi **Wayground**, menciptakan antusiasme kompetitif yang sehat.
 
 ---
 
-## 3. Struktur & Alur Aktivitas Instruksional
+## 3. Diferensiasi Desain Antara Teori dan Praktik
 
-Rancangan modul ajar yang saya susun membedakan alur pembelajaran untuk sesi teori dan sesi praktik dengan tetap mempertahankan konsistensi manajemen kelas:
-
-### A. Alur Modul Pembelajaran Teori (Algoritma & Analisis Data)
-1. **Fase Apersepsi & Orientasi**:
-   - Guru membuka kelas, menyapa siswa, dan membuka dokumen Google Docs yang memuat peta kegiatan, sasaran kompetensi, dan rundown langkah demi langkah hari itu.
-2. **Fase Eksplorasi & Sintesis Mandiri**:
-   - Guru memberikan poin-poin kunci materi esensial.
-   - Siswa melakukan penelusuran mandiri menggunakan peramban (*browser*).
-   - Siswa membaca, menganalisis, dan merangkum konsep ke dalam buku catatan masing-masing dengan kalimat orisinal.
-   - Guru aktif berkeliling (*active roaming*) untuk memantau progres catatan, membimbing siswa yang mengalami hambatan, serta memastikan siswa tetap fokus pada koridor materi.
-3. **Fase Konfirmasi & Diskusi Terbuka (PPT Validation)**:
-   - Guru menayangkan presentasi PPT untuk memvalidasi temuan siswa, meluruskan definisi yang keliru, dan membuka forum tanya jawab interaktif.
-4. **Fase Evaluasi Formatif Gamifikasi**:
-   - Siswa menyelesaikan kuis evaluasi formatif berbasis game interaktif melalui platform **Wayground**, menciptakan atmosfer evaluasi yang menyenangkan dan kompetitif.
-
-### B. Alur Modul Pembelajaran Praktik (Elemen Algoritma & Pemrograman)
-1. **Fase Apersepsi Praktik**:
-   - Mengaitkan konsep algoritma dengan alur kerja nyata (seperti instruksi kerja mesin pada bidang keteknikan).
-2. **Fase Pemanduan Praktik (*Scaffolding*)**:
-   - Guru membagikan lembar panduan/modul ringkas (*cheatsheet*) dalam bentuk format digital PDF.
-   - Siswa menguji logika langkah kerja pemrograman melalui teka-teki logika berbasis blok (**Blockly Games**) sebelum masuk ke bahasa tekstual.
-   - Siswa mempraktikkan penulisan program langsung pada IDE berbasis web (**OnlineGDB**).
-   - Guru melakukan pendampingan intensif berkeliling laboratorium untuk memberikan asistensi teknis *one-on-one*.
-3. **Fase Modifikasi & Eksplorasi AI**:
-   - Siswa ditantang untuk memodifikasi keluaran program sesuai kreativitas masing-masing.
-   - Siswa diperbolehkan mengeksplorasi sintaks alternatif secara kritis berbantukan perangkat AI (seperti AI code assistant), mendorong literasi teknologi mutakhir yang bertanggung jawab.
-
-### C. Diferensiasi dan Progresi Pembelajaran
-Perencanaan yang saya susun memperlihatkan progresi bertahap:
-- Pada elemen awal (Algoritma dan Pemrograman), fokus diletakkan pada kemandirian individu (*individual discovery*) guna membangun fondasi nalar komputasional tiap peserta didik.
-- Pada elemen berikutnya (Analisis Data), desain instruksional ditingkatkan ke arah **pembelajaran kolaboratif kelompok**: siswa mengkaji data bersama tim, menyusun slide presentasi, dan mempresentasikan hasil analisis di hadapan rekan sejawat untuk melatih kecakapan komunikasi publik.
+Rancangan modul ajar PPL II saya bagi menjadi dua format eksekusi yang saling melengkapi:
+- **Format Sesi Teori Komputasional**: Menekankan penalaran konsep, konstruksi catatan orisinal, serta diskusi kelompok. Pada elemen Analisis Data, desain saya tingkatkan dari pencarian mandiri individu menjadi investigasi kelompok kecil yang bermuara pada presentasi panel kelas.
+- **Format Sesi Praktik Pemrograman (Coding)**: Menerapkan pendekatan *Scaffolded Guided Coding*. Saya menyediakan modul panduan, *cheatsheet*, dan *starter code*. Peserta didik menguji algoritma di platform IDE web (**OnlineGDB**), lalu pada tahap evaluasi diberikan kebebasan memodifikasi logika kode secara kreatif, termasuk memanfaatkan eksplorasi berbasis AI secara kritis dan etis.
 
 ---
 
-## 4. Evaluasi Kritis atas Keselarasan Perangkat
-
-Berdasarkan telaah perangkat dan supervisi bersama Guru Pamong (Ibu **Febriyana, S.T.**) dan DPL:
-- **Kekuatan Modul**: Pembagian fase yang jelas (Eksplorasi → Catatan Mandiri → Konfirmasi Klasikal → Gamifikasi) sangat efektif mereduksi perilaku pasif siswa dan meminimalkan celah pengawasan guru (*blind spot*).
-- **Fleksibilitas Alokasi Waktu**: Penyediaan panduan ringkas *cheatsheet* sangat membantu menghemat waktu instruksi tatap muka, sehingga porsi waktu terbesar (60-70%) dialokasikan untuk latihan terbimbing dan pendampingan individu.
-- **Integrasi Asesmen Autentik**: Perangkat tidak hanya mengukur capaian kognitif akhir, melainkan mencakup penilaian proses pada buku catatan siswa, keterlibatan diskusi, kepatuhan rundown Google Docs, dan pengisian *exit ticket*.
-
----
-
-## 5. Berkas & Lampiran Dokumen Perencanaan
-
-- [Modul Ajar Informatika Fase E: Algoritma dan Pemrograman](/rpp.docx) (Perangkat pembelajaran mandiri di SMKN 3 Yogyakarta).
-- [Cheatsheet & Panduan Praktik Pemrograman OnlineGDB](/lkpd.docx) (Panduan ringkas langkah kerja siswa).
-- Dokumen Google Docs Rundown & Agenda Instruksional Kelas X TM 1 & X TM 2.
-- Lembar Telaah Perangkat Pembelajaran bersama Guru Pamong Febriyana, S.T.
+## 4. Tautan Dokumen Produk Perencanaan
+- Rencana Pelaksanaan Dinamis (RPD) Algoritma & Pemrograman Fase E X TM.
+- Rencana Pelaksanaan Dinamis (RPD) Sistem Komputer & Perangkat Digital.
+- Buku Administrasi Pendidik Lengkap (ATP, Program Tahunan/Semester, Rekap Nilai).
+- Struktur Jam Pelajaran & Jadwal KBM SMKN 3 Yogyakarta.
+- Dokumentasi Pengaturan Sistem Blok Pembelajaran Kejuruan.

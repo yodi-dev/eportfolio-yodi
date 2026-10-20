@@ -8,18 +8,35 @@ date: "2026-10-16"
 badge: "Dimensi 06 - Asesmen & Evaluasi"
 color: "teal"
 attachments:
-  - title: "Instrumen Penilaian Multi-Metode & Analisis Ketuntasan"
-    type: "pdf"
-    url: "/dokumen/ppl-2/rubrik-penilaian-multimetode.pdf"
-    size: "104 KB"
-    badge: "Instrumen Asesmen"
-    description: "Rubrik catatan orisinal, kisi-kisi Wayground, rubrik koding OnlineGDB, dan rekap ketuntasan klasikal (>90%)."
-  - title: "Lembar Kerja Peserta Didik (LKPD) Flowchart & Koding"
-    type: "pdf"
-    url: "/dokumen/ppl-2/lkpd-algoritma-flowchart.pdf"
-    size: "93 KB"
+  - title: "LKPD: Pembersihan dan Validasi Data (Fase E X TM)"
+    type: "docx"
+    url: "/dokumen/ppl-2/LKPD Pembersihan dan Validasi Data.docx"
+    size: "316 KB"
     badge: "LKPD Asli"
-    description: "Lembar kerja peserta didik untuk perancangan diagram alir logika dan konversi program C++."
+    description: "Lembar kerja peserta didik berbasis studi kasus pembersihan data kotor kebiasaan belajar."
+  - title: "Rubrik Penilaian Kinerja Praktik Pembersihan Data"
+    type: "docx"
+    url: "/dokumen/ppl-2/Rubrik_Penilaian_Praktik_Pembersihan_Data.docx"
+    size: "314 KB"
+    badge: "Rubrik Asesmen"
+    description: "Pedoman penskoran autentik kinerja siswa mencakup validasi data, rumus spreadsheet, dan kerapian output."
+  - title: "Bahan Uji Asesmen: Dataset Kotor Kebiasaan Belajar"
+    type: "xlsx"
+    url: "/dokumen/ppl-2/Dataset Kotor Kebiasaan Belajar Siswa.xlsx"
+    size: "15 KB"
+    badge: "Dataset Uji"
+    description: "File spreadsheet data mentah yang digunakan sebagai bahan asesmen unjuk kerja siswa."
+  - title: "Kunci Jawaban Guru: Standar Solusi Pembersihan Data"
+    type: "xlsx"
+    url: "/dokumen/ppl-2/Kunci Guru Pembersihan Data.xlsx"
+    size: "17 KB"
+    badge: "Kunci Penilaian"
+    description: "Kunci pedoman validasi guru untuk mengukur ketepatan pembersihan dan filtering data siswa."
+  - title: "Kumpulan Hasil Tugas Murid Kelas X TM (Google Drive)"
+    type: "drive"
+    url: "https://drive.google.com/drive/folders/1l3G0LNKkGxQ8UR0H7qK3E2_NA-FlDqSb?usp=sharing"
+    badge: "Tugas Siswa (Drive)"
+    description: "Penyimpanan cloud resmi portofolio tugas murid kelas X TM 1 & X TM 2 berisi file pengerjaan pembersihan data, program, dan LKPD."
 ---
 
 ## 1. Paradigma Asesmen Autentik Multi-Metode
@@ -38,45 +55,36 @@ Mengingat siswa memiliki keragaman gaya belajar dan kecakapan komputasi, instrum
 ```mermaid
 graph TD
     A["Sistem Penilaian Terpadu PPL II"] --> B["1. Evaluasi Tertulis Manual<br/>(Buku Catatan & Flowchart)"]
-    A --> C["2. Evaluasi Gamifikasi Online<br/>(Wayground Quiz)"]
-    A --> D["3. Evaluasi Praktik Koding<br/>(OnlineGDB Submission & Modifikasi AI)"]
-    A --> E["4. Evaluasi Proyek Kelompok<br/>(Slide Presentasi Analisis Data)"]
-    A --> F["5. Evaluasi Reflektif<br/>(Exit Ticket Form)"]
-    style A fill:#0f766e,stroke:#115e59,stroke-width:2px,color:#fff
-    style B fill:#fefce8,stroke:#ca8a04,stroke-width:1px
+    A --> C["2. Gamifikasi Digital<br/>(Kuis Wayground)"]
+    A --> D["3. Kinerja Praktik Coding<br/>(OnlineGDB & Python)"]
+    A --> E["4. Kinerja Presentasi Kelompok<br/>(Slide Analisis Data)"]
+    A --> F["5. Evaluasi Reflektif Diri<br/>(Exit Ticket Siswa)"]
+    style A fill:#047857,stroke:#065f46,stroke-width:2px,color:#fff
+    style B fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
     style C fill:#fdf2f8,stroke:#db2777,stroke-width:1px
     style D fill:#f0fdfa,stroke:#0d9488,stroke-width:1px
     style E fill:#eff6ff,stroke:#2563eb,stroke-width:1px
-    style F fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
+    style F fill:#fefce8,stroke:#ca8a04,stroke-width:1px
 ```
 
-### A. Asesmen Tertulis Manual (Buku Catatan & Flowchart)
-- **Rubrik Penilaian Catatan Siswa**:
-  - *Orisinalitas Bahasa*: Menilai kemampuan siswa merangkum materi peramban menggunakan kalimat sendiri (skor maksimal diberikan jika tidak ada kalimat yang sekadar menyalin mentah-mentah dari web).
-  - *Kelengkapan Poin Kunci*: Memastikan poin-poin materi esensial tercakup secara sistematis.
-  - *Kerapian & Keterbacaan*: Menilai struktur hierarki tulisan dan diagram logika sederhana.
-- **Pengerjaan Flowchart Manual**:
-  - Siswa menggambar diagram alur logika algoritma di buku catatan dengan simbol ANSI standar (Terminator, Input/Output, Process, Decision, Flowline). Menilai kebenaran alur logika sebelum diimplementasikan ke dalam program komputer.
+### A. Evaluasi Tertulis Manual (Buku Catatan & Flowchart)
+- **Fokus Pengukuran**: Orisinalitas pemahaman, kerapian penyusunan alur logika, dan kemampuan menyintesis informasi dari internet ke dalam bahasa sendiri.
+- **Rubrik Penilaian**:
+  - Skor 4: Catatan lengkap, konsep akurat, disusun dengan bahasa sendiri, flowchart menggunakan simbol ANSI yang benar.
+  - Skor 3: Catatan lengkap, sebagian kalimat masih menyalin dari internet, flowchart runtut.
+  - Skor 2: Catatan kurang lengkap, alur logika flowchart melompat.
+  - Skor 1: Catatan menyalin mentah atau tidak mengerjakan.
 
-### B. Asesmen Gamifikasi Digital (Platform Wayground)
-- **Karakteristik Soal**: Butir soal pilihan ganda konseptual dan studi kasus algoritma tingkat tinggi (HOTS) yang disajikan dengan batasan waktu dinamis.
-- **Fungsi Analitik**: Platform Wayground menghasilkan data statistik langsung:
-  - Sebaran skor kelas X TM 1 dan X TM 2 secara real-time.
-  - Identifikasi butir soal dengan persentase kesalahan tertinggi (*item difficulty analysis*) untuk langsung dibahas dan diklarifikasi bersama di kelas.
+### B. Kuis Formatif Gamifikasi (Wayground)
+- **Fokus Pengukuran**: Pemahaman cepat butir soal pilihan ganda seputar logika percabangan, perulangan, dan konsep data.
+- **Mekanisme**: Platform Wayground memberikan umpan balik langsung (*immediate feedback*), analisis butir soal per siswa, dan papan peringkat (*leaderboard*) yang memicu motivasi belajar intrinsik.
 
-### C. Asesmen Kinerja Praktik Koding (OnlineGDB Submission)
-- **Mekanisme Pengumpulan**: Siswa mengeksekusi program di IDE web OnlineGDB, menguji jalannya kode, lalu mengunduh berkas sumber kode (*source code*) untuk dinilai.
-- **Kriteria Penilaian Kinerja**:
-  1. *Fungsionalitas Program*: Program dapat dikompilasi (*compile*) tanpa galat sintaks dan menghasilkan keluaran (*output*) yang sesuai spesifikasi persoalan.
-  2. *Kreativitas Modifikasi Logika*: Siswa diberi kebebasan memodifikasi variabel, pesan interaktif, atau alur percabangan program.
-  3. *Eksplorasi Berbantukan AI*: Kemampuan siswa memanfaatkan prompt kecerdasan artifisial untuk memperkaya fungsionalitas program secara etis dan bertanggung jawab.
+### C. Kinerja Praktik Coding (OnlineGDB & Python)
+- **Fokus Pengukuran**: Kemampuan menyusun kode sumber yang dapat dieksekusi tanpa galat (*zero runtime error*), struktur logika program, serta kreativitas dalam memodifikasi fitur program secara mandiri maupun berbantuan AI.
+- **Format Luaran**: Berkas unduhan source code dari platform OnlineGDB yang diverifikasi langsung oleh guru saat sesi keliling kelas.
 
-### D. Asesmen Kolaboratif (Slide Presentasi Analisis Data)
-- **Tingkatan Progresi**: Pada materi Analisis Data, proses pencarian ditingkatkan dari penugasan individu menjadi **penugasan investigasi kelompok**.
-- **Rubrik Penilaian Presentasi**:
-  - *Kualitas Slide*: Kerapian visual, kesesuaian data yang dihimpun, dan kejelasan alur informasi.
-  - *Penyampaian & Kerja Sama*: Keterlibatan seluruh anggota kelompok saat berbicara di depan kelas.
-  - *Kecakapan Diskusi*: Kemampuan merespons tanggapan dan pertanyaan dari kelompok audiens secara kritis dan santun.
+### D. Kinerja Presentasi Kelompok (Elemen Analisis Data)
+- **Fokus Pengukuran**: Kerja sama tim, kualitas materi slide, kejelasan penyampaian temuan data, serta responsivitas saat sesi tanya jawab antarkelompok.
 
 ### E. Asesmen Reflektif Diri (Exit Ticket)
 - Berupa lembar umpan balik singkat yang diisi siswa di akhir sesi:
@@ -112,8 +120,8 @@ pie title Distribusi Hasil Evaluasi Kelas X TM
 
 ## 4. Berkas & Lampiran Instrumen Asesmen
 
-- Kisi-kisi Asesmen Formatif & Bank Soal Pilihan Ganda Wayground.
-- Rubrik Penilaian Kinerja Koding Praktik OnlineGDB dan Flowchart.
-- Rubrik Penilaian Slide & Unjuk Kerja Presentasi Kelompok Analisis Data.
-- Rekapitulasi Tanggapan Exit Ticket Siswa Kelas X TM 1 dan X TM 2.
-- Tabel Rekapitulasi Ketuntasan Belajar & Rencana Program Remedial-Pengayaan.
+- **Lembar Kerja Peserta Didik (LKPD)**: Panduan praktikum pembersihan dan validasi data kotor.
+- **Rubrik Penilaian Kinerja Praktik**: Pedoman penilaian autentik proses pembersihan data.
+- **Dataset Kotor Simulasi**: Berkas spreadsheet data studi kasus kebiasaan belajar siswa.
+- **Kunci Pedoman Guru**: Kunci penyelesaian dan kriteria keberhasilan olah data.
+- **Repositori Tugas Murid di Google Drive**: Seluruh portofolio dan hasil pengerjaan siswa kelas X TM 1 & X TM 2.

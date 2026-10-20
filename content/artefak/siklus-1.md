@@ -81,7 +81,7 @@ Dalam sesi refleksi pasca-pembelajaran bersama Guru Pamong Ibu **Febriyana, S.T.
 
 ## 5. Berkas & Lampiran Pembelajaran Siklus 1
 
-- [Modul Ajar / RPP Siklus 1 Informatika Fase E](/rpp.docx) (Perangkat pembelajaran terbimbing siklus pertama).
-- [Lembar Kerja Peserta Didik (LKPD) Siklus 1](/lkpd.docx) (Lembar kerja identifikasi logika proposisi).
+- [Modul Ajar / RPP Siklus 1 Informatika Fase E](/dokumen/ppl-1/rpp-ppl1.docx) (Perangkat pembelajaran terbimbing siklus pertama).
+- [Lembar Kerja Peserta Didik (LKPD) Siklus 1](/dokumen/ppl-1/lkpd-ppl1.docx) (Lembar kerja identifikasi logika proposisi).
 - Catatan Harian Refleksi Praktik Lapangan Terbimbing Siklus 1.
 - Lembar Observasi Partisipasi Kelas bersama Guru Pamong Febriyana, S.T.

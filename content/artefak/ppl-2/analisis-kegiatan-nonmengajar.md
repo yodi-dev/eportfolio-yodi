@@ -8,12 +8,42 @@ date: "2026-10-16"
 badge: "Dimensi 05 - Nonmengajar"
 color: "teal"
 attachments:
-  - title: "Surat Tugas & Rekapitulasi Kegiatan Nonmengajar PPL II"
+  - title: "Jadwal Resmi Piket 5S Gerbang Sekolah"
     type: "pdf"
-    url: "/dokumen/ppl-2/surat-tugas-piket-nonmengajar.pdf"
-    size: "99 KB"
-    badge: "Surat Tugas Resmi"
-    description: "Rekapitulasi resmi penugasan piket 5S, piket KBM, kepanitiaan HUT RI, serta inovasi SIBENKA dan SIPENSI."
+    url: "/dokumen/ppl-2/Jadwal Piket 5S.pdf"
+    size: "184 KB"
+    badge: "Piket 5S"
+    description: "Jadwal penugasan pembiasaan Senyum, Sapa, Salam, Sopan, dan Santun di gerbang utama SMKN 3 Yogyakarta."
+  - title: "Jadwal Piket KBM Harian Mahasiswa PPL II"
+    type: "pdf"
+    url: "/dokumen/ppl-2/Jadwal Piket KBM PPL 2 - PPG.pdf"
+    size: "198 KB"
+    badge: "Piket KBM"
+    description: "Jadwal pelaksanaan piket pelayanan ketertiban kelas dan koordinasi KBM harian sekolah mitra."
+  - title: "Undangan Resmi BIMTEK Aplikasi SIBENKA"
+    type: "pdf"
+    url: "/dokumen/ppl-2/Undangan BIMTEK SIBENKA.pdf"
+    size: "321 KB"
+    badge: "Inovasi SIBENKA"
+    description: "Surat undangan resmi bimbingan teknis dan diseminasi implementasi aplikasi web SIBENKA di SMKN 3 Yogyakarta."
+  - title: "Jadwal Jumat Krida Skagata 3 in 1 (Senam & Kebugaran)"
+    type: "pdf"
+    url: "/dokumen/ppl-2/Jadwal Jumat Krida Skagata 3 in 1 - Skema 3 Kelas.pdf"
+    size: "69 KB"
+    badge: "Jumat Krida"
+    description: "Panduan dan skema pembagian kelas kegiatan senam bersama dan pembinaan kebugaran jasmani."
+  - title: "Jadwal Upacara, Perwalian, dan Senam Sehat TA 2026/2027"
+    type: "pdf"
+    url: "/dokumen/ppl-2/Jadwal Upacara, Perwalian Wali Kelas, dan Senam Sehat Jumat Krida  - TA 2026-2027 - SMKN 3 Yogyakarta.pdf"
+    size: "88 KB"
+    badge: "Agenda Sekolah"
+    description: "Kalender penugasan pendampingan upacara bendera dan perwalian siswa bersama wali kelas."
+  - title: "Kalender Kegiatan Ketarunaan SMKN 3 Yogyakarta"
+    type: "pdf"
+    url: "/dokumen/ppl-2/Kalender_Ketarunaan_SMKN3_Yogyakarta_2026_2027.pdf"
+    size: "57 KB"
+    badge: "Budaya Ketarunaan"
+    description: "Agenda pembinaan karakter kedisiplinan dan sistem ketarunaan vokasi SMKN 3 Yogyakarta."
   - title: "Inovasi Sistem Informasi Bengkel Mesin (SIBENKA)"
     type: "link"
     url: "https://github.com/yodi-dev"
@@ -93,8 +123,8 @@ Keterlibatan intensif dalam agenda nonmengajar memberikan hikmah mendalam bagi p
 
 ## 4. Tautan & Lampiran Dokumentasi Nonmengajar
 
-- Dokumentasi Visual & Logbook Pelaksanaan Piket 5S dan Piket KBM.
-- Arsip Foto & Sertifikat Kepanitiaan HUT RI ke-79 dan HUT SMKN 3 Yogyakarta.
-- Dokumentasi Rancang Bangun & Tangkapan Layar Sistem Informasi **SIBENKA**.
-- Dokumentasi Rancang Bangun & Tangkapan Layar Sistem Informasi **SIPENSI**.
-- Surat Keterangan / Pengesahan Kontribusi Kegiatan Persekolahan dari Pihak Sekolah Mitra.
+- Jadwal Resmi Piket 5S Gerbang Sekolah.
+- Jadwal Piket Pelayanan KBM Harian Mahasiswa PPL II.
+- Surat Undangan Resmi Bimbingan Teknis (BIMTEK) Aplikasi **SIBENKA**.
+- Panduan Pelaksanaan Jumat Krida Skagata 3 in 1.
+- Kalender Kegiatan dan Pembinaan Budaya Ketarunaan SMKN 3 Yogyakarta.

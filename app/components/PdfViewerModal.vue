@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, onUnmounted } from 'vue'
+import { computed, onMounted, onUnmounted } from 'vue'
 
 const props = defineProps({
     isOpen: {
@@ -17,6 +17,11 @@ const props = defineProps({
 })
 
 const emit = defineEmits(['close'])
+
+const isImage = computed(() => {
+    if (!props.fileUrl) return false
+    return /\.(png|jpe?g|webp|gif|svg)(\?.*)?$/i.test(props.fileUrl)
+})
 
 const handleKeyDown = (e) => {
     if (e.key === 'Escape' && props.isOpen) {
@@ -50,12 +55,17 @@ onUnmounted(() => {
                     <div class="px-6 py-4 bg-stone-900 text-white flex items-center justify-between border-b border-stone-800 flex-shrink-0">
                         <div class="flex items-center gap-3 overflow-hidden">
                             <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <svg v-if="isImage" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>
+                                <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
                                 </svg>
                             </div>
                             <div class="truncate">
-                                <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400 block">Pratinjau Dokumen Otentik</span>
+                                <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400 block">
+                                    {{ isImage ? 'Pratinjau Gambar / Infografis' : 'Pratinjau Dokumen Otentik' }}
+                                </span>
                                 <h3 class="text-sm sm:text-base font-semibold text-white truncate font-serif">{{ title }}</h3>
                             </div>
                         </div>
@@ -88,11 +98,14 @@ onUnmounted(() => {
                         </div>
                     </div>
 
-                    <!-- PDF Viewer Iframe / Fallback -->
-                    <div class="flex-1 bg-stone-100 relative">
-                        <iframe v-if="fileUrl" :src="fileUrl"
+                    <!-- Viewer / Fallback -->
+                    <div class="flex-1 bg-stone-100 relative flex items-center justify-center overflow-auto p-4">
+                        <img v-if="isImage" :src="fileUrl"
+                            class="max-w-full max-h-[78vh] object-contain rounded-xl shadow-md border border-stone-200 bg-white"
+                            :alt="title" />
+                        <iframe v-else-if="fileUrl" :src="fileUrl"
                             class="w-full h-full border-0"
-                            title="Pratinjau PDF">
+                            title="Pratinjau Dokumen">
                         </iframe>
                         <div v-else class="flex flex-col items-center justify-center h-full text-stone-500 gap-2 p-6 text-center">
                             <p class="text-sm">Dokumen tidak dapat dimuat atau berkas belum dipilih.</p>
@@ -120,4 +133,3 @@ onUnmounted(() => {
     animation: scaleIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 </style>
-

@@ -16,7 +16,7 @@ export default defineContentConfig({
                 color: z.string().optional(),
                 attachments: z.array(z.object({
                     title: z.string(),
-                    type: z.enum(['pdf', 'docx', 'pptx', 'xlsx', 'drive', 'video', 'link']).default('pdf'),
+                    type: z.enum(['pdf', 'docx', 'pptx', 'xlsx', 'image', 'drive', 'video', 'link']).default('pdf'),
                     url: z.string(),
                     size: z.string().optional(),
                     badge: z.string().optional(),

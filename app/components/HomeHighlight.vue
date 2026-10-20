@@ -20,11 +20,9 @@
                         class="px-4 py-1.5 bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider rounded-full">Siklus
                         1</span>
                 </div>
-                <h3 class="text-xl font-bold text-stone-900 mb-3 font-serif">Perencanaan &
-                    Asesmen</h3>
+                <h3 class="text-xl font-bold text-stone-900 mb-3 font-serif">Tantangan Dasar & Adaptasi</h3>
                 <p class="text-stone-600 text-sm md:text-base flex-grow mb-6 leading-relaxed">
-                    Penyusunan modul ajar pertama dan pelaksanaan asesmen diagnostik untuk memahami karakteristik setiap
-                    peserta didik di kelas.
+                    Mendiagnosis karakteristik murid kejuruan, evaluasi kelemahan bahan bacaan teks panjang, dan perombakan modul ajar visual bersama GP Febriyana, S.T.
                 </p>
                 <NuxtLink to="/artefak/siklus-1"
                     class="text-emerald-700 font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all mt-auto w-max">
@@ -43,11 +41,9 @@
                         class="px-4 py-1.5 bg-teal-100 text-teal-800 text-xs font-bold uppercase tracking-wider rounded-full">Siklus
                         2</span>
                 </div>
-                <h3 class="text-xl font-bold text-stone-900 mb-3 font-serif">Implementasi &
-                    Adaptasi</h3>
+                <h3 class="text-xl font-bold text-stone-900 mb-3 font-serif">Penguatan Manajemen Kelas</h3>
                 <p class="text-stone-600 text-sm md:text-base flex-grow mb-6 leading-relaxed">
-                    Penerapan model pembelajaran inovatif berdasarkan hasil refleksi siklus pertama untuk meningkatkan
-                    keterlibatan siswa secara aktif.
+                    Penguatan active roaming dan scaffolding di lab komputer, mitigasi blind spot, serta penegakan disiplin humanis Sistem Among (Skor L8: 3.9).
                 </p>
                 <NuxtLink to="/artefak/siklus-2"
                     class="text-teal-700 font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all mt-auto w-max">
@@ -66,11 +62,9 @@
                         class="px-4 py-1.5 bg-stone-200 text-stone-800 text-xs font-bold uppercase tracking-wider rounded-full">Siklus
                         3</span>
                 </div>
-                <h3 class="text-xl font-bold text-stone-900 mb-3 font-serif">Refleksi
-                    Komprehensif</h3>
+                <h3 class="text-xl font-bold text-stone-900 mb-3 font-serif">Otonomi & Diferensiasi</h3>
                 <p class="text-stone-600 text-sm md:text-base flex-grow mb-6 leading-relaxed">
-                    Evaluasi akhir proses pembelajaran, analisis hasil asesmen sumatif, serta penyusunan rencana tindak
-                    lanjut untuk perbaikan ke depan.
+                    Inovasi riset mandiri terpandu di internet dan diferensiasi produk presentasi (Canva vs PPT) yang memicu lonjakan antusiasme belajar 100%.
                 </p>
                 <NuxtLink to="/artefak/siklus-3"
                     class="text-stone-700 font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all mt-auto w-max">
@@ -91,7 +85,7 @@
                     class="absolute inset-0 w-full h-full bg-gradient-to-r from-emerald-600 to-teal-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 </div>
                 <span class="relative flex items-center gap-3">
-                    Jelajahi Semua Artefak
+                    Jelajahi 13 Artefak Pembelajaran
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-5 h-5 group-hover:translate-x-1.5 transition-transform">
                         <path stroke-linecap="round" stroke-linejoin="round"

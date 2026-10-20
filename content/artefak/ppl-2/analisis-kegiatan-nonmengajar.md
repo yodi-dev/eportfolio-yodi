@@ -66,20 +66,39 @@ Selama menjalani masa PPL II di **SMK Negeri 3 Yogyakarta (Skagata)**, saya meng
 
 ## 2. Rincian Pelaksanaan 5 Pilar Aktivitas Nonmengajar
 
-```mermaid
-graph TD
-    A["Aktivitas Nonmengajar PPL II"] --> B["1. Piket 5S Gerbang Sekolah"]
-    A --> C["2. Piket KBM & Tata Tertib"]
-    A --> D["3. Kepanitiaan HUT RI (17-an)"]
-    A --> E["4. Peringatan HUT Sekolah (Dies Natalis)"]
-    A --> F["5. Inovasi Digital: SIBENKA & SIPENSI"]
-    style A fill:#0f766e,stroke:#115e59,stroke-width:2px,color:#fff
-    style B fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
-    style C fill:#f0fdfa,stroke:#0d9488,stroke-width:1px
-    style D fill:#fefce8,stroke:#ca8a04,stroke-width:1px
-    style E fill:#eff6ff,stroke:#2563eb,stroke-width:1px
-    style F fill:#faf5ff,stroke:#9333ea,stroke-width:2px
-```
+<div class="not-prose my-6 p-5 bg-stone-50 rounded-2xl border border-stone-200">
+  <div class="text-xs font-bold uppercase tracking-wider text-teal-800 mb-4 flex items-center gap-2">
+    <span class="w-2 h-2 rounded-full bg-teal-500"></span>
+    5 Pilar Aktivitas Nonmengajar & Dedikasi Persekolahan PPL II
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs">
+    <div class="p-3 bg-white rounded-xl border border-emerald-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-emerald-100 text-emerald-800 font-bold text-[10px] rounded uppercase">Pilar 1</span>
+      <h5 class="font-bold text-stone-900 text-xs">Piket 5S Gerbang</h5>
+      <p class="text-[11px] text-stone-500 leading-relaxed">Penyambutan senyum, salam, sapa, ketertiban seragam & helm.</p>
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-teal-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-teal-100 text-teal-800 font-bold text-[10px] rounded uppercase">Pilar 2</span>
+      <h5 class="font-bold text-stone-900 text-xs">Piket KBM</h5>
+      <p class="text-[11px] text-stone-500 leading-relaxed">Presensi keterlambatan, penanganan kelas kosong, izin siswa.</p>
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-amber-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-amber-100 text-amber-800 font-bold text-[10px] rounded uppercase">Pilar 3</span>
+      <h5 class="font-bold text-stone-900 text-xs">HUT RI ke-79</h5>
+      <p class="text-[11px] text-stone-500 leading-relaxed">Kepanitiaan lomba 17-an & dokumentasi visual kejuaraan.</p>
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-blue-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-blue-100 text-blue-800 font-bold text-[10px] rounded uppercase">Pilar 4</span>
+      <h5 class="font-bold text-stone-900 text-xs">Dies Natalis Skagata</h5>
+      <p class="text-[11px] text-stone-500 leading-relaxed">Manajemen panggung seni & ketertiban arus penonton.</p>
+    </div>
+    <div class="p-3 bg-teal-800 text-white rounded-xl space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-teal-950 text-teal-200 font-bold text-[10px] rounded uppercase">Inovasi Unggulan</span>
+      <h5 class="font-bold text-white text-xs">SIBENKA & SIPENSI</h5>
+      <p class="text-[11px] text-teal-100 leading-relaxed">Rancang bangun web presensi & sistem info digital sekolah.</p>
+    </div>
+  </div>
+</div>
 
 ### A. Piket 5S (Senyum, Salam, Sapa, Sopan, Santun) di Gerbang Sekolah
 - **Fokus Kegiatan**: Berjaga di gerbang utama sekolah setiap pagi sebelum bel masuk berbunyi untuk menyambut kedatangan peserta didik, guru, dan tenaga kependidikan.

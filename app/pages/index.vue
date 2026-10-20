@@ -23,9 +23,9 @@ const quickModules = [
     },
     {
         title: 'Artefak Pembelajaran',
-        desc: 'Katalog modul ajar, LKPD, inovasi, dan analisis diferensiasi multi-siklus.',
+        desc: 'Katalog 13 modul ajar, 6 dimensi analisis PPL II, dan LK 1–4 Seminar PPG.',
         to: '/artefak',
-        badge: 'Koleksi Berkas',
+        badge: '13 Dokumen',
         color: 'emerald',
         icon: 'M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z'
     },
@@ -122,10 +122,10 @@ const quickModules = [
 
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                 <div class="bg-white p-6 rounded-3xl border border-stone-100 shadow-sm space-y-2">
-                    <span class="text-xs font-bold uppercase tracking-wider text-stone-500">Artefak Siklus</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-stone-500">Total Artefak</span>
                     <div class="text-3xl md:text-4xl font-extrabold text-stone-900 font-serif">
-                        3</div>
-                    <p class="text-stone-500 text-xs leading-relaxed">Siklus 1, 2, & 3 PPL I Terdokumentasi</p>
+                        13</div>
+                    <p class="text-stone-500 text-xs leading-relaxed">PPL I (3), PPL II (6), Seminar (4)</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-3xl border border-stone-100 shadow-sm space-y-2">
@@ -199,15 +199,13 @@ const quickModules = [
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
                             <span class="text-xs font-bold text-stone-500 uppercase">Mata Kuliah 2</span>
-                            <span class="px-2.5 py-0.5 bg-teal-100 text-teal-800 text-xs font-bold rounded-full">Praktik
-                                Mandiri</span>
+                            <span class="px-2.5 py-0.5 bg-teal-100 text-teal-800 text-xs font-bold rounded-full">6 Dimensi Lengkap</span>
                         </div>
                         <h3 class="text-lg font-bold text-stone-900 group-hover:text-teal-700 transition-colors font-serif">
                             PPL II: Praktik Mandiri
                         </h3>
                         <p class="text-stone-600 text-sm leading-relaxed">
-                            Dokumentasi pelaksanaan pembelajaran mandiri penuh di kelas, studi kasus penanganan siswa,
-                            dan evaluasi belajar.
+                            Praktik mandiri kelas X TM 1 & 2 SMKN 3 Yogyakarta, telaah 6 dimensi, integrasi Wayground & OnlineGDB, serta aplikasi SIBENKA & SIPENSI.
                         </p>
                     </div>
                     <div
@@ -223,14 +221,13 @@ const quickModules = [
                         <div class="flex items-center justify-between">
                             <span class="text-xs font-bold text-stone-500 uppercase">Mata Kuliah 3</span>
                             <span
-                                class="px-2.5 py-0.5 bg-amber-100 text-amber-800 text-xs font-bold rounded-full">Perancangan</span>
+                                class="px-2.5 py-0.5 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full">4 Lembar Kerja</span>
                         </div>
                         <h3 class="text-lg font-bold text-stone-900 group-hover:text-amber-700 transition-colors font-serif">
                             Seminar PPG
                         </h3>
                         <p class="text-stone-600 text-sm leading-relaxed">
-                            Ruang diseminasi karya inovasi pembelajaran, jurnal refleksi kritis berkelanjutan, dan
-                            naskah artikel ilmiah.
+                            Refleksi komprehensif (LK 1-3) dan Desain Inovasi SIPENSI berbasis gamifikasi & face recognition (LK 4) lengkap berkas otentik.
                         </p>
                     </div>
                     <div

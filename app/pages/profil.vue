@@ -46,31 +46,42 @@ useSeoMeta({
                         <h2 class="text-3xl font-bold text-stone-900 font-serif">
                             Yodi Irawan
                         </h2>
-                        <p class="text-stone-500 text-sm mt-1">Calon Pendidik Profesional • Praktisi Pembelajaran Adaptif & Teknologi</p>
+                        <p class="text-stone-500 text-sm mt-1">NIM: <strong>25105260008</strong> • Bidang Studi: <strong>Informatika</strong></p>
                     </div>
 
                     <p class="text-stone-700 leading-relaxed text-base md:text-[17px] text-left">
-                        Seorang pendidik yang bersemangat mengombinasikan kepekaan pedagogi humanis dengan kecakapan teknologi instruksional. Berfokus pada penciptaan ekosistem kelas yang aman, memberdayakan nalar kritis, dan memfasilitasi kemandirian belajar bagi setiap peserta didik.
+                        Seorang pendidik yang bersemangat mengombinasikan kepekaan pedagogi humanis dengan kecakapan teknologi instruksional. Berfokus pada penciptaan ekosistem kelas yang aman, memberdayakan nalar kritis, dan memfasilitasi kemandirian belajar bagi setiap peserta didik di SMK Negeri 3 Yogyakarta.
                     </p>
 
-                    <!-- Informasi Meta / Ringkasan -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3 border-t border-stone-100 text-left text-sm">
-                        <div class="flex items-center gap-3">
-                            <span class="text-stone-500 text-xs font-bold uppercase tracking-wider w-24">Asal Wilayah</span>
-                            <span class="text-stone-800 font-medium">Jambi – Sumatera Selatan</span>
+                    <!-- Informasi Meta / Ringkasan Akademik -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-4 border-t border-stone-100 text-left text-sm">
+                        <div class="flex items-center gap-2">
+                            <span class="text-stone-400 text-xs font-bold uppercase tracking-wider w-28 flex-shrink-0">Sekolah PPL</span>
+                            <span class="text-stone-800 font-medium truncate">SMK Negeri 3 Yogyakarta</span>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <span class="text-stone-500 text-xs font-bold uppercase tracking-wider w-24">Akar Budaya</span>
-                            <span class="text-stone-800 font-medium">Budaya Melayu</span>
+                        <div class="flex items-center gap-2">
+                            <span class="text-stone-400 text-xs font-bold uppercase tracking-wider w-28 flex-shrink-0">Kelas Sasaran</span>
+                            <span class="text-stone-800 font-medium truncate">X TM 1 & X TM 2 (Teknik Mesin)</span>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <span class="text-stone-500 text-xs font-bold uppercase tracking-wider w-24">Guru Pamong</span>
+                        <div class="flex items-center gap-2">
+                            <span class="text-stone-400 text-xs font-bold uppercase tracking-wider w-28 flex-shrink-0">Guru Pamong</span>
                             <span class="text-stone-800 font-medium">Febriyana, S.T.</span>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <span class="text-stone-500 text-xs font-bold uppercase tracking-wider w-24">Web Pribadi</span>
-                            <a href="http://awanbeo.my.id" target="_blank" rel="noopener noreferrer" class="text-emerald-700 font-semibold hover:underline">
-                                awanbeo.my.id
+                        <div class="flex items-center gap-2">
+                            <span class="text-stone-400 text-xs font-bold uppercase tracking-wider w-28 flex-shrink-0">Akar Budaya</span>
+                            <span class="text-stone-800 font-medium">Melayu (Jambi – Sumsel)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-stone-400 text-xs font-bold uppercase tracking-wider w-28 flex-shrink-0">LPTK Asal</span>
+                            <span class="text-stone-800 font-medium">Universitas Negeri Yogyakarta</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-stone-400 text-xs font-bold uppercase tracking-wider w-28 flex-shrink-0">Web Portofolio</span>
+                            <a href="https://awanbeo.my.id" target="_blank" rel="noopener noreferrer" class="text-emerald-700 font-semibold hover:underline flex items-center gap-1">
+                                <span>awanbeo.my.id</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -174,7 +185,7 @@ useSeoMeta({
                 </div>
 
                 <div class="flex-shrink-0">
-                    <a href="http://awanbeo.my.id" target="_blank" rel="noopener noreferrer"
+                    <a href="https://awanbeo.my.id" target="_blank" rel="noopener noreferrer"
                         class="px-6 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-2xl text-xs font-bold uppercase tracking-wider inline-flex items-center gap-2 transition-all shadow-md hover:scale-105">
                         Lihat Portofolio Web Dev
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">

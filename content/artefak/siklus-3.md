@@ -44,15 +44,29 @@ Tujuan pembelajaran siklus ini adalah membekali siswa kejuruan dengan daya nalar
 
 Belajar dari evaluasi Siklus 1 (siswa pasif jika disodori teks panjang) dan Siklus 2 (perlunya instruksi terstruktur anti-distraksi), pada Siklus 3 saya menerapkan dua terobosan utama:
 
-```mermaid
-flowchart TD
-    A["Tantangan Topik Hoaks & Verifikasi"] --> B["Riset Mandiri Terpandu via Peramban"]
-    B --> C{"Diferensiasi Produk Presentasi"}
-    C --> D["Format Canva Multimedia Visual"]
-    C --> E["Format Slide PPT Interaktif"]
-    D --> F["Presentasi Kelas & Diskusi Kolaboratif"]
-    E --> F
-```
+<div class="not-prose my-6 p-5 bg-teal-50/60 rounded-2xl border border-teal-200/80">
+  <div class="text-xs font-bold uppercase tracking-wider text-teal-900 mb-3 flex items-center gap-2">
+    <span class="w-2 h-2 rounded-full bg-teal-600"></span>
+    Alur Inovasi: Riset Mandiri Terpandu & Diferensiasi Produk
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+    <div class="p-3 bg-white rounded-xl border border-teal-100 space-y-1 shadow-xs">
+      <span class="text-[10px] font-bold text-teal-700 uppercase">Tahap 1</span>
+      <p class="font-bold text-stone-800">Tantangan Studi Kasus</p>
+      <p class="text-stone-500">Mengkaji fenomena hoaks riil di media sosial.</p>
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-teal-100 space-y-1 shadow-xs">
+      <span class="text-[10px] font-bold text-teal-700 uppercase">Tahap 2</span>
+      <p class="font-bold text-stone-800">Riset Mandiri Terpandu</p>
+      <p class="text-stone-500">Eksplorasi peramban lab dengan prompt kata kunci.</p>
+    </div>
+    <div class="p-3 bg-emerald-700 text-white rounded-xl space-y-1 shadow-xs">
+      <span class="text-[10px] font-bold text-emerald-200 uppercase">Tahap 3: Otonomi Produk</span>
+      <p class="font-bold">Diferensiasi Bebas</p>
+      <p class="text-emerald-100 text-[11px]">Pilihan format: Canva Visual vs Slide PPT Interaktif.</p>
+    </div>
+  </div>
+</div>
 
 1. **Riset Mandiri Terpandu (*Guided Web-Research*)**: Siswa tidak lagi dijejali bahan bacaan pasif, melainkan diberikan lembar panduan kata kunci (*keyword prompt*) untuk mencari, membedah, dan memverifikasi contoh kasus hoaks riil yang beredar di internet menggunakan peramban komputer masing-masing.
 2. **Diferensiasi Produk Presentasi**: Saya memberikan kemerdekaan belajar (*student agency*) dalam memilih media pelaporan hasil analisis. Siswa yang berminat pada desain grafis memilih menggunakan **Canva**, sementara siswa yang menyukai struktur teks teratur memilih menggunakan **PowerPoint (PPT)**.

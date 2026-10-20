@@ -69,20 +69,44 @@ attachments:
 
 Pada pelaksanaan PPL II di **SMK Negeri 3 Yogyakarta**, keberhasilan pembelajaran di kelas **X TM 1 dan X TM 2** sangat ditentukan oleh pemilihan media yang tepat guna dan responsif terhadap karakteristik siswa. Menghindari kelemahan PPL I di mana siswa mudah terdistraksi saat membaca bahan tayang yang monoton, saya membangun sebuah **Ekosistem Media Multi-Modal Terpadu** yang mengombinasikan keunggulan platform digital modern dengan keandalan media konvensional.
 
-```mermaid
-flowchart LR
-    A["1. Google Docs<br/>Rundown & Transparansi Agenda"] --> B["2. Browser & Buku Fisik<br/>Active Note-Taking & Parafrase"]
-    B --> C["3. Slide PPT Interaktif<br/>Konfirmasi & Diskusi Kelas"]
-    C --> D["4. Wayground<br/>Evaluasi Gamifikasi Cepat"]
-    D --> E["5. Blockly Games & OnlineGDB<br/>Jembatan Logika & Praktik Ngoding"]
-    E --> F["6. Modul Cheatsheet PDF<br/>Panduan Modifikasi & AI Assistant"]
-    style A fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
-    style B fill:#fefce8,stroke:#ca8a04,stroke-width:2px
-    style C fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style D fill:#fdf2f8,stroke:#db2777,stroke-width:2px
-    style E fill:#f0fdfa,stroke:#0d9488,stroke-width:2px
-    style F fill:#faf5ff,stroke:#9333ea,stroke-width:2px
-```
+<div class="not-prose my-6 p-5 bg-stone-50 rounded-2xl border border-stone-200">
+  <div class="text-xs font-bold uppercase tracking-wider text-teal-800 mb-4 flex items-center gap-2">
+    <span class="w-2 h-2 rounded-full bg-teal-500"></span>
+    Arsitektur 6 Tahapan Ekosistem Media Multi-Modal Terpadu
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-2 text-xs">
+    <div class="p-3 bg-white rounded-xl border border-stone-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-emerald-100 text-emerald-800 font-bold text-[9px] rounded uppercase">01. Agenda</span>
+      <h5 class="font-bold text-stone-800 text-xs">Google Docs</h5>
+      <p class="text-[11px] text-stone-500 leading-tight">Transparansi alur & target waktu.</p>
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-stone-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-amber-100 text-amber-800 font-bold text-[9px] rounded uppercase">02. Catatan</span>
+      <h5 class="font-bold text-stone-800 text-xs">Buku Fisik</h5>
+      <p class="text-[11px] text-stone-500 leading-tight">Active note-taking anti copas.</p>
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-stone-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-blue-100 text-blue-800 font-bold text-[9px] rounded uppercase">03. Validasi</span>
+      <h5 class="font-bold text-stone-800 text-xs">Slide PPT</h5>
+      <p class="text-[11px] text-stone-500 leading-tight">Konfirmasi klasikal interaktif.</p>
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-stone-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-pink-100 text-pink-800 font-bold text-[9px] rounded uppercase">04. Kuis</span>
+      <h5 class="font-bold text-stone-800 text-xs">Wayground</h5>
+      <p class="text-[11px] text-stone-500 leading-tight">Gamifikasi & leaderboard kelas.</p>
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-stone-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-teal-100 text-teal-800 font-bold text-[9px] rounded uppercase">05. Praktik</span>
+      <h5 class="font-bold text-stone-800 text-xs">OnlineGDB</h5>
+      <p class="text-[11px] text-stone-500 leading-tight">Cloud IDE & Blockly logika.</p>
+    </div>
+    <div class="p-3 bg-teal-700 text-white rounded-xl space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-teal-900 text-teal-100 font-bold text-[9px] rounded uppercase">06. Panduan</span>
+      <h5 class="font-bold text-white text-xs">Cheatsheet PDF</h5>
+      <p class="text-[11px] text-teal-100 leading-tight">Sintaks ringkas & AI prompt.</p>
+    </div>
+  </div>
+</div>
 
 ---
 

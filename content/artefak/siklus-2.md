@@ -48,13 +48,29 @@ Namun, strategi baru ini memunculkan tantangan baru yang tidak terduga:
 - **Munculnya Titik Buta Pengawasan (*Blind Spot*)**: Ketika saya mencurahkan perhatian mendalam untuk membantu satu kelompok di sudut ruangan, beberapa siswa di sudut lain memanfaatkan kelengahan tersebut untuk membuka peramban lain, bermain game daring, atau mengakses media sosial.
 - **Dilema Alokasi Waktu**: Terlalu lama berhenti di satu meja menyebabkan kelompok lain merasa terabaikan dan kehilangan momentum fokus belajar.
 
-```mermaid
-flowchart TD
-    A["Active Roaming Tanpa Timer Ketat"] --> B["Fokus Terpusat pada 1 Kelompok"]
-    B --> C["Tercipta Blind Spot di Sudut Lain Lab"]
-    C --> D["Siswa Curi-Curi Buka Game/Sosmed"]
-    D --> E["Urgensi Proximity Control & Disiplin Tegas"]
-```
+<div class="not-prose my-6 p-5 bg-amber-50/60 rounded-2xl border border-amber-200/80">
+  <div class="text-xs font-bold uppercase tracking-wider text-amber-900 mb-3 flex items-center gap-2">
+    <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+    Alur Tantangan: Dinamika Blind Spot di Laboratorium Komputer
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-5 gap-2 text-center text-xs">
+    <div class="p-3 bg-white rounded-xl border border-amber-100 font-semibold text-stone-800 shadow-xs">
+      1. Active Roaming Tanpa Timer
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-amber-100 font-semibold text-amber-800 shadow-xs">
+      2. Terlalu Lama di 1 Meja
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-amber-100 font-semibold text-amber-800 shadow-xs">
+      3. Blind Spot Sudut Lab
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-amber-100 font-semibold text-stone-700 shadow-xs">
+      4. Siswa Terdistraksi Game
+    </div>
+    <div class="p-3 bg-amber-600 text-white rounded-xl font-bold shadow-xs">
+      5. Solusi: Proximity & Timer
+    </div>
+  </div>
+</div>
 
 ---
 

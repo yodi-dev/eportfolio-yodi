@@ -92,15 +92,29 @@ Penyusunan materi mengedepankan integrasi tiga dimensi TPACK:
 - **Pedagogical Knowledge (PK)**: Penerapan metode *Active Note-Taking* di mana siswa menelusuri materi melalui internet dan wajib mencatatnya dengan kalimat mereka sendiri di buku tulis fisik guna merangsang proses kognitif pemahaman mendalam. Dilanjutkan validasi klasikal menggunakan slide PPT interaktif dan evaluasi formatif melalui kuis permainan **Wayground**.
 - **Technological Knowledge (TK)**: Pemanfaatan platform web modern yang ringan tanpa membebani fasilitas lab komputer: **Google Docs** untuk transparansi rencana kegiatan belajar harian, **Blockly Games** sebagai media jembatan logika visual, **OnlineGDB** sebagai lingkungan pengembangan program (IDE) cloud instan, dan artikel digital rujukan serta panduan format ringkas (*cheatsheet PDF*).
 
-```mermaid
-graph TD
-    CK["Content Knowledge (CK)<br/>Algoritma, Pemrograman, Analisis Data"] --- PK["Pedagogical Knowledge (PK)<br/>Active Note-Taking, Scaffolding, Wayground"]
-    PK --- TK["Technological Knowledge (TK)<br/>Blockly, OnlineGDB, Google Docs, AI"]
-    TK --- CK
-    style CK fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
-    style PK fill:#f0fdfa,stroke:#0d9488,stroke-width:2px
-    style TK fill:#f8fafc,stroke:#64748b,stroke-width:2px
-```
+<div class="not-prose my-6 p-5 bg-stone-50 rounded-2xl border border-stone-200">
+  <div class="text-xs font-bold uppercase tracking-wider text-emerald-800 mb-4 flex items-center gap-2">
+    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+    Integrasi Tiga Dimensi TPACK dalam Pembelajaran Kelas X TM
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+    <div class="p-4 bg-white rounded-xl border border-emerald-200 space-y-1.5 shadow-xs">
+      <span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 font-bold text-[10px] rounded uppercase">CK</span>
+      <h4 class="font-bold text-stone-900 text-sm">Content Knowledge</h4>
+      <p class="text-stone-600 leading-relaxed">Algoritma, pemrograman Python, flowchart, dan validasi data terstruktur sesuai CP Fase E.</p>
+    </div>
+    <div class="p-4 bg-white rounded-xl border border-teal-200 space-y-1.5 shadow-xs">
+      <span class="px-2 py-0.5 bg-teal-100 text-teal-800 font-bold text-[10px] rounded uppercase">PK</span>
+      <h4 class="font-bold text-stone-900 text-sm">Pedagogical Knowledge</h4>
+      <p class="text-stone-600 leading-relaxed">Active Note-Taking manual, scaffolding bertingkat, validasi PPT klasikal, dan gamifikasi Wayground.</p>
+    </div>
+    <div class="p-4 bg-white rounded-xl border border-stone-300 space-y-1.5 shadow-xs">
+      <span class="px-2 py-0.5 bg-stone-100 text-stone-800 font-bold text-[10px] rounded uppercase">TK</span>
+      <h4 class="font-bold text-stone-900 text-sm">Technological Knowledge</h4>
+      <p class="text-stone-600 leading-relaxed">Blockly Games, cloud IDE OnlineGDB, Google Docs agenda terpadu, dan eksplorasi modul digital.</p>
+    </div>
+  </div>
+</div>
 
 ---
 

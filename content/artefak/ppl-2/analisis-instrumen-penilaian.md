@@ -52,20 +52,39 @@ Mengingat siswa memiliki keragaman gaya belajar dan kecakapan komputasi, instrum
 
 ## 2. Struktur Instrumen Penilaian yang Diterapkan
 
-```mermaid
-graph TD
-    A["Sistem Penilaian Terpadu PPL II"] --> B["1. Evaluasi Tertulis Manual<br/>(Buku Catatan & Flowchart)"]
-    A --> C["2. Gamifikasi Digital<br/>(Kuis Wayground)"]
-    A --> D["3. Kinerja Praktik Coding<br/>(OnlineGDB & Python)"]
-    A --> E["4. Kinerja Presentasi Kelompok<br/>(Slide Analisis Data)"]
-    A --> F["5. Evaluasi Reflektif Diri<br/>(Exit Ticket Siswa)"]
-    style A fill:#047857,stroke:#065f46,stroke-width:2px,color:#fff
-    style B fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
-    style C fill:#fdf2f8,stroke:#db2777,stroke-width:1px
-    style D fill:#f0fdfa,stroke:#0d9488,stroke-width:1px
-    style E fill:#eff6ff,stroke:#2563eb,stroke-width:1px
-    style F fill:#fefce8,stroke:#ca8a04,stroke-width:1px
-```
+<div class="not-prose my-6 p-5 bg-stone-50 rounded-2xl border border-stone-200">
+  <div class="text-xs font-bold uppercase tracking-wider text-emerald-800 mb-4 flex items-center gap-2">
+    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+    5 Pilar Sistem Penilaian Autentik Terpadu PPL II
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs">
+    <div class="p-3 bg-white rounded-xl border border-emerald-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-emerald-100 text-emerald-800 font-bold text-[10px] rounded uppercase">Asesmen 1</span>
+      <h5 class="font-bold text-stone-900 text-xs">Catatan & Flowchart</h5>
+      <p class="text-[11px] text-stone-500 leading-relaxed">Orisinalitas tulisan manual di buku & kepatuhan simbol ANSI.</p>
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-pink-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-pink-100 text-pink-800 font-bold text-[10px] rounded uppercase">Asesmen 2</span>
+      <h5 class="font-bold text-stone-900 text-xs">Kuis Wayground</h5>
+      <p class="text-[11px] text-stone-500 leading-relaxed">Gamifikasi formatif cepat, analisis butir & leaderboard.</p>
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-teal-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-teal-100 text-teal-800 font-bold text-[10px] rounded uppercase">Asesmen 3</span>
+      <h5 class="font-bold text-stone-900 text-xs">Coding OnlineGDB</h5>
+      <p class="text-[11px] text-stone-500 leading-relaxed">Zero error runtime, logika perulangan, & eksplorasi AI.</p>
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-blue-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-blue-100 text-blue-800 font-bold text-[10px] rounded uppercase">Asesmen 4</span>
+      <h5 class="font-bold text-stone-900 text-xs">Presentasi Data</h5>
+      <p class="text-[11px] text-stone-500 leading-relaxed">Kolaborasi kelompok, pembersihan dataset, dan komunikasi.</p>
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-amber-200 space-y-1 shadow-xs">
+      <span class="px-1.5 py-0.5 bg-amber-100 text-amber-800 font-bold text-[10px] rounded uppercase">Asesmen 5</span>
+      <h5 class="font-bold text-stone-900 text-xs">Exit Ticket</h5>
+      <p class="text-[11px] text-stone-500 leading-relaxed">Refleksi metakognitif siswa, kendala materi, & umpan balik.</p>
+    </div>
+  </div>
+</div>
 
 ### A. Evaluasi Tertulis Manual (Buku Catatan & Flowchart)
 - **Fokus Pengukuran**: Orisinalitas pemahaman, kerapian penyusunan alur logika, dan kemampuan menyintesis informasi dari internet ke dalam bahasa sendiri.
@@ -103,12 +122,35 @@ Peralihan strategi dari *In-Class Flipped Learning* pasif pada PPL I menuju meto
 
 ### B. Analisis Butir & Tindak Lanjut Evaluasi
 
-```mermaid
-pie title Distribusi Hasil Evaluasi Kelas X TM
-    "Tuntas Mandiri (Sangat Baik)" : 58
-    "Tuntas dengan Penguatan (Baik)" : 32
-    "Perlu Bimbingan Remedial" : 10
-```
+<div class="not-prose my-6 p-5 bg-white rounded-2xl border border-stone-200 shadow-xs space-y-3">
+  <div class="flex items-center justify-between">
+    <div class="text-xs font-bold uppercase tracking-wider text-stone-700 flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+      Distribusi Hasil Evaluasi Formatif & Ketuntasan Kelas X TM
+    </div>
+    <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full">
+      Ketuntasan 90%
+    </span>
+  </div>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 text-center">
+    <div class="p-4 bg-emerald-50 rounded-xl border border-emerald-200 space-y-1">
+      <div class="text-2xl font-black text-emerald-800 font-serif">58%</div>
+      <div class="text-xs font-bold text-emerald-950">Tuntas Mandiri</div>
+      <div class="text-[11px] text-emerald-700 leading-tight">Kategori Sangat Baik (Nilai ≥ 85)</div>
+    </div>
+    <div class="p-4 bg-teal-50 rounded-xl border border-teal-200 space-y-1">
+      <div class="text-2xl font-black text-teal-800 font-serif">32%</div>
+      <div class="text-xs font-bold text-teal-950">Tuntas dengan Penguatan</div>
+      <div class="text-[11px] text-teal-700 leading-tight">Kategori Baik (Nilai 75–84)</div>
+    </div>
+    <div class="p-4 bg-amber-50 rounded-xl border border-amber-200 space-y-1">
+      <div class="text-2xl font-black text-amber-800 font-serif">10%</div>
+      <div class="text-xs font-bold text-amber-950">Bimbingan Remedial</div>
+      <div class="text-[11px] text-amber-700 leading-tight">Tutor Sebaya & Cheatsheet (Nilai &lt; 75)</div>
+    </div>
+  </div>
+</div>
 
 1. **Program Remedial (Bagi Siswa Belum Tuntas)**:
    - Dilakukan melalui pendekatan *Tutor Sebaya (Peer Tutoring)*: siswa yang telah menguasai logika koding dipasangkan dengan siswa yang masih mengalami kesulitan sintaks di OnlineGDB.

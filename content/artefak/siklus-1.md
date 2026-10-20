@@ -53,12 +53,26 @@ Pada pertemuan-pertemuan pertama di laboratorium komputer, saya menghadapi dinam
 
 Pada siklus pertama ini, saya menguji coba penerapan metode *In-Class Flipped Learning*, di mana di awal sesi saya membagikan bahan bacaan digital berbasis teks panjang untuk dibaca mandiri oleh siswa sebelum berdiskusi.
 
-```mermaid
-flowchart LR
-    A["Bahan Bacaan Teks Panjang"] --> B["Beban Kognitif Tinggi"]
-    B --> C["Siswa Mengantuk & Bosan"]
-    C --> D["Partisipasi Kelas Pasif"]
-```
+<div class="not-prose my-6 p-5 bg-rose-50/50 rounded-2xl border border-rose-200/80">
+  <div class="text-xs font-bold uppercase tracking-wider text-rose-800 mb-3 flex items-center gap-2">
+    <span class="w-2 h-2 rounded-full bg-rose-500"></span>
+    Alur Rantai Masalah: Kegagalan In-Class Flipped Learning Teks Panjang
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-4 gap-2.5 text-center text-xs">
+    <div class="p-3 bg-white rounded-xl border border-rose-100 font-semibold text-stone-800 shadow-xs">
+      1. Bahan Bacaan Teks Panjang
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-rose-100 font-semibold text-rose-800 shadow-xs">
+      2. Beban Kognitif Berlebih
+    </div>
+    <div class="p-3 bg-white rounded-xl border border-rose-100 font-semibold text-rose-800 shadow-xs">
+      3. Siswa Jenuh & Mengantuk
+    </div>
+    <div class="p-3 bg-rose-600 text-white rounded-xl font-bold shadow-xs">
+      4. Partisipasi Kelas Pasif
+    </div>
+  </div>
+</div>
 
 Berdasarkan observasi kelas dan catatan harian mengajar:
 1. **Beban Kognitif Teks (*Text-Heavy Fatigue*)**: Siswa SMK jurusan teknik lebih responsif terhadap instruksi visual, kinestetik, dan aplikatif. Tumpukan teks panjang di layar komputer di awal jam pelajaran justru membuat mereka cepat jenuh, mengantuk, dan kehilangan minat belajar.

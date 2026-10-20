@@ -41,16 +41,16 @@ const courses = [
         id: 'seminar',
         title: 'Seminar PPG',
         subtitle: 'Seminar Pendidikan Profesi Guru',
-        status: 'Dalam Perancangan',
-        statusClass: 'bg-amber-100 text-amber-800',
-        score: 'Desain Inovasi',
+        status: 'Tersedia LK 1 & LK 4',
+        statusClass: 'bg-emerald-100 text-emerald-800',
+        score: '4 Lembar Kerja (LK 1-4)',
         to: '/mata-kuliah/seminar',
-        desc: 'Ruang diseminasi gagasan pedagogis, formulasi desain inovasi pembelajaran berbasis riset, serta penyusunan jurnal refleksi bermakna.',
+        desc: 'Ruang refleksi pengalaman belajar komprehensif (LK 1–3) dan formulasi karya inovasi pendidikan digital SIPENSI (LK 4) lengkap berkas fisik otentik.',
         highlights: [
-            'Desain Inovasi Pembelajaran Berbasis Teknologi',
-            'Jurnal Refleksi Kritis Berkelanjutan',
-            'Karya Ilmiah / Best Practice Pembelajaran',
-            'Simulasi & Uji Kinerja Portofolio'
+            'LK 1: Identifikasi Diri & Filosofi Biji Kopi',
+            'LK 2: Refleksi Pengalaman Belajar Smt 1 & 2',
+            'LK 3: Refleksi Kritis Program PPG Menyeluruh',
+            'LK 4: Desain Karya Inovasi Pendidikan SIPENSI'
         ]
     }
 ]

@@ -19,8 +19,8 @@ const isCourseActive = computed(() => {
 const coursesSubmenu = [
     { label: 'Ringkasan Mata Kuliah', to: '/mata-kuliah', desc: 'Peta kurikulum & status 3 mata kuliah' },
     { label: 'PPL I (Terbimbing)', to: '/mata-kuliah/ppl-1', desc: 'Asistensi, 3 siklus & legalitas L7-L8' },
-    { label: 'PPL II (Praktik Mandiri)', to: '/mata-kuliah/ppl-2', desc: 'Praktik mandiri & penanganan kasus' },
-    { label: 'Seminar PPG', to: '/mata-kuliah/seminar', desc: 'Desain inovasi & jurnal refleksi' }
+    { label: 'PPL II (Praktik Mandiri)', to: '/mata-kuliah/ppl-2', desc: 'Praktik mandiri & 6 dimensi analisis' },
+    { label: 'Seminar PPG', to: '/mata-kuliah/seminar', desc: 'Refleksi LK 1–4 & Inovasi SIPENSI' }
 ]
 
 // Tutup dropdown desktop saat klik di luar
@@ -283,12 +283,12 @@ onBeforeUnmount(() => {
                             </li>
                             <li>
                                 <NuxtLink to="/mata-kuliah/ppl-2" class="text-stone-600 hover:text-emerald-700 transition-colors inline-flex items-center gap-1.5">
-                                    <span class="text-emerald-600 font-bold">&bull;</span> PPL II (Praktik Mandiri & Studi Kasus)
+                                    <span class="text-emerald-600 font-bold">&bull;</span> PPL II (Praktik Mandiri & 6 Dimensi)
                                 </NuxtLink>
                             </li>
                             <li>
                                 <NuxtLink to="/mata-kuliah/seminar" class="text-stone-600 hover:text-emerald-700 transition-colors inline-flex items-center gap-1.5">
-                                    <span class="text-emerald-600 font-bold">&bull;</span> Seminar PPG (Desain Inovasi)
+                                    <span class="text-emerald-600 font-bold">&bull;</span> Seminar PPG (Refleksi & Inovasi SIPENSI)
                                 </NuxtLink>
                             </li>
                             <li>
@@ -298,7 +298,7 @@ onBeforeUnmount(() => {
                             </li>
                             <li>
                                 <NuxtLink to="/artefak" class="text-stone-600 hover:text-emerald-700 transition-colors inline-flex items-center gap-1.5">
-                                    <span class="text-emerald-600 font-bold">&bull;</span> Katalog Artefak & Modul Ajar
+                                    <span class="text-emerald-600 font-bold">&bull;</span> Katalog 13 Artefak Pembelajaran
                                 </NuxtLink>
                             </li>
                         </ul>

@@ -15,14 +15,14 @@
             </p>
         </header>
 
+        <!-- Pernyataan Visi Pribadi -->
         <section>
             <div
                 class="relative p-8 md:p-12 bg-emerald-800 text-emerald-50 rounded-[2.5rem] shadow-[0_8px_30px_rgb(52,211,153,0.15)] overflow-hidden text-center md:text-left">
                 <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-emerald-600/50 rounded-full blur-3xl"></div>
 
                 <div class="relative z-10 space-y-4">
-                    <span class="text-xs font-bold tracking-widest text-emerald-300 uppercase">Pernyataan Visi
-                        Pribadi</span>
+                    <span class="text-xs font-bold tracking-widest text-emerald-300 uppercase">Pernyataan Visi Pribadi</span>
                     <h2 class="text-2xl md:text-3xl font-medium leading-relaxed font-serif">
                         "Menjadi pendidik yang adaptif, humanis, dan berbasis teknologi untuk menumbuhkan kemandirian
                         belajar serta karakter profil pelajar pancasila."
@@ -31,12 +31,75 @@
             </div>
         </section>
 
+        <!-- Metafora Filosofis: Biji Kopi (Refleksi LK 1 Seminar PPG) -->
+        <section class="bg-gradient-to-br from-amber-950 via-stone-900 to-stone-900 text-amber-50 p-8 md:p-10 rounded-[2.5rem] shadow-xl relative overflow-hidden border border-amber-900/40">
+            <div class="absolute -right-12 -top-12 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10 space-y-5">
+                <div class="flex items-center gap-2.5">
+                    <span class="px-3 py-1 bg-amber-500/20 text-amber-300 text-xs font-bold uppercase tracking-wider rounded-full border border-amber-500/30">
+                        Metafora Filosofis
+                    </span>
+                    <span class="text-xs text-amber-200/70 font-medium">Refleksi LK 1 Identifikasi Diri</span>
+                </div>
+
+                <h3 class="text-2xl font-bold font-serif text-white">
+                    Filosofi Pendidik: "Menjadi Biji Kopi"
+                </h3>
+
+                <p class="text-amber-100/90 leading-relaxed text-base md:text-[17px] text-left">
+                    Ketika wortel dimasukkan ke dalam air mendidih, ia melunak dan kehilangan keteguhannya. Telur dimasukkan ke air mendidih, bagian dalamnya mengeras kaku. Namun, <strong>biji kopi</strong> yang dimasukkan ke dalam air mendidih justru mengubah air tersebut menjadi kopi yang harum, hangat, dan memberi kenikmatan bagi siapa pun yang meminumnya.
+                </p>
+
+                <p class="text-amber-200/80 leading-relaxed text-sm text-left italic border-l-2 border-amber-400/60 pl-4 py-1">
+                    "Seorang guru profesional tidak boleh tergerus menjadi lembek oleh keterbatasan sarana lab, atau menjadi kaku otoriter karena kenakalan siswa. Pendidik sejati hadir layaknya biji kopi: mewarnai iklim kelas dengan kehangatan pedagogis dan menyebarkan aroma inspirasi kemandirian."
+                </p>
+            </div>
+        </section>
+
+        <!-- 3 Dimensi Kemerdekaan Belajar Siswa -->
+        <section class="space-y-6">
+            <div class="text-center md:text-left space-y-2">
+                <h3 class="text-2xl font-bold text-stone-900 font-serif">
+                    3 Dimensi Kemerdekaan Belajar Siswa
+                </h3>
+                <p class="text-stone-500 text-sm">Hak esensial murid kejuruan yang dijamin dalam setiap sesi instruksional.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-white rounded-3xl border border-stone-200 shadow-sm space-y-3">
+                    <div class="w-10 h-10 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold">1</div>
+                    <h4 class="font-bold text-stone-900 text-base">Kemerdekaan Fisiologis</h4>
+                    <p class="text-stone-600 text-xs md:text-sm leading-relaxed">
+                        Fasilitas lab yang ergonomis, kebebasan minum saat KBM panjang, dan jeda peregangan agar raga siswa tetap bugar selama sesi koding intensif.
+                    </p>
+                </div>
+
+                <div class="p-6 bg-white rounded-3xl border border-stone-200 shadow-sm space-y-3">
+                    <div class="w-10 h-10 rounded-2xl bg-teal-50 text-teal-700 flex items-center justify-center font-bold">2</div>
+                    <h4 class="font-bold text-stone-900 text-base">Kemerdekaan Emosional</h4>
+                    <p class="text-stone-600 text-xs md:text-sm leading-relaxed">
+                        Ruang kelas bebas rasa takut salah. Menegakkan Sistem Among: guru menuntun dan mengapresiasi keberanian mencoba tanpa mempermalukan mental murid.
+                    </p>
+                </div>
+
+                <div class="p-6 bg-white rounded-3xl border border-stone-200 shadow-sm space-y-3">
+                    <div class="w-10 h-10 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold">3</div>
+                    <h4 class="font-bold text-stone-900 text-base">Kemerdekaan Literasi</h4>
+                    <p class="text-stone-600 text-xs md:text-sm leading-relaxed">
+                        Otonomi menelusuri artikel dan referensi digital, mencatat dengan bahasa sendiri (active note-taking), dan bebas memilih alat presentasi (Canva vs PPT).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pilar Implementasi Visi -->
         <section class="space-y-8">
             <div class="text-center md:text-left space-y-2">
                 <h3 class="text-2xl font-bold text-stone-900 font-serif">
-                    Pilar Implementasi Visi
+                    Pilar Aksi Implementasi Visi
                 </h3>
-                <p class="text-stone-500 text-sm">Landasan utama dalam setiap praktik pembelajaran.</p>
+                <p class="text-stone-500 text-sm">Landasan metodologis dalam setiap praktik pembelajaran.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -74,13 +137,13 @@
                     <h4 class="text-lg font-bold text-stone-900 mb-3 font-serif">Adaptasi
                         Digital</h4>
                     <p class="text-stone-600 text-sm leading-relaxed">
-                        Mengintegrasikan teknologi secara kritis dan bijak (seperti pemanfaatan media sosial positif)
-                        agar pembelajaran relevan dengan ekosistem digital siswa.
+                        Mengintegrasikan teknologi secara kritis dan bijak (aplikasi web cloud, kuis Wayground, dan OnlineGDB) agar pembelajaran relevan dengan ekosistem digital siswa.
                     </p>
                 </div>
             </div>
         </section>
 
+        <!-- Rencana Tindak Lanjut Pasca-PPG -->
         <section
             class="bg-white p-8 md:p-10 rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-stone-100 space-y-8">
             <div class="space-y-2 text-center md:text-left">
@@ -124,8 +187,7 @@
                     <h4 class="text-md font-bold text-stone-800 group-hover:text-emerald-700 transition-colors">
                         Pengembangan Profesional Berkelanjutan</h4>
                     <p class="text-stone-600 text-sm mt-2 leading-relaxed">
-                        Aktif dalam komunitas guru (MGMP) dan mengikuti pelatihan pemanfaatan kecerdasan buatan (AI)
-                        serta platform digital interaktif guna memperkaya variasi bahan ajar visual.
+                        Aktif dalam komunitas guru (MGMP) dan mengintegrasikan kecerdasan buatan (AI) serta platform digital interaktif (Wayground, OnlineGDB, SIPENSI) guna memperkaya media ajar kejuruan.
                     </p>
                 </div>
 
@@ -138,6 +200,6 @@
 <script setup>
 useSeoMeta({
     title: 'Visi Guru Profesional',
-    description: 'Komitmen diri dalam mewujudkan pembelajaran yang berpihak pada murid, adaptif terhadap perkembangan zaman, dan bernilai humanis.'
+    description: 'Komitmen diri dalam mewujudkan pembelajaran yang berpihak pada murid, filosofi biji kopi, 3 dimensi kemerdekaan belajar, dan RTL pasca-PPG.'
 })
 </script>

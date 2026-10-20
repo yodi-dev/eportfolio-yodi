@@ -15,31 +15,46 @@ Pada **Lembar Kerja 2 (LK 2)** mata kuliah **Seminar Pendidikan Profesi Guru (PP
 
 Tujuan utama LK 2 adalah menghubungkan antara **fondasi teoretis** yang dipelajari di bangku perkuliahan dengan **realitas empiris** saat mengajar di sekolah mitra (SMKN 3 Yogyakarta).
 
-> [!NOTE]
-> **Status Dokumen**: Dokumen formal Lembar Kerja 2 (LK 2) saat ini sedang dalam proses konsolidasi akhir bersama Dosen Pembimbing Seminar PPG dan berkas otentik akan segera disematkan pada laman ini setelah tahap verifikasi selesai.
+<div class="my-6 p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200/90 text-amber-900 not-prose flex items-start gap-3">
+    <div class="w-6 h-6 rounded-full bg-amber-200 text-amber-800 flex items-center justify-center flex-shrink-0 font-bold text-xs mt-0.5">i</div>
+    <div class="space-y-1 text-xs sm:text-sm">
+        <p class="font-bold text-amber-950">Status Dokumen & Progres Penyusunan:</p>
+        <p class="text-amber-800 leading-relaxed">
+            Dokumen formal Lembar Kerja 2 (LK 2) saat ini sedang dalam proses konsolidasi akhir bersama Dosen Pembimbing Seminar PPG. Berkas PDF otentik akan disematkan pada laman ini setelah tahapan telaah selesai.
+        </p>
+    </div>
+</div>
 
 ---
 
 ## 2. Struktur Pemetaan Mata Kuliah yang Ditelaah
 
-```mermaid
-flowchart TD
-    subgraph S1["Semester 1: Fondasi Filosofis & Praktik Terbimbing"]
-        M1["Filosofi Pendidikan Indonesia"]
-        M2["Pemahaman tentang Peserta Didik & Pembelajarannya"]
-        M3["Prinsip Pengajaran dan Asesmen I (PPA I)"]
-        M4["Praktik Pengalaman Lapangan I (PPL I)"]
-    end
-    subgraph S2["Semester 2: Diferensiasi, Kepemimpinan, & Praktik Mandiri"]
-        M5["Pembelajaran Berdiferensiasi"]
-        M6["Prinsip Pengajaran dan Asesmen II (PPA II)"]
-        M7["Projek Kepemimpinan"]
-        M8["Praktik Pengalaman Lapangan II (PPL II)"]
-    end
-    S1 --> S2
-    style S1 fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style S2 fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
-```
+<div class="my-6 grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
+    <div class="p-5 rounded-2xl bg-blue-50/80 border border-blue-200 space-y-3">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-800">Semester 1</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 bg-blue-100 text-blue-700 rounded-md">Fondasi Teoretis & Terbimbing</span>
+        </div>
+        <ul class="text-xs sm:text-sm text-stone-700 space-y-2">
+            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold mt-0.5">•</span><span><strong>Filosofi Pendidikan Indonesia</strong>: Sistem Among & pemerdekaan potensi siswa</span></li>
+            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold mt-0.5">•</span><span><strong>Pemahaman Peserta Didik</strong>: TaRL, CRT, & pemetaan sosio-emosional</span></li>
+            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold mt-0.5">•</span><span><strong>Prinsip Pengajaran & Asesmen I</strong>: Kerangka kerja Understanding by Design (UbD)</span></li>
+            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold mt-0.5">•</span><span><strong>PPL I</strong>: Observasi, asistensi, & 3 siklus pembelajaran terbimbing</span></li>
+        </ul>
+    </div>
+    <div class="p-5 rounded-2xl bg-emerald-50/80 border border-emerald-200 space-y-3">
+        <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-800">Semester 2</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 bg-emerald-100 text-emerald-700 rounded-md">Diferensiasi & Praktik Mandiri</span>
+        </div>
+        <ul class="text-xs sm:text-sm text-stone-700 space-y-2">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">•</span><span><strong>Pembelajaran Berdiferensiasi</strong>: Kesiapan, minat, & profil belajar siswa</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">•</span><span><strong>Prinsip Pengajaran & Asesmen II</strong>: Asesmen diagnostik & autentik kejuruan</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">•</span><span><strong>Projek Kepemimpinan</strong>: Inisiatif sosial berbasis sekolah & komunitas</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">•</span><span><strong>PPL II</strong>: Mengajar mandiri penuh X TM & inovasi SIPENSI/SIBENKA</span></li>
+        </ul>
+    </div>
+</div>
 
 ### A. Mata Kuliah Semester 1
 1. **Filosofi Pendidikan Indonesia**:
@@ -74,3 +89,4 @@ Dalam menyusun telaah reflektif LK 2, analisis dilakukan menggunakan siklus refl
 - **Awareness of Essential Aspects (Menyadari Aspek Kunci)**: Faktor psikologis, teknis, atau pedagogis apa yang memicu keberhasilan atau kegagalan tindakan.
 - **Creating Alternative Methods (Menciptakan Alternatif)**: Solusi perbaikan apa yang dapat dirumuskan untuk mengatasi kelemahan tersebut.
 - **Trial (Pengujian)**: Penerapan solusi alternatif pada siklus pembelajaran berikutnya.
+

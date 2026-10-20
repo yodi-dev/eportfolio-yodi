@@ -20,6 +20,20 @@ const closePreview = () => {
     previewModal.value = null
 }
 
+const handleKeyDown = (e) => {
+    if (e.key === 'Escape' && previewModal.value) {
+        closePreview()
+    }
+}
+
+onMounted(() => {
+    window.addEventListener('keydown', handleKeyDown)
+})
+
+onUnmounted(() => {
+    window.removeEventListener('keydown', handleKeyDown)
+})
+
 // State & fungsi modal pratinjau PDF in-browser
 const isPdfModalOpen = ref(false)
 const activePdfTitle = ref('')
@@ -158,6 +172,14 @@ const seminarDocuments = [
         description: 'Naskah asli rancang bangun sistem presensi web SIPENSI dengan Geolocation dan Timestamp Swafoto di SMKN 3 Yogyakarta.'
     },
     {
+        title: 'Aplikasi Presensi Web SIPENSI (SMKN 3 Yogyakarta)',
+        type: 'link',
+        url: 'https://github.com/yodi-dev',
+        badge: 'Inovasi SIPENSI',
+        category: 'Sistem Informasi',
+        description: 'Sistem presensi terpusat berbasis geolocation dan timestamp swafoto untuk tenaga pendidik SMKN 3 Yogyakarta.'
+    },
+    {
         title: 'Undangan Resmi BIMTEK Aplikasi SIBENKA',
         type: 'pdf',
         url: '/dokumen/ppl-2/Undangan BIMTEK SIBENKA.pdf',
@@ -293,12 +315,12 @@ const getBadgeClass = (type) => {
                     </div>
 
                     <!-- Action Footer -->
-                    <div class="pt-4 border-t border-stone-100 flex items-center justify-between gap-3">
-                        <div class="flex items-center gap-2">
+                    <div class="pt-4 border-t border-stone-100 flex flex-wrap items-center justify-between gap-2.5">
+                        <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
                             <!-- Tombol Pratinjau Cepat Ringkasan -->
                             <button @click="openPreview(pillar)"
                                 type="button"
-                                class="text-xs font-semibold text-stone-500 hover:text-stone-800 transition-colors inline-flex items-center gap-1">
+                                class="text-xs font-semibold text-stone-500 hover:text-stone-800 transition-colors inline-flex items-center gap-1 px-2 py-1 rounded-lg hover:bg-stone-50">
                                 <span>Ringkasan</span>
                             </button>
 
@@ -405,13 +427,15 @@ const getBadgeClass = (type) => {
                         </button>
 
                         <a :href="file.url"
-                            download
+                            :download="file.type !== 'link'"
                             target="_blank"
+                            rel="noopener noreferrer"
                             class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-stone-700 bg-stone-100 hover:bg-stone-200 rounded-xl transition-colors ml-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5 text-stone-500">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                <path v-if="file.type === 'link'" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                <path v-else stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
                             </svg>
-                            <span>Unduh ({{ file.size }})</span>
+                            <span>{{ file.type === 'link' ? 'Buka Aplikasi' : `Unduh (${file.size || 'Berkas'})` }}</span>
                         </a>
                     </div>
                 </div>
@@ -432,7 +456,8 @@ const getBadgeClass = (type) => {
         </section>
 
         <!-- Modal Ringkasan Cepat LK -->
-        <div v-if="previewModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/60 backdrop-blur-xs animate-fadeIn">
+        <div v-if="previewModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/60 backdrop-blur-xs animate-fadeIn"
+            @click.self="closePreview">
             <div class="bg-white rounded-3xl max-w-lg w-full p-6 md:p-8 space-y-5 border border-stone-200 shadow-2xl relative max-h-[90vh] overflow-y-auto">
                 <div class="flex items-center justify-between pb-3 border-b border-stone-100">
                     <div class="flex items-center gap-2">
@@ -473,7 +498,7 @@ const getBadgeClass = (type) => {
         <PdfViewerModal
             :is-open="isPdfModalOpen"
             :title="activePdfTitle"
-            :pdf-url="activePdfUrl"
+            :file-url="activePdfUrl"
             @close="closePdfPreview"
         />
 

@@ -22,16 +22,23 @@ Mata kuliah **Seminar Pendidikan Profesi Guru (PPG)** diawali dengan eksplorasi 
 
 Melalui **Lembar Kerja 1 (LK 1)**, saya merumuskan identifikasi diri secara jujur dan kritis, membedah tantangan nyata pendidikan di tanah air, serta menetapkan cetak biru (*blueprint*) pengembangan diri berkelanjutan.
 
-```mermaid
-flowchart TD
-    A["Identifikasi Diri (LK 1)"] --> B["1. Visi Pendidikan Indonesia<br/>Literasi Fundamental & Kecakapan Digital"]
-    A --> C["2. Visi Pribadi Calon Guru<br/>Filosofi 'Biji Kopi' & Jam Terbang Nyata"]
-    A --> D["3. Strategi Pencapaian Visi<br/>Manajemen Diri: Fisiologis, Emosional, & Motivasi"]
-    style A fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style B fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
-    style C fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style D fill:#fdf2f8,stroke:#db2777,stroke-width:2px
-```
+<div class="my-6 grid grid-cols-1 md:grid-cols-3 gap-3.5 not-prose">
+    <div class="p-4 rounded-2xl bg-amber-50/90 border border-amber-200/90 space-y-1.5">
+        <span class="text-[10px] font-bold uppercase tracking-wider text-amber-800 px-2 py-0.5 bg-amber-200/80 rounded">Pilar 01</span>
+        <h4 class="text-sm font-bold text-stone-900 font-serif">Visi Pendidikan Indonesia</h4>
+        <p class="text-xs text-stone-600 leading-relaxed">Pengentasan darurat literasi dasar membaca dan peningkatan kecakapan literasi digital siswa.</p>
+    </div>
+    <div class="p-4 rounded-2xl bg-blue-50/90 border border-blue-200/90 space-y-1.5">
+        <span class="text-[10px] font-bold uppercase tracking-wider text-blue-800 px-2 py-0.5 bg-blue-200/80 rounded">Pilar 02</span>
+        <h4 class="text-sm font-bold text-stone-900 font-serif">Visi Pribadi Calon Guru</h4>
+        <p class="text-xs text-stone-600 leading-relaxed">Filosofi guru sebagai "Biji Kopi" yang tuntas kompetensi dan praktisi nyata SMK.</p>
+    </div>
+    <div class="p-4 rounded-2xl bg-emerald-50/90 border border-emerald-200/90 space-y-1.5">
+        <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-800 px-2 py-0.5 bg-emerald-200/80 rounded">Pilar 03</span>
+        <h4 class="text-sm font-bold text-stone-900 font-serif">Strategi Pencapaian</h4>
+        <p class="text-xs text-stone-600 leading-relaxed">Manajemen diri holistik: kemerdekaan fisiologis, kematangan emosional, dan motivasi.</p>
+    </div>
+</div>
 
 ---
 
@@ -81,16 +88,28 @@ Ilmu pengetahuan kehilangan kekuatannya jika terisolasi dari realitas kehidupan.
 
 Menjadi pendidik profesional bukanlah perlombaan lari cepat (*sprint*), melainkan sebuah **lari maraton** yang membutuhkan stamina dan manajemen energi yang kokoh. Untuk mencapai visi besar di atas, saya merumuskan empat pilar manajemen diri:
 
-```mermaid
-flowchart LR
-    P1["1. Kemerdekaan Fisiologis<br/>Kebugaran Fisik & Pola Tidur"] --> P2["2. Kecerdasan Emosional<br/>Ketenangan & Kesabaran Lab"]
-    P2 --> P3["3. Motivasi Intrinsik<br/>Menjaga Nyala Panggilan Jiwa"]
-    P3 --> P4["4. Manajemen Waktu & Diri<br/>Keseimbangan Hidup Terukur"]
-    style P1 fill:#fef2f2,stroke:#ef4444,stroke-width:2px
-    style P2 fill:#f0fdf4,stroke:#22c55e,stroke-width:2px
-    style P3 fill:#eff6ff,stroke:#3b82f6,stroke-width:2px
-    style P4 fill:#faf5ff,stroke:#a855f7,stroke-width:2px
-```
+<div class="my-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 not-prose">
+    <div class="p-4 rounded-2xl bg-rose-50 border border-rose-200 space-y-1.5">
+        <span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-rose-200 text-rose-800 rounded">Fondasi 1</span>
+        <h4 class="text-xs font-bold text-stone-900 font-serif">Kemerdekaan Fisiologis</h4>
+        <p class="text-xs text-stone-600 leading-relaxed">Kebugaran fisik, pola nutrisi, dan tidur optimal sebagai modal energi mengajar.</p>
+    </div>
+    <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-1.5">
+        <span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-emerald-200 text-emerald-800 rounded">Fondasi 2</span>
+        <h4 class="text-xs font-bold text-stone-900 font-serif">Kecerdasan Emosional</h4>
+        <p class="text-xs text-stone-600 leading-relaxed">Ketenangan, kejernihan pikiran, dan kesabaran menghadapi heterogenitas lab.</p>
+    </div>
+    <div class="p-4 rounded-2xl bg-blue-50 border border-blue-200 space-y-1.5">
+        <span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-blue-200 text-blue-800 rounded">Fondasi 3</span>
+        <h4 class="text-xs font-bold text-stone-900 font-serif">Motivasi Intrinsik</h4>
+        <p class="text-xs text-stone-600 leading-relaxed">Menjaga nyala api panggilan jiwa dalam menempuh maraton profesi guru.</p>
+    </div>
+    <div class="p-4 rounded-2xl bg-purple-50 border border-purple-200 space-y-1.5">
+        <span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-purple-200 text-purple-800 rounded">Fondasi 4</span>
+        <h4 class="text-xs font-bold text-stone-900 font-serif">Manajemen Waktu & Diri</h4>
+        <p class="text-xs text-stone-600 leading-relaxed">Keseimbangan proporsional antara tugas, pengembangan diri, dan hidup pribadi.</p>
+    </div>
+</div>
 
 1. **Mewujudkan Kemerdekaan Fisiologis**:
    Sebelum mampu mencurahkan perhatian optimal kepada peserta didik, guru harus mandiri secara fisik. Menjaga nutrisi seimbang, hidrasi cukup, pola istirahat teratur, dan kebugaran tubuh adalah syarat mutlak agar tidak mudah lelah ketika mengajar sesi praktik panjang di laboratorium komputer.
@@ -100,3 +119,4 @@ flowchart LR
    Rutinitas administrasi dan kelelahan fisik rentan memadamkan api semangat mengajar. Menjaga kesadaran akan alasan awal memilih profesi guru menjadi bahan bakar harian agar tetap antusias melayani peserta didik, baik pada tahap asistensi mengajar maupun saat memikul mandat penuh di kelas.
 4. **Menerapkan Manajemen Pribadi yang Tangguh**:
    Seluruh pilar diikat oleh manajemen waktu yang disiplin. Mengalokasikan waktu untuk persiapan modul, koreksi tugas, pengembangan diri, dan kehidupan pribadi secara proporsional menghindarkan diri dari kejenuhan (*burnout*), memastikan langkah karier pendidik berlangsung sehat, berdaya tahan, dan produktif.
+

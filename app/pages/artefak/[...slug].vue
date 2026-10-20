@@ -125,6 +125,9 @@ const closePdfPreview = () => {
                     <span v-if="doc.badge" class="px-3 py-1 bg-teal-50 text-teal-700 text-xs font-semibold rounded-full">
                         {{ doc.badge }}
                     </span>
+                    <span v-if="doc.status === 'in-progress'" class="px-3 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-full border border-amber-200 uppercase tracking-wider">
+                        Tahap Konsolidasi
+                    </span>
                     <span class="text-stone-500 text-sm ml-auto font-medium">
                         {{ formatDate(doc.date) }}
                     </span>

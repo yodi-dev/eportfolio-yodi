@@ -3,7 +3,7 @@ import { ref, computed } from 'vue'
 
 useSeoMeta({
     title: 'Katalog Artefak Pembelajaran PPG',
-    description: 'Koleksi komprehensif 10 artefak pembelajaran PPL I (3 Siklus), PPL II (6 Dimensi Analisis), dan Desain Inovasi Seminar PPG Yodi Irawan.'
+    description: 'Koleksi komprehensif 13 artefak pembelajaran PPL I (3 Siklus), PPL II (6 Dimensi Analisis), dan 4 Lembar Kerja Seminar PPG Yodi Irawan.'
 })
 
 const { data: list } = await useAsyncData('artefak-catalog', () =>
@@ -72,7 +72,7 @@ const clearSearch = () => {
                 Daftar Artefak Pembelajaran
             </h1>
             <p class="text-stone-600 max-w-3xl text-base md:text-lg leading-relaxed">
-                Repositori terstruktur seluruh dokumen luaran praktik: modul ajar multi-siklus, 6 dimensi analisis praktik mandiri di SMKN 3 Yogyakarta, dan proposal desain inovasi Seminar PPG.
+                Repositori terstruktur seluruh dokumen luaran praktik: modul ajar multi-siklus, 6 dimensi analisis praktik mandiri di SMKN 3 Yogyakarta, dan 4 lembar kerja komprehensif Seminar PPG.
             </p>
         </header>
 

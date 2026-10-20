@@ -32,22 +32,24 @@ Melalui **Lembar Kerja 4 (LK 4)**, saya merancang dan mengimplementasikan sebuah
 - **Sasaran Pengguna**: Mahasiswa Praktik Pengalaman Lapangan (PPL), Mahasiswa Praktik Kependidikan (PK), dan Guru Tidak Tetap (GTT) di **SMK Negeri 3 Yogyakarta**.
 - **Konteks Lembaga**: Sekolah Menengah Kejuruan berorientasi ketarunaan dengan mobilitas tinggi dan dinamika KBM bengkel yang padat.
 
-```mermaid
-flowchart TD
-    subgraph Tantangan["Tantangan Manajemen Sekolah"]
-        T1["Presensi Manual Kertas<br/>(Mudah Rusak/Hilang)"]
-        T2["Google Form Terpisah<br/>(Rawan Titip Absen)"]
-        T3["Monitoring Lambat<br/>(Waka Kurikulum Sulit Cek KBM)"]
-    end
-    subgraph Solusi["Inovasi Web SIPENSI"]
-        S1["API Geolocation<br/>(Verifikasi Radius GPS Sekolah)"]
-        S2["Kamera Timestamp Swafoto<br/>(Waktu & Tanggal Otomatis)"]
-        S3["Dashboard Real-Time<br/>(Rekap Bulanan Otomatis)"]
-    end
-    Tantangan --> Solusi
-    style Tantangan fill:#fef2f2,stroke:#ef4444,stroke-width:2px
-    style Solusi fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
-```
+<div class="my-6 grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
+    <div class="p-5 rounded-2xl bg-rose-50/80 border border-rose-200 space-y-2">
+        <span class="text-xs font-bold uppercase tracking-wider text-rose-700 block">Tantangan Manajemen Sekolah</span>
+        <ul class="text-xs sm:text-sm text-stone-700 space-y-1.5 list-disc list-inside">
+            <li><strong>Presensi Manual Kertas</strong>: Rentan rusak, tercecer, dan rawan manipulasi.</li>
+            <li><strong>Google Form Terpisah</strong>: Rawan "titip absen" dari luar sekolah.</li>
+            <li><strong>Monitoring Lambat</strong>: Waka Kurikulum sulit memastikan kesiapan KBM secara real-time.</li>
+        </ul>
+    </div>
+    <div class="p-5 rounded-2xl bg-emerald-50/80 border border-emerald-200 space-y-2">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-800 block">Solusi Inovasi Web SIPENSI</span>
+        <ul class="text-xs sm:text-sm text-stone-700 space-y-1.5 list-disc list-inside">
+            <li><strong>API Geolocation</strong>: Verifikasi radius koordinat GPS sekolah secara otomatis.</li>
+            <li><strong>Timestamp Swafoto</strong>: Kamera gawai mengunci foto dan waktu nyata tanpa manipulasi.</li>
+            <li><strong>Dashboard Real-Time</strong>: Rekapitulasi laporan bulanan otomatis sekali klik.</li>
+        </ul>
+    </div>
+</div>
 
 ---
 
@@ -94,16 +96,28 @@ Karya inovasi ini dirancang dengan memenuhi 5 prinsip utama inovasi pendidikan y
 
 Pengembangan dan penerapan aplikasi ini dilakukan melalui metodologi adaptif dan bertahap guna memastikan kestabilan sistem:
 
-```mermaid
-flowchart LR
-    Stage1["Tahap 1<br/>Uji Coba Terbatas<br/>(8 Mhs Informatika)"] --> Stage2["Tahap 2<br/>Presentasi & Validasi<br/>(Guru Pamong)"]
-    Stage2 --> Stage3["Tahap 3<br/>Diseminasi Kurikulum<br/>(Waka Kurikulum)"]
-    Stage3 --> Stage4["Tahap 4<br/>Adopsi Massal Sekolah<br/>(Lintas Jurusan PPL/PK/GTT)"]
-    style Stage1 fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style Stage2 fill:#fefce8,stroke:#ca8a04,stroke-width:2px
-    style Stage3 fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
-    style Stage4 fill:#faf5ff,stroke:#9333ea,stroke-width:2px
-```
+<div class="my-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 not-prose">
+    <div class="p-4 rounded-2xl bg-sky-50 border border-sky-200 space-y-1.5">
+        <span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-sky-200 text-sky-800 rounded">Tahap 1</span>
+        <h4 class="text-xs font-bold text-stone-900">Uji Coba Terbatas</h4>
+        <p class="text-xs text-stone-600">8 Mahasiswa PPL Informatika menguji akurasi GPS dan stabilitas antarmuka.</p>
+    </div>
+    <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 space-y-1.5">
+        <span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-amber-200 text-amber-800 rounded">Tahap 2</span>
+        <h4 class="text-xs font-bold text-stone-900">Validasi Pamong</h4>
+        <p class="text-xs text-stone-600">Presentasi hasil rekap data dan verifikasi fitur anti-kecurangan kepada Guru Pamong.</p>
+    </div>
+    <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-1.5">
+        <span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-emerald-200 text-emerald-800 rounded">Tahap 3</span>
+        <h4 class="text-xs font-bold text-stone-900">Diseminasi Kurikulum</h4>
+        <p class="text-xs text-stone-600">Eskalasi ke Waka Kurikulum SMKN 3 Yogyakarta untuk arahan standardisasi.</p>
+    </div>
+    <div class="p-4 rounded-2xl bg-purple-50 border border-purple-200 space-y-1.5">
+        <span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-purple-200 text-purple-800 rounded">Tahap 4</span>
+        <h4 class="text-xs font-bold text-stone-900">Adopsi Massal Sekolah</h4>
+        <p class="text-xs text-stone-600">Pendaftaran seluruh akun PPL, PK, dan GTT lintas jurusan secara resmi.</p>
+    </div>
+</div>
 
 1. **Tahap 1 (Uji Coba Skala Kecil)**: Diluncurkan pada kelompok terbatas yang terdiri dari 8 mahasiswa PPL jurusan Informatika untuk menguji akurasi GPS dan responsivitas antarmuka.
 2. **Tahap 2 (Validasi Guru Pamong)**: Mempresentasikan rekapitulasi data dan demonstrasi fitur anti-kecurangan kepada Guru Pamong.
@@ -118,3 +132,4 @@ Efektivitas produk inovasi ini diukur melalui tiga indikator kinerja utama:
 - **Validitas Data Kehadiran**: Peningkatan akurasi data mencapai tingkat tertinggi. Kasus keterlambatan tersembunyi dan titip presensi berhasil dieliminasi karena penguncian koordinat *geolocation* sekolah.
 - **Efisiensi Waktu Rekapitulasi**: Waktu kerja penyusunan laporan presensi bulanan yang semula memakan waktu 3–5 hari kerja kini terpangkas menjadi hitungan detik dengan fitur cetak otomatis dari database.
 - **Tingkat Kepuasan & Umpan Balik Positif**: Wawancara dengan pemangku kepentingan (Waka Kurikulum dan Guru Pamong) mencatatkan tingkat kepuasan tinggi terhadap kemudahan operasional dan transparansi pemantauan tenaga pendidik.
+

@@ -41,14 +41,14 @@ const courses = [
         id: 'seminar',
         title: 'Seminar PPG',
         subtitle: 'Seminar Pendidikan Profesi Guru',
-        status: 'Tersedia LK 1 & LK 4',
+        status: 'Tersedia LK 1, LK 2, & LK 4',
         statusClass: 'bg-emerald-100 text-emerald-800',
         score: '4 Lembar Kerja (LK 1-4)',
         to: '/mata-kuliah/seminar',
         desc: 'Ruang refleksi pengalaman belajar komprehensif (LK 1–3) dan formulasi karya inovasi pendidikan digital SIPENSI (LK 4) lengkap berkas fisik otentik.',
         highlights: [
             'LK 1: Identifikasi Diri & Filosofi Biji Kopi',
-            'LK 2: Refleksi Pengalaman Belajar Smt 1 & 2',
+            'LK 2: Refleksi 6 Mata Kuliah Semester 1 Lengkap',
             'LK 3: Refleksi Kritis Program PPG Menyeluruh',
             'LK 4: Desain Karya Inovasi Pendidikan SIPENSI'
         ]

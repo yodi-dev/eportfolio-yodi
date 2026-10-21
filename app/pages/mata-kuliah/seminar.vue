@@ -81,20 +81,27 @@ const fourPillars = [
         number: '02',
         code: 'LK 2',
         title: 'Refleksi Mata Kuliah Semester 1 & 2',
-        subtitle: 'Telaah Pengalaman Belajar Mata Kuliah Inti & Selektif dengan Kerangka ALACT',
-        status: 'Tahap Konsolidasi (Menyusul)',
-        statusClass: 'bg-amber-100 text-amber-800 border-amber-200',
+        subtitle: 'Telaah Pengalaman Belajar 6 Mata Kuliah Semester 1 Berbasis Dokumen Resmi',
+        status: '6 Dokumen Asli Tersedia (Semester 1)',
+        statusClass: 'bg-emerald-100 text-emerald-800 border-emerald-200',
         path: '/artefak/seminar/lk-2-refleksi-mata-kuliah',
         iconBg: 'bg-blue-50 text-blue-700',
         iconSvg: 'M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25',
-        summary: 'Rekonstruksi komprehensif pengalaman belajar mata kuliah semester 1 (Filosofi Pendidikan, Pemahaman Peserta Didik, PPA I, PPL I) dan semester 2 (Pembelajaran Berdiferensiasi, PPA II, Projek Kepemimpinan, PPL II) menggunakan kerangka refleksi kritis ALACT/Gibbs.',
+        summary: 'Rekonstruksi komprehensif pengalaman belajar 6 mata kuliah Semester 1 (Filosofi Pendidikan, Pemahaman Peserta Didik, Pembelajaran Kreatif & Inovatif, Pembelajaran Mendalam & Asesmen, Growth Mindset, dan PPL I Terbimbing) berdasarkan 6 berkas fisik LK 2 resmi.',
         points: [
-            'Sintesis teori UbD, TaRL, dan Culturally Responsive Teaching (CRT)',
-            'Penerapan strategi diferensiasi konten, proses, dan produk di kelas kejuruan',
-            'Integrasi pengalaman asistensi mengajar PPL I dan praktik mandiri PPL II',
-            'Analisis kesenjangan teoretis vs dinamika nyata laboratorium komputer'
+            'Transfer of values & Sistem Among menuntun kodrat KHD (Filosofi Pendidikan)',
+            'Profiling murid, penolakan penyeragaman, & diferensiasi ZPD (Peserta Didik)',
+            'Integrasi TPACK, PjBL kejuruan, & gamifikasi Quizizz (Kreatif & Inovatif)',
+            'Mindful/meaningful learning, UbD, & unjuk kerja DUDIKA (Deep Learning)',
+            'Neuroplastisitas, The Power of Yet, & Bug Bounty di lab koding (Growth Mindset)',
+            'Fleksibilitas RPP Plan B, chemistry murid, & active roaming (PPL I Terbimbing)'
         ],
-        hasAuthenticDoc: false
+        hasAuthenticDoc: true,
+        docFile: {
+            title: 'Lembar Kerja 2 (LK 2): Filosofi Pendidikan dan Nilai',
+            url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Filosofi Pendidikan.pdf',
+            size: '203 KB'
+        }
     },
     {
         id: 'lk3',
@@ -161,6 +168,60 @@ const seminarDocuments = [
         badge: 'Dokumen Resmi LK 1',
         category: 'Lembar Kerja',
         description: 'Naskah asli identifikasi diri, visi pendidikan Indonesia, filosofi guru "biji kopi", dan langkah manajemen diri.'
+    },
+    {
+        title: 'LK 2: Filosofi Pendidikan dan Pendidikan Nilai',
+        type: 'pdf',
+        url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Filosofi Pendidikan.pdf',
+        size: '203 KB',
+        badge: 'Dokumen Resmi LK 2',
+        category: 'Lembar Kerja',
+        description: 'Refleksi esensi pendidikan pembentuk watak, sistem Among KHD, dan pergeseran dari teacher-centered ke student-centered.'
+    },
+    {
+        title: 'LK 2: Pemahaman Tentang Peserta Didik dan Pembelajaran',
+        type: 'pdf',
+        url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - pemahaman peserta didik.pdf',
+        size: '197 KB',
+        badge: 'Dokumen Resmi LK 2',
+        category: 'Lembar Kerja',
+        description: 'Refleksi profiling karakteristik siswa, penolakan penyeragaman, teori Piaget & Vygotsky, ZPD, dan diferensiasi kasus Pak Anto.'
+    },
+    {
+        title: 'LK 2: Pembelajaran Kreatif dan Inovatif',
+        type: 'pdf',
+        url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Pembelajaran Kreatif dan Inovatif.pdf',
+        size: '199 KB',
+        badge: 'Dokumen Resmi LK 2',
+        category: 'Lembar Kerja',
+        description: 'Refleksi integrasi TPACK, PjBL kontekstual vokasi, Flipped Classroom, gamifikasi Quizizz/Wayground, dan peer-tutoring.'
+    },
+    {
+        title: 'LK 2: Pembelajaran Mendalam dan Asesmen Dasar',
+        type: 'pdf',
+        url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Pembelajaran Mendalam dan Asesmen Dasar.pdf',
+        size: '202 KB',
+        badge: 'Dokumen Resmi LK 2',
+        category: 'Lembar Kerja',
+        description: 'Refleksi prinsip deep learning (meaningful, mindful, joyful), Backward Design (UbD), dan asesmen autentik unjuk kerja DUDIKA.'
+    },
+    {
+        title: 'LK 2: Pola Pikir Bertumbuh (Growth Mindset)',
+        type: 'pdf',
+        url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Pola Pikir Bertumbuh (Growth Mindset).pdf',
+        size: '211 KB',
+        badge: 'Dokumen Resmi LK 2',
+        category: 'Lembar Kerja',
+        description: 'Refleksi neuroplastisitas otak, Process-Praise, The Power of Yet, Klinik Kesalahan, dan Bug Bounty & Celebration di kelas koding.'
+    },
+    {
+        title: 'LK 2: Praktik Pengalaman Lapangan (PPL) Terbimbing',
+        type: 'pdf',
+        url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Praktik Pengalaman Lapangan (PPL) Terbimbing.pdf',
+        size: '198 KB',
+        badge: 'Dokumen Resmi LK 2',
+        category: 'Lembar Kerja',
+        description: 'Refleksi menjembatani teori dan praktik di SMKN 3 Yogyakarta bersama GP Febriyana, S.T., fleksibilitas RPP Plan B, dan chemistry emosional.'
     },
     {
         title: 'Lembar Kerja 4 (LK 4): Penyusunan Desain Karya Inovatif',
@@ -441,15 +502,15 @@ const getBadgeClass = (type) => {
                 </div>
             </div>
 
-            <!-- Catatan Berkas LK 2 & LK 3 Menyusul -->
-            <div class="p-5 rounded-2xl bg-amber-50/70 border border-amber-200/60 flex items-start gap-3.5 text-amber-900 text-xs sm:text-sm">
-                <div class="w-5 h-5 rounded-full bg-amber-200 text-amber-800 flex items-center justify-center flex-shrink-0 mt-0.5 font-bold text-xs">
-                    i
+            <!-- Catatan Berkas LK 2 & LK 3 -->
+            <div class="p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200/60 flex items-start gap-3.5 text-emerald-950 text-xs sm:text-sm">
+                <div class="w-5 h-5 rounded-full bg-emerald-200 text-emerald-800 flex items-center justify-center flex-shrink-0 mt-0.5 font-bold text-xs">
+                    ✓
                 </div>
                 <div class="space-y-1">
-                    <p class="font-bold">Informasi Status Lembar Kerja 2 & Lembar Kerja 3:</p>
-                    <p class="text-amber-800 leading-relaxed">
-                        Dokumen asli untuk <strong>LK 2 (Refleksi Mata Kuliah Semester 1 & 2)</strong> dan <strong>LK 3 (Refleksi Program PPG Secara Keseluruhan)</strong> sedang dalam proses konsolidasi naratif bersama Dosen Pembimbing. Berkas PDF otentik akan langsung disematkan pada repositori ini setelah disahkan.
+                    <p class="font-bold text-emerald-900">Progres Kelengkapan Dokumen Seminar PPG:</p>
+                    <p class="text-emerald-800 leading-relaxed">
+                        Dokumen asli untuk <strong>LK 1 (Identifikasi Diri)</strong>, <strong>LK 2 (6 Dokumen Refleksi Semester 1)</strong>, dan <strong>LK 4 (Desain Inovasi SIPENSI)</strong> telah lengkap dan terverifikasi di repositori. Untuk berkas <strong>LK 3 (Refleksi Program PPG Secara Keseluruhan)</strong> sedang dalam proses konsolidasi akhir bersama Dosen Pembimbing.
                     </p>
                 </div>
             </div>

@@ -227,7 +227,7 @@ const quickModules = [
                             Seminar PPG
                         </h3>
                         <p class="text-stone-600 text-sm leading-relaxed">
-                            Refleksi komprehensif (LK 1-3) dan Desain Inovasi SIPENSI berbasis gamifikasi & face recognition (LK 4) lengkap berkas otentik.
+                            Refleksi LK 1 (Identifikasi Diri), 6 berkas LK 2 (Semester 1), dan Desain Inovasi SIPENSI (LK 4) lengkap berkas fisik otentik.
                         </p>
                     </div>
                     <div

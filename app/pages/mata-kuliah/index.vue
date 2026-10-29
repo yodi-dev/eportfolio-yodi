@@ -48,7 +48,7 @@ const courses = [
         desc: 'Ruang refleksi pengalaman belajar komprehensif (LK 1–3) dan formulasi karya inovasi pendidikan digital SIPENSI (LK 4) lengkap berkas fisik otentik.',
         highlights: [
             'LK 1: Identifikasi Diri & Filosofi Biji Kopi',
-            'LK 2: Refleksi 6 Mata Kuliah Semester 1 Lengkap',
+            'LK 2: Refleksi 10 Mata Kuliah Semester 1 & 2 Lengkap',
             'LK 3: Refleksi Kritis Program PPG Menyeluruh',
             'LK 4: Desain Karya Inovasi Pendidikan SIPENSI'
         ]

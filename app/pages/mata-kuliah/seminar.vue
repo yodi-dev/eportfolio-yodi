@@ -81,26 +81,25 @@ const fourPillars = [
         number: '02',
         code: 'LK 2',
         title: 'Refleksi Mata Kuliah Semester 1 & 2',
-        subtitle: 'Telaah Pengalaman Belajar 6 Mata Kuliah Semester 1 Berbasis Dokumen Resmi',
-        status: '6 Dokumen Asli Tersedia (Semester 1)',
+        subtitle: 'Telaah Pengalaman Belajar 10 Mata Kuliah Semester 1 & 2 Berbasis Dokumen Resmi',
+        status: '10 Dokumen Asli Lengkap (Sem 1 & 2)',
         statusClass: 'bg-emerald-100 text-emerald-800 border-emerald-200',
         path: '/artefak/seminar/lk-2-refleksi-mata-kuliah',
         iconBg: 'bg-blue-50 text-blue-700',
         iconSvg: 'M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25',
-        summary: 'Rekonstruksi komprehensif pengalaman belajar 6 mata kuliah Semester 1 (Filosofi Pendidikan, Pemahaman Peserta Didik, Pembelajaran Kreatif & Inovatif, Pembelajaran Mendalam & Asesmen, Growth Mindset, dan PPL I Terbimbing) berdasarkan 6 berkas fisik LK 2 resmi.',
+        summary: 'Rekonstruksi komprehensif pengalaman belajar 10 mata kuliah Semester 1 dan 2 (Filosofi Pendidikan, Pemahaman Siswa, Pembelajaran Inovatif, Deep Learning Dasar & Lanjutan/PMAL, Growth Mindset, PPL 1 Terbimbing, PSE & Well-Being, Kepemimpinan SIBENKA, dan PPL 2 Mandiri) didukung 11 berkas bukti otentik.',
         points: [
-            'Transfer of values & Sistem Among menuntun kodrat KHD (Filosofi Pendidikan)',
-            'Profiling murid, penolakan penyeragaman, & diferensiasi ZPD (Peserta Didik)',
-            'Integrasi TPACK, PjBL kejuruan, & gamifikasi Quizizz (Kreatif & Inovatif)',
-            'Mindful/meaningful learning, UbD, & unjuk kerja DUDIKA (Deep Learning)',
-            'Neuroplastisitas, The Power of Yet, & Bug Bounty di lab koding (Growth Mindset)',
-            'Fleksibilitas RPP Plan B, chemistry murid, & active roaming (PPL I Terbimbing)'
+            'Semester 1: Filosofi Among KHD, profiling ZPD, TPACK & PjBL, Deep Learning, Growth Mindset, & PPL 1',
+            'PMAL (Sem 2): Pembelajaran adaptif DUP, TaRL, CRT, Taksonomi SOLO, & TeFa lintas kejuruan mesin',
+            'PSE (Sem 2): 5 Kompetensi CASEL, teknik STOP, Emotion Wheel, & regulasi gawai JEDA Digital',
+            'Projek Kepemimpinan: Kepemimpinan transformasional, Inkuiri Apresiatif BAGJA, SMART Goals SIBENKA',
+            'PPL Mandiri: Kemandirian KBM 4 siklus di X TM 1 & 2, gamifikasi Blockly/Wayground, & mitigasi lab'
         ],
         hasAuthenticDoc: true,
         docFile: {
-            title: 'Lembar Kerja 2 (LK 2): Filosofi Pendidikan dan Nilai',
-            url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Filosofi Pendidikan.pdf',
-            size: '203 KB'
+            title: 'Lembar Kerja 2 (LK 2): Pembelajaran Mendalam dan Asesmen Lanjutan (Semester 2)',
+            url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Pembelajaran Mendalam dan Asesmen Lanjutan.pdf',
+            size: '200 KB'
         }
     },
     {
@@ -156,6 +155,8 @@ const repoFilter = ref('all')
 const repoCategories = [
     { id: 'all', label: 'Semua Berkas' },
     { id: 'Lembar Kerja', label: 'Lembar Kerja (LK)' },
+    { id: 'Laporan UAS', label: 'Laporan UAS & Esai' },
+    { id: 'Refleksi Praktik', label: 'Refleksi Praktik & Jurnal' },
     { id: 'Sistem Informasi', label: 'Sistem & Inovasi' }
 ]
 
@@ -164,7 +165,7 @@ const seminarDocuments = [
         title: 'Lembar Kerja 1 (LK 1): Identifikasi Diri',
         type: 'pdf',
         url: '/dokumen/seminar/LEMBAR KERJA 1 (LK 1).pdf',
-        size: '184 KB',
+        size: '180 KB',
         badge: 'Dokumen Resmi LK 1',
         category: 'Lembar Kerja',
         description: 'Naskah asli identifikasi diri, visi pendidikan Indonesia, filosofi guru "biji kopi", dan langkah manajemen diri.'
@@ -173,8 +174,8 @@ const seminarDocuments = [
         title: 'LK 2: Filosofi Pendidikan dan Pendidikan Nilai',
         type: 'pdf',
         url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Filosofi Pendidikan.pdf',
-        size: '203 KB',
-        badge: 'Dokumen Resmi LK 2',
+        size: '198 KB',
+        badge: 'Resmi LK 2 (Sem 1)',
         category: 'Lembar Kerja',
         description: 'Refleksi esensi pendidikan pembentuk watak, sistem Among KHD, dan pergeseran dari teacher-centered ke student-centered.'
     },
@@ -182,8 +183,8 @@ const seminarDocuments = [
         title: 'LK 2: Pemahaman Tentang Peserta Didik dan Pembelajaran',
         type: 'pdf',
         url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - pemahaman peserta didik.pdf',
-        size: '197 KB',
-        badge: 'Dokumen Resmi LK 2',
+        size: '193 KB',
+        badge: 'Resmi LK 2 (Sem 1)',
         category: 'Lembar Kerja',
         description: 'Refleksi profiling karakteristik siswa, penolakan penyeragaman, teori Piaget & Vygotsky, ZPD, dan diferensiasi kasus Pak Anto.'
     },
@@ -191,8 +192,8 @@ const seminarDocuments = [
         title: 'LK 2: Pembelajaran Kreatif dan Inovatif',
         type: 'pdf',
         url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Pembelajaran Kreatif dan Inovatif.pdf',
-        size: '199 KB',
-        badge: 'Dokumen Resmi LK 2',
+        size: '194 KB',
+        badge: 'Resmi LK 2 (Sem 1)',
         category: 'Lembar Kerja',
         description: 'Refleksi integrasi TPACK, PjBL kontekstual vokasi, Flipped Classroom, gamifikasi Quizizz/Wayground, dan peer-tutoring.'
     },
@@ -200,8 +201,8 @@ const seminarDocuments = [
         title: 'LK 2: Pembelajaran Mendalam dan Asesmen Dasar',
         type: 'pdf',
         url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Pembelajaran Mendalam dan Asesmen Dasar.pdf',
-        size: '202 KB',
-        badge: 'Dokumen Resmi LK 2',
+        size: '198 KB',
+        badge: 'Resmi LK 2 (Sem 1)',
         category: 'Lembar Kerja',
         description: 'Refleksi prinsip deep learning (meaningful, mindful, joyful), Backward Design (UbD), dan asesmen autentik unjuk kerja DUDIKA.'
     },
@@ -209,8 +210,8 @@ const seminarDocuments = [
         title: 'LK 2: Pola Pikir Bertumbuh (Growth Mindset)',
         type: 'pdf',
         url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Pola Pikir Bertumbuh (Growth Mindset).pdf',
-        size: '211 KB',
-        badge: 'Dokumen Resmi LK 2',
+        size: '206 KB',
+        badge: 'Resmi LK 2 (Sem 1)',
         category: 'Lembar Kerja',
         description: 'Refleksi neuroplastisitas otak, Process-Praise, The Power of Yet, Klinik Kesalahan, dan Bug Bounty & Celebration di kelas koding.'
     },
@@ -218,19 +219,154 @@ const seminarDocuments = [
         title: 'LK 2: Praktik Pengalaman Lapangan (PPL) Terbimbing',
         type: 'pdf',
         url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Praktik Pengalaman Lapangan (PPL) Terbimbing.pdf',
-        size: '198 KB',
-        badge: 'Dokumen Resmi LK 2',
+        size: '193 KB',
+        badge: 'Resmi LK 2 (Sem 1)',
         category: 'Lembar Kerja',
         description: 'Refleksi menjembatani teori dan praktik di SMKN 3 Yogyakarta bersama GP Febriyana, S.T., fleksibilitas RPP Plan B, dan chemistry emosional.'
+    },
+    {
+        title: 'LK 2: Pembelajaran Mendalam dan Asesmen Lanjutan',
+        type: 'pdf',
+        url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Pembelajaran Mendalam dan Asesmen Lanjutan.pdf',
+        size: '200 KB',
+        badge: 'Resmi LK 2 (Sem 2)',
+        category: 'Lembar Kerja',
+        description: 'Refleksi perancangan pembelajaran adaptif berbasis DUP, TaRL, dan CRT, Taksonomi SOLO, serta evaluasi formatif berkelanjutan.'
+    },
+    {
+        title: 'LK 2: Pembelajaran Sosial Emosional',
+        type: 'pdf',
+        url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Pembelajaran Sosial Emosional.pdf',
+        size: '204 KB',
+        badge: 'Resmi LK 2 (Sem 2)',
+        category: 'Lembar Kerja',
+        description: 'Refleksi 5 kompetensi CASEL, teknik STOP, Emotion Wheel, penundaan respons impulsif saat bug/error koding, dan school well-being.'
+    },
+    {
+        title: 'LK 2: Projek Kepemimpinan',
+        type: 'pdf',
+        url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2)- Proyek Kepemimpinan.pdf',
+        size: '200 KB',
+        badge: 'Resmi LK 2 (Sem 2)',
+        category: 'Lembar Kerja',
+        description: 'Refleksi kepemimpinan transformasional, Inkuiri Apresiatif BAGJA, SMART Goals, dan integrasi empati manajerial proyek SIBENKA.'
+    },
+    {
+        title: 'LK 2: Praktik Pengalaman Lapangan (PPL) Mandiri',
+        type: 'pdf',
+        url: '/dokumen/seminar/LEMBAR KERJA 2 (LK 2) - Praktik Pengalaman Lapangan (PPL) Mandiri.pdf',
+        size: '184 KB',
+        badge: 'Resmi LK 2 (Sem 2)',
+        category: 'Lembar Kerja',
+        description: 'Refleksi puncak praktik mengajar mandiri di SMKN 3 Yogyakarta, integrasi konteks mesin, gamifikasi Blockly, & mitigasi kendala lab.'
     },
     {
         title: 'Lembar Kerja 4 (LK 4): Penyusunan Desain Karya Inovatif',
         type: 'pdf',
         url: '/dokumen/seminar/LEMBAR KERJA 4 (LK 4).pdf',
-        size: '229 KB',
+        size: '224 KB',
         badge: 'Dokumen Resmi LK 4',
         category: 'Lembar Kerja',
         description: 'Naskah asli rancang bangun sistem presensi web SIPENSI dengan Geolocation dan Timestamp Swafoto di SMKN 3 Yogyakarta.'
+    },
+    {
+        title: 'Laporan UAS PMAL: Merancang Pembelajaran Berbasis DUP, TaRL, dan CRT',
+        type: 'pdf',
+        url: '/dokumen/seminar/LAPORAN UJIAN AKHIR SEMESTER - PMAL.pdf',
+        size: '480 KB',
+        badge: 'Laporan UAS (38 Hlm)',
+        category: 'Laporan UAS',
+        description: 'Laporan lengkap perancangan 3 pertemuan materi Algoritma di X TM 1 SMKN 3 Yogyakarta memuat kisi-kisi asesmen kognitif & nonkognitif.'
+    },
+    {
+        title: 'Laporan Proyek UAS PSE: JEDA Digital untuk School Well-Being',
+        type: 'pdf',
+        url: '/dokumen/seminar/LAPORAN UJIAN AKHIR SEMESTER - PSE.pdf',
+        size: '665 KB',
+        badge: 'Laporan UAS (35 Hlm)',
+        category: 'Laporan UAS',
+        description: 'Intervensi regulasi gawai di lab komputer berbasis 5 kompetensi CASEL, kartu skenario JEDA, rubrik evaluasi, & naskah poster.'
+    },
+    {
+        title: 'Esai Akademik UAS: Filosofi Pendidikan dan Nilai Profesi Guru',
+        type: 'pdf',
+        url: '/dokumen/seminar/UAS.pdf',
+        size: '151 KB',
+        badge: 'Esai UAS Akademik',
+        category: 'Laporan UAS',
+        description: 'Esai reflektif komprehensif implementasi holistik filosofi pendidikan, analisis Sokola Rimba, growth mindset, dan kode etik guru.'
+    },
+    {
+        title: 'Dokumen 2.E: Refleksi dan Tindak Lanjut Pembelajaran Mendalam',
+        type: 'pdf',
+        url: '/dokumen/seminar/2E.pdf',
+        size: '127 KB',
+        badge: 'Artefak 2.E PMAL',
+        category: 'Refleksi Praktik',
+        description: 'Laporan simulasi KBM di kelas X BP SMKN 3 Yogyakarta, evaluasi diri pendidik, dan strategi manajemen ketahanan emosional.'
+    },
+    {
+        title: 'Dokumen 3.E: Penerapan Experiential Learning dan PSE di Sekolah',
+        type: 'pdf',
+        url: '/dokumen/seminar/3.E.pdf',
+        size: '178 KB',
+        badge: 'Artefak 3.E PSE',
+        category: 'Refleksi Praktik',
+        description: 'Revisi RPP materi Search Engine berorientasi Adiwiyata di kelas X BP, integrasi teknik STOP, Emotion Wheel, & rubrik evaluasi diri.'
+    },
+    {
+        title: 'Tugas 8.1: Jurnal Refleksi Mingguan Proyek Kepemimpinan SIBENKA',
+        type: 'pdf',
+        url: '/dokumen/seminar/Tugas 8.1.pdf',
+        size: '71 KB',
+        badge: 'Jurnal SIBENKA (M1-M7)',
+        category: 'Refleksi Praktik',
+        description: 'Catatan refleksi mingguan peran Ketua Tim & Lead Developer dari inisiasi, koordinasi mitra, uji coba toolman, hingga evaluasi akhir.'
+    },
+    {
+        title: 'LK 4 PPLM: Refleksi Praktik Mengajar Mandiri - Siklus 1',
+        type: 'pdf',
+        url: '/dokumen/seminar/LK4 Refleksi Praktek Mengajar Mandiri PPLM - siklus 1.pdf',
+        size: '289 KB',
+        badge: 'LK 4 PPLM Siklus 1',
+        category: 'Refleksi Praktik',
+        description: 'Refleksi apersepsi algoritma, penguatan Blockly, dan kuis Wayground (ttd Febriyana, S.T & Dr. Drs. Totok Sukardiyono, S.T., M.T.).'
+    },
+    {
+        title: 'LK 4 PPLM: Refleksi Praktik Mengajar Mandiri - Siklus 2',
+        type: 'pdf',
+        url: '/dokumen/seminar/LK4 Refleksi Praktek Mengajar Mandiri PPLM - siklus 2.pdf',
+        size: '288 KB',
+        badge: 'LK 4 PPLM Siklus 2',
+        category: 'Refleksi Praktik',
+        description: 'Refleksi KBM IDE Python OnlineGDB, pemanfaatan cheatsheet koding, dan strategi pendampingan perbedaan kecepatan belajar siswa.'
+    },
+    {
+        title: 'LK 4 PPLM: Refleksi Praktik Mengajar Mandiri - Siklus 3',
+        type: 'pdf',
+        url: '/dokumen/seminar/LK4 Refleksi Praktek Mengajar Mandiri PPLM - siklus 3.pdf',
+        size: '288 KB',
+        badge: 'LK 4 PPLM Siklus 3',
+        category: 'Refleksi Praktik',
+        description: 'Refleksi evaluasi konsep algoritma berbasis Blockly dan transisi analisis data yang dikaitkan dengan konteks Teknik Mesin.'
+    },
+    {
+        title: 'LK 4 PPLM: Refleksi Praktik Mengajar Mandiri - Siklus 4',
+        type: 'pdf',
+        url: '/dokumen/seminar/LK4 Refleksi Praktek Mengajar Mandiri PPLM - siklus 4.pdf',
+        size: '291 KB',
+        badge: 'LK 4 PPLM Siklus 4',
+        category: 'Refleksi Praktik',
+        description: 'Refleksi presentasi kelompok, praktik Excel, dan mitigasi kendala lab komputer dengan pengalihan KBM ke kelas teori pada 5 Oktober.'
+    },
+    {
+        title: 'Laporan Aksi Nyata: Refleksi Filosofi Pendidikan Indonesia',
+        type: 'pdf',
+        url: '/dokumen/seminar/4.E LAPORAN AKSI NYATA.pdf',
+        size: '327 KB',
+        badge: 'Aksi Nyata KHD',
+        category: 'Refleksi Praktik',
+        description: 'Rancangan 3 aksi nyata pembenahan diri, pembelajaran kontekstual berbasis potensi lokal, & literasi digital global Tri-Kon KHD.'
     },
     {
         title: 'Aplikasi Presensi Web SIPENSI (SMKN 3 Yogyakarta)',
@@ -327,7 +463,7 @@ const getBadgeClass = (type) => {
                     </p>
                 </div>
                 <span class="text-xs font-semibold px-3 py-1 bg-stone-100 text-stone-700 rounded-full border border-stone-200 self-start sm:self-auto">
-                    2 Dokumen Tuntas • 2 Dalam Proses
+                    3 Pilar Lembar Kerja Tuntas (LK 1, 2, 4) • 1 Dalam Proses (LK 3)
                 </span>
             </div>
 
@@ -510,7 +646,7 @@ const getBadgeClass = (type) => {
                 <div class="space-y-1">
                     <p class="font-bold text-emerald-900">Progres Kelengkapan Dokumen Seminar PPG:</p>
                     <p class="text-emerald-800 leading-relaxed">
-                        Dokumen asli untuk <strong>LK 1 (Identifikasi Diri)</strong>, <strong>LK 2 (6 Dokumen Refleksi Semester 1)</strong>, dan <strong>LK 4 (Desain Inovasi SIPENSI)</strong> telah lengkap dan terverifikasi di repositori. Untuk berkas <strong>LK 3 (Refleksi Program PPG Secara Keseluruhan)</strong> sedang dalam proses konsolidasi akhir bersama Dosen Pembimbing.
+                        Dokumen otentik untuk <strong>LK 1 (Identifikasi Diri)</strong>, <strong>LK 2 (10 Dokumen Refleksi Lengkap Semester 1 & 2)</strong>, dan <strong>LK 4 (Desain Inovasi SIPENSI)</strong> telah 100% lengkap dan terverifikasi di repositori bersama 11 berkas bukti dukung otentik. Untuk berkas <strong>LK 3 (Refleksi Program PPG Secara Keseluruhan)</strong> sedang dalam proses penyusunan dan konsolidasi akhir bersama Dosen Pembimbing.
                     </p>
                 </div>
             </div>

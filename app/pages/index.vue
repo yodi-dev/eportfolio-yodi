@@ -227,7 +227,7 @@ const quickModules = [
                             Seminar PPG
                         </h3>
                         <p class="text-stone-600 text-sm leading-relaxed">
-                            Refleksi LK 1 (Identifikasi Diri), 6 berkas LK 2 (Semester 1), dan Desain Inovasi SIPENSI (LK 4) lengkap berkas fisik otentik.
+                            Refleksi LK 1 (Identifikasi Diri), 10 berkas LK 2 (Semester 1 & 2), dan Desain Inovasi SIPENSI (LK 4) lengkap repositori berkas fisik otentik.
                         </p>
                     </div>
                     <div

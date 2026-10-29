@@ -20,9 +20,29 @@ const closePreview = () => {
     previewModal.value = null
 }
 
+// State untuk Galeri Inovasi SIPENSI SKAGATA
+const activeSipensiIndex = ref(0)
+const isImageModalOpen = ref(false)
+const activeImageUrl = ref('')
+const activeImageTitle = ref('')
+
+const openImageZoom = (item) => {
+    activeImageUrl.value = item.image
+    activeImageTitle.value = item.title
+    isImageModalOpen.value = true
+}
+
+const closeImageZoom = () => {
+    isImageModalOpen.value = false
+}
+
 const handleKeyDown = (e) => {
-    if (e.key === 'Escape' && previewModal.value) {
-        closePreview()
+    if (e.key === 'Escape') {
+        if (isImageModalOpen.value) {
+            closeImageZoom()
+        } else if (previewModal.value) {
+            closePreview()
+        }
     }
 }
 
@@ -33,6 +53,52 @@ onMounted(() => {
 onUnmounted(() => {
     window.removeEventListener('keydown', handleKeyDown)
 })
+
+// Galeri Sorotan Antarmuka SIPENSI SKAGATA
+const sipensiGallery = [
+    {
+        title: 'Presensi Harian Geofencing GPS',
+        role: 'Mahasiswa Praktikan',
+        caption: 'Batas masuk 07:15 WIB, batas pulang 15:00 WIB, dengan validasi radius ketat 100 meter dari perimeter SMKN 3 Yogyakarta.',
+        image: '/dokumen/seminar/ss/Screenshot 2026-10-30 034335.png',
+        badge: 'Geofence 100m'
+    },
+    {
+        title: 'Presensi Piket KBM Swafoto WebRTC',
+        role: 'Mahasiswa Praktikan',
+        caption: 'Kamera swafoto waktu nyata dengan watermark tanggal dan jam otomatis, meniadakan celah kecurangan galeri ponsel.',
+        image: '/dokumen/seminar/ss/Screenshot 2026-10-30 034407.png',
+        badge: 'WebRTC Camera'
+    },
+    {
+        title: 'Kalibrasi Peta Geofencing Leaflet OSM',
+        role: 'Administrator Sistem',
+        caption: 'Peta perimeter interaktif SMKN 3 Yogyakarta (-7.777128, 110.366523) dengan kontrol slider radius 10m-1000m.',
+        image: '/dokumen/seminar/ss/Screenshot 2026-10-30 035523.png',
+        badge: 'Leaflet.js Engine'
+    },
+    {
+        title: 'Monitoring Mahasiswa Binaan Real-Time',
+        role: 'Guru Pamong',
+        caption: 'Dashboard pemantauan status kehadiran harian mahasiswa Informatika UNY oleh Guru Pamong Febriyana, S.T.',
+        image: '/dokumen/seminar/ss/Screenshot 2026-10-30 034903.png',
+        badge: 'Live Status'
+    },
+    {
+        title: 'Rekapitulasi Bulanan & Ekspor Excel',
+        role: 'Guru Pamong',
+        caption: 'Akumulasi presensi bulanan 5 hari kerja efektif dengan persentase kehadiran dan ekspor spreadsheet .xlsx otomatis.',
+        image: '/dokumen/seminar/ss/Screenshot 2026-10-30 035308.png',
+        badge: 'Ekspor .xlsx'
+    },
+    {
+        title: 'Pemetaan Pamong & Strict Data Isolation',
+        role: 'Administrator Sistem',
+        caption: 'Penegakan isolasi data ketat agar guru pamong hanya memantau mahasiswa dari jurusan binaannya masing-masing.',
+        image: '/dokumen/seminar/ss/Screenshot 2026-10-30 035423.png',
+        badge: 'Data Security'
+    }
+]
 
 // State & fungsi modal pratinjau PDF in-browser
 const isPdfModalOpen = ref(false)
@@ -383,12 +449,12 @@ const seminarDocuments = [
         description: 'Rancangan 3 aksi nyata pembenahan diri, pembelajaran kontekstual berbasis potensi lokal, & literasi digital global Tri-Kon KHD.'
     },
     {
-        title: 'Aplikasi Presensi Web SIPENSI (SMKN 3 Yogyakarta)',
+        title: 'Aplikasi Presensi Web SIPENSI SKAGATA (CodeIgniter 4)',
         type: 'link',
-        url: 'https://github.com/yodi-dev',
+        url: 'https://github.com/yodi-dev/sipensi-skagata',
         badge: 'Inovasi SIPENSI',
         category: 'Sistem Informasi',
-        description: 'Sistem presensi terpusat berbasis geolocation dan timestamp swafoto untuk tenaga pendidik SMKN 3 Yogyakarta.'
+        description: 'Repositori resmi sistem presensi & piket KBM berbasis CodeIgniter 4, Geolocation GPS radius 100m, dan WebRTC kamera timestamp di SMKN 3 Yogyakarta.'
     },
     {
         title: 'Undangan Resmi BIMTEK Aplikasi SIBENKA',
@@ -562,6 +628,109 @@ const getBadgeClass = (type) => {
             </div>
         </section>
 
+        <!-- Showcase Khusus Karya Inovasi Pendidikan: SIPENSI SKAGATA (CodeIgniter 4) -->
+        <section class="bg-gradient-to-br from-emerald-950 via-stone-900 to-stone-900 text-stone-100 p-6 sm:p-8 md:p-10 rounded-[2.5rem] border border-emerald-900/60 shadow-lg space-y-8 relative overflow-hidden">
+            <!-- Decorative Background Element -->
+            <div class="absolute -right-16 -top-16 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <!-- Header Showcase -->
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 border-b border-stone-800 relative z-10">
+                <div class="space-y-2 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-900/80 text-emerald-300 border border-emerald-700/60 text-[11px] font-bold rounded-full uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Karya Inovasi Unggulan • Lembar Kerja 4
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white font-serif tracking-tight">
+                        SIPENSI SKAGATA (CodeIgniter 4)
+                    </h2>
+                    <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">
+                        Sistem Informasi Presensi & Piket KBM berbasis web dengan verifikasi <strong>HTML5 Geolocation (Radius 100m)</strong>, <strong>Kamera Swafoto WebRTC Timestamp</strong>, dan <strong>Strict Data Isolation</strong> di SMK Negeri 3 Yogyakarta.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-2.5 flex-shrink-0">
+                    <a href="https://github.com/yodi-dev/sipensi-skagata" target="_blank" rel="noopener noreferrer"
+                        class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-all inline-flex items-center gap-2 shadow-sm">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                        </svg>
+                        <span>Source Code GitHub</span>
+                    </a>
+                    <NuxtLink to="/artefak/seminar/lk-4-karya-inovasi-pendidikan"
+                        class="px-4 py-2 bg-stone-800 hover:bg-stone-700 text-stone-200 hover:text-white text-xs font-semibold rounded-xl transition-all border border-stone-700 inline-flex items-center gap-1.5">
+                        <span>Baca Naskah LK 4</span>
+                        &rarr;
+                    </NuxtLink>
+                </div>
+            </div>
+
+            <!-- Fitur Utama & Highlight Metrik -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs relative z-10">
+                <div class="p-3.5 rounded-2xl bg-stone-800/60 border border-stone-700/60 space-y-1">
+                    <span class="text-[10px] uppercase font-mono text-emerald-400 block">Arsitektur MVC</span>
+                    <span class="font-bold text-white text-sm">CodeIgniter 4 & MySQL</span>
+                    <p class="text-[11px] text-stone-400">CSRF protection, routing bersih, dan database relasional aman.</p>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-stone-800/60 border border-stone-700/60 space-y-1">
+                    <span class="text-[10px] uppercase font-mono text-emerald-400 block">Geofence Perimeter</span>
+                    <span class="font-bold text-white text-sm">Radius 100m Presisi</span>
+                    <p class="text-[11px] text-stone-400">Peta Leaflet OSM SMKN 3 Yogyakarta (-7.777128, 110.366523).</p>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-stone-800/60 border border-stone-700/60 space-y-1">
+                    <span class="text-[10px] uppercase font-mono text-emerald-400 block">Anti-Kecurangan</span>
+                    <span class="font-bold text-white text-sm">WebRTC Swafoto</span>
+                    <p class="text-[11px] text-stone-400">Kamera langsung dengan watermark jam dan tanggal otomatis.</p>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-stone-800/60 border border-stone-700/60 space-y-1">
+                    <span class="text-[10px] uppercase font-mono text-emerald-400 block">Pelaporan Instan</span>
+                    <span class="font-bold text-white text-sm">Ekspor Excel .xlsx</span>
+                    <p class="text-[11px] text-stone-400">Rekapitulasi bulanan otomatis sekali klik siap tanda tangan.</p>
+                </div>
+            </div>
+
+            <!-- Galeri Interaktif Preview Antarmuka -->
+            <div class="space-y-4 pt-2 relative z-10">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <span class="text-xs font-bold uppercase tracking-wider text-stone-400 flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-emerald-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                        Sorotan Tangkapan Layar Sistem (Klik untuk Memperbesar)
+                    </span>
+                    <span class="text-[11px] text-stone-400">
+                        Menampilkan {{ sipensiGallery.length }} dari 20 Dokumen Antarmuka Otentik
+                    </span>
+                </div>
+
+                <!-- Showcase Preview Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div v-for="(item, idx) in sipensiGallery" :key="idx"
+                        @click="openImageZoom(item)"
+                        class="bg-stone-800/80 hover:bg-stone-800 p-3.5 rounded-2xl border border-stone-700 hover:border-emerald-500/60 transition-all cursor-pointer group flex flex-col justify-between space-y-3">
+                        <div class="overflow-hidden rounded-xl border border-stone-700/80 bg-stone-950 aspect-video relative">
+                            <img :src="item.image" :alt="item.title" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                            <div class="absolute inset-0 bg-stone-950/20 group-hover:bg-transparent transition-colors"></div>
+                            <span class="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-stone-900/90 text-emerald-400 text-[10px] font-bold border border-stone-700">
+                                {{ item.badge }}
+                            </span>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] uppercase font-bold text-emerald-400 tracking-wider">{{ item.role }}</span>
+                                <span class="text-[10px] text-stone-500 group-hover:text-stone-300 transition-colors">Perbesar &rarr;</span>
+                            </div>
+                            <h4 class="text-xs sm:text-sm font-bold text-white group-hover:text-emerald-300 transition-colors line-clamp-1 font-serif">
+                                {{ item.title }}
+                            </h4>
+                            <p class="text-[11px] text-stone-400 leading-relaxed line-clamp-2">
+                                {{ item.caption }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Pusat Repositori Berkas Asli Seminar PPG (Evidence Vault) -->
         <section class="bg-stone-50/90 p-6 md:p-10 rounded-3xl border border-stone-200/90 space-y-6">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-stone-200">
@@ -712,6 +881,22 @@ const getBadgeClass = (type) => {
             :file-url="activePdfUrl"
             @close="closePdfPreview"
         />
+
+        <!-- Image Zoom Modal SIPENSI SKAGATA -->
+        <div v-if="isImageModalOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-950/80 backdrop-blur-sm animate-fadeIn"
+            @click.self="closeImageZoom">
+            <div class="bg-stone-900 border border-stone-800 rounded-3xl max-w-4xl w-full p-4 space-y-3 relative shadow-2xl overflow-hidden">
+                <div class="flex items-center justify-between text-stone-200 px-2 pt-1">
+                    <span class="text-xs font-bold font-mono tracking-wider text-emerald-400">{{ activeImageTitle }}</span>
+                    <button @click="closeImageZoom" type="button" class="w-8 h-8 rounded-full bg-stone-800 hover:bg-stone-700 text-stone-300 hover:text-white flex items-center justify-center transition-colors">
+                        ✕
+                    </button>
+                </div>
+                <div class="rounded-2xl overflow-hidden border border-stone-800 bg-stone-950 flex items-center justify-center max-h-[80vh]">
+                    <img :src="activeImageUrl" :alt="activeImageTitle" class="w-full h-auto max-h-[78vh] object-contain" />
+                </div>
+            </div>
+        </div>
 
     </div>
 </template>

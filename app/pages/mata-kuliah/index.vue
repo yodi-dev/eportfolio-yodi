@@ -41,7 +41,7 @@ const courses = [
         id: 'seminar',
         title: 'Seminar PPG',
         subtitle: 'Seminar Pendidikan Profesi Guru',
-        status: 'Tersedia LK 1, LK 2, & LK 4',
+        status: 'Lengkap LK 1 - LK 4 (100%)',
         statusClass: 'bg-emerald-100 text-emerald-800',
         score: '4 Lembar Kerja (LK 1-4)',
         to: '/mata-kuliah/seminar',

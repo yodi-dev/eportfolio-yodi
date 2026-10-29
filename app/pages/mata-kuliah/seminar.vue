@@ -107,20 +107,25 @@ const fourPillars = [
         number: '03',
         code: 'LK 3',
         title: 'Refleksi Program PPG Menyeluruh',
-        subtitle: 'Sintesis Holistik Metamorfosis Menjadi Pendidik Profesional Berdampak',
-        status: 'Tahap Konsolidasi (Menyusul)',
-        statusClass: 'bg-amber-100 text-amber-800 border-amber-200',
+        subtitle: 'Visi Pendidikan Indonesia, Standar Guru UU 14/2005, & 3 Langkah Karir',
+        status: 'Dokumen Asli Tersedia',
+        statusClass: 'bg-emerald-100 text-emerald-800 border-emerald-200',
         path: '/artefak/seminar/lk-3-refleksi-program-ppg',
         iconBg: 'bg-purple-50 text-purple-700',
         iconSvg: 'M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342',
-        summary: 'Perenungan holistik perjalanan transformasi dari mahasiswa calon guru menjadi pendidik profesional siap tugas: dekonstruksi pola pikir lama, resonansi kultur ketarunaan vokasi SMKN 3 Yogyakarta, dan kesiapan dedikasi berkelanjutan.',
+        summary: 'Perenungan holistik sistem pendidikan Indonesia dari kacamata TI (pemanfaatan teknologi tepat guna & sinkronisasi kurikulum/daerah), penguasaan 4 kompetensi guru profesional UU 14/2005, serta 3 langkah strategis memulai karir guru (adaptasi, persiapan instrumen, dan kemerdekaan diri).',
         points: [
-            'Transformasi Mindset: Bergeser dari pengajar materi menjadi fasilitator potensi murid',
-            'Resonansi Budaya Vokasi: Harmonisasi disiplin ketarunaan dan kepedulian humanis',
-            'Dedikasi Ekosistem Sekolah: Terlibat aktif dalam denyut nadi manajemen dan KBM',
-            'Komitmen Berkelanjutan: Adaptif terhadap revolusi teknologi dan integritas moral guru'
+            'Visi Pendidikan: Pemanfaatan TI pedagogis tepat guna & sinkronisasi jenjang SMK-PT/daerah',
+            'Standar UU 14/2005: Integrasi 4 kompetensi utama (Pedagogik, Kepribadian, Sosial, Profesional)',
+            'Karakter Abad 21: Keterampilan 4C, berorientasi siswa, pembelajar berkelanjutan, & manajerial',
+            '3 Langkah Karir Guru: Adaptasi intrinsik-ekstrinsik, kerja keras administrasi, & memerdekakan kebutuhan diri'
         ],
-        hasAuthenticDoc: false
+        hasAuthenticDoc: true,
+        docFile: {
+            title: 'Lembar Kerja 3 (LK 3): Refleksi Pengalaman Belajar Selama Mengikuti PPG',
+            url: '/dokumen/seminar/LEMBAR KERJA 3 (LK 3).pdf',
+            size: '202 KB'
+        }
     },
     {
         id: 'lk4',
@@ -259,6 +264,15 @@ const seminarDocuments = [
         badge: 'Resmi LK 2 (Sem 2)',
         category: 'Lembar Kerja',
         description: 'Refleksi puncak praktik mengajar mandiri di SMKN 3 Yogyakarta, integrasi konteks mesin, gamifikasi Blockly, & mitigasi kendala lab.'
+    },
+    {
+        title: 'Lembar Kerja 3 (LK 3): Refleksi Pengalaman Belajar Mengikuti PPG',
+        type: 'pdf',
+        url: '/dokumen/seminar/LEMBAR KERJA 3 (LK 3).pdf',
+        size: '202 KB',
+        badge: 'Dokumen Resmi LK 3',
+        category: 'Lembar Kerja',
+        description: 'Naskah asli refleksi komprehensif sistem pendidikan Indonesia (TI & sinkronisasi jenjang/daerah), standar guru UU 14/2005, dan 3 langkah strategis karir guru.'
     },
     {
         title: 'Lembar Kerja 4 (LK 4): Penyusunan Desain Karya Inovatif',
@@ -462,8 +476,8 @@ const getBadgeClass = (type) => {
                         Rangkaian telaah komprehensif dari evaluasi jati diri hingga penciptaan karya inovasi di sekolah mitra.
                     </p>
                 </div>
-                <span class="text-xs font-semibold px-3 py-1 bg-stone-100 text-stone-700 rounded-full border border-stone-200 self-start sm:self-auto">
-                    3 Pilar Lembar Kerja Tuntas (LK 1, 2, 4) • 1 Dalam Proses (LK 3)
+                <span class="text-xs font-semibold px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full border border-emerald-200 self-start sm:self-auto font-medium">
+                    4 Pilar Lembar Kerja Tuntas 100% (LK 1 - LK 4 Lengkap)
                 </span>
             </div>
 
@@ -644,9 +658,9 @@ const getBadgeClass = (type) => {
                     ✓
                 </div>
                 <div class="space-y-1">
-                    <p class="font-bold text-emerald-900">Progres Kelengkapan Dokumen Seminar PPG:</p>
+                    <p class="font-bold text-emerald-900">Kelengkapan 100% Repositori Seminar PPG:</p>
                     <p class="text-emerald-800 leading-relaxed">
-                        Dokumen otentik untuk <strong>LK 1 (Identifikasi Diri)</strong>, <strong>LK 2 (10 Dokumen Refleksi Lengkap Semester 1 & 2)</strong>, dan <strong>LK 4 (Desain Inovasi SIPENSI)</strong> telah 100% lengkap dan terverifikasi di repositori bersama 11 berkas bukti dukung otentik. Untuk berkas <strong>LK 3 (Refleksi Program PPG Secara Keseluruhan)</strong> sedang dalam proses penyusunan dan konsolidasi akhir bersama Dosen Pembimbing.
+                        Seluruh dokumen otentik untuk <strong>4 Pilar Lembar Kerja Seminar PPG (LK 1, LK 2 [10 Dokumen], LK 3, dan LK 4)</strong> telah 100% lengkap dan terverifikasi di repositori bersama 11 berkas bukti dukung otentik (total 26 berkas fisik resmi). E-Portfolio diseminasi akademik mata kuliah Seminar PPG kini telah paripurna dan siap diuji.
                     </p>
                 </div>
             </div>

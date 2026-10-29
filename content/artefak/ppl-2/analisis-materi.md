@@ -22,7 +22,7 @@ attachments:
     description: "Materi konsep pengolahan data, privasi data, dan teknik validasi data digital."
   - title: "Slide Presentasi: Algoritma & Pemrograman untuk Teknik Mesin"
     type: "pptx"
-    url: "/dokumen/ppl-2/Algoritma & Pemrograman - Teknik Mesin.pptx"
+    url: "/dokumen/ppl-2/Algoritma dan Pemrograman - Teknik Mesin.pptx"
     size: "696 KB"
     badge: "Slide Validasi"
     description: "Media tayang PowerPoint konseptual untuk memvalidasi dan mengonfirmasi catatan mandiri peserta didik."

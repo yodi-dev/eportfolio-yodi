@@ -276,7 +276,7 @@ const documentRepository = [
     {
         title: 'Slide Presentasi: Algoritma & Pemrograman Teknik Mesin',
         type: 'pptx',
-        url: '/dokumen/ppl-2/Algoritma & Pemrograman - Teknik Mesin.pptx',
+        url: '/dokumen/ppl-2/Algoritma dan Pemrograman - Teknik Mesin.pptx',
         size: '696 KB',
         badge: 'Slide Presentasi',
         category: 'Media Pembelajaran',

@@ -231,8 +231,8 @@ const documentRepository = [
     {
         title: 'Rencana Pelaksanaan Dinamis (RPD): Algoritma & Pemrograman',
         type: 'image',
-        url: '/dokumen/ppl-2/RPD Algoritma.png',
-        size: '1.6 MB',
+        url: '/dokumen/ppl-2/RPD Algoritma.webp',
+        size: '204 KB',
         badge: 'RPD Utama',
         category: 'Perencanaan',
         description: 'Desain alur capaian pembelajaran algoritma dan pemrograman terstruktur.'
@@ -240,8 +240,8 @@ const documentRepository = [
     {
         title: 'Rencana Pelaksanaan Dinamis (RPD): Sistem Komputer',
         type: 'image',
-        url: '/dokumen/ppl-2/RPD Siskom.png',
-        size: '1.5 MB',
+        url: '/dokumen/ppl-2/RPD Siskom.webp',
+        size: '172 KB',
         badge: 'RPD Penunjang',
         category: 'Perencanaan',
         description: 'Rancangan instruksional topik sistem komputer dan infrastruktur digital.'
@@ -411,8 +411,8 @@ const documentRepository = [
     {
         title: 'Struktur Jam Pelajaran & Jadwal KBM',
         type: 'image',
-        url: '/dokumen/ppl-2/Jam Pelajaran.jpeg',
-        size: '276 KB',
+        url: '/dokumen/ppl-2/Jam Pelajaran.webp',
+        size: '116 KB',
         badge: 'Jadwal KBM',
         category: 'Perencanaan',
         description: 'Struktur alokasi waktu dan jadwal tatap muka laboratorium komputer.'
@@ -420,8 +420,8 @@ const documentRepository = [
     {
         title: 'Pengaturan Jadwal Sistem Blok 1 Praktik',
         type: 'image',
-        url: '/dokumen/ppl-2/Blok 1.jpeg',
-        size: '204 KB',
+        url: '/dokumen/ppl-2/Blok 1.webp',
+        size: '81 KB',
         badge: 'Sistem Blok',
         category: 'Perencanaan',
         description: 'Dokumentasi pembagian sistem blok 1 pembelajaran kejuruan.'
@@ -429,8 +429,8 @@ const documentRepository = [
     {
         title: 'Pengaturan Jadwal Sistem Blok 2 Praktik',
         type: 'image',
-        url: '/dokumen/ppl-2/Blok 2.jpeg',
-        size: '198 KB',
+        url: '/dokumen/ppl-2/Blok 2.webp',
+        size: '78 KB',
         badge: 'Sistem Blok',
         category: 'Perencanaan',
         description: 'Dokumentasi pembagian sistem blok 2 pembelajaran kejuruan.'
@@ -438,8 +438,8 @@ const documentRepository = [
     {
         title: 'Peta Konsep & Mindmap Analisis Data',
         type: 'image',
-        url: '/dokumen/ppl-2/Analisis Data - 2.png',
-        size: '1.6 MB',
+        url: '/dokumen/ppl-2/Analisis Data - 2.webp',
+        size: '181 KB',
         badge: 'Mindmap AD',
         category: 'Media Pembelajaran',
         description: 'Media infografis peta konsep visual pengolahan data terstruktur.'

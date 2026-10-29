@@ -355,5 +355,8 @@ onBeforeUnmount(() => {
             </div>
         </footer>
 
+        <!-- Tombol Back to Top -->
+        <BackToTop />
+
     </div>
 </template>

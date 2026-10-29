@@ -27,7 +27,7 @@ useSeoMeta({
             <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-10">
                 <div class="w-44 h-44 md:w-52 md:h-52 flex-shrink-0">
                     <div class="w-full h-full rounded-2xl border-4 border-white shadow-lg overflow-hidden group">
-                        <img src="/pp.png" alt="Foto Profil Yodi Irawan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <img src="/pp.webp" alt="Foto Profil Yodi Irawan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     </div>
                 </div>
 

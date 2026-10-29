@@ -208,7 +208,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 </div>
 <div class="bg-stone-50 p-4 rounded-2xl border border-stone-200">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-<img src="/dokumen/seminar/ss/01-login-sipensi-skagata.png" alt="Login SIPENSI SKAGATA" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+<img src="/dokumen/seminar/ss/01-login-sipensi-skagata.webp" alt="Login SIPENSI SKAGATA" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs">
 <div>
@@ -233,7 +233,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 01: Presensi Harian Geofencing -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/02-presensi-harian-geofencing.png" alt="Presensi Harian Mahasiswa" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/02-presensi-harian-geofencing.webp" alt="Presensi Harian Mahasiswa" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -249,7 +249,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 02: Presensi Piket KBM Swafoto -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/03-presensi-piket-kbm-swafoto.png" alt="Kamera Piket KBM" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/03-presensi-piket-kbm-swafoto.webp" alt="Kamera Piket KBM" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -265,7 +265,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 03: Riwayat Presensi Saya -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/04-riwayat-presensi-mahasiswa.png" alt="Riwayat Presensi" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/04-riwayat-presensi-mahasiswa.webp" alt="Riwayat Presensi" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -281,7 +281,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 04: Panduan Pengguna Praktikan -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/05-panduan-praktikan.png" alt="Panduan Praktikan" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/05-panduan-praktikan.webp" alt="Panduan Praktikan" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -297,7 +297,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 05: Profil Mahasiswa Praktikan -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3 md:col-span-2">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs max-h-72">
-                    <img src="/dokumen/seminar/ss/06-profil-mahasiswa.png" alt="Profil Mahasiswa" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/06-profil-mahasiswa.webp" alt="Profil Mahasiswa" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -325,7 +325,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 06: Monitoring Harian Pamong -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/07-monitoring-harian-pamong.png" alt="Monitoring Harian Pamong" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/07-monitoring-harian-pamong.webp" alt="Monitoring Harian Pamong" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -341,7 +341,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 07: Laporan Piket KBM Pamong -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/08-laporan-piket-kbm-pamong.png" alt="Laporan Piket KBM Pamong" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/08-laporan-piket-kbm-pamong.webp" alt="Laporan Piket KBM Pamong" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -357,7 +357,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 08: Rekapitulasi Presensi Bulanan Pamong -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/09-rekap-bulanan-pamong-excel.png" alt="Rekapitulasi Bulanan" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/09-rekap-bulanan-pamong-excel.webp" alt="Rekapitulasi Bulanan" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -373,7 +373,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 09: Panduan Guru Pamong -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/10-panduan-guru-pamong.png" alt="Panduan Pamong" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/10-panduan-guru-pamong.webp" alt="Panduan Pamong" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -389,7 +389,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 10: Profil Guru Pamong -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3 md:col-span-2">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs max-h-72">
-                    <img src="/dokumen/seminar/ss/11-profil-guru-pamong.png" alt="Profil Pamong" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/11-profil-guru-pamong.webp" alt="Profil Pamong" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -417,7 +417,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 11: Dashboard Ringkasan Eksekutif -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/12-dashboard-eksekutif-admin.png" alt="Dashboard Administrator" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/12-dashboard-eksekutif-admin.webp" alt="Dashboard Administrator" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -433,7 +433,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 12: Manajemen Data Mahasiswa & Impor Excel -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/13-manajemen-mahasiswa-impor-excel.png" alt="Manajemen Mahasiswa" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/13-manajemen-mahasiswa-impor-excel.webp" alt="Manajemen Mahasiswa" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -449,7 +449,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 13: Pemetaan Guru Pamong & Strict Data Isolation -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/14-pemetaan-pamong-data-isolation.png" alt="Pemetaan Pamong" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/14-pemetaan-pamong-data-isolation.webp" alt="Pemetaan Pamong" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -465,7 +465,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 14: Master Data Jurusan -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/15-master-data-jurusan.png" alt="Master Data Jurusan" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/15-master-data-jurusan.webp" alt="Master Data Jurusan" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -481,7 +481,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 15: Master Data Asal Universitas Mitra -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/16-master-data-universitas-mitra.png" alt="Master Data Universitas" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/16-master-data-universitas-mitra.webp" alt="Master Data Universitas" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -497,7 +497,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 16: Master Data Periode & Gelombang -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/17-master-data-periode-gelombang.png" alt="Master Data Periode" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/17-master-data-periode-gelombang.webp" alt="Master Data Periode" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -513,7 +513,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 17: Pengaturan Geofencing Peta SMKN 3 Yogyakarta (LEAFLET OSM) -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3 md:col-span-2">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs max-h-96">
-                    <img src="/dokumen/seminar/ss/18-kalibrasi-geofencing-leaflet-osm.png" alt="Peta Geofencing Leaflet SMKN 3 Yogyakarta" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/18-kalibrasi-geofencing-leaflet-osm.webp" alt="Peta Geofencing Leaflet SMKN 3 Yogyakarta" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -529,7 +529,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 18: Panduan Pengguna Administrator -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/19-panduan-administrator-sistem.png" alt="Panduan Administrator" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/19-panduan-administrator-sistem.webp" alt="Panduan Administrator" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">
@@ -545,7 +545,7 @@ Berikut adalah dokumentasi visual otentik dari implementasi aplikasi web **SIPEN
 <!-- 19: Profil Administrator Sistem -->
 <div class="bg-stone-50 p-3.5 rounded-2xl border border-stone-200 flex flex-col justify-between space-y-3">
 <div class="overflow-hidden rounded-xl border border-stone-200 bg-white shadow-xs">
-                    <img src="/dokumen/seminar/ss/20-profil-super-administrator.png" alt="Profil Administrator" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
+                    <img src="/dokumen/seminar/ss/20-profil-super-administrator.webp" alt="Profil Administrator" class="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300" loading="lazy" />
 </div>
 <div class="space-y-1">
                     <div class="flex items-center justify-between">

@@ -69,7 +69,7 @@ const quickModules = [
             <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 relative z-10">
                 <div
                     class="w-32 h-32 md:w-40 md:h-40 rounded-3xl border-4 border-white shadow-md overflow-hidden flex-shrink-0 group">
-                    <img src="/pp.png" alt="Foto Yodi Irawan"
+                    <img src="/pp.webp" alt="Foto Yodi Irawan"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
 

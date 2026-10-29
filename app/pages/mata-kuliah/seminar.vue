@@ -60,42 +60,42 @@ const sipensiGallery = [
         title: 'Presensi Harian Geofencing GPS',
         role: 'Mahasiswa Praktikan',
         caption: 'Batas masuk 07:15 WIB, batas pulang 15:00 WIB, dengan validasi radius ketat 100 meter dari perimeter SMKN 3 Yogyakarta.',
-        image: '/dokumen/seminar/ss/02-presensi-harian-geofencing.png',
+        image: '/dokumen/seminar/ss/02-presensi-harian-geofencing.webp',
         badge: 'Geofence 100m'
     },
     {
         title: 'Presensi Piket KBM Swafoto WebRTC',
         role: 'Mahasiswa Praktikan',
         caption: 'Kamera swafoto waktu nyata dengan watermark tanggal dan jam otomatis, meniadakan celah kecurangan galeri ponsel.',
-        image: '/dokumen/seminar/ss/03-presensi-piket-kbm-swafoto.png',
+        image: '/dokumen/seminar/ss/03-presensi-piket-kbm-swafoto.webp',
         badge: 'WebRTC Camera'
     },
     {
         title: 'Kalibrasi Peta Geofencing Leaflet OSM',
         role: 'Administrator Sistem',
         caption: 'Peta perimeter interaktif SMKN 3 Yogyakarta (-7.777128, 110.366523) dengan kontrol slider radius 10m-1000m.',
-        image: '/dokumen/seminar/ss/18-kalibrasi-geofencing-leaflet-osm.png',
+        image: '/dokumen/seminar/ss/18-kalibrasi-geofencing-leaflet-osm.webp',
         badge: 'Leaflet.js Engine'
     },
     {
         title: 'Monitoring Mahasiswa Binaan Real-Time',
         role: 'Guru Pamong',
         caption: 'Dashboard pemantauan status kehadiran harian mahasiswa Informatika UNY oleh Guru Pamong Febriyana, S.T.',
-        image: '/dokumen/seminar/ss/07-monitoring-harian-pamong.png',
+        image: '/dokumen/seminar/ss/07-monitoring-harian-pamong.webp',
         badge: 'Live Status'
     },
     {
         title: 'Rekapitulasi Bulanan & Ekspor Excel',
         role: 'Guru Pamong',
         caption: 'Akumulasi presensi bulanan 5 hari kerja efektif dengan persentase kehadiran dan ekspor spreadsheet .xlsx otomatis.',
-        image: '/dokumen/seminar/ss/09-rekap-bulanan-pamong-excel.png',
+        image: '/dokumen/seminar/ss/09-rekap-bulanan-pamong-excel.webp',
         badge: 'Ekspor .xlsx'
     },
     {
         title: 'Pemetaan Pamong & Strict Data Isolation',
         role: 'Administrator Sistem',
         caption: 'Penegakan isolasi data ketat agar guru pamong hanya memantau mahasiswa dari jurusan binaannya masing-masing.',
-        image: '/dokumen/seminar/ss/14-pemetaan-pamong-data-isolation.png',
+        image: '/dokumen/seminar/ss/14-pemetaan-pamong-data-isolation.webp',
         badge: 'Data Security'
     }
 ]
